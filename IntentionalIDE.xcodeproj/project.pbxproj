@@ -12,6 +12,17 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D71BDD9C11613D92007FE6FC /* JavaScript.g in Resources */ = {isa = PBXBuildFile; fileRef = D71BDD9B11613D92007FE6FC /* JavaScript.g */; };
+		D71BDDC0116140FB007FE6FC /* DynaLoaderTest.h in Headers */ = {isa = PBXBuildFile; fileRef = D71BDDBE116140FB007FE6FC /* DynaLoaderTest.h */; };
+		D71BDDC1116140FB007FE6FC /* DynaLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDDBF116140FB007FE6FC /* DynaLoaderTest.m */; };
+		D71BDDF711614562007FE6FC /* IntentionalObjectiveC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D71BDDB7116140A4007FE6FC /* IntentionalObjectiveC.framework */; };
+		D71BDE4411614C7E007FE6FC /* IntentionalObjectiveC.h in Headers */ = {isa = PBXBuildFile; fileRef = D71BDE4211614C7E007FE6FC /* IntentionalObjectiveC.h */; };
+		D71BDE4511614C7E007FE6FC /* IntentionalObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDE4311614C7E007FE6FC /* IntentionalObjectiveC.m */; };
+		D71BDE9E11615377007FE6FC /* JavaScriptLexer.c in Sources */ = {isa = PBXBuildFile; fileRef = D71BDE9A11615377007FE6FC /* JavaScriptLexer.c */; };
+		D71BDE9F11615377007FE6FC /* JavaScriptParser.c in Sources */ = {isa = PBXBuildFile; fileRef = D71BDE9C11615377007FE6FC /* JavaScriptParser.c */; };
+		D71BDEC3116157C6007FE6FC /* libantlr3c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */; };
+		D71BDED111616097007FE6FC /* IntentionalEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDED011616097007FE6FC /* IntentionalEditorView.m */; };
+		D71BDEF2116161E5007FE6FC /* MethodView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDEF1116161E5007FE6FC /* MethodView.m */; };
 		D721A5081160E08400BD51C9 /* IntentionalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A5071160E08400BD51C9 /* IntentionalCore.m */; };
 		D721A50C1160E11800BD51C9 /* IntentionalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A50B1160E11800BD51C9 /* IntentionalClass.m */; };
 		D721A50F1160E12600BD51C9 /* IntentionalAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A50E1160E12600BD51C9 /* IntentionalAttribute.m */; };
@@ -22,6 +33,19 @@
 		D721A62B1160EFC500BD51C9 /* JavaScriptClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A62A1160EFC500BD51C9 /* JavaScriptClass.m */; };
 		D721A62D1160EFE400BD51C9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721A62C1160EFE400BD51C9 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D71BDE0111614658007FE6FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D71BDDF711614562007FE6FC /* IntentionalObjectiveC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -36,6 +60,23 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* IntentionalIDE-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IntentionalIDE-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* IntentionalIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntentionalIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71BDD9B11613D92007FE6FC /* JavaScript.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JavaScript.g; path = parsing/JavaScript.g; sourceTree = "<group>"; };
+		D71BDD9D11613EAD007FE6FC /* Java.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Java.g; sourceTree = "<group>"; };
+		D71BDDB7116140A4007FE6FC /* IntentionalObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentionalObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71BDDB8116140A4007FE6FC /* IntentionalObjectiveC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntentionalObjectiveC-Info.plist"; sourceTree = "<group>"; };
+		D71BDDBE116140FB007FE6FC /* DynaLoaderTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynaLoaderTest.h; sourceTree = "<group>"; };
+		D71BDDBF116140FB007FE6FC /* DynaLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynaLoaderTest.m; sourceTree = "<group>"; };
+		D71BDE4211614C7E007FE6FC /* IntentionalObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalObjectiveC.h; sourceTree = "<group>"; };
+		D71BDE4311614C7E007FE6FC /* IntentionalObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalObjectiveC.m; sourceTree = "<group>"; };
+		D71BDE9A11615377007FE6FC /* JavaScriptLexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = JavaScriptLexer.c; path = parsing/JavaScriptLexer.c; sourceTree = "<group>"; };
+		D71BDE9B11615377007FE6FC /* JavaScriptLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptLexer.h; path = parsing/JavaScriptLexer.h; sourceTree = "<group>"; };
+		D71BDE9C11615377007FE6FC /* JavaScriptParser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = JavaScriptParser.c; path = parsing/JavaScriptParser.c; sourceTree = "<group>"; };
+		D71BDE9D11615377007FE6FC /* JavaScriptParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptParser.h; path = parsing/JavaScriptParser.h; sourceTree = "<group>"; };
+		D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libantlr3c.dylib; path = /usr/local/lib/libantlr3c.dylib; sourceTree = "<absolute>"; };
+		D71BDECF11616097007FE6FC /* IntentionalEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalEditorView.h; sourceTree = "<group>"; };
+		D71BDED011616097007FE6FC /* IntentionalEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalEditorView.m; sourceTree = "<group>"; };
+		D71BDEF0116161E5007FE6FC /* MethodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodView.h; sourceTree = "<group>"; };
+		D71BDEF1116161E5007FE6FC /* MethodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodView.m; sourceTree = "<group>"; };
 		D721A5061160E08400BD51C9 /* IntentionalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalCore.h; sourceTree = "<group>"; };
 		D721A5071160E08400BD51C9 /* IntentionalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalCore.m; sourceTree = "<group>"; };
 		D721A50A1160E11800BD51C9 /* IntentionalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalClass.h; sourceTree = "<group>"; };
@@ -62,6 +103,14 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				D721A62D1160EFE400BD51C9 /* JavaScriptCore.framework in Frameworks */,
+				D71BDEC3116157C6007FE6FC /* libantlr3c.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D71BDDB5116140A4007FE6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +122,10 @@
 			children = (
 				256AC3D80F4B6AC300CF3369 /* IntentionalIDEAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* IntentionalIDEAppDelegate.m */,
+				D71BDECF11616097007FE6FC /* IntentionalEditorView.h */,
+				D71BDED011616097007FE6FC /* IntentionalEditorView.m */,
+				D71BDEF0116161E5007FE6FC /* MethodView.h */,
+				D71BDEF1116161E5007FE6FC /* MethodView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -82,6 +135,7 @@
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				D721A62C1160EFE400BD51C9 /* JavaScriptCore.framework */,
+				D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -100,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* IntentionalIDE.app */,
+				D71BDDB7116140A4007FE6FC /* IntentionalObjectiveC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,12 +162,15 @@
 		29B97314FDCFA39411CA2CEA /* IntentionalIDE */ = {
 			isa = PBXGroup;
 			children = (
+				D71BDDBD116140C9007FE6FC /* ObjectiveC Generator */,
+				D71BDD2E1161329E007FE6FC /* Parser */,
 				D721A5051160E06900BD51C9 /* Core */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				D71BDDB8116140A4007FE6FC /* IntentionalObjectiveC-Info.plist */,
 			);
 			name = IntentionalIDE;
 			sourceTree = "<group>";
@@ -143,6 +201,30 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D71BDD2E1161329E007FE6FC /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				D71BDE9A11615377007FE6FC /* JavaScriptLexer.c */,
+				D71BDE9B11615377007FE6FC /* JavaScriptLexer.h */,
+				D71BDE9C11615377007FE6FC /* JavaScriptParser.c */,
+				D71BDE9D11615377007FE6FC /* JavaScriptParser.h */,
+				D71BDD9B11613D92007FE6FC /* JavaScript.g */,
+				D71BDD9D11613EAD007FE6FC /* Java.g */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		D71BDDBD116140C9007FE6FC /* ObjectiveC Generator */ = {
+			isa = PBXGroup;
+			children = (
+				D71BDDBE116140FB007FE6FC /* DynaLoaderTest.h */,
+				D71BDDBF116140FB007FE6FC /* DynaLoaderTest.m */,
+				D71BDE4211614C7E007FE6FC /* IntentionalObjectiveC.h */,
+				D71BDE4311614C7E007FE6FC /* IntentionalObjectiveC.m */,
+			);
+			name = "ObjectiveC Generator";
 			sourceTree = "<group>";
 		};
 		D721A5051160E06900BD51C9 /* Core */ = {
@@ -178,6 +260,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D71BDDB2116140A4007FE6FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71BDDC0116140FB007FE6FC /* DynaLoaderTest.h in Headers */,
+				D71BDE4411614C7E007FE6FC /* IntentionalObjectiveC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		8D1107260486CEB800E47090 /* IntentionalIDE */ = {
 			isa = PBXNativeTarget;
@@ -186,6 +280,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				D71BDE0111614658007FE6FC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -196,6 +291,24 @@
 			productName = IntentionalIDE;
 			productReference = 8D1107320486CEB800E47090 /* IntentionalIDE.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D71BDDB6116140A4007FE6FC /* IntentionalObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D71BDDBB116140A5007FE6FC /* Build configuration list for PBXNativeTarget "IntentionalObjectiveC" */;
+			buildPhases = (
+				D71BDDB2116140A4007FE6FC /* Headers */,
+				D71BDDB3116140A4007FE6FC /* Resources */,
+				D71BDDB4116140A4007FE6FC /* Sources */,
+				D71BDDB5116140A4007FE6FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentionalObjectiveC;
+			productName = IntentionalObjectiveC;
+			productReference = D71BDDB7116140A4007FE6FC /* IntentionalObjectiveC.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* IntentionalIDE */,
+				D71BDDB6116140A4007FE6FC /* IntentionalObjectiveC */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +335,14 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				D71BDD9C11613D92007FE6FC /* JavaScript.g in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D71BDDB3116140A4007FE6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +363,19 @@
 				D721A51C1160E1D800BD51C9 /* CodeExecutor.m in Sources */,
 				D721A51F1160E42000BD51C9 /* IntentionalObject.m in Sources */,
 				D721A62B1160EFC500BD51C9 /* JavaScriptClass.m in Sources */,
+				D71BDE9E11615377007FE6FC /* JavaScriptLexer.c in Sources */,
+				D71BDE9F11615377007FE6FC /* JavaScriptParser.c in Sources */,
+				D71BDED111616097007FE6FC /* IntentionalEditorView.m in Sources */,
+				D71BDEF2116161E5007FE6FC /* MethodView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D71BDDB4116140A4007FE6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71BDDC1116140FB007FE6FC /* DynaLoaderTest.m in Sources */,
+				D71BDE4511614C7E007FE6FC /* IntentionalObjectiveC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +412,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IntentionalIDE_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "IntentionalIDE-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = IntentionalIDE;
@@ -323,6 +459,60 @@
 			};
 			name = Release;
 		};
+		D71BDDB9116140A5007FE6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "IntentionalObjectiveC-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = IntentionalObjectiveC;
+			};
+			name = Debug;
+		};
+		D71BDDBA116140A5007FE6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "IntentionalObjectiveC-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = IntentionalObjectiveC;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +530,15 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D71BDDBB116140A5007FE6FC /* Build configuration list for PBXNativeTarget "IntentionalObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D71BDDB9116140A5007FE6FC /* Debug */,
+				D71BDDBA116140A5007FE6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

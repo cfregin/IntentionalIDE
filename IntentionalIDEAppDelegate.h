@@ -11,9 +11,11 @@
 #import "IntentionalClass.h"
 @interface IntentionalIDEAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
-	
+	NSBundle *localFramework;
+	NSArray *loadedClasses;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (retain) NSArray *loadedClasses;
+-(void)gotClasses:(NSNotification*)notification;
 @end
