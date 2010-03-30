@@ -9,8 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "CodeExecutor.h"
 #import "IntentionalClass.h"
-#import "JavaScriptLexer.h"
-#import "JavaScriptParser.h"
+#import "ANTLRParser.h"
 @interface IntentionalIDEAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
 	NSBundle *localFramework;

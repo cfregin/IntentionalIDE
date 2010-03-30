@@ -16,7 +16,11 @@
 	[self setLoadedClasses:[[notification userInfo] valueForKey:@"NSLoadedClasses"]];
 }
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	pANTLR3_UINT8	    fName;
+	ANTLRParser *parser = [[ANTLRParser alloc] init];
+	
+	[parser release];
+	
+/*	pANTLR3_UINT8	    fName;
 	pANTLR3_INPUT_STREAM    input;
 	pJavaScriptLexer		    lxr;
 	pANTLR3_COMMON_TOKEN_STREAM	    tstream;
@@ -53,7 +57,7 @@
 	psr	    ->free  (psr);	    psr = NULL;
     tstream ->free  (tstream);	    tstream = NULL;
     lxr	    ->free  (lxr);	    lxr = NULL;
-    input   ->close (input);	    input = NULL;
+    input   ->close (input);	    input = NULL;*/
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotClasses:) name:NSBundleDidLoadNotification object:nil];
 	
 //Load framework dynamicaly
