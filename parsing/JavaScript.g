@@ -10,10 +10,37 @@ options
 	output=AST;
 	backtrack=true;
 	memoize=true;
+	language = C;
+}
+@header {
+	#include <stdlib.h>
+	#include <string.h>
+	#include <stdlib.h>
 }
 
+@members {
+struct MethodDescription{
+	char* name;
+	char* content;
+};
+struct MethodDescription *ptrMethods;
+
+void addMethod(){
+}
+struct MethodDescription* createMethod(){
+	return (struct MethodDescription *) malloc(sizeof(struct MethodDescription)); 
+	
+}
+void initialize_arrays(){
+	ptrMethods = (struct MethodDescription *) malloc(sizeof(struct MethodDescription)); 
+
+}
+
+
+}
 program
 	: DLT!* sourceElements DLT!* EOF!
+	{ printf("program\n"); }
 	;
 	
 sourceElements
@@ -32,6 +59,7 @@ functionDeclaration
 	
 functionExpression
 	: 'function' DLT!* Identifier? DLT!* formalParameterList DLT!* functionBody
+	{ addMethod($Identifier.text, $Identifier.type);}
 	;
 	
 formalParameterList

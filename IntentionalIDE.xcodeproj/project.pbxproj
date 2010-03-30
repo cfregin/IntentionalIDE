@@ -23,6 +23,8 @@
 		D71BDEC3116157C6007FE6FC /* libantlr3c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */; };
 		D71BDED111616097007FE6FC /* IntentionalEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDED011616097007FE6FC /* IntentionalEditorView.m */; };
 		D71BDEF2116161E5007FE6FC /* MethodView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDEF1116161E5007FE6FC /* MethodView.m */; };
+		D71BE02A116185F0007FE6FC /* demo.js in Sources */ = {isa = PBXBuildFile; fileRef = D71BE029116185F0007FE6FC /* demo.js */; };
+		D71BE03611618626007FE6FC /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = D71BE029116185F0007FE6FC /* demo.js */; };
 		D721A5081160E08400BD51C9 /* IntentionalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A5071160E08400BD51C9 /* IntentionalCore.m */; };
 		D721A50C1160E11800BD51C9 /* IntentionalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A50B1160E11800BD51C9 /* IntentionalClass.m */; };
 		D721A50F1160E12600BD51C9 /* IntentionalAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A50E1160E12600BD51C9 /* IntentionalAttribute.m */; };
@@ -77,6 +79,7 @@
 		D71BDED011616097007FE6FC /* IntentionalEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalEditorView.m; sourceTree = "<group>"; };
 		D71BDEF0116161E5007FE6FC /* MethodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodView.h; sourceTree = "<group>"; };
 		D71BDEF1116161E5007FE6FC /* MethodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodView.m; sourceTree = "<group>"; };
+		D71BE029116185F0007FE6FC /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		D721A5061160E08400BD51C9 /* IntentionalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalCore.h; sourceTree = "<group>"; };
 		D721A5071160E08400BD51C9 /* IntentionalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalCore.m; sourceTree = "<group>"; };
 		D721A50A1160E11800BD51C9 /* IntentionalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalClass.h; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 				8D1107310486CEB800E47090 /* IntentionalIDE-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				D71BE029116185F0007FE6FC /* demo.js */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -333,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71BE03611618626007FE6FC /* demo.js in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				D71BDD9C11613D92007FE6FC /* JavaScript.g in Resources */,
@@ -367,6 +372,7 @@
 				D71BDE9F11615377007FE6FC /* JavaScriptParser.c in Sources */,
 				D71BDED111616097007FE6FC /* IntentionalEditorView.m in Sources */,
 				D71BDEF2116161E5007FE6FC /* MethodView.m in Sources */,
+				D71BE02A116185F0007FE6FC /* demo.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

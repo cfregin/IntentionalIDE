@@ -270,6 +270,7 @@
 								<string>D71BDDBD116140C9007FE6FC</string>
 								<string>D71BDD2E1161329E007FE6FC</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A0FEA54F0111CA2CBB</string>
 								<string>D721A62C1160EFE400BD51C9</string>
@@ -290,7 +291,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -326,7 +327,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>D721A4F91160E02000BD51C9</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>IntentionalEditorView.m</string>
+								<string>JavaScriptParser.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -334,17 +335,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>D721A4FA1160E02000BD51C9</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>IntentionalEditorView.m</string>
+										<string>JavaScriptParser.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D71BDF8F116168AF007FE6FC</string>
+										<string>D71BE0571161895D007FE6FC</string>
 										<key>history</key>
 										<array>
 											<string>D721A5381160E5BF00BD51C9</string>
 											<string>D721A53B1160E5BF00BD51C9</string>
 											<string>D721A53E1160E5BF00BD51C9</string>
-											<string>D721A5401160E5BF00BD51C9</string>
 											<string>D721A5411160E5BF00BD51C9</string>
 											<string>D721A59B1160EB7D00BD51C9</string>
 											<string>D721A59D1160EB7D00BD51C9</string>
@@ -364,21 +364,24 @@
 											<string>D71BDD1211612D5A007FE6FC</string>
 											<string>D71BDD1311612D5A007FE6FC</string>
 											<string>D71BDDA211613ECF007FE6FC</string>
-											<string>D71BDDF911614566007FE6FC</string>
 											<string>D71BDDFA11614566007FE6FC</string>
 											<string>D71BDE4911614C9C007FE6FC</string>
 											<string>D71BDE6011614D7C007FE6FC</string>
 											<string>D71BDE6B11614E38007FE6FC</string>
-											<string>D71BDEA911615554007FE6FC</string>
 											<string>D71BDEAB11615554007FE6FC</string>
-											<string>D71BDEC6116157C8007FE6FC</string>
 											<string>D71BDED61161613D007FE6FC</string>
-											<string>D71BDEE71161618F007FE6FC</string>
 											<string>D71BDEF611616231007FE6FC</string>
 											<string>D71BDF4611616629007FE6FC</string>
 											<string>D71BDF68116166EF007FE6FC</string>
 											<string>D71BDF821161687F007FE6FC</string>
-											<string>D71BDF831161687F007FE6FC</string>
+											<string>D71BDF991161794B007FE6FC</string>
+											<string>D71BDFA211617D73007FE6FC</string>
+											<string>D71BDFA311617D73007FE6FC</string>
+											<string>D71BE00911618505007FE6FC</string>
+											<string>D71BE0101161851D007FE6FC</string>
+											<string>D71BE0391161869A007FE6FC</string>
+											<string>D71BE0431161874F007FE6FC</string>
+											<string>D71BE04A116188DB007FE6FC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -542,8 +545,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -699,7 +700,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D71BDF90116168AF007FE6FC</string>
+		<string>D71BE05311618901007FE6FC</string>
 		<string>D71BDCD011612AC6007FE6FC</string>
 		<string>D71BDCD111612AC6007FE6FC</string>
 		<string>/Users/cfregin/development/IntentionalIDE/IntentionalIDE.xcodeproj</string>
