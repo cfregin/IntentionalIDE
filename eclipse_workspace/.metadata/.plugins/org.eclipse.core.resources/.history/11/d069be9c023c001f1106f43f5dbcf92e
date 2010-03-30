@@ -1,0 +1,5 @@
+function helloWorld(somevar){
+	trace("Hello world");
+}
+helloWorld();
+trave("now");

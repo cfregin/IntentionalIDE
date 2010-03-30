@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ParserCore/grammars/ES3.g3&apos; to &apos;ES3.g&apos;" description="Rename resource &apos;ES3.g3&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="grammars/ES3.g3" name="ES3.g" stamp="1269952641107" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ParserCore/grammars/ES3Walker.g3&apos; to &apos;ES3Walker.g&apos;" description="Rename resource &apos;ES3Walker.g3&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="grammars/ES3Walker.g3" name="ES3Walker.g" stamp="1269952656481" updateReferences="true"/>
+</session>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>ANTLR Packages</comment>
+<entry key="antlr.3.2.desc">ANTLR Parser Generator  Version 3.2 Sep 23, 2009 12:02:23</entry>
+<entry key="antlr.3.2.home">/Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/libs</entry>
+<entry key="antlr.3.2.cp">/Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/libs/antlr-3.2.jar</entry>
+<entry key="antlr.packages">3.2</entry>
+<entry key="antlr.3.2.created">1269950550538</entry>
+<entry key="antlr.3.2.selected">true</entry>
+</properties>

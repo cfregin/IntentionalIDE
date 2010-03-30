@@ -1,0 +1,15 @@
+package de.intentionalide.xml;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name="XmlClass")
+public class XmlMethod {
+	String name;
+	public XmlMethod(){
+		
+	}
+
+}

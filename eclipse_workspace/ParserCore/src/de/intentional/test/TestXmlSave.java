@@ -1,0 +1,34 @@
+package de.intentional.test;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+
+import org.junit.Test;
+
+import de.intentionalide.xml.XmlClass;
+import de.intentionalide.xml.XmlMethod;
+
+public class TestXmlSave {
+	@Test
+	public void testSave() throws JAXBException{
+
+		XmlClass xmlClass = new XmlClass();
+		xmlClass.setName("Main class");
+		XmlMethod xmlMethod = new XmlMethod();
+		xmlMethod.setName("This is a method");
+		xmlMethod.setStaticMethod(Boolean.FALSE);
+		xmlClass.getMethods().add(xmlMethod);
+		Marshaller marshaller = JAXBContext.newInstance("de.intentionalide.generated").createMarshaller();
+		marshaller.marshal(xmlClass, new File("demo.xml"));
+		
+		Unmarshaller unmarshaller = JAXBContext.newInstance("de.intentionalide.generated").createUnmarshaller();
+		XmlClass result = (XmlClass)((JAXBElement)unmarshaller.unmarshal(new File("demo.xml"))).getValue();
+		
+		System.out.println(result.getMethods().get(0).getName());
+	}
+}

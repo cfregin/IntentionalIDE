@@ -1,4 +1,0 @@
-function mytest(){
-	var demo="huhu";
-	trace(demo);
-}

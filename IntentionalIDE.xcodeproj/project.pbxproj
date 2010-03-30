@@ -12,14 +12,11 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		D71BDD9C11613D92007FE6FC /* JavaScript.g in Resources */ = {isa = PBXBuildFile; fileRef = D71BDD9B11613D92007FE6FC /* JavaScript.g */; };
 		D71BDDC0116140FB007FE6FC /* DynaLoaderTest.h in Headers */ = {isa = PBXBuildFile; fileRef = D71BDDBE116140FB007FE6FC /* DynaLoaderTest.h */; };
 		D71BDDC1116140FB007FE6FC /* DynaLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDDBF116140FB007FE6FC /* DynaLoaderTest.m */; };
 		D71BDDF711614562007FE6FC /* IntentionalObjectiveC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D71BDDB7116140A4007FE6FC /* IntentionalObjectiveC.framework */; };
 		D71BDE4411614C7E007FE6FC /* IntentionalObjectiveC.h in Headers */ = {isa = PBXBuildFile; fileRef = D71BDE4211614C7E007FE6FC /* IntentionalObjectiveC.h */; };
 		D71BDE4511614C7E007FE6FC /* IntentionalObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDE4311614C7E007FE6FC /* IntentionalObjectiveC.m */; };
-		D71BDE9E11615377007FE6FC /* JavaScriptLexer.c in Sources */ = {isa = PBXBuildFile; fileRef = D71BDE9A11615377007FE6FC /* JavaScriptLexer.c */; };
-		D71BDE9F11615377007FE6FC /* JavaScriptParser.c in Sources */ = {isa = PBXBuildFile; fileRef = D71BDE9C11615377007FE6FC /* JavaScriptParser.c */; };
 		D71BDEC3116157C6007FE6FC /* libantlr3c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */; };
 		D71BDED111616097007FE6FC /* IntentionalEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDED011616097007FE6FC /* IntentionalEditorView.m */; };
 		D71BDEF2116161E5007FE6FC /* MethodView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BDEF1116161E5007FE6FC /* MethodView.m */; };
@@ -34,6 +31,8 @@
 		D721A51F1160E42000BD51C9 /* IntentionalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A51E1160E42000BD51C9 /* IntentionalObject.m */; };
 		D721A62B1160EFC500BD51C9 /* JavaScriptClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D721A62A1160EFC500BD51C9 /* JavaScriptClass.m */; };
 		D721A62D1160EFE400BD51C9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721A62C1160EFE400BD51C9 /* JavaScriptCore.framework */; };
+		D7B97E43116201EC004C9B33 /* ANTLRParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B97E42116201EC004C9B33 /* ANTLRParser.m */; };
+		D7D972C31161EDDB0015546E /* libantlr3c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,7 +61,6 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* IntentionalIDE-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IntentionalIDE-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* IntentionalIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntentionalIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D71BDD9B11613D92007FE6FC /* JavaScript.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JavaScript.g; path = parsing/JavaScript.g; sourceTree = "<group>"; };
 		D71BDD9D11613EAD007FE6FC /* Java.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Java.g; sourceTree = "<group>"; };
 		D71BDDB7116140A4007FE6FC /* IntentionalObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentionalObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71BDDB8116140A4007FE6FC /* IntentionalObjectiveC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntentionalObjectiveC-Info.plist"; sourceTree = "<group>"; };
@@ -70,10 +68,6 @@
 		D71BDDBF116140FB007FE6FC /* DynaLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynaLoaderTest.m; sourceTree = "<group>"; };
 		D71BDE4211614C7E007FE6FC /* IntentionalObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalObjectiveC.h; sourceTree = "<group>"; };
 		D71BDE4311614C7E007FE6FC /* IntentionalObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalObjectiveC.m; sourceTree = "<group>"; };
-		D71BDE9A11615377007FE6FC /* JavaScriptLexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = JavaScriptLexer.c; path = parsing/JavaScriptLexer.c; sourceTree = "<group>"; };
-		D71BDE9B11615377007FE6FC /* JavaScriptLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptLexer.h; path = parsing/JavaScriptLexer.h; sourceTree = "<group>"; };
-		D71BDE9C11615377007FE6FC /* JavaScriptParser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = JavaScriptParser.c; path = parsing/JavaScriptParser.c; sourceTree = "<group>"; };
-		D71BDE9D11615377007FE6FC /* JavaScriptParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptParser.h; path = parsing/JavaScriptParser.h; sourceTree = "<group>"; };
 		D71BDEC2116157C6007FE6FC /* libantlr3c.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libantlr3c.dylib; path = /usr/local/lib/libantlr3c.dylib; sourceTree = "<absolute>"; };
 		D71BDECF11616097007FE6FC /* IntentionalEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionalEditorView.h; sourceTree = "<group>"; };
 		D71BDED011616097007FE6FC /* IntentionalEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionalEditorView.m; sourceTree = "<group>"; };
@@ -97,6 +91,8 @@
 		D721A6291160EFC500BD51C9 /* JavaScriptClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptClass.h; sourceTree = "<group>"; };
 		D721A62A1160EFC500BD51C9 /* JavaScriptClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptClass.m; sourceTree = "<group>"; };
 		D721A62C1160EFE400BD51C9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D7B97E41116201EC004C9B33 /* ANTLRParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTLRParser.h; sourceTree = "<group>"; };
+		D7B97E42116201EC004C9B33 /* ANTLRParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTLRParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D972C31161EDDB0015546E /* libantlr3c.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +162,7 @@
 		29B97314FDCFA39411CA2CEA /* IntentionalIDE */ = {
 			isa = PBXGroup;
 			children = (
+				D7B97E40116201CC004C9B33 /* ANTLR */,
 				D71BDDBD116140C9007FE6FC /* ObjectiveC Generator */,
 				D71BDD2E1161329E007FE6FC /* Parser */,
 				D721A5051160E06900BD51C9 /* Core */,
@@ -210,11 +208,6 @@
 		D71BDD2E1161329E007FE6FC /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				D71BDE9A11615377007FE6FC /* JavaScriptLexer.c */,
-				D71BDE9B11615377007FE6FC /* JavaScriptLexer.h */,
-				D71BDE9C11615377007FE6FC /* JavaScriptParser.c */,
-				D71BDE9D11615377007FE6FC /* JavaScriptParser.h */,
-				D71BDD9B11613D92007FE6FC /* JavaScript.g */,
 				D71BDD9D11613EAD007FE6FC /* Java.g */,
 			);
 			name = Parser;
@@ -260,6 +253,15 @@
 				D721A62A1160EFC500BD51C9 /* JavaScriptClass.m */,
 			);
 			name = Types;
+			sourceTree = "<group>";
+		};
+		D7B97E40116201CC004C9B33 /* ANTLR */ = {
+			isa = PBXGroup;
+			children = (
+				D7B97E41116201EC004C9B33 /* ANTLRParser.h */,
+				D7B97E42116201EC004C9B33 /* ANTLRParser.m */,
+			);
+			name = ANTLR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +342,6 @@
 				D71BE03611618626007FE6FC /* demo.js in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				D71BDD9C11613D92007FE6FC /* JavaScript.g in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,11 +369,10 @@
 				D721A51C1160E1D800BD51C9 /* CodeExecutor.m in Sources */,
 				D721A51F1160E42000BD51C9 /* IntentionalObject.m in Sources */,
 				D721A62B1160EFC500BD51C9 /* JavaScriptClass.m in Sources */,
-				D71BDE9E11615377007FE6FC /* JavaScriptLexer.c in Sources */,
-				D71BDE9F11615377007FE6FC /* JavaScriptParser.c in Sources */,
 				D71BDED111616097007FE6FC /* IntentionalEditorView.m in Sources */,
 				D71BDEF2116161E5007FE6FC /* MethodView.m in Sources */,
 				D71BE02A116185F0007FE6FC /* demo.js in Sources */,
+				D7B97E43116201EC004C9B33 /* ANTLRParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +433,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IntentionalIDE_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "IntentionalIDE-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = IntentionalIDE;

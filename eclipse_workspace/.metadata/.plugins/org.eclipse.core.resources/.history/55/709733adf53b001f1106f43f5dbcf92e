@@ -1,0 +1,17 @@
+package de.intentionalide;
+
+import org.antlr.runtime.ANTLRFileStream;
+import org.antlr.runtime.CharStream;
+
+public class ParseJavascript {
+	public static void main(String[] args) {
+		CharStream input = new ANTLRFileStream(args[0]);
+		JavaScriptLexer lex = new JavaScriptLexer(input);
+		TokenStream tokens = new TokenRewriteStream(lex);
+		//System.out.println("before, tokens="+tokens);
+		JavaScriptParser parser = new JavaScriptParser(tokens);
+		parser.program();
+		System.out.println(tokens);
+
+	}
+}

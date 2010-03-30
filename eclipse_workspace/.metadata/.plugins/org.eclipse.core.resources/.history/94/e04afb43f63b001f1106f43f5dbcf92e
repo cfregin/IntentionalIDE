@@ -1,0 +1,34 @@
+package de.intentionalide;
+
+import java.io.IOException;
+
+import org.antlr.runtime.ANTLRFileStream;
+import org.antlr.runtime.CharStream;
+import org.antlr.runtime.RecognitionException;
+import org.antlr.runtime.TokenRewriteStream;
+import org.antlr.runtime.TokenStream;
+
+public class ParseJavascript {
+	public static void main(String[] args) {
+
+		try {
+			CharStream input = new ANTLRFileStream("tests/demo.js");
+			JavaScriptLexer lex = new JavaScriptLexer(input);
+			TokenStream tokens = new TokenRewriteStream(lex);
+			//System.out.println("before, tokens="+tokens);
+			JavaScriptParser parser = new JavaScriptParser(tokens);
+			parser.program();
+			for(String line:parser.methods){
+				
+			}
+			System.out.println(tokens);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (RecognitionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}

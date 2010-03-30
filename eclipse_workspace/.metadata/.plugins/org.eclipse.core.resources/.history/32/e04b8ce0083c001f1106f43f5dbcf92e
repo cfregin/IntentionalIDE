@@ -1,0 +1,15 @@
+package de.intentionalide;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name="intendedClass")
+public class IntendClass {
+	public IntendClass(){
+		
+	}
+	private String name;
+	
+}
