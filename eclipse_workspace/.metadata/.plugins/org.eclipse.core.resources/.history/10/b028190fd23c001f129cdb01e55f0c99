@@ -1,0 +1,19 @@
+package de.intentionalide.code;
+
+import java.util.Collection;
+import java.util.HashMap;
+
+public class IntentionalProgram {
+	public IntentionalProgram(){
+		
+	}
+	private HashMap<String, IntentionalClass> classes = new HashMap<String, IntentionalClass>();
+	
+	public void addClass(String name, IntentionalClass theClass){
+		classes.put(name, theClass);
+		
+	}
+	public Collection<IntentionalClass> getClasses(){
+		return classes.values();
+	}
+}

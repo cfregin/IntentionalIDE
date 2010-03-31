@@ -1,0 +1,45 @@
+package de.intentionalide.parser;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.antlr.runtime.ANTLRStringStream;
+import org.antlr.runtime.CharStream;
+import org.antlr.runtime.ParserRuleReturnScope;
+import org.antlr.runtime.RecognitionException;
+import org.antlr.runtime.TokenRewriteStream;
+import org.antlr.runtime.TokenStream;
+import org.antlr.runtime.tree.CommonTree;
+
+import de.intentionalide.parser.java.JavaLexer;
+import de.intentionalide.parser.java.JavaParser;
+
+public class IntentionalJavaParser {
+	private static Logger log = Logger.getLogger("IntentionalJavaParser");
+	public IntentionalJavaParser(){
+		
+	}
+	public void parse(String javaCode, String filename) throws RecognitionException{
+		CharStream stream = new ANTLRStringStream(javaCode);
+		JavaLexer lexer = new JavaLexer(stream);
+		TokenStream tokens = new TokenRewriteStream(lexer);
+		JavaParser parser = new JavaParser(tokens);
+		ParserRuleReturnScope result = parser.compilationUnit();
+		Object tree = result.getTree();
+		parseTree(tree);
+				
+	}
+	public void parseTree(Object tree){
+		if(!(tree instanceof CommonTree)){
+			return;
+		}
+		log.log(Level.INFO,tree.toString());
+		CommonTree javaTree = (CommonTree)tree;
+		for(Object child:javaTree.getChildren()){
+			log.log(Level.INFO, child.toString());
+		}
+		
+		
+	}
+	
+}

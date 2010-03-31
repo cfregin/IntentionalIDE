@@ -1,0 +1,36 @@
+package de.intentionalide.parser;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.antlr.runtime.ANTLRStringStream;
+import org.antlr.runtime.CharStream;
+import org.antlr.runtime.RecognitionException;
+import org.antlr.runtime.TokenRewriteStream;
+import org.antlr.runtime.TokenStream;
+
+import de.intentionalide.parser.java.JavaLexer;
+import de.intentionalide.parser.java.JavaParser;
+public class IntentionalParser {
+	public static void main(String[] args) throws IOException, RecognitionException {
+		System.out.println(new File(".").getAbsolutePath());
+		String javacode = IntentionalParser.readFile("Demo.java");
+		CharStream stream = new ANTLRStringStream(javacode);
+		JavaLexer lexer = new JavaLexer(stream);
+		TokenStream tokens = new TokenRewriteStream(lexer);
+		JavaParser parser = new JavaParser(tokens);
+		Object result = parser.compilationUnit();
+	}
+	private static String readFile(String path) throws IOException{
+		BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
+		String line = null;
+		StringBuffer codeBuffer=new StringBuffer();
+		while((line = reader.readLine())!=null){
+			codeBuffer.append(line);
+			codeBuffer.append('\n');
+		}
+		return codeBuffer.toString();
+	}
+}

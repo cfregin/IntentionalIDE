@@ -1,0 +1,13 @@
+package de.intentionalide.parser;
+
+public class IntentionalJavaParser {
+	public IntentionalJavaParser(){
+		
+	}
+	public void parse(String javaCode, String filename){
+		
+	}
+	public void parseTree(Object tree){
+		
+	}
+}

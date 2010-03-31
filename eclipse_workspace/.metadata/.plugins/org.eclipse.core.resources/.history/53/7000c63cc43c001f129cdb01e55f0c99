@@ -1,0 +1,29 @@
+package de.intentionalide.parser;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class IntentionalJavaParser {
+	public IntentionalJavaParser(){
+		
+	}
+	public void parse(String javaCode, String filename){
+		
+	}
+	public void parseTree(Object tree){
+		
+	}
+	private String readFile(String path) throws IOException{
+		BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
+		String line = null;
+		StringBuffer codeBuffer=new StringBuffer();
+		while((line = reader.readLine())!=null){
+			codeBuffer.append(line);
+			codeBuffer.append('\n');
+		}
+		return codeBuffer.toString();
+	}
+	
+}

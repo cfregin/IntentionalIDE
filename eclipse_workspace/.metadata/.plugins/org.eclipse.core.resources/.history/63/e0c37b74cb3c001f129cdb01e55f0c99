@@ -1,0 +1,35 @@
+package de.intentionalide.code;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
+public class IntentionalClass extends IntentionalElement {
+	private String className;
+	
+	List<IntentionalImport> imports = new LinkedList<IntentionalImport>();
+	HashMap<String, IntentionalMethod> methods = new HashMap<String, IntentionalMethod>();
+	HashMap<String,IntentionalProperty> properties = new HashMap<String, IntentionalProperty>();
+	
+	
+	public void addMethod(String name, IntentionalMethod theMethod){
+		methods.put(name, theMethod);
+	}
+	public void addImport(IntentionalImport intentionalImport){
+		imports.add(intentionalImport);
+	}
+	public List<IntentionalImport> getImports(){
+		return imports;
+	}
+	public Collection<IntentionalMethod> getMethods(){
+		return methods.values();
+	}
+	public void setClassName(String className) {
+		this.className = className;
+	}
+	public String getClassName() {
+		return className;
+	}
+}

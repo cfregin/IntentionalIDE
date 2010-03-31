@@ -1,0 +1,9 @@
+package de.intentionalide.code;
+
+import java.util.HashMap;
+
+public class IntentionalClass extends IntentionalElement {
+	
+	HashMap<String, IntentionalMethod> methods;
+	HashMap<String,IntentionalProperty> properties;
+}

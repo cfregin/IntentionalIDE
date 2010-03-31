@@ -1,0 +1,14 @@
+package de.intentionalide.code;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+public class IntentionalClass extends IntentionalElement {
+	List<IntentionalImport> imports = new LinkedList<IntentionalImport>();
+	HashMap<String, IntentionalMethod> methods;
+	HashMap<String,IntentionalProperty> properties;
+	public void addImport(IntentionalImport intentionalImport){
+		imports.add(intentionalImport);
+	}
+}
