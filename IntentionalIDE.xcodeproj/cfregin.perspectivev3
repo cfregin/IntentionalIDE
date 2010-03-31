@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Project</string>
+	<string>Debug</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -294,8 +294,6 @@
 							<string>MainColumn</string>
 							<real>245</real>
 						</array>
-						<key>RubberWindowFrame</key>
-						<string>179 303 1440 819 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -306,8 +304,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -325,7 +321,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D7B97E76116250BD004C9B33</string>
+										<string>D7B97E85116340A9004C9B33</string>
 										<key>history</key>
 										<array>
 											<string>D721A5381160E5BF00BD51C9</string>
@@ -380,8 +376,6 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {1173, 468}}</string>
-								<key>RubberWindowFrame</key>
-								<string>179 303 1440 819 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -405,8 +399,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1173, 278}}</string>
-										<key>RubberWindowFrame</key>
-										<string>179 303 1440 819 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -544,6 +536,8 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1440, 141}}</string>
+						<key>RubberWindowFrame</key>
+						<string>179 303 1440 819 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -618,7 +612,11 @@
 							</array>
 							<key>Frame</key>
 							<string>{{703, 0}, {737, 307}}</string>
+							<key>RubberWindowFrame</key>
+							<string>179 303 1440 819 0 0 1920 1178 </string>
 						</dict>
+						<key>RubberWindowFrame</key>
+						<string>179 303 1440 819 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -682,6 +680,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>D7B97E86116340A9004C9B33</string>
 		<string>D7B97E601162031E004C9B33</string>
 		<string>D7B97E611162031E004C9B33</string>
 		<string>/Users/cfregin/development/IntentionalIDE/IntentionalIDE.xcodeproj</string>

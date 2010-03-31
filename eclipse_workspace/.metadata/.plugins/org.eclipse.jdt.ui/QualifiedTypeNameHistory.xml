@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.antlr.runtime.CharStream"/>
+<fullyQualifiedTypeName name="org.antlr.runtime.ANTLRFileStream"/>
+<fullyQualifiedTypeName name="org.antlr.runtime.TokenRewriteStream"/>
+<fullyQualifiedTypeName name="org.antlr.runtime.TokenStream"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAccessorType"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlType"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="de.intentionalide.xml.XmlMethod"/>
+<fullyQualifiedTypeName name="javax.xml.bind.Marshaller"/>
+<fullyQualifiedTypeName name="javax.xml.bind.JAXBContext"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.xml.bind.Unmarshaller"/>
+<fullyQualifiedTypeName name="javax.xml.bind.JAXBElement"/>
+<fullyQualifiedTypeName name="de.intentionalide.xml.XmlClass"/>
+</qualifiedTypeNameHistroy>

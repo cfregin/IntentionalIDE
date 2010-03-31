@@ -1,2 +1,16 @@
 1269952641107	Rename resource 'ES3.g3'
 1269952656481	Rename resource 'ES3Walker.g3'
+1270025972033	Move files
+1270035137266	Delete element
+1270036810443	Delete element
+1270036813604	Delete elements
+1270036946983	Delete element
+1270037150830	Delete element
+1270037571672	Rename local variable 'code'
+1270039457322	Rename type 'Program'
+1270040754233	Encapsulate field 'path'
+1270041105995	Rename method 'parse'
+1270041271279	Encapsulate field 'className'
+1270041675284	Rename method 'getMethodNames'
+1270041890201	Encapsulate field 'methodName'
+1270043871556	Move file

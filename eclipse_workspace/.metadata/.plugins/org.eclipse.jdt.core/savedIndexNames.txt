@@ -1,6 +1,7 @@
 INDEX VERSION 1.126+/Users/cfregin/development/IntentionalIDE/eclipse_workspace/.metadata/.plugins/org.eclipse.jdt.core
 3321539481.index
-1506127098.index
+3266567714.index
+4148479965.index
 1762658067.index
 1163619204.index
 1273319153.index
@@ -9,8 +10,8 @@ INDEX VERSION 1.126+/Users/cfregin/development/IntentionalIDE/eclipse_workspace/
 1833648217.index
 2395626786.index
 2286151582.index
-3712507179.index
 4238209716.index
+3712507179.index
 1819685514.index
 1384487945.index
 1271342938.index
@@ -24,4 +25,4 @@ INDEX VERSION 1.126+/Users/cfregin/development/IntentionalIDE/eclipse_workspace/
 2332924295.index
 852499497.index
 1381985556.index
-3266567714.index
+1506127098.index
