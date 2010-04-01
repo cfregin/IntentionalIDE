@@ -9,6 +9,7 @@ import org.antlr.runtime.RecognitionException;
 
 import de.intentionalide.code.IntentionalClass;
 import de.intentionalide.code.IntentionalProgram;
+import de.intentionalide.codegenerator.ObjectiveCGenerator;
 public class IntentionalParser {
 	public static void main(String[] args) throws IOException, RecognitionException {
 		System.out.println(new File(".").getAbsolutePath());
@@ -22,6 +23,9 @@ public class IntentionalParser {
 			log("With impoers:" + theClass.getImports());
 			log("With methods:" + theClass.getMethods());
 		}
+		
+		ObjectiveCGenerator generator = new ObjectiveCGenerator(program);
+		generator.generateClass("Demo");
 	}
 	private static String readFile(String path) throws IOException{
 		BufferedReader reader = new BufferedReader(new FileReader(new File(path)));

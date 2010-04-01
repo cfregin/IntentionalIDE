@@ -321,7 +321,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D7B97E85116340A9004C9B33</string>
+										<string>D7B97EA21164BF10004C9B33</string>
 										<key>history</key>
 										<array>
 											<string>D721A5381160E5BF00BD51C9</string>
@@ -357,10 +357,6 @@
 											<string>D71BDFA211617D73007FE6FC</string>
 											<string>D71BDFA311617D73007FE6FC</string>
 											<string>D71BE0391161869A007FE6FC</string>
-											<string>D7B97E44116202A1004C9B33</string>
-											<string>D7B97E45116202A1004C9B33</string>
-											<string>D7B97E46116202A1004C9B33</string>
-											<string>D7B97E6311620321004C9B33</string>
 											<string>D7B97E681162032C004C9B33</string>
 										</array>
 									</dict>
@@ -680,7 +676,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D7B97E86116340A9004C9B33</string>
 		<string>D7B97E601162031E004C9B33</string>
 		<string>D7B97E611162031E004C9B33</string>
 		<string>/Users/cfregin/development/IntentionalIDE/IntentionalIDE.xcodeproj</string>

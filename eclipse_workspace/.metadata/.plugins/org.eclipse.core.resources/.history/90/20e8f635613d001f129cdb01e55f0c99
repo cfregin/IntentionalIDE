@@ -1,0 +1,12 @@
+package de.intentionalide.codegenerator;
+
+import de.intentionalide.code.IntentionalProgram;
+
+public class ObjectiveCGenerator {
+	public ObjectiveCGenerator(IntentionalProgram program){
+		
+	}
+	public void generateClass(String className){
+		
+	}
+}

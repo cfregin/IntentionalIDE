@@ -16,4 +16,7 @@ public class IntentionalProgram {
 	public Collection<IntentionalClass> getClasses(){
 		return classes.values();
 	}
+	public IntentionalClass findClass(String name){
+		return classes.get(name);
+	}
 }

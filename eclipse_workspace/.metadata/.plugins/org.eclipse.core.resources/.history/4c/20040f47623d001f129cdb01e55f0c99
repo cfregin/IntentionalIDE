@@ -1,0 +1,15 @@
+package de.intentionalide.codegenerator;
+
+import de.intentionalide.code.IntentionalClass;
+import de.intentionalide.code.IntentionalProgram;
+
+public class ObjectiveCGenerator {
+	private IntentionalProgram program;
+	public ObjectiveCGenerator(IntentionalProgram program){
+		this.program = program;
+	}
+	public void generateClass(String className){
+		IntentionalClass theClass = program.findClass(className);
+		
+	}
+}

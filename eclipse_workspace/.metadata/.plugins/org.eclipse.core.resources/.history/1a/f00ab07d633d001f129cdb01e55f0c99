@@ -1,0 +1,45 @@
+package de.intentionalide.codegenerator;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import de.intentionalide.code.IntentionalClass;
+import de.intentionalide.code.IntentionalProgram;
+
+public class ObjectiveCGenerator {
+	private IntentionalProgram program;
+	public ObjectiveCGenerator(IntentionalProgram program){
+		this.program = program;
+	}
+	public void generateClass(String className) throws IOException{
+		IntentionalClass theClass = program.findClass(className);
+		FileWriter headerFile = new FileWriter("output/"+ className+".h");
+		FileWriter implementationFile = new FileWriter("output/"+ className+".m");
+		StringBuffer header = new StringBuffer();
+		StringBuffer implementation = new StringBuffer();
+		header.append("@interface ");
+		header.append(theClass);
+		header.append(": NSObject {");
+		header.append('\n');
+		
+		
+		header.append("}");
+		header.append("@end");
+		header.append('\n');
+		
+		implementation.append("@implementation ");
+		implementation.append(className);
+		implementation.append('\n');
+		implementation.append("@end");
+		implementation.append('\n');
+		
+		headerFile.write(header.toString());
+		implementationFile.write(implementation.toString());
+		
+		headerFile.close();
+		implementationFile.close();
+		
+	}
+	
+	
+}
