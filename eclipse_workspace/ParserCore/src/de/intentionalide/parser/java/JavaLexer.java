@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g 2010-03-31 16:30:12
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g 2010-03-31 22:00:23
 
 package de.intentionalide.parser.java;
 
@@ -144,8 +144,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LONGLITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1335:5: ( IntegerNumber LongSuffix )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1335:9: IntegerNumber LongSuffix
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1336:5: ( IntegerNumber LongSuffix )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1336:9: IntegerNumber LongSuffix
             {
             mIntegerNumber(); 
             mLongSuffix(); 
@@ -165,8 +165,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = INTLITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1340:5: ( IntegerNumber )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1340:9: IntegerNumber
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1341:5: ( IntegerNumber )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1341:9: IntegerNumber
             {
             mIntegerNumber(); 
 
@@ -183,7 +183,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "IntegerNumber"
     public final void mIntegerNumber() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1345:5: ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | HexPrefix ( HexDigit )+ )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1346:5: ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | HexPrefix ( HexDigit )+ )
             int alt4=4;
             int LA4_0 = input.LA(1);
 
@@ -222,17 +222,17 @@ public class JavaLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1345:9: '0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1346:9: '0'
                     {
                     match('0'); 
 
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1346:9: '1' .. '9' ( '0' .. '9' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1347:9: '1' .. '9' ( '0' .. '9' )*
                     {
                     matchRange('1','9'); 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1346:18: ( '0' .. '9' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1347:18: ( '0' .. '9' )*
                     loop1:
                     do {
                         int alt1=2;
@@ -245,7 +245,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt1) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1346:19: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1347:19: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -261,10 +261,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1347:9: '0' ( '0' .. '7' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1348:9: '0' ( '0' .. '7' )+
                     {
                     match('0'); 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1347:13: ( '0' .. '7' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1348:13: ( '0' .. '7' )+
                     int cnt2=0;
                     loop2:
                     do {
@@ -278,7 +278,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt2) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1347:14: '0' .. '7'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1348:14: '0' .. '7'
                     	    {
                     	    matchRange('0','7'); 
 
@@ -298,10 +298,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1348:9: HexPrefix ( HexDigit )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1349:9: HexPrefix ( HexDigit )+
                     {
                     mHexPrefix(); 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1348:19: ( HexDigit )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1349:19: ( HexDigit )+
                     int cnt3=0;
                     loop3:
                     do {
@@ -315,7 +315,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1348:19: HexDigit
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1349:19: HexDigit
                     	    {
                     	    mHexDigit(); 
 
@@ -345,7 +345,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "HexPrefix"
     public final void mHexPrefix() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1353:5: ( '0x' | '0X' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1354:5: ( '0x' | '0X' )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -373,7 +373,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1353:9: '0x'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1354:9: '0x'
                     {
                     match("0x"); 
 
@@ -381,7 +381,7 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1353:16: '0X'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1354:16: '0X'
                     {
                     match("0X"); 
 
@@ -399,8 +399,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "HexDigit"
     public final void mHexDigit() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1358:5: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1358:9: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1359:5: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1359:9: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -423,7 +423,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "LongSuffix"
     public final void mLongSuffix() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1363:5: ( 'l' | 'L' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1364:5: ( 'l' | 'L' )
             // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
@@ -447,14 +447,14 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "NonIntegerNumber"
     public final void mNonIntegerNumber() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? | '.' ( '0' .. '9' )+ ( Exponent )? | ( '0' .. '9' )+ Exponent | ( '0' .. '9' )+ | HexPrefix ( HexDigit )* ( () | ( '.' ( HexDigit )* ) ) ( 'p' | 'P' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? | '.' ( '0' .. '9' )+ ( Exponent )? | ( '0' .. '9' )+ Exponent | ( '0' .. '9' )+ | HexPrefix ( HexDigit )* ( () | ( '.' ( HexDigit )* ) ) ( 'p' | 'P' ) ( '+' | '-' )? ( '0' .. '9' )+ )
             int alt18=5;
             alt18 = dfa18.predict(input);
             switch (alt18) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )?
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:9: ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:9: ( '0' .. '9' )+
                     int cnt6=0;
                     loop6:
                     do {
@@ -468,7 +468,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:10: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -485,7 +485,7 @@ public class JavaLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:27: ( '0' .. '9' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:27: ( '0' .. '9' )*
                     loop7:
                     do {
                         int alt7=2;
@@ -498,7 +498,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:28: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:28: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -510,7 +510,7 @@ public class JavaLexer extends Lexer {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:41: ( Exponent )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:41: ( Exponent )?
                     int alt8=2;
                     int LA8_0 = input.LA(1);
 
@@ -519,7 +519,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt8) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1369:41: Exponent
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:41: Exponent
                             {
                             mExponent(); 
 
@@ -532,10 +532,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:9: '.' ( '0' .. '9' )+ ( Exponent )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:9: '.' ( '0' .. '9' )+ ( Exponent )?
                     {
                     match('.'); 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:13: ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:13: ( '0' .. '9' )+
                     int cnt9=0;
                     loop9:
                     do {
@@ -549,7 +549,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:15: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:15: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -565,7 +565,7 @@ public class JavaLexer extends Lexer {
                         cnt9++;
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:29: ( Exponent )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:29: ( Exponent )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -574,7 +574,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1370:29: Exponent
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:29: Exponent
                             {
                             mExponent(); 
 
@@ -587,9 +587,9 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:9: ( '0' .. '9' )+ Exponent
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1372:9: ( '0' .. '9' )+ Exponent
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:9: ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1372:9: ( '0' .. '9' )+
                     int cnt11=0;
                     loop11:
                     do {
@@ -603,7 +603,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1371:10: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1372:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -624,9 +624,9 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1372:9: ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1373:9: ( '0' .. '9' )+
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1372:9: ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1373:9: ( '0' .. '9' )+
                     int cnt12=0;
                     loop12:
                     do {
@@ -640,7 +640,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1372:10: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1373:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -660,10 +660,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1374:9: HexPrefix ( HexDigit )* ( () | ( '.' ( HexDigit )* ) ) ( 'p' | 'P' ) ( '+' | '-' )? ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:9: HexPrefix ( HexDigit )* ( () | ( '.' ( HexDigit )* ) ) ( 'p' | 'P' ) ( '+' | '-' )? ( '0' .. '9' )+
                     {
                     mHexPrefix(); 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1374:19: ( HexDigit )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:19: ( HexDigit )*
                     loop13:
                     do {
                         int alt13=2;
@@ -676,7 +676,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt13) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1374:20: HexDigit
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:20: HexDigit
                     	    {
                     	    mHexDigit(); 
 
@@ -688,7 +688,7 @@ public class JavaLexer extends Lexer {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:9: ( () | ( '.' ( HexDigit )* ) )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:9: ( () | ( '.' ( HexDigit )* ) )
                     int alt15=2;
                     int LA15_0 = input.LA(1);
 
@@ -706,10 +706,10 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt15) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:14: ()
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:14: ()
                             {
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:14: ()
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1375:15: 
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:14: ()
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:15: 
                             {
                             }
 
@@ -717,13 +717,13 @@ public class JavaLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:14: ( '.' ( HexDigit )* )
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1377:14: ( '.' ( HexDigit )* )
                             {
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:14: ( '.' ( HexDigit )* )
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:15: '.' ( HexDigit )*
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1377:14: ( '.' ( HexDigit )* )
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1377:15: '.' ( HexDigit )*
                             {
                             match('.'); 
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:19: ( HexDigit )*
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1377:19: ( HexDigit )*
                             loop14:
                             do {
                                 int alt14=2;
@@ -736,7 +736,7 @@ public class JavaLexer extends Lexer {
 
                                 switch (alt14) {
                             	case 1 :
-                            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1376:20: HexDigit
+                            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1377:20: HexDigit
                             	    {
                             	    mHexDigit(); 
 
@@ -766,7 +766,7 @@ public class JavaLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1379:9: ( '+' | '-' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1380:9: ( '+' | '-' )?
                     int alt16=2;
                     int LA16_0 = input.LA(1);
 
@@ -792,7 +792,7 @@ public class JavaLexer extends Lexer {
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1380:9: ( '0' .. '9' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1381:9: ( '0' .. '9' )+
                     int cnt17=0;
                     loop17:
                     do {
@@ -806,7 +806,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt17) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1380:11: '0' .. '9'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1381:11: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -836,8 +836,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "Exponent"
     public final void mExponent() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1385:5: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1385:9: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1386:5: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1386:9: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -848,7 +848,7 @@ public class JavaLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1385:23: ( '+' | '-' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1386:23: ( '+' | '-' )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -874,7 +874,7 @@ public class JavaLexer extends Lexer {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1385:38: ( '0' .. '9' )+
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1386:38: ( '0' .. '9' )+
             int cnt20=0;
             loop20:
             do {
@@ -888,7 +888,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt20) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1385:40: '0' .. '9'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1386:40: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -916,7 +916,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "FloatSuffix"
     public final void mFloatSuffix() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1390:5: ( 'f' | 'F' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1391:5: ( 'f' | 'F' )
             // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:
             {
             if ( input.LA(1)=='F'||input.LA(1)=='f' ) {
@@ -940,7 +940,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "DoubleSuffix"
     public final void mDoubleSuffix() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1395:5: ( 'd' | 'D' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1396:5: ( 'd' | 'D' )
             // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:
             {
             if ( input.LA(1)=='D'||input.LA(1)=='d' ) {
@@ -966,8 +966,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FLOATLITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1399:5: ( NonIntegerNumber FloatSuffix )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1399:9: NonIntegerNumber FloatSuffix
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1400:5: ( NonIntegerNumber FloatSuffix )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1400:9: NonIntegerNumber FloatSuffix
             {
             mNonIntegerNumber(); 
             mFloatSuffix(); 
@@ -987,11 +987,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = DOUBLELITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1403:5: ( NonIntegerNumber ( DoubleSuffix )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1403:9: NonIntegerNumber ( DoubleSuffix )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1404:5: ( NonIntegerNumber ( DoubleSuffix )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1404:9: NonIntegerNumber ( DoubleSuffix )?
             {
             mNonIntegerNumber(); 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1403:26: ( DoubleSuffix )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1404:26: ( DoubleSuffix )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -1000,7 +1000,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt21) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1403:26: DoubleSuffix
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1404:26: DoubleSuffix
                     {
                     mDoubleSuffix(); 
 
@@ -1025,11 +1025,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CHARLITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1407:5: ( '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' | '\\r' | '\\n' ) ) '\\'' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1407:9: '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' | '\\r' | '\\n' ) ) '\\''
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1408:5: ( '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' | '\\r' | '\\n' ) ) '\\'' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1408:9: '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' | '\\r' | '\\n' ) ) '\\''
             {
             match('\''); 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1408:9: ( EscapeSequence | ~ ( '\\'' | '\\\\' | '\\r' | '\\n' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1409:9: ( EscapeSequence | ~ ( '\\'' | '\\\\' | '\\r' | '\\n' ) )
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -1047,14 +1047,14 @@ public class JavaLexer extends Lexer {
             }
             switch (alt22) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1408:13: EscapeSequence
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1409:13: EscapeSequence
                     {
                     mEscapeSequence(); 
 
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1409:13: ~ ( '\\'' | '\\\\' | '\\r' | '\\n' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1410:13: ~ ( '\\'' | '\\\\' | '\\r' | '\\n' )
                     {
                     if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                         input.consume();
@@ -1088,11 +1088,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = STRINGLITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1415:5: ( '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' | '\\r' | '\\n' ) )* '\"' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1415:9: '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' | '\\r' | '\\n' ) )* '\"'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1416:5: ( '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' | '\\r' | '\\n' ) )* '\"' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1416:9: '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' | '\\r' | '\\n' ) )* '\"'
             {
             match('\"'); 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1416:9: ( EscapeSequence | ~ ( '\\\\' | '\"' | '\\r' | '\\n' ) )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1417:9: ( EscapeSequence | ~ ( '\\\\' | '\"' | '\\r' | '\\n' ) )*
             loop23:
             do {
                 int alt23=3;
@@ -1108,14 +1108,14 @@ public class JavaLexer extends Lexer {
 
                 switch (alt23) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1416:13: EscapeSequence
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1417:13: EscapeSequence
             	    {
             	    mEscapeSequence(); 
 
             	    }
             	    break;
             	case 2 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1417:13: ~ ( '\\\\' | '\"' | '\\r' | '\\n' )
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1418:13: ~ ( '\\\\' | '\"' | '\\r' | '\\n' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1150,89 +1150,89 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "EscapeSequence"
     public final void mEscapeSequence() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1424:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1424:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1425:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1425:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) )
             {
             match('\\'); 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1424:14: ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1425:14: ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) )
             int alt24=11;
             alt24 = dfa24.predict(input);
             switch (alt24) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1425:18: 'b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1426:18: 'b'
                     {
                     match('b'); 
 
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1426:18: 't'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1427:18: 't'
                     {
                     match('t'); 
 
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1427:18: 'n'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1428:18: 'n'
                     {
                     match('n'); 
 
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1428:18: 'f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1429:18: 'f'
                     {
                     match('f'); 
 
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1429:18: 'r'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1430:18: 'r'
                     {
                     match('r'); 
 
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1430:18: '\\\"'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1431:18: '\\\"'
                     {
                     match('\"'); 
 
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1431:18: '\\''
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1432:18: '\\''
                     {
                     match('\''); 
 
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1432:18: '\\\\'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1433:18: '\\\\'
                     {
                     match('\\'); 
 
                     }
                     break;
                 case 9 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:18: ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:18: ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:18: ( '0' .. '3' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:19: '0' .. '3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:18: ( '0' .. '3' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:19: '0' .. '3'
                     {
                     matchRange('0','3'); 
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:29: ( '0' .. '7' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:30: '0' .. '7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:29: ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:30: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:40: ( '0' .. '7' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1434:41: '0' .. '7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:40: ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1435:41: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -1242,17 +1242,17 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 10 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1436:18: ( '0' .. '7' ) ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1437:18: ( '0' .. '7' ) ( '0' .. '7' )
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1436:18: ( '0' .. '7' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1436:19: '0' .. '7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1437:18: ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1437:19: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1436:29: ( '0' .. '7' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1436:30: '0' .. '7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1437:29: ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1437:30: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -1262,10 +1262,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 11 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1438:18: ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1439:18: ( '0' .. '7' )
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1438:18: ( '0' .. '7' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1438:19: '0' .. '7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1439:18: ( '0' .. '7' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1439:19: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -1291,8 +1291,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1443:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1443:9: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1444:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1444:9: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||(input.LA(1)>='\f' && input.LA(1)<='\r')||input.LA(1)==' ' ) {
                 input.consume();
@@ -1325,8 +1325,8 @@ public class JavaLexer extends Lexer {
 
                         boolean isJavaDoc = false;
                     
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1459:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1459:9: '/*' ( options {greedy=false; } : . )* '*/'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1460:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1460:9: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
@@ -1335,7 +1335,7 @@ public class JavaLexer extends Lexer {
                                 isJavaDoc = true;
                             }
                         
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1465:9: ( options {greedy=false; } : . )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1466:9: ( options {greedy=false; } : . )*
             loop25:
             do {
                 int alt25=2;
@@ -1360,7 +1360,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt25) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1465:36: .
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1466:36: .
             	    {
             	    matchAny(); 
 
@@ -1397,16 +1397,16 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LINE_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )
             int alt29=2;
             alt29 = dfa29.predict(input);
             switch (alt29) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' )
                     {
                     match("//"); 
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:14: (~ ( '\\n' | '\\r' ) )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:14: (~ ( '\\n' | '\\r' ) )*
                     loop26:
                     do {
                         int alt26=2;
@@ -1419,7 +1419,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt26) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:14: ~ ( '\\n' | '\\r' )
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:14: ~ ( '\\n' | '\\r' )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1439,7 +1439,7 @@ public class JavaLexer extends Lexer {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:29: ( '\\r\\n' | '\\r' | '\\n' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:29: ( '\\r\\n' | '\\r' | '\\n' )
                     int alt27=3;
                     int LA27_0 = input.LA(1);
 
@@ -1463,7 +1463,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt27) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:30: '\\r\\n'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:30: '\\r\\n'
                             {
                             match("\r\n"); 
 
@@ -1471,14 +1471,14 @@ public class JavaLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:39: '\\r'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:39: '\\r'
                             {
                             match('\r'); 
 
                             }
                             break;
                         case 3 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1477:46: '\\n'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1478:46: '\\n'
                             {
                             match('\n'); 
 
@@ -1494,11 +1494,11 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1481:9: '//' (~ ( '\\n' | '\\r' ) )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1482:9: '//' (~ ( '\\n' | '\\r' ) )*
                     {
                     match("//"); 
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1481:14: (~ ( '\\n' | '\\r' ) )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1482:14: (~ ( '\\n' | '\\r' ) )*
                     loop28:
                     do {
                         int alt28=2;
@@ -1511,7 +1511,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt28) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1481:14: ~ ( '\\n' | '\\r' )
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1482:14: ~ ( '\\n' | '\\r' )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1552,8 +1552,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = ABSTRACT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1488:5: ( 'abstract' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1488:9: 'abstract'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1489:5: ( 'abstract' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1489:9: 'abstract'
             {
             match("abstract"); 
 
@@ -1573,8 +1573,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = ASSERT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1492:5: ( 'assert' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1492:9: 'assert'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1493:5: ( 'assert' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1493:9: 'assert'
             {
             match("assert"); 
 
@@ -1594,8 +1594,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BOOLEAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1496:5: ( 'boolean' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1496:9: 'boolean'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1497:5: ( 'boolean' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1497:9: 'boolean'
             {
             match("boolean"); 
 
@@ -1615,8 +1615,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BREAK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1500:5: ( 'break' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1500:9: 'break'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1501:5: ( 'break' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1501:9: 'break'
             {
             match("break"); 
 
@@ -1636,8 +1636,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BYTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1504:5: ( 'byte' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1504:9: 'byte'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1505:5: ( 'byte' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1505:9: 'byte'
             {
             match("byte"); 
 
@@ -1657,8 +1657,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CASE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1508:5: ( 'case' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1508:9: 'case'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1509:5: ( 'case' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1509:9: 'case'
             {
             match("case"); 
 
@@ -1678,8 +1678,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CATCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1512:5: ( 'catch' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1512:9: 'catch'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1513:5: ( 'catch' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1513:9: 'catch'
             {
             match("catch"); 
 
@@ -1699,8 +1699,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1516:5: ( 'char' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1516:9: 'char'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1517:5: ( 'char' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1517:9: 'char'
             {
             match("char"); 
 
@@ -1720,8 +1720,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CLASS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1520:5: ( 'class' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1520:9: 'class'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1521:5: ( 'class' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1521:9: 'class'
             {
             match("class"); 
 
@@ -1741,8 +1741,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CONST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1524:5: ( 'const' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1524:9: 'const'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1525:5: ( 'const' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1525:9: 'const'
             {
             match("const"); 
 
@@ -1762,8 +1762,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CONTINUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1528:5: ( 'continue' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1528:9: 'continue'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1529:5: ( 'continue' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1529:9: 'continue'
             {
             match("continue"); 
 
@@ -1783,8 +1783,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = DEFAULT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1532:5: ( 'default' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1532:9: 'default'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1533:5: ( 'default' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1533:9: 'default'
             {
             match("default"); 
 
@@ -1804,8 +1804,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = DO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1536:5: ( 'do' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1536:9: 'do'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1537:5: ( 'do' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1537:9: 'do'
             {
             match("do"); 
 
@@ -1825,8 +1825,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1540:5: ( 'double' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1540:9: 'double'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1541:5: ( 'double' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1541:9: 'double'
             {
             match("double"); 
 
@@ -1846,8 +1846,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1544:5: ( 'else' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1544:9: 'else'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1545:5: ( 'else' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1545:9: 'else'
             {
             match("else"); 
 
@@ -1867,8 +1867,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = ENUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1548:5: ( 'enum' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1548:9: 'enum'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1549:5: ( 'enum' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1549:9: 'enum'
             {
             match("enum"); 
 
@@ -1888,8 +1888,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = EXTENDS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1552:5: ( 'extends' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1552:9: 'extends'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1553:5: ( 'extends' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1553:9: 'extends'
             {
             match("extends"); 
 
@@ -1909,8 +1909,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FINAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1556:5: ( 'final' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1556:9: 'final'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1557:5: ( 'final' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1557:9: 'final'
             {
             match("final"); 
 
@@ -1930,8 +1930,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FINALLY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1560:5: ( 'finally' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1560:9: 'finally'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1561:5: ( 'finally' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1561:9: 'finally'
             {
             match("finally"); 
 
@@ -1951,8 +1951,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FLOAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1564:5: ( 'float' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1564:9: 'float'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1565:5: ( 'float' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1565:9: 'float'
             {
             match("float"); 
 
@@ -1972,8 +1972,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1568:5: ( 'for' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1568:9: 'for'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1569:5: ( 'for' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1569:9: 'for'
             {
             match("for"); 
 
@@ -1993,8 +1993,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = GOTO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1572:5: ( 'goto' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1572:9: 'goto'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1573:5: ( 'goto' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1573:9: 'goto'
             {
             match("goto"); 
 
@@ -2014,8 +2014,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1576:5: ( 'if' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1576:9: 'if'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1577:5: ( 'if' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1577:9: 'if'
             {
             match("if"); 
 
@@ -2035,8 +2035,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = IMPLEMENTS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1580:5: ( 'implements' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1580:9: 'implements'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1581:5: ( 'implements' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1581:9: 'implements'
             {
             match("implements"); 
 
@@ -2056,8 +2056,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = IMPORT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1584:5: ( 'import' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1584:9: 'import'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1585:5: ( 'import' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1585:9: 'import'
             {
             match("import"); 
 
@@ -2077,8 +2077,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = INSTANCEOF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1588:5: ( 'instanceof' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1588:9: 'instanceof'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1589:5: ( 'instanceof' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1589:9: 'instanceof'
             {
             match("instanceof"); 
 
@@ -2098,8 +2098,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1592:5: ( 'int' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1592:9: 'int'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1593:5: ( 'int' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1593:9: 'int'
             {
             match("int"); 
 
@@ -2119,8 +2119,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = INTERFACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1596:5: ( 'interface' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1596:9: 'interface'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1597:5: ( 'interface' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1597:9: 'interface'
             {
             match("interface"); 
 
@@ -2140,8 +2140,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LONG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1600:5: ( 'long' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1600:9: 'long'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1601:5: ( 'long' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1601:9: 'long'
             {
             match("long"); 
 
@@ -2161,8 +2161,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = NATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1604:5: ( 'native' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1604:9: 'native'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1605:5: ( 'native' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1605:9: 'native'
             {
             match("native"); 
 
@@ -2182,8 +2182,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = NEW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1608:5: ( 'new' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1608:9: 'new'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1609:5: ( 'new' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1609:9: 'new'
             {
             match("new"); 
 
@@ -2203,8 +2203,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PACKAGE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1612:5: ( 'package' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1612:9: 'package'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1613:5: ( 'package' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1613:9: 'package'
             {
             match("package"); 
 
@@ -2224,8 +2224,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PRIVATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1616:5: ( 'private' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1616:9: 'private'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1617:5: ( 'private' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1617:9: 'private'
             {
             match("private"); 
 
@@ -2245,8 +2245,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PROTECTED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1620:5: ( 'protected' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1620:9: 'protected'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1621:5: ( 'protected' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1621:9: 'protected'
             {
             match("protected"); 
 
@@ -2266,8 +2266,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PUBLIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1624:5: ( 'public' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1624:9: 'public'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1625:5: ( 'public' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1625:9: 'public'
             {
             match("public"); 
 
@@ -2287,8 +2287,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1628:5: ( 'return' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1628:9: 'return'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1629:5: ( 'return' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1629:9: 'return'
             {
             match("return"); 
 
@@ -2308,8 +2308,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SHORT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1632:5: ( 'short' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1632:9: 'short'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1633:5: ( 'short' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1633:9: 'short'
             {
             match("short"); 
 
@@ -2329,8 +2329,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = STATIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1636:5: ( 'static' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1636:9: 'static'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1637:5: ( 'static' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1637:9: 'static'
             {
             match("static"); 
 
@@ -2350,8 +2350,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = STRICTFP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1640:5: ( 'strictfp' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1640:9: 'strictfp'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1641:5: ( 'strictfp' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1641:9: 'strictfp'
             {
             match("strictfp"); 
 
@@ -2371,8 +2371,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SUPER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1644:5: ( 'super' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1644:9: 'super'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1645:5: ( 'super' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1645:9: 'super'
             {
             match("super"); 
 
@@ -2392,8 +2392,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SWITCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1648:5: ( 'switch' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1648:9: 'switch'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1649:5: ( 'switch' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1649:9: 'switch'
             {
             match("switch"); 
 
@@ -2413,8 +2413,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SYNCHRONIZED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1652:5: ( 'synchronized' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1652:9: 'synchronized'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1653:5: ( 'synchronized' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1653:9: 'synchronized'
             {
             match("synchronized"); 
 
@@ -2434,8 +2434,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = THIS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1656:5: ( 'this' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1656:9: 'this'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1657:5: ( 'this' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1657:9: 'this'
             {
             match("this"); 
 
@@ -2455,8 +2455,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = THROW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1660:5: ( 'throw' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1660:9: 'throw'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1661:5: ( 'throw' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1661:9: 'throw'
             {
             match("throw"); 
 
@@ -2476,8 +2476,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = THROWS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1664:5: ( 'throws' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1664:9: 'throws'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1665:5: ( 'throws' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1665:9: 'throws'
             {
             match("throws"); 
 
@@ -2497,8 +2497,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = TRANSIENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1668:5: ( 'transient' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1668:9: 'transient'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1669:5: ( 'transient' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1669:9: 'transient'
             {
             match("transient"); 
 
@@ -2518,8 +2518,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = TRY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1672:5: ( 'try' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1672:9: 'try'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1673:5: ( 'try' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1673:9: 'try'
             {
             match("try"); 
 
@@ -2539,8 +2539,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = VOID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1676:5: ( 'void' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1676:9: 'void'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1677:5: ( 'void' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1677:9: 'void'
             {
             match("void"); 
 
@@ -2560,8 +2560,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = VOLATILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1680:5: ( 'volatile' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1680:9: 'volatile'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1681:5: ( 'volatile' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1681:9: 'volatile'
             {
             match("volatile"); 
 
@@ -2581,8 +2581,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1684:5: ( 'while' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1684:9: 'while'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1685:5: ( 'while' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1685:9: 'while'
             {
             match("while"); 
 
@@ -2602,8 +2602,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1688:5: ( 'true' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1688:9: 'true'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1689:5: ( 'true' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1689:9: 'true'
             {
             match("true"); 
 
@@ -2623,8 +2623,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1692:5: ( 'false' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1692:9: 'false'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1693:5: ( 'false' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1693:9: 'false'
             {
             match("false"); 
 
@@ -2644,8 +2644,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = NULL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1696:5: ( 'null' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1696:9: 'null'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1697:5: ( 'null' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1697:9: 'null'
             {
             match("null"); 
 
@@ -2665,8 +2665,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1700:5: ( '(' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1700:9: '('
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1701:5: ( '(' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1701:9: '('
             {
             match('('); 
 
@@ -2685,8 +2685,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = RPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1704:5: ( ')' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1704:9: ')'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1705:5: ( ')' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1705:9: ')'
             {
             match(')'); 
 
@@ -2705,8 +2705,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LBRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1708:5: ( '{' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1708:9: '{'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1709:5: ( '{' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1709:9: '{'
             {
             match('{'); 
 
@@ -2725,8 +2725,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = RBRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1712:5: ( '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1712:9: '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1713:5: ( '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1713:9: '}'
             {
             match('}'); 
 
@@ -2745,8 +2745,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LBRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1716:5: ( '[' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1716:9: '['
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1717:5: ( '[' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1717:9: '['
             {
             match('['); 
 
@@ -2765,8 +2765,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = RBRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1720:5: ( ']' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1720:9: ']'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1721:5: ( ']' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1721:9: ']'
             {
             match(']'); 
 
@@ -2785,8 +2785,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SEMI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1724:5: ( ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1724:9: ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1725:5: ( ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1725:9: ';'
             {
             match(';'); 
 
@@ -2805,8 +2805,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1728:5: ( ',' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1728:9: ','
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1729:5: ( ',' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1729:9: ','
             {
             match(','); 
 
@@ -2825,8 +2825,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = DOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1732:5: ( '.' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1732:9: '.'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1733:5: ( '.' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1733:9: '.'
             {
             match('.'); 
 
@@ -2845,8 +2845,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = ELLIPSIS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1736:5: ( '...' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1736:9: '...'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1737:5: ( '...' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1737:9: '...'
             {
             match("..."); 
 
@@ -2866,8 +2866,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = EQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1740:5: ( '=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1740:9: '='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1741:5: ( '=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1741:9: '='
             {
             match('='); 
 
@@ -2886,8 +2886,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BANG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1744:5: ( '!' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1744:9: '!'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1745:5: ( '!' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1745:9: '!'
             {
             match('!'); 
 
@@ -2906,8 +2906,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = TILDE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1748:5: ( '~' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1748:9: '~'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1749:5: ( '~' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1749:9: '~'
             {
             match('~'); 
 
@@ -2926,8 +2926,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = QUES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1752:5: ( '?' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1752:9: '?'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1753:5: ( '?' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1753:9: '?'
             {
             match('?'); 
 
@@ -2946,8 +2946,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = COLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1756:5: ( ':' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1756:9: ':'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1757:5: ( ':' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1757:9: ':'
             {
             match(':'); 
 
@@ -2966,8 +2966,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = EQEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1760:5: ( '==' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1760:9: '=='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1761:5: ( '==' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1761:9: '=='
             {
             match("=="); 
 
@@ -2987,8 +2987,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = AMPAMP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1764:5: ( '&&' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1764:9: '&&'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1765:5: ( '&&' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1765:9: '&&'
             {
             match("&&"); 
 
@@ -3008,8 +3008,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BARBAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1768:5: ( '||' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1768:9: '||'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1769:5: ( '||' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1769:9: '||'
             {
             match("||"); 
 
@@ -3029,8 +3029,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PLUSPLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1772:5: ( '++' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1772:9: '++'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1773:5: ( '++' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1773:9: '++'
             {
             match("++"); 
 
@@ -3050,8 +3050,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SUBSUB;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1776:5: ( '--' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1776:9: '--'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1777:5: ( '--' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1777:9: '--'
             {
             match("--"); 
 
@@ -3071,8 +3071,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1780:5: ( '+' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1780:9: '+'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1781:5: ( '+' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1781:9: '+'
             {
             match('+'); 
 
@@ -3091,8 +3091,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SUB;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1784:5: ( '-' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1784:9: '-'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1785:5: ( '-' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1785:9: '-'
             {
             match('-'); 
 
@@ -3111,8 +3111,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = STAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1788:5: ( '*' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1788:9: '*'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1789:5: ( '*' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1789:9: '*'
             {
             match('*'); 
 
@@ -3131,8 +3131,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SLASH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1792:5: ( '/' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1792:9: '/'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1793:5: ( '/' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1793:9: '/'
             {
             match('/'); 
 
@@ -3151,8 +3151,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = AMP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1796:5: ( '&' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1796:9: '&'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1797:5: ( '&' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1797:9: '&'
             {
             match('&'); 
 
@@ -3171,8 +3171,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1800:5: ( '|' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1800:9: '|'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1801:5: ( '|' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1801:9: '|'
             {
             match('|'); 
 
@@ -3191,8 +3191,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CARET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1804:5: ( '^' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1804:9: '^'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1805:5: ( '^' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1805:9: '^'
             {
             match('^'); 
 
@@ -3211,8 +3211,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PERCENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1808:5: ( '%' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1808:9: '%'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1809:5: ( '%' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1809:9: '%'
             {
             match('%'); 
 
@@ -3231,8 +3231,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PLUSEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1812:5: ( '+=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1812:9: '+='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1813:5: ( '+=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1813:9: '+='
             {
             match("+="); 
 
@@ -3252,8 +3252,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SUBEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1816:5: ( '-=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1816:9: '-='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1817:5: ( '-=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1817:9: '-='
             {
             match("-="); 
 
@@ -3273,8 +3273,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = STAREQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1820:5: ( '*=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1820:9: '*='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1821:5: ( '*=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1821:9: '*='
             {
             match("*="); 
 
@@ -3294,8 +3294,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = SLASHEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1824:5: ( '/=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1824:9: '/='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1825:5: ( '/=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1825:9: '/='
             {
             match("/="); 
 
@@ -3315,8 +3315,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = AMPEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1828:5: ( '&=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1828:9: '&='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1829:5: ( '&=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1829:9: '&='
             {
             match("&="); 
 
@@ -3336,8 +3336,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BAREQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1832:5: ( '|=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1832:9: '|='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1833:5: ( '|=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1833:9: '|='
             {
             match("|="); 
 
@@ -3357,8 +3357,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CARETEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1836:5: ( '^=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1836:9: '^='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1837:5: ( '^=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1837:9: '^='
             {
             match("^="); 
 
@@ -3378,8 +3378,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = PERCENTEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1840:5: ( '%=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1840:9: '%='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1841:5: ( '%=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1841:9: '%='
             {
             match("%="); 
 
@@ -3399,8 +3399,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = MONKEYS_AT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1844:5: ( '@' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1844:9: '@'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1845:5: ( '@' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1845:9: '@'
             {
             match('@'); 
 
@@ -3419,8 +3419,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = BANGEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1848:5: ( '!=' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1848:9: '!='
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1849:5: ( '!=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1849:9: '!='
             {
             match("!="); 
 
@@ -3440,8 +3440,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = GT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1852:5: ( '>' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1852:9: '>'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1853:5: ( '>' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1853:9: '>'
             {
             match('>'); 
 
@@ -3460,8 +3460,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1856:5: ( '<' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1856:9: '<'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1857:5: ( '<' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1857:9: '<'
             {
             match('<'); 
 
@@ -3480,11 +3480,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = IDENTIFIER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1860:5: ( IdentifierStart ( IdentifierPart )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1860:9: IdentifierStart ( IdentifierPart )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1861:5: ( IdentifierStart ( IdentifierPart )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1861:9: IdentifierStart ( IdentifierPart )*
             {
             mIdentifierStart(); 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1860:25: ( IdentifierPart )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1861:25: ( IdentifierPart )*
             loop30:
             do {
                 int alt30=2;
@@ -3497,7 +3497,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt30) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1860:25: IdentifierPart
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1861:25: IdentifierPart
             	    {
             	    mIdentifierPart(); 
 
@@ -3523,18 +3523,18 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "SurrogateIdentifer"
     public final void mSurrogateIdentifer() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1865:5: ( ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1865:9: ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1866:5: ( ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1866:9: ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' )
             {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1865:9: ( '\\ud800' .. '\\udbff' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1865:10: '\\ud800' .. '\\udbff'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1866:9: ( '\\ud800' .. '\\udbff' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1866:10: '\\ud800' .. '\\udbff'
             {
             matchRange('\uD800','\uDBFF'); 
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1865:30: ( '\\udc00' .. '\\udfff' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1865:31: '\\udc00' .. '\\udfff'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1866:30: ( '\\udc00' .. '\\udfff' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1866:31: '\\udc00' .. '\\udfff'
             {
             matchRange('\uDC00','\uDFFF'); 
 
@@ -3552,7 +3552,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "IdentifierStart"
     public final void mIdentifierStart() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1870:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00a2' .. '\\u00a5' | '\\u00aa' | '\\u00b5' | '\\u00ba' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u0236' | '\\u0250' .. '\\u02c1' | '\\u02c6' .. '\\u02d1' | '\\u02e0' .. '\\u02e4' | '\\u02ee' | '\\u037a' | '\\u0386' | '\\u0388' .. '\\u038a' | '\\u038c' | '\\u038e' .. '\\u03a1' | '\\u03a3' .. '\\u03ce' | '\\u03d0' .. '\\u03f5' | '\\u03f7' .. '\\u03fb' | '\\u0400' .. '\\u0481' | '\\u048a' .. '\\u04ce' | '\\u04d0' .. '\\u04f5' | '\\u04f8' .. '\\u04f9' | '\\u0500' .. '\\u050f' | '\\u0531' .. '\\u0556' | '\\u0559' | '\\u0561' .. '\\u0587' | '\\u05d0' .. '\\u05ea' | '\\u05f0' .. '\\u05f2' | '\\u0621' .. '\\u063a' | '\\u0640' .. '\\u064a' | '\\u066e' .. '\\u066f' | '\\u0671' .. '\\u06d3' | '\\u06d5' | '\\u06e5' .. '\\u06e6' | '\\u06ee' .. '\\u06ef' | '\\u06fa' .. '\\u06fc' | '\\u06ff' | '\\u0710' | '\\u0712' .. '\\u072f' | '\\u074d' .. '\\u074f' | '\\u0780' .. '\\u07a5' | '\\u07b1' | '\\u0904' .. '\\u0939' | '\\u093d' | '\\u0950' | '\\u0958' .. '\\u0961' | '\\u0985' .. '\\u098c' | '\\u098f' .. '\\u0990' | '\\u0993' .. '\\u09a8' | '\\u09aa' .. '\\u09b0' | '\\u09b2' | '\\u09b6' .. '\\u09b9' | '\\u09bd' | '\\u09dc' .. '\\u09dd' | '\\u09df' .. '\\u09e1' | '\\u09f0' .. '\\u09f3' | '\\u0a05' .. '\\u0a0a' | '\\u0a0f' .. '\\u0a10' | '\\u0a13' .. '\\u0a28' | '\\u0a2a' .. '\\u0a30' | '\\u0a32' .. '\\u0a33' | '\\u0a35' .. '\\u0a36' | '\\u0a38' .. '\\u0a39' | '\\u0a59' .. '\\u0a5c' | '\\u0a5e' | '\\u0a72' .. '\\u0a74' | '\\u0a85' .. '\\u0a8d' | '\\u0a8f' .. '\\u0a91' | '\\u0a93' .. '\\u0aa8' | '\\u0aaa' .. '\\u0ab0' | '\\u0ab2' .. '\\u0ab3' | '\\u0ab5' .. '\\u0ab9' | '\\u0abd' | '\\u0ad0' | '\\u0ae0' .. '\\u0ae1' | '\\u0af1' | '\\u0b05' .. '\\u0b0c' | '\\u0b0f' .. '\\u0b10' | '\\u0b13' .. '\\u0b28' | '\\u0b2a' .. '\\u0b30' | '\\u0b32' .. '\\u0b33' | '\\u0b35' .. '\\u0b39' | '\\u0b3d' | '\\u0b5c' .. '\\u0b5d' | '\\u0b5f' .. '\\u0b61' | '\\u0b71' | '\\u0b83' | '\\u0b85' .. '\\u0b8a' | '\\u0b8e' .. '\\u0b90' | '\\u0b92' .. '\\u0b95' | '\\u0b99' .. '\\u0b9a' | '\\u0b9c' | '\\u0b9e' .. '\\u0b9f' | '\\u0ba3' .. '\\u0ba4' | '\\u0ba8' .. '\\u0baa' | '\\u0bae' .. '\\u0bb5' | '\\u0bb7' .. '\\u0bb9' | '\\u0bf9' | '\\u0c05' .. '\\u0c0c' | '\\u0c0e' .. '\\u0c10' | '\\u0c12' .. '\\u0c28' | '\\u0c2a' .. '\\u0c33' | '\\u0c35' .. '\\u0c39' | '\\u0c60' .. '\\u0c61' | '\\u0c85' .. '\\u0c8c' | '\\u0c8e' .. '\\u0c90' | '\\u0c92' .. '\\u0ca8' | '\\u0caa' .. '\\u0cb3' | '\\u0cb5' .. '\\u0cb9' | '\\u0cbd' | '\\u0cde' | '\\u0ce0' .. '\\u0ce1' | '\\u0d05' .. '\\u0d0c' | '\\u0d0e' .. '\\u0d10' | '\\u0d12' .. '\\u0d28' | '\\u0d2a' .. '\\u0d39' | '\\u0d60' .. '\\u0d61' | '\\u0d85' .. '\\u0d96' | '\\u0d9a' .. '\\u0db1' | '\\u0db3' .. '\\u0dbb' | '\\u0dbd' | '\\u0dc0' .. '\\u0dc6' | '\\u0e01' .. '\\u0e30' | '\\u0e32' .. '\\u0e33' | '\\u0e3f' .. '\\u0e46' | '\\u0e81' .. '\\u0e82' | '\\u0e84' | '\\u0e87' .. '\\u0e88' | '\\u0e8a' | '\\u0e8d' | '\\u0e94' .. '\\u0e97' | '\\u0e99' .. '\\u0e9f' | '\\u0ea1' .. '\\u0ea3' | '\\u0ea5' | '\\u0ea7' | '\\u0eaa' .. '\\u0eab' | '\\u0ead' .. '\\u0eb0' | '\\u0eb2' .. '\\u0eb3' | '\\u0ebd' | '\\u0ec0' .. '\\u0ec4' | '\\u0ec6' | '\\u0edc' .. '\\u0edd' | '\\u0f00' | '\\u0f40' .. '\\u0f47' | '\\u0f49' .. '\\u0f6a' | '\\u0f88' .. '\\u0f8b' | '\\u1000' .. '\\u1021' | '\\u1023' .. '\\u1027' | '\\u1029' .. '\\u102a' | '\\u1050' .. '\\u1055' | '\\u10a0' .. '\\u10c5' | '\\u10d0' .. '\\u10f8' | '\\u1100' .. '\\u1159' | '\\u115f' .. '\\u11a2' | '\\u11a8' .. '\\u11f9' | '\\u1200' .. '\\u1206' | '\\u1208' .. '\\u1246' | '\\u1248' | '\\u124a' .. '\\u124d' | '\\u1250' .. '\\u1256' | '\\u1258' | '\\u125a' .. '\\u125d' | '\\u1260' .. '\\u1286' | '\\u1288' | '\\u128a' .. '\\u128d' | '\\u1290' .. '\\u12ae' | '\\u12b0' | '\\u12b2' .. '\\u12b5' | '\\u12b8' .. '\\u12be' | '\\u12c0' | '\\u12c2' .. '\\u12c5' | '\\u12c8' .. '\\u12ce' | '\\u12d0' .. '\\u12d6' | '\\u12d8' .. '\\u12ee' | '\\u12f0' .. '\\u130e' | '\\u1310' | '\\u1312' .. '\\u1315' | '\\u1318' .. '\\u131e' | '\\u1320' .. '\\u1346' | '\\u1348' .. '\\u135a' | '\\u13a0' .. '\\u13f4' | '\\u1401' .. '\\u166c' | '\\u166f' .. '\\u1676' | '\\u1681' .. '\\u169a' | '\\u16a0' .. '\\u16ea' | '\\u16ee' .. '\\u16f0' | '\\u1700' .. '\\u170c' | '\\u170e' .. '\\u1711' | '\\u1720' .. '\\u1731' | '\\u1740' .. '\\u1751' | '\\u1760' .. '\\u176c' | '\\u176e' .. '\\u1770' | '\\u1780' .. '\\u17b3' | '\\u17d7' | '\\u17db' .. '\\u17dc' | '\\u1820' .. '\\u1877' | '\\u1880' .. '\\u18a8' | '\\u1900' .. '\\u191c' | '\\u1950' .. '\\u196d' | '\\u1970' .. '\\u1974' | '\\u1d00' .. '\\u1d6b' | '\\u1e00' .. '\\u1e9b' | '\\u1ea0' .. '\\u1ef9' | '\\u1f00' .. '\\u1f15' | '\\u1f18' .. '\\u1f1d' | '\\u1f20' .. '\\u1f45' | '\\u1f48' .. '\\u1f4d' | '\\u1f50' .. '\\u1f57' | '\\u1f59' | '\\u1f5b' | '\\u1f5d' | '\\u1f5f' .. '\\u1f7d' | '\\u1f80' .. '\\u1fb4' | '\\u1fb6' .. '\\u1fbc' | '\\u1fbe' | '\\u1fc2' .. '\\u1fc4' | '\\u1fc6' .. '\\u1fcc' | '\\u1fd0' .. '\\u1fd3' | '\\u1fd6' .. '\\u1fdb' | '\\u1fe0' .. '\\u1fec' | '\\u1ff2' .. '\\u1ff4' | '\\u1ff6' .. '\\u1ffc' | '\\u203f' .. '\\u2040' | '\\u2054' | '\\u2071' | '\\u207f' | '\\u20a0' .. '\\u20b1' | '\\u2102' | '\\u2107' | '\\u210a' .. '\\u2113' | '\\u2115' | '\\u2119' .. '\\u211d' | '\\u2124' | '\\u2126' | '\\u2128' | '\\u212a' .. '\\u212d' | '\\u212f' .. '\\u2131' | '\\u2133' .. '\\u2139' | '\\u213d' .. '\\u213f' | '\\u2145' .. '\\u2149' | '\\u2160' .. '\\u2183' | '\\u3005' .. '\\u3007' | '\\u3021' .. '\\u3029' | '\\u3031' .. '\\u3035' | '\\u3038' .. '\\u303c' | '\\u3041' .. '\\u3096' | '\\u309d' .. '\\u309f' | '\\u30a1' .. '\\u30ff' | '\\u3105' .. '\\u312c' | '\\u3131' .. '\\u318e' | '\\u31a0' .. '\\u31b7' | '\\u31f0' .. '\\u31ff' | '\\u3400' .. '\\u4db5' | '\\u4e00' .. '\\u9fa5' | '\\ua000' .. '\\ua48c' | '\\uac00' .. '\\ud7a3' | '\\uf900' .. '\\ufa2d' | '\\ufa30' .. '\\ufa6a' | '\\ufb00' .. '\\ufb06' | '\\ufb13' .. '\\ufb17' | '\\ufb1d' | '\\ufb1f' .. '\\ufb28' | '\\ufb2a' .. '\\ufb36' | '\\ufb38' .. '\\ufb3c' | '\\ufb3e' | '\\ufb40' .. '\\ufb41' | '\\ufb43' .. '\\ufb44' | '\\ufb46' .. '\\ufbb1' | '\\ufbd3' .. '\\ufd3d' | '\\ufd50' .. '\\ufd8f' | '\\ufd92' .. '\\ufdc7' | '\\ufdf0' .. '\\ufdfc' | '\\ufe33' .. '\\ufe34' | '\\ufe4d' .. '\\ufe4f' | '\\ufe69' | '\\ufe70' .. '\\ufe74' | '\\ufe76' .. '\\ufefc' | '\\uff04' | '\\uff21' .. '\\uff3a' | '\\uff3f' | '\\uff41' .. '\\uff5a' | '\\uff65' .. '\\uffbe' | '\\uffc2' .. '\\uffc7' | '\\uffca' .. '\\uffcf' | '\\uffd2' .. '\\uffd7' | '\\uffda' .. '\\uffdc' | '\\uffe0' .. '\\uffe1' | '\\uffe5' .. '\\uffe6' | ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1871:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00a2' .. '\\u00a5' | '\\u00aa' | '\\u00b5' | '\\u00ba' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u0236' | '\\u0250' .. '\\u02c1' | '\\u02c6' .. '\\u02d1' | '\\u02e0' .. '\\u02e4' | '\\u02ee' | '\\u037a' | '\\u0386' | '\\u0388' .. '\\u038a' | '\\u038c' | '\\u038e' .. '\\u03a1' | '\\u03a3' .. '\\u03ce' | '\\u03d0' .. '\\u03f5' | '\\u03f7' .. '\\u03fb' | '\\u0400' .. '\\u0481' | '\\u048a' .. '\\u04ce' | '\\u04d0' .. '\\u04f5' | '\\u04f8' .. '\\u04f9' | '\\u0500' .. '\\u050f' | '\\u0531' .. '\\u0556' | '\\u0559' | '\\u0561' .. '\\u0587' | '\\u05d0' .. '\\u05ea' | '\\u05f0' .. '\\u05f2' | '\\u0621' .. '\\u063a' | '\\u0640' .. '\\u064a' | '\\u066e' .. '\\u066f' | '\\u0671' .. '\\u06d3' | '\\u06d5' | '\\u06e5' .. '\\u06e6' | '\\u06ee' .. '\\u06ef' | '\\u06fa' .. '\\u06fc' | '\\u06ff' | '\\u0710' | '\\u0712' .. '\\u072f' | '\\u074d' .. '\\u074f' | '\\u0780' .. '\\u07a5' | '\\u07b1' | '\\u0904' .. '\\u0939' | '\\u093d' | '\\u0950' | '\\u0958' .. '\\u0961' | '\\u0985' .. '\\u098c' | '\\u098f' .. '\\u0990' | '\\u0993' .. '\\u09a8' | '\\u09aa' .. '\\u09b0' | '\\u09b2' | '\\u09b6' .. '\\u09b9' | '\\u09bd' | '\\u09dc' .. '\\u09dd' | '\\u09df' .. '\\u09e1' | '\\u09f0' .. '\\u09f3' | '\\u0a05' .. '\\u0a0a' | '\\u0a0f' .. '\\u0a10' | '\\u0a13' .. '\\u0a28' | '\\u0a2a' .. '\\u0a30' | '\\u0a32' .. '\\u0a33' | '\\u0a35' .. '\\u0a36' | '\\u0a38' .. '\\u0a39' | '\\u0a59' .. '\\u0a5c' | '\\u0a5e' | '\\u0a72' .. '\\u0a74' | '\\u0a85' .. '\\u0a8d' | '\\u0a8f' .. '\\u0a91' | '\\u0a93' .. '\\u0aa8' | '\\u0aaa' .. '\\u0ab0' | '\\u0ab2' .. '\\u0ab3' | '\\u0ab5' .. '\\u0ab9' | '\\u0abd' | '\\u0ad0' | '\\u0ae0' .. '\\u0ae1' | '\\u0af1' | '\\u0b05' .. '\\u0b0c' | '\\u0b0f' .. '\\u0b10' | '\\u0b13' .. '\\u0b28' | '\\u0b2a' .. '\\u0b30' | '\\u0b32' .. '\\u0b33' | '\\u0b35' .. '\\u0b39' | '\\u0b3d' | '\\u0b5c' .. '\\u0b5d' | '\\u0b5f' .. '\\u0b61' | '\\u0b71' | '\\u0b83' | '\\u0b85' .. '\\u0b8a' | '\\u0b8e' .. '\\u0b90' | '\\u0b92' .. '\\u0b95' | '\\u0b99' .. '\\u0b9a' | '\\u0b9c' | '\\u0b9e' .. '\\u0b9f' | '\\u0ba3' .. '\\u0ba4' | '\\u0ba8' .. '\\u0baa' | '\\u0bae' .. '\\u0bb5' | '\\u0bb7' .. '\\u0bb9' | '\\u0bf9' | '\\u0c05' .. '\\u0c0c' | '\\u0c0e' .. '\\u0c10' | '\\u0c12' .. '\\u0c28' | '\\u0c2a' .. '\\u0c33' | '\\u0c35' .. '\\u0c39' | '\\u0c60' .. '\\u0c61' | '\\u0c85' .. '\\u0c8c' | '\\u0c8e' .. '\\u0c90' | '\\u0c92' .. '\\u0ca8' | '\\u0caa' .. '\\u0cb3' | '\\u0cb5' .. '\\u0cb9' | '\\u0cbd' | '\\u0cde' | '\\u0ce0' .. '\\u0ce1' | '\\u0d05' .. '\\u0d0c' | '\\u0d0e' .. '\\u0d10' | '\\u0d12' .. '\\u0d28' | '\\u0d2a' .. '\\u0d39' | '\\u0d60' .. '\\u0d61' | '\\u0d85' .. '\\u0d96' | '\\u0d9a' .. '\\u0db1' | '\\u0db3' .. '\\u0dbb' | '\\u0dbd' | '\\u0dc0' .. '\\u0dc6' | '\\u0e01' .. '\\u0e30' | '\\u0e32' .. '\\u0e33' | '\\u0e3f' .. '\\u0e46' | '\\u0e81' .. '\\u0e82' | '\\u0e84' | '\\u0e87' .. '\\u0e88' | '\\u0e8a' | '\\u0e8d' | '\\u0e94' .. '\\u0e97' | '\\u0e99' .. '\\u0e9f' | '\\u0ea1' .. '\\u0ea3' | '\\u0ea5' | '\\u0ea7' | '\\u0eaa' .. '\\u0eab' | '\\u0ead' .. '\\u0eb0' | '\\u0eb2' .. '\\u0eb3' | '\\u0ebd' | '\\u0ec0' .. '\\u0ec4' | '\\u0ec6' | '\\u0edc' .. '\\u0edd' | '\\u0f00' | '\\u0f40' .. '\\u0f47' | '\\u0f49' .. '\\u0f6a' | '\\u0f88' .. '\\u0f8b' | '\\u1000' .. '\\u1021' | '\\u1023' .. '\\u1027' | '\\u1029' .. '\\u102a' | '\\u1050' .. '\\u1055' | '\\u10a0' .. '\\u10c5' | '\\u10d0' .. '\\u10f8' | '\\u1100' .. '\\u1159' | '\\u115f' .. '\\u11a2' | '\\u11a8' .. '\\u11f9' | '\\u1200' .. '\\u1206' | '\\u1208' .. '\\u1246' | '\\u1248' | '\\u124a' .. '\\u124d' | '\\u1250' .. '\\u1256' | '\\u1258' | '\\u125a' .. '\\u125d' | '\\u1260' .. '\\u1286' | '\\u1288' | '\\u128a' .. '\\u128d' | '\\u1290' .. '\\u12ae' | '\\u12b0' | '\\u12b2' .. '\\u12b5' | '\\u12b8' .. '\\u12be' | '\\u12c0' | '\\u12c2' .. '\\u12c5' | '\\u12c8' .. '\\u12ce' | '\\u12d0' .. '\\u12d6' | '\\u12d8' .. '\\u12ee' | '\\u12f0' .. '\\u130e' | '\\u1310' | '\\u1312' .. '\\u1315' | '\\u1318' .. '\\u131e' | '\\u1320' .. '\\u1346' | '\\u1348' .. '\\u135a' | '\\u13a0' .. '\\u13f4' | '\\u1401' .. '\\u166c' | '\\u166f' .. '\\u1676' | '\\u1681' .. '\\u169a' | '\\u16a0' .. '\\u16ea' | '\\u16ee' .. '\\u16f0' | '\\u1700' .. '\\u170c' | '\\u170e' .. '\\u1711' | '\\u1720' .. '\\u1731' | '\\u1740' .. '\\u1751' | '\\u1760' .. '\\u176c' | '\\u176e' .. '\\u1770' | '\\u1780' .. '\\u17b3' | '\\u17d7' | '\\u17db' .. '\\u17dc' | '\\u1820' .. '\\u1877' | '\\u1880' .. '\\u18a8' | '\\u1900' .. '\\u191c' | '\\u1950' .. '\\u196d' | '\\u1970' .. '\\u1974' | '\\u1d00' .. '\\u1d6b' | '\\u1e00' .. '\\u1e9b' | '\\u1ea0' .. '\\u1ef9' | '\\u1f00' .. '\\u1f15' | '\\u1f18' .. '\\u1f1d' | '\\u1f20' .. '\\u1f45' | '\\u1f48' .. '\\u1f4d' | '\\u1f50' .. '\\u1f57' | '\\u1f59' | '\\u1f5b' | '\\u1f5d' | '\\u1f5f' .. '\\u1f7d' | '\\u1f80' .. '\\u1fb4' | '\\u1fb6' .. '\\u1fbc' | '\\u1fbe' | '\\u1fc2' .. '\\u1fc4' | '\\u1fc6' .. '\\u1fcc' | '\\u1fd0' .. '\\u1fd3' | '\\u1fd6' .. '\\u1fdb' | '\\u1fe0' .. '\\u1fec' | '\\u1ff2' .. '\\u1ff4' | '\\u1ff6' .. '\\u1ffc' | '\\u203f' .. '\\u2040' | '\\u2054' | '\\u2071' | '\\u207f' | '\\u20a0' .. '\\u20b1' | '\\u2102' | '\\u2107' | '\\u210a' .. '\\u2113' | '\\u2115' | '\\u2119' .. '\\u211d' | '\\u2124' | '\\u2126' | '\\u2128' | '\\u212a' .. '\\u212d' | '\\u212f' .. '\\u2131' | '\\u2133' .. '\\u2139' | '\\u213d' .. '\\u213f' | '\\u2145' .. '\\u2149' | '\\u2160' .. '\\u2183' | '\\u3005' .. '\\u3007' | '\\u3021' .. '\\u3029' | '\\u3031' .. '\\u3035' | '\\u3038' .. '\\u303c' | '\\u3041' .. '\\u3096' | '\\u309d' .. '\\u309f' | '\\u30a1' .. '\\u30ff' | '\\u3105' .. '\\u312c' | '\\u3131' .. '\\u318e' | '\\u31a0' .. '\\u31b7' | '\\u31f0' .. '\\u31ff' | '\\u3400' .. '\\u4db5' | '\\u4e00' .. '\\u9fa5' | '\\ua000' .. '\\ua48c' | '\\uac00' .. '\\ud7a3' | '\\uf900' .. '\\ufa2d' | '\\ufa30' .. '\\ufa6a' | '\\ufb00' .. '\\ufb06' | '\\ufb13' .. '\\ufb17' | '\\ufb1d' | '\\ufb1f' .. '\\ufb28' | '\\ufb2a' .. '\\ufb36' | '\\ufb38' .. '\\ufb3c' | '\\ufb3e' | '\\ufb40' .. '\\ufb41' | '\\ufb43' .. '\\ufb44' | '\\ufb46' .. '\\ufbb1' | '\\ufbd3' .. '\\ufd3d' | '\\ufd50' .. '\\ufd8f' | '\\ufd92' .. '\\ufdc7' | '\\ufdf0' .. '\\ufdfc' | '\\ufe33' .. '\\ufe34' | '\\ufe4d' .. '\\ufe4f' | '\\ufe69' | '\\ufe70' .. '\\ufe74' | '\\ufe76' .. '\\ufefc' | '\\uff04' | '\\uff21' .. '\\uff3a' | '\\uff3f' | '\\uff41' .. '\\uff5a' | '\\uff65' .. '\\uffbe' | '\\uffc2' .. '\\uffc7' | '\\uffca' .. '\\uffcf' | '\\uffd2' .. '\\uffd7' | '\\uffda' .. '\\uffdc' | '\\uffe0' .. '\\uffe1' | '\\uffe5' .. '\\uffe6' | ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' ) )
             int alt31=294;
             int LA31_0 = input.LA(1);
 
@@ -4446,2068 +4446,2068 @@ public class JavaLexer extends Lexer {
             }
             switch (alt31) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1870:9: '\\u0024'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1871:9: '\\u0024'
                     {
                     match('$'); 
 
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1871:9: '\\u0041' .. '\\u005a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1872:9: '\\u0041' .. '\\u005a'
                     {
                     matchRange('A','Z'); 
 
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1872:9: '\\u005f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1873:9: '\\u005f'
                     {
                     match('_'); 
 
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1873:9: '\\u0061' .. '\\u007a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1874:9: '\\u0061' .. '\\u007a'
                     {
                     matchRange('a','z'); 
 
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1874:9: '\\u00a2' .. '\\u00a5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1875:9: '\\u00a2' .. '\\u00a5'
                     {
                     matchRange('\u00A2','\u00A5'); 
 
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1875:9: '\\u00aa'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1876:9: '\\u00aa'
                     {
                     match('\u00AA'); 
 
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1876:9: '\\u00b5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1877:9: '\\u00b5'
                     {
                     match('\u00B5'); 
 
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1877:9: '\\u00ba'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1878:9: '\\u00ba'
                     {
                     match('\u00BA'); 
 
                     }
                     break;
                 case 9 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1878:9: '\\u00c0' .. '\\u00d6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1879:9: '\\u00c0' .. '\\u00d6'
                     {
                     matchRange('\u00C0','\u00D6'); 
 
                     }
                     break;
                 case 10 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1879:9: '\\u00d8' .. '\\u00f6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1880:9: '\\u00d8' .. '\\u00f6'
                     {
                     matchRange('\u00D8','\u00F6'); 
 
                     }
                     break;
                 case 11 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1880:9: '\\u00f8' .. '\\u0236'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1881:9: '\\u00f8' .. '\\u0236'
                     {
                     matchRange('\u00F8','\u0236'); 
 
                     }
                     break;
                 case 12 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1881:9: '\\u0250' .. '\\u02c1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1882:9: '\\u0250' .. '\\u02c1'
                     {
                     matchRange('\u0250','\u02C1'); 
 
                     }
                     break;
                 case 13 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1882:9: '\\u02c6' .. '\\u02d1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1883:9: '\\u02c6' .. '\\u02d1'
                     {
                     matchRange('\u02C6','\u02D1'); 
 
                     }
                     break;
                 case 14 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1883:9: '\\u02e0' .. '\\u02e4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1884:9: '\\u02e0' .. '\\u02e4'
                     {
                     matchRange('\u02E0','\u02E4'); 
 
                     }
                     break;
                 case 15 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1884:9: '\\u02ee'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1885:9: '\\u02ee'
                     {
                     match('\u02EE'); 
 
                     }
                     break;
                 case 16 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1885:9: '\\u037a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1886:9: '\\u037a'
                     {
                     match('\u037A'); 
 
                     }
                     break;
                 case 17 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1886:9: '\\u0386'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1887:9: '\\u0386'
                     {
                     match('\u0386'); 
 
                     }
                     break;
                 case 18 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1887:9: '\\u0388' .. '\\u038a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1888:9: '\\u0388' .. '\\u038a'
                     {
                     matchRange('\u0388','\u038A'); 
 
                     }
                     break;
                 case 19 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1888:9: '\\u038c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1889:9: '\\u038c'
                     {
                     match('\u038C'); 
 
                     }
                     break;
                 case 20 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1889:9: '\\u038e' .. '\\u03a1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1890:9: '\\u038e' .. '\\u03a1'
                     {
                     matchRange('\u038E','\u03A1'); 
 
                     }
                     break;
                 case 21 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1890:9: '\\u03a3' .. '\\u03ce'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1891:9: '\\u03a3' .. '\\u03ce'
                     {
                     matchRange('\u03A3','\u03CE'); 
 
                     }
                     break;
                 case 22 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1891:9: '\\u03d0' .. '\\u03f5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1892:9: '\\u03d0' .. '\\u03f5'
                     {
                     matchRange('\u03D0','\u03F5'); 
 
                     }
                     break;
                 case 23 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1892:9: '\\u03f7' .. '\\u03fb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1893:9: '\\u03f7' .. '\\u03fb'
                     {
                     matchRange('\u03F7','\u03FB'); 
 
                     }
                     break;
                 case 24 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1893:9: '\\u0400' .. '\\u0481'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1894:9: '\\u0400' .. '\\u0481'
                     {
                     matchRange('\u0400','\u0481'); 
 
                     }
                     break;
                 case 25 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1894:9: '\\u048a' .. '\\u04ce'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1895:9: '\\u048a' .. '\\u04ce'
                     {
                     matchRange('\u048A','\u04CE'); 
 
                     }
                     break;
                 case 26 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1895:9: '\\u04d0' .. '\\u04f5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1896:9: '\\u04d0' .. '\\u04f5'
                     {
                     matchRange('\u04D0','\u04F5'); 
 
                     }
                     break;
                 case 27 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1896:9: '\\u04f8' .. '\\u04f9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1897:9: '\\u04f8' .. '\\u04f9'
                     {
                     matchRange('\u04F8','\u04F9'); 
 
                     }
                     break;
                 case 28 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1897:9: '\\u0500' .. '\\u050f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1898:9: '\\u0500' .. '\\u050f'
                     {
                     matchRange('\u0500','\u050F'); 
 
                     }
                     break;
                 case 29 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1898:9: '\\u0531' .. '\\u0556'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1899:9: '\\u0531' .. '\\u0556'
                     {
                     matchRange('\u0531','\u0556'); 
 
                     }
                     break;
                 case 30 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1899:9: '\\u0559'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1900:9: '\\u0559'
                     {
                     match('\u0559'); 
 
                     }
                     break;
                 case 31 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1900:9: '\\u0561' .. '\\u0587'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1901:9: '\\u0561' .. '\\u0587'
                     {
                     matchRange('\u0561','\u0587'); 
 
                     }
                     break;
                 case 32 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1901:9: '\\u05d0' .. '\\u05ea'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1902:9: '\\u05d0' .. '\\u05ea'
                     {
                     matchRange('\u05D0','\u05EA'); 
 
                     }
                     break;
                 case 33 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1902:9: '\\u05f0' .. '\\u05f2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1903:9: '\\u05f0' .. '\\u05f2'
                     {
                     matchRange('\u05F0','\u05F2'); 
 
                     }
                     break;
                 case 34 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1903:9: '\\u0621' .. '\\u063a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1904:9: '\\u0621' .. '\\u063a'
                     {
                     matchRange('\u0621','\u063A'); 
 
                     }
                     break;
                 case 35 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1904:9: '\\u0640' .. '\\u064a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1905:9: '\\u0640' .. '\\u064a'
                     {
                     matchRange('\u0640','\u064A'); 
 
                     }
                     break;
                 case 36 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1905:9: '\\u066e' .. '\\u066f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1906:9: '\\u066e' .. '\\u066f'
                     {
                     matchRange('\u066E','\u066F'); 
 
                     }
                     break;
                 case 37 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1906:9: '\\u0671' .. '\\u06d3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1907:9: '\\u0671' .. '\\u06d3'
                     {
                     matchRange('\u0671','\u06D3'); 
 
                     }
                     break;
                 case 38 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1907:9: '\\u06d5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1908:9: '\\u06d5'
                     {
                     match('\u06D5'); 
 
                     }
                     break;
                 case 39 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1908:9: '\\u06e5' .. '\\u06e6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1909:9: '\\u06e5' .. '\\u06e6'
                     {
                     matchRange('\u06E5','\u06E6'); 
 
                     }
                     break;
                 case 40 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1909:9: '\\u06ee' .. '\\u06ef'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1910:9: '\\u06ee' .. '\\u06ef'
                     {
                     matchRange('\u06EE','\u06EF'); 
 
                     }
                     break;
                 case 41 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1910:9: '\\u06fa' .. '\\u06fc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1911:9: '\\u06fa' .. '\\u06fc'
                     {
                     matchRange('\u06FA','\u06FC'); 
 
                     }
                     break;
                 case 42 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1911:9: '\\u06ff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1912:9: '\\u06ff'
                     {
                     match('\u06FF'); 
 
                     }
                     break;
                 case 43 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1912:9: '\\u0710'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1913:9: '\\u0710'
                     {
                     match('\u0710'); 
 
                     }
                     break;
                 case 44 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1913:9: '\\u0712' .. '\\u072f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1914:9: '\\u0712' .. '\\u072f'
                     {
                     matchRange('\u0712','\u072F'); 
 
                     }
                     break;
                 case 45 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1914:9: '\\u074d' .. '\\u074f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1915:9: '\\u074d' .. '\\u074f'
                     {
                     matchRange('\u074D','\u074F'); 
 
                     }
                     break;
                 case 46 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1915:9: '\\u0780' .. '\\u07a5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1916:9: '\\u0780' .. '\\u07a5'
                     {
                     matchRange('\u0780','\u07A5'); 
 
                     }
                     break;
                 case 47 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1916:9: '\\u07b1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1917:9: '\\u07b1'
                     {
                     match('\u07B1'); 
 
                     }
                     break;
                 case 48 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1917:9: '\\u0904' .. '\\u0939'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1918:9: '\\u0904' .. '\\u0939'
                     {
                     matchRange('\u0904','\u0939'); 
 
                     }
                     break;
                 case 49 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1918:9: '\\u093d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1919:9: '\\u093d'
                     {
                     match('\u093D'); 
 
                     }
                     break;
                 case 50 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1919:9: '\\u0950'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1920:9: '\\u0950'
                     {
                     match('\u0950'); 
 
                     }
                     break;
                 case 51 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1920:9: '\\u0958' .. '\\u0961'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1921:9: '\\u0958' .. '\\u0961'
                     {
                     matchRange('\u0958','\u0961'); 
 
                     }
                     break;
                 case 52 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1921:9: '\\u0985' .. '\\u098c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1922:9: '\\u0985' .. '\\u098c'
                     {
                     matchRange('\u0985','\u098C'); 
 
                     }
                     break;
                 case 53 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1922:9: '\\u098f' .. '\\u0990'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1923:9: '\\u098f' .. '\\u0990'
                     {
                     matchRange('\u098F','\u0990'); 
 
                     }
                     break;
                 case 54 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1923:9: '\\u0993' .. '\\u09a8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1924:9: '\\u0993' .. '\\u09a8'
                     {
                     matchRange('\u0993','\u09A8'); 
 
                     }
                     break;
                 case 55 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1924:9: '\\u09aa' .. '\\u09b0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1925:9: '\\u09aa' .. '\\u09b0'
                     {
                     matchRange('\u09AA','\u09B0'); 
 
                     }
                     break;
                 case 56 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1925:9: '\\u09b2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1926:9: '\\u09b2'
                     {
                     match('\u09B2'); 
 
                     }
                     break;
                 case 57 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1926:9: '\\u09b6' .. '\\u09b9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1927:9: '\\u09b6' .. '\\u09b9'
                     {
                     matchRange('\u09B6','\u09B9'); 
 
                     }
                     break;
                 case 58 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1927:9: '\\u09bd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1928:9: '\\u09bd'
                     {
                     match('\u09BD'); 
 
                     }
                     break;
                 case 59 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1928:9: '\\u09dc' .. '\\u09dd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1929:9: '\\u09dc' .. '\\u09dd'
                     {
                     matchRange('\u09DC','\u09DD'); 
 
                     }
                     break;
                 case 60 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1929:9: '\\u09df' .. '\\u09e1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1930:9: '\\u09df' .. '\\u09e1'
                     {
                     matchRange('\u09DF','\u09E1'); 
 
                     }
                     break;
                 case 61 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1930:9: '\\u09f0' .. '\\u09f3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1931:9: '\\u09f0' .. '\\u09f3'
                     {
                     matchRange('\u09F0','\u09F3'); 
 
                     }
                     break;
                 case 62 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1931:9: '\\u0a05' .. '\\u0a0a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1932:9: '\\u0a05' .. '\\u0a0a'
                     {
                     matchRange('\u0A05','\u0A0A'); 
 
                     }
                     break;
                 case 63 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1932:9: '\\u0a0f' .. '\\u0a10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1933:9: '\\u0a0f' .. '\\u0a10'
                     {
                     matchRange('\u0A0F','\u0A10'); 
 
                     }
                     break;
                 case 64 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1933:9: '\\u0a13' .. '\\u0a28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1934:9: '\\u0a13' .. '\\u0a28'
                     {
                     matchRange('\u0A13','\u0A28'); 
 
                     }
                     break;
                 case 65 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1934:9: '\\u0a2a' .. '\\u0a30'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1935:9: '\\u0a2a' .. '\\u0a30'
                     {
                     matchRange('\u0A2A','\u0A30'); 
 
                     }
                     break;
                 case 66 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1935:9: '\\u0a32' .. '\\u0a33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1936:9: '\\u0a32' .. '\\u0a33'
                     {
                     matchRange('\u0A32','\u0A33'); 
 
                     }
                     break;
                 case 67 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1936:9: '\\u0a35' .. '\\u0a36'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1937:9: '\\u0a35' .. '\\u0a36'
                     {
                     matchRange('\u0A35','\u0A36'); 
 
                     }
                     break;
                 case 68 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1937:9: '\\u0a38' .. '\\u0a39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1938:9: '\\u0a38' .. '\\u0a39'
                     {
                     matchRange('\u0A38','\u0A39'); 
 
                     }
                     break;
                 case 69 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1938:9: '\\u0a59' .. '\\u0a5c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1939:9: '\\u0a59' .. '\\u0a5c'
                     {
                     matchRange('\u0A59','\u0A5C'); 
 
                     }
                     break;
                 case 70 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1939:9: '\\u0a5e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1940:9: '\\u0a5e'
                     {
                     match('\u0A5E'); 
 
                     }
                     break;
                 case 71 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1940:9: '\\u0a72' .. '\\u0a74'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1941:9: '\\u0a72' .. '\\u0a74'
                     {
                     matchRange('\u0A72','\u0A74'); 
 
                     }
                     break;
                 case 72 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1941:9: '\\u0a85' .. '\\u0a8d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1942:9: '\\u0a85' .. '\\u0a8d'
                     {
                     matchRange('\u0A85','\u0A8D'); 
 
                     }
                     break;
                 case 73 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1942:9: '\\u0a8f' .. '\\u0a91'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1943:9: '\\u0a8f' .. '\\u0a91'
                     {
                     matchRange('\u0A8F','\u0A91'); 
 
                     }
                     break;
                 case 74 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1943:9: '\\u0a93' .. '\\u0aa8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1944:9: '\\u0a93' .. '\\u0aa8'
                     {
                     matchRange('\u0A93','\u0AA8'); 
 
                     }
                     break;
                 case 75 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1944:9: '\\u0aaa' .. '\\u0ab0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1945:9: '\\u0aaa' .. '\\u0ab0'
                     {
                     matchRange('\u0AAA','\u0AB0'); 
 
                     }
                     break;
                 case 76 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1945:9: '\\u0ab2' .. '\\u0ab3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1946:9: '\\u0ab2' .. '\\u0ab3'
                     {
                     matchRange('\u0AB2','\u0AB3'); 
 
                     }
                     break;
                 case 77 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1946:9: '\\u0ab5' .. '\\u0ab9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1947:9: '\\u0ab5' .. '\\u0ab9'
                     {
                     matchRange('\u0AB5','\u0AB9'); 
 
                     }
                     break;
                 case 78 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1947:9: '\\u0abd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1948:9: '\\u0abd'
                     {
                     match('\u0ABD'); 
 
                     }
                     break;
                 case 79 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1948:9: '\\u0ad0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1949:9: '\\u0ad0'
                     {
                     match('\u0AD0'); 
 
                     }
                     break;
                 case 80 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1949:9: '\\u0ae0' .. '\\u0ae1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1950:9: '\\u0ae0' .. '\\u0ae1'
                     {
                     matchRange('\u0AE0','\u0AE1'); 
 
                     }
                     break;
                 case 81 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1950:9: '\\u0af1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1951:9: '\\u0af1'
                     {
                     match('\u0AF1'); 
 
                     }
                     break;
                 case 82 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1951:9: '\\u0b05' .. '\\u0b0c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1952:9: '\\u0b05' .. '\\u0b0c'
                     {
                     matchRange('\u0B05','\u0B0C'); 
 
                     }
                     break;
                 case 83 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1952:9: '\\u0b0f' .. '\\u0b10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1953:9: '\\u0b0f' .. '\\u0b10'
                     {
                     matchRange('\u0B0F','\u0B10'); 
 
                     }
                     break;
                 case 84 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1953:9: '\\u0b13' .. '\\u0b28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1954:9: '\\u0b13' .. '\\u0b28'
                     {
                     matchRange('\u0B13','\u0B28'); 
 
                     }
                     break;
                 case 85 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1954:9: '\\u0b2a' .. '\\u0b30'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1955:9: '\\u0b2a' .. '\\u0b30'
                     {
                     matchRange('\u0B2A','\u0B30'); 
 
                     }
                     break;
                 case 86 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1955:9: '\\u0b32' .. '\\u0b33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1956:9: '\\u0b32' .. '\\u0b33'
                     {
                     matchRange('\u0B32','\u0B33'); 
 
                     }
                     break;
                 case 87 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1956:9: '\\u0b35' .. '\\u0b39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1957:9: '\\u0b35' .. '\\u0b39'
                     {
                     matchRange('\u0B35','\u0B39'); 
 
                     }
                     break;
                 case 88 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1957:9: '\\u0b3d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1958:9: '\\u0b3d'
                     {
                     match('\u0B3D'); 
 
                     }
                     break;
                 case 89 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1958:9: '\\u0b5c' .. '\\u0b5d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1959:9: '\\u0b5c' .. '\\u0b5d'
                     {
                     matchRange('\u0B5C','\u0B5D'); 
 
                     }
                     break;
                 case 90 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1959:9: '\\u0b5f' .. '\\u0b61'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1960:9: '\\u0b5f' .. '\\u0b61'
                     {
                     matchRange('\u0B5F','\u0B61'); 
 
                     }
                     break;
                 case 91 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1960:9: '\\u0b71'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1961:9: '\\u0b71'
                     {
                     match('\u0B71'); 
 
                     }
                     break;
                 case 92 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1961:9: '\\u0b83'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1962:9: '\\u0b83'
                     {
                     match('\u0B83'); 
 
                     }
                     break;
                 case 93 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1962:9: '\\u0b85' .. '\\u0b8a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1963:9: '\\u0b85' .. '\\u0b8a'
                     {
                     matchRange('\u0B85','\u0B8A'); 
 
                     }
                     break;
                 case 94 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1963:9: '\\u0b8e' .. '\\u0b90'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1964:9: '\\u0b8e' .. '\\u0b90'
                     {
                     matchRange('\u0B8E','\u0B90'); 
 
                     }
                     break;
                 case 95 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1964:9: '\\u0b92' .. '\\u0b95'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1965:9: '\\u0b92' .. '\\u0b95'
                     {
                     matchRange('\u0B92','\u0B95'); 
 
                     }
                     break;
                 case 96 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1965:9: '\\u0b99' .. '\\u0b9a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1966:9: '\\u0b99' .. '\\u0b9a'
                     {
                     matchRange('\u0B99','\u0B9A'); 
 
                     }
                     break;
                 case 97 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1966:9: '\\u0b9c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1967:9: '\\u0b9c'
                     {
                     match('\u0B9C'); 
 
                     }
                     break;
                 case 98 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1967:9: '\\u0b9e' .. '\\u0b9f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1968:9: '\\u0b9e' .. '\\u0b9f'
                     {
                     matchRange('\u0B9E','\u0B9F'); 
 
                     }
                     break;
                 case 99 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1968:9: '\\u0ba3' .. '\\u0ba4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1969:9: '\\u0ba3' .. '\\u0ba4'
                     {
                     matchRange('\u0BA3','\u0BA4'); 
 
                     }
                     break;
                 case 100 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1969:9: '\\u0ba8' .. '\\u0baa'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1970:9: '\\u0ba8' .. '\\u0baa'
                     {
                     matchRange('\u0BA8','\u0BAA'); 
 
                     }
                     break;
                 case 101 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1970:9: '\\u0bae' .. '\\u0bb5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1971:9: '\\u0bae' .. '\\u0bb5'
                     {
                     matchRange('\u0BAE','\u0BB5'); 
 
                     }
                     break;
                 case 102 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1971:9: '\\u0bb7' .. '\\u0bb9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1972:9: '\\u0bb7' .. '\\u0bb9'
                     {
                     matchRange('\u0BB7','\u0BB9'); 
 
                     }
                     break;
                 case 103 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1972:9: '\\u0bf9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1973:9: '\\u0bf9'
                     {
                     match('\u0BF9'); 
 
                     }
                     break;
                 case 104 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1973:9: '\\u0c05' .. '\\u0c0c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1974:9: '\\u0c05' .. '\\u0c0c'
                     {
                     matchRange('\u0C05','\u0C0C'); 
 
                     }
                     break;
                 case 105 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1974:9: '\\u0c0e' .. '\\u0c10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1975:9: '\\u0c0e' .. '\\u0c10'
                     {
                     matchRange('\u0C0E','\u0C10'); 
 
                     }
                     break;
                 case 106 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1975:9: '\\u0c12' .. '\\u0c28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1976:9: '\\u0c12' .. '\\u0c28'
                     {
                     matchRange('\u0C12','\u0C28'); 
 
                     }
                     break;
                 case 107 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1976:9: '\\u0c2a' .. '\\u0c33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1977:9: '\\u0c2a' .. '\\u0c33'
                     {
                     matchRange('\u0C2A','\u0C33'); 
 
                     }
                     break;
                 case 108 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1977:9: '\\u0c35' .. '\\u0c39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1978:9: '\\u0c35' .. '\\u0c39'
                     {
                     matchRange('\u0C35','\u0C39'); 
 
                     }
                     break;
                 case 109 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1978:9: '\\u0c60' .. '\\u0c61'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1979:9: '\\u0c60' .. '\\u0c61'
                     {
                     matchRange('\u0C60','\u0C61'); 
 
                     }
                     break;
                 case 110 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1979:9: '\\u0c85' .. '\\u0c8c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1980:9: '\\u0c85' .. '\\u0c8c'
                     {
                     matchRange('\u0C85','\u0C8C'); 
 
                     }
                     break;
                 case 111 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1980:9: '\\u0c8e' .. '\\u0c90'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1981:9: '\\u0c8e' .. '\\u0c90'
                     {
                     matchRange('\u0C8E','\u0C90'); 
 
                     }
                     break;
                 case 112 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1981:9: '\\u0c92' .. '\\u0ca8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1982:9: '\\u0c92' .. '\\u0ca8'
                     {
                     matchRange('\u0C92','\u0CA8'); 
 
                     }
                     break;
                 case 113 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1982:9: '\\u0caa' .. '\\u0cb3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1983:9: '\\u0caa' .. '\\u0cb3'
                     {
                     matchRange('\u0CAA','\u0CB3'); 
 
                     }
                     break;
                 case 114 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1983:9: '\\u0cb5' .. '\\u0cb9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1984:9: '\\u0cb5' .. '\\u0cb9'
                     {
                     matchRange('\u0CB5','\u0CB9'); 
 
                     }
                     break;
                 case 115 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1984:9: '\\u0cbd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1985:9: '\\u0cbd'
                     {
                     match('\u0CBD'); 
 
                     }
                     break;
                 case 116 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1985:9: '\\u0cde'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1986:9: '\\u0cde'
                     {
                     match('\u0CDE'); 
 
                     }
                     break;
                 case 117 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1986:9: '\\u0ce0' .. '\\u0ce1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1987:9: '\\u0ce0' .. '\\u0ce1'
                     {
                     matchRange('\u0CE0','\u0CE1'); 
 
                     }
                     break;
                 case 118 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1987:9: '\\u0d05' .. '\\u0d0c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1988:9: '\\u0d05' .. '\\u0d0c'
                     {
                     matchRange('\u0D05','\u0D0C'); 
 
                     }
                     break;
                 case 119 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1988:9: '\\u0d0e' .. '\\u0d10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1989:9: '\\u0d0e' .. '\\u0d10'
                     {
                     matchRange('\u0D0E','\u0D10'); 
 
                     }
                     break;
                 case 120 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1989:9: '\\u0d12' .. '\\u0d28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1990:9: '\\u0d12' .. '\\u0d28'
                     {
                     matchRange('\u0D12','\u0D28'); 
 
                     }
                     break;
                 case 121 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1990:9: '\\u0d2a' .. '\\u0d39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1991:9: '\\u0d2a' .. '\\u0d39'
                     {
                     matchRange('\u0D2A','\u0D39'); 
 
                     }
                     break;
                 case 122 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1991:9: '\\u0d60' .. '\\u0d61'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1992:9: '\\u0d60' .. '\\u0d61'
                     {
                     matchRange('\u0D60','\u0D61'); 
 
                     }
                     break;
                 case 123 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1992:9: '\\u0d85' .. '\\u0d96'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1993:9: '\\u0d85' .. '\\u0d96'
                     {
                     matchRange('\u0D85','\u0D96'); 
 
                     }
                     break;
                 case 124 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1993:9: '\\u0d9a' .. '\\u0db1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1994:9: '\\u0d9a' .. '\\u0db1'
                     {
                     matchRange('\u0D9A','\u0DB1'); 
 
                     }
                     break;
                 case 125 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1994:9: '\\u0db3' .. '\\u0dbb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1995:9: '\\u0db3' .. '\\u0dbb'
                     {
                     matchRange('\u0DB3','\u0DBB'); 
 
                     }
                     break;
                 case 126 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1995:9: '\\u0dbd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1996:9: '\\u0dbd'
                     {
                     match('\u0DBD'); 
 
                     }
                     break;
                 case 127 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1996:9: '\\u0dc0' .. '\\u0dc6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1997:9: '\\u0dc0' .. '\\u0dc6'
                     {
                     matchRange('\u0DC0','\u0DC6'); 
 
                     }
                     break;
                 case 128 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1997:9: '\\u0e01' .. '\\u0e30'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1998:9: '\\u0e01' .. '\\u0e30'
                     {
                     matchRange('\u0E01','\u0E30'); 
 
                     }
                     break;
                 case 129 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1998:9: '\\u0e32' .. '\\u0e33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1999:9: '\\u0e32' .. '\\u0e33'
                     {
                     matchRange('\u0E32','\u0E33'); 
 
                     }
                     break;
                 case 130 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1999:9: '\\u0e3f' .. '\\u0e46'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2000:9: '\\u0e3f' .. '\\u0e46'
                     {
                     matchRange('\u0E3F','\u0E46'); 
 
                     }
                     break;
                 case 131 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2000:9: '\\u0e81' .. '\\u0e82'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2001:9: '\\u0e81' .. '\\u0e82'
                     {
                     matchRange('\u0E81','\u0E82'); 
 
                     }
                     break;
                 case 132 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2001:9: '\\u0e84'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2002:9: '\\u0e84'
                     {
                     match('\u0E84'); 
 
                     }
                     break;
                 case 133 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2002:9: '\\u0e87' .. '\\u0e88'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2003:9: '\\u0e87' .. '\\u0e88'
                     {
                     matchRange('\u0E87','\u0E88'); 
 
                     }
                     break;
                 case 134 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2003:9: '\\u0e8a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2004:9: '\\u0e8a'
                     {
                     match('\u0E8A'); 
 
                     }
                     break;
                 case 135 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2004:9: '\\u0e8d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2005:9: '\\u0e8d'
                     {
                     match('\u0E8D'); 
 
                     }
                     break;
                 case 136 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2005:9: '\\u0e94' .. '\\u0e97'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2006:9: '\\u0e94' .. '\\u0e97'
                     {
                     matchRange('\u0E94','\u0E97'); 
 
                     }
                     break;
                 case 137 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2006:9: '\\u0e99' .. '\\u0e9f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2007:9: '\\u0e99' .. '\\u0e9f'
                     {
                     matchRange('\u0E99','\u0E9F'); 
 
                     }
                     break;
                 case 138 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2007:9: '\\u0ea1' .. '\\u0ea3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2008:9: '\\u0ea1' .. '\\u0ea3'
                     {
                     matchRange('\u0EA1','\u0EA3'); 
 
                     }
                     break;
                 case 139 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2008:9: '\\u0ea5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2009:9: '\\u0ea5'
                     {
                     match('\u0EA5'); 
 
                     }
                     break;
                 case 140 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2009:9: '\\u0ea7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2010:9: '\\u0ea7'
                     {
                     match('\u0EA7'); 
 
                     }
                     break;
                 case 141 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2010:9: '\\u0eaa' .. '\\u0eab'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2011:9: '\\u0eaa' .. '\\u0eab'
                     {
                     matchRange('\u0EAA','\u0EAB'); 
 
                     }
                     break;
                 case 142 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2011:9: '\\u0ead' .. '\\u0eb0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2012:9: '\\u0ead' .. '\\u0eb0'
                     {
                     matchRange('\u0EAD','\u0EB0'); 
 
                     }
                     break;
                 case 143 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2012:9: '\\u0eb2' .. '\\u0eb3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2013:9: '\\u0eb2' .. '\\u0eb3'
                     {
                     matchRange('\u0EB2','\u0EB3'); 
 
                     }
                     break;
                 case 144 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2013:9: '\\u0ebd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2014:9: '\\u0ebd'
                     {
                     match('\u0EBD'); 
 
                     }
                     break;
                 case 145 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2014:9: '\\u0ec0' .. '\\u0ec4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2015:9: '\\u0ec0' .. '\\u0ec4'
                     {
                     matchRange('\u0EC0','\u0EC4'); 
 
                     }
                     break;
                 case 146 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2015:9: '\\u0ec6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2016:9: '\\u0ec6'
                     {
                     match('\u0EC6'); 
 
                     }
                     break;
                 case 147 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2016:9: '\\u0edc' .. '\\u0edd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2017:9: '\\u0edc' .. '\\u0edd'
                     {
                     matchRange('\u0EDC','\u0EDD'); 
 
                     }
                     break;
                 case 148 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2017:9: '\\u0f00'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2018:9: '\\u0f00'
                     {
                     match('\u0F00'); 
 
                     }
                     break;
                 case 149 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2018:9: '\\u0f40' .. '\\u0f47'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2019:9: '\\u0f40' .. '\\u0f47'
                     {
                     matchRange('\u0F40','\u0F47'); 
 
                     }
                     break;
                 case 150 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2019:9: '\\u0f49' .. '\\u0f6a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2020:9: '\\u0f49' .. '\\u0f6a'
                     {
                     matchRange('\u0F49','\u0F6A'); 
 
                     }
                     break;
                 case 151 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2020:9: '\\u0f88' .. '\\u0f8b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2021:9: '\\u0f88' .. '\\u0f8b'
                     {
                     matchRange('\u0F88','\u0F8B'); 
 
                     }
                     break;
                 case 152 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2021:9: '\\u1000' .. '\\u1021'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2022:9: '\\u1000' .. '\\u1021'
                     {
                     matchRange('\u1000','\u1021'); 
 
                     }
                     break;
                 case 153 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2022:9: '\\u1023' .. '\\u1027'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2023:9: '\\u1023' .. '\\u1027'
                     {
                     matchRange('\u1023','\u1027'); 
 
                     }
                     break;
                 case 154 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2023:9: '\\u1029' .. '\\u102a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2024:9: '\\u1029' .. '\\u102a'
                     {
                     matchRange('\u1029','\u102A'); 
 
                     }
                     break;
                 case 155 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2024:9: '\\u1050' .. '\\u1055'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2025:9: '\\u1050' .. '\\u1055'
                     {
                     matchRange('\u1050','\u1055'); 
 
                     }
                     break;
                 case 156 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2025:9: '\\u10a0' .. '\\u10c5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2026:9: '\\u10a0' .. '\\u10c5'
                     {
                     matchRange('\u10A0','\u10C5'); 
 
                     }
                     break;
                 case 157 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2026:9: '\\u10d0' .. '\\u10f8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2027:9: '\\u10d0' .. '\\u10f8'
                     {
                     matchRange('\u10D0','\u10F8'); 
 
                     }
                     break;
                 case 158 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2027:9: '\\u1100' .. '\\u1159'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2028:9: '\\u1100' .. '\\u1159'
                     {
                     matchRange('\u1100','\u1159'); 
 
                     }
                     break;
                 case 159 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2028:9: '\\u115f' .. '\\u11a2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2029:9: '\\u115f' .. '\\u11a2'
                     {
                     matchRange('\u115F','\u11A2'); 
 
                     }
                     break;
                 case 160 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2029:9: '\\u11a8' .. '\\u11f9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2030:9: '\\u11a8' .. '\\u11f9'
                     {
                     matchRange('\u11A8','\u11F9'); 
 
                     }
                     break;
                 case 161 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2030:9: '\\u1200' .. '\\u1206'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2031:9: '\\u1200' .. '\\u1206'
                     {
                     matchRange('\u1200','\u1206'); 
 
                     }
                     break;
                 case 162 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2031:9: '\\u1208' .. '\\u1246'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2032:9: '\\u1208' .. '\\u1246'
                     {
                     matchRange('\u1208','\u1246'); 
 
                     }
                     break;
                 case 163 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2032:9: '\\u1248'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2033:9: '\\u1248'
                     {
                     match('\u1248'); 
 
                     }
                     break;
                 case 164 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2033:9: '\\u124a' .. '\\u124d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2034:9: '\\u124a' .. '\\u124d'
                     {
                     matchRange('\u124A','\u124D'); 
 
                     }
                     break;
                 case 165 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2034:9: '\\u1250' .. '\\u1256'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2035:9: '\\u1250' .. '\\u1256'
                     {
                     matchRange('\u1250','\u1256'); 
 
                     }
                     break;
                 case 166 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2035:9: '\\u1258'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2036:9: '\\u1258'
                     {
                     match('\u1258'); 
 
                     }
                     break;
                 case 167 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2036:9: '\\u125a' .. '\\u125d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2037:9: '\\u125a' .. '\\u125d'
                     {
                     matchRange('\u125A','\u125D'); 
 
                     }
                     break;
                 case 168 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2037:9: '\\u1260' .. '\\u1286'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2038:9: '\\u1260' .. '\\u1286'
                     {
                     matchRange('\u1260','\u1286'); 
 
                     }
                     break;
                 case 169 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2038:9: '\\u1288'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2039:9: '\\u1288'
                     {
                     match('\u1288'); 
 
                     }
                     break;
                 case 170 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2039:9: '\\u128a' .. '\\u128d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2040:9: '\\u128a' .. '\\u128d'
                     {
                     matchRange('\u128A','\u128D'); 
 
                     }
                     break;
                 case 171 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2040:9: '\\u1290' .. '\\u12ae'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2041:9: '\\u1290' .. '\\u12ae'
                     {
                     matchRange('\u1290','\u12AE'); 
 
                     }
                     break;
                 case 172 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2041:9: '\\u12b0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2042:9: '\\u12b0'
                     {
                     match('\u12B0'); 
 
                     }
                     break;
                 case 173 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2042:9: '\\u12b2' .. '\\u12b5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2043:9: '\\u12b2' .. '\\u12b5'
                     {
                     matchRange('\u12B2','\u12B5'); 
 
                     }
                     break;
                 case 174 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2043:9: '\\u12b8' .. '\\u12be'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2044:9: '\\u12b8' .. '\\u12be'
                     {
                     matchRange('\u12B8','\u12BE'); 
 
                     }
                     break;
                 case 175 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2044:9: '\\u12c0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2045:9: '\\u12c0'
                     {
                     match('\u12C0'); 
 
                     }
                     break;
                 case 176 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2045:9: '\\u12c2' .. '\\u12c5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2046:9: '\\u12c2' .. '\\u12c5'
                     {
                     matchRange('\u12C2','\u12C5'); 
 
                     }
                     break;
                 case 177 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2046:9: '\\u12c8' .. '\\u12ce'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2047:9: '\\u12c8' .. '\\u12ce'
                     {
                     matchRange('\u12C8','\u12CE'); 
 
                     }
                     break;
                 case 178 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2047:9: '\\u12d0' .. '\\u12d6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2048:9: '\\u12d0' .. '\\u12d6'
                     {
                     matchRange('\u12D0','\u12D6'); 
 
                     }
                     break;
                 case 179 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2048:9: '\\u12d8' .. '\\u12ee'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2049:9: '\\u12d8' .. '\\u12ee'
                     {
                     matchRange('\u12D8','\u12EE'); 
 
                     }
                     break;
                 case 180 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2049:9: '\\u12f0' .. '\\u130e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2050:9: '\\u12f0' .. '\\u130e'
                     {
                     matchRange('\u12F0','\u130E'); 
 
                     }
                     break;
                 case 181 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2050:9: '\\u1310'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2051:9: '\\u1310'
                     {
                     match('\u1310'); 
 
                     }
                     break;
                 case 182 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2051:9: '\\u1312' .. '\\u1315'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2052:9: '\\u1312' .. '\\u1315'
                     {
                     matchRange('\u1312','\u1315'); 
 
                     }
                     break;
                 case 183 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2052:9: '\\u1318' .. '\\u131e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2053:9: '\\u1318' .. '\\u131e'
                     {
                     matchRange('\u1318','\u131E'); 
 
                     }
                     break;
                 case 184 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2053:9: '\\u1320' .. '\\u1346'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2054:9: '\\u1320' .. '\\u1346'
                     {
                     matchRange('\u1320','\u1346'); 
 
                     }
                     break;
                 case 185 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2054:9: '\\u1348' .. '\\u135a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2055:9: '\\u1348' .. '\\u135a'
                     {
                     matchRange('\u1348','\u135A'); 
 
                     }
                     break;
                 case 186 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2055:9: '\\u13a0' .. '\\u13f4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2056:9: '\\u13a0' .. '\\u13f4'
                     {
                     matchRange('\u13A0','\u13F4'); 
 
                     }
                     break;
                 case 187 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2056:9: '\\u1401' .. '\\u166c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2057:9: '\\u1401' .. '\\u166c'
                     {
                     matchRange('\u1401','\u166C'); 
 
                     }
                     break;
                 case 188 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2057:9: '\\u166f' .. '\\u1676'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2058:9: '\\u166f' .. '\\u1676'
                     {
                     matchRange('\u166F','\u1676'); 
 
                     }
                     break;
                 case 189 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2058:9: '\\u1681' .. '\\u169a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2059:9: '\\u1681' .. '\\u169a'
                     {
                     matchRange('\u1681','\u169A'); 
 
                     }
                     break;
                 case 190 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2059:9: '\\u16a0' .. '\\u16ea'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2060:9: '\\u16a0' .. '\\u16ea'
                     {
                     matchRange('\u16A0','\u16EA'); 
 
                     }
                     break;
                 case 191 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2060:9: '\\u16ee' .. '\\u16f0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2061:9: '\\u16ee' .. '\\u16f0'
                     {
                     matchRange('\u16EE','\u16F0'); 
 
                     }
                     break;
                 case 192 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2061:9: '\\u1700' .. '\\u170c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2062:9: '\\u1700' .. '\\u170c'
                     {
                     matchRange('\u1700','\u170C'); 
 
                     }
                     break;
                 case 193 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2062:9: '\\u170e' .. '\\u1711'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2063:9: '\\u170e' .. '\\u1711'
                     {
                     matchRange('\u170E','\u1711'); 
 
                     }
                     break;
                 case 194 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2063:9: '\\u1720' .. '\\u1731'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2064:9: '\\u1720' .. '\\u1731'
                     {
                     matchRange('\u1720','\u1731'); 
 
                     }
                     break;
                 case 195 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2064:9: '\\u1740' .. '\\u1751'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2065:9: '\\u1740' .. '\\u1751'
                     {
                     matchRange('\u1740','\u1751'); 
 
                     }
                     break;
                 case 196 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2065:9: '\\u1760' .. '\\u176c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2066:9: '\\u1760' .. '\\u176c'
                     {
                     matchRange('\u1760','\u176C'); 
 
                     }
                     break;
                 case 197 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2066:9: '\\u176e' .. '\\u1770'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2067:9: '\\u176e' .. '\\u1770'
                     {
                     matchRange('\u176E','\u1770'); 
 
                     }
                     break;
                 case 198 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2067:9: '\\u1780' .. '\\u17b3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2068:9: '\\u1780' .. '\\u17b3'
                     {
                     matchRange('\u1780','\u17B3'); 
 
                     }
                     break;
                 case 199 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2068:9: '\\u17d7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2069:9: '\\u17d7'
                     {
                     match('\u17D7'); 
 
                     }
                     break;
                 case 200 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2069:9: '\\u17db' .. '\\u17dc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2070:9: '\\u17db' .. '\\u17dc'
                     {
                     matchRange('\u17DB','\u17DC'); 
 
                     }
                     break;
                 case 201 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2070:9: '\\u1820' .. '\\u1877'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2071:9: '\\u1820' .. '\\u1877'
                     {
                     matchRange('\u1820','\u1877'); 
 
                     }
                     break;
                 case 202 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2071:9: '\\u1880' .. '\\u18a8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2072:9: '\\u1880' .. '\\u18a8'
                     {
                     matchRange('\u1880','\u18A8'); 
 
                     }
                     break;
                 case 203 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2072:9: '\\u1900' .. '\\u191c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2073:9: '\\u1900' .. '\\u191c'
                     {
                     matchRange('\u1900','\u191C'); 
 
                     }
                     break;
                 case 204 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2073:9: '\\u1950' .. '\\u196d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2074:9: '\\u1950' .. '\\u196d'
                     {
                     matchRange('\u1950','\u196D'); 
 
                     }
                     break;
                 case 205 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2074:9: '\\u1970' .. '\\u1974'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2075:9: '\\u1970' .. '\\u1974'
                     {
                     matchRange('\u1970','\u1974'); 
 
                     }
                     break;
                 case 206 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2075:9: '\\u1d00' .. '\\u1d6b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2076:9: '\\u1d00' .. '\\u1d6b'
                     {
                     matchRange('\u1D00','\u1D6B'); 
 
                     }
                     break;
                 case 207 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2076:9: '\\u1e00' .. '\\u1e9b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2077:9: '\\u1e00' .. '\\u1e9b'
                     {
                     matchRange('\u1E00','\u1E9B'); 
 
                     }
                     break;
                 case 208 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2077:9: '\\u1ea0' .. '\\u1ef9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2078:9: '\\u1ea0' .. '\\u1ef9'
                     {
                     matchRange('\u1EA0','\u1EF9'); 
 
                     }
                     break;
                 case 209 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2078:9: '\\u1f00' .. '\\u1f15'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2079:9: '\\u1f00' .. '\\u1f15'
                     {
                     matchRange('\u1F00','\u1F15'); 
 
                     }
                     break;
                 case 210 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2079:9: '\\u1f18' .. '\\u1f1d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2080:9: '\\u1f18' .. '\\u1f1d'
                     {
                     matchRange('\u1F18','\u1F1D'); 
 
                     }
                     break;
                 case 211 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2080:9: '\\u1f20' .. '\\u1f45'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2081:9: '\\u1f20' .. '\\u1f45'
                     {
                     matchRange('\u1F20','\u1F45'); 
 
                     }
                     break;
                 case 212 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2081:9: '\\u1f48' .. '\\u1f4d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2082:9: '\\u1f48' .. '\\u1f4d'
                     {
                     matchRange('\u1F48','\u1F4D'); 
 
                     }
                     break;
                 case 213 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2082:9: '\\u1f50' .. '\\u1f57'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2083:9: '\\u1f50' .. '\\u1f57'
                     {
                     matchRange('\u1F50','\u1F57'); 
 
                     }
                     break;
                 case 214 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2083:9: '\\u1f59'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2084:9: '\\u1f59'
                     {
                     match('\u1F59'); 
 
                     }
                     break;
                 case 215 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2084:9: '\\u1f5b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2085:9: '\\u1f5b'
                     {
                     match('\u1F5B'); 
 
                     }
                     break;
                 case 216 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2085:9: '\\u1f5d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2086:9: '\\u1f5d'
                     {
                     match('\u1F5D'); 
 
                     }
                     break;
                 case 217 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2086:9: '\\u1f5f' .. '\\u1f7d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2087:9: '\\u1f5f' .. '\\u1f7d'
                     {
                     matchRange('\u1F5F','\u1F7D'); 
 
                     }
                     break;
                 case 218 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2087:9: '\\u1f80' .. '\\u1fb4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2088:9: '\\u1f80' .. '\\u1fb4'
                     {
                     matchRange('\u1F80','\u1FB4'); 
 
                     }
                     break;
                 case 219 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2088:9: '\\u1fb6' .. '\\u1fbc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2089:9: '\\u1fb6' .. '\\u1fbc'
                     {
                     matchRange('\u1FB6','\u1FBC'); 
 
                     }
                     break;
                 case 220 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2089:9: '\\u1fbe'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2090:9: '\\u1fbe'
                     {
                     match('\u1FBE'); 
 
                     }
                     break;
                 case 221 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2090:9: '\\u1fc2' .. '\\u1fc4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2091:9: '\\u1fc2' .. '\\u1fc4'
                     {
                     matchRange('\u1FC2','\u1FC4'); 
 
                     }
                     break;
                 case 222 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2091:9: '\\u1fc6' .. '\\u1fcc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2092:9: '\\u1fc6' .. '\\u1fcc'
                     {
                     matchRange('\u1FC6','\u1FCC'); 
 
                     }
                     break;
                 case 223 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2092:9: '\\u1fd0' .. '\\u1fd3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2093:9: '\\u1fd0' .. '\\u1fd3'
                     {
                     matchRange('\u1FD0','\u1FD3'); 
 
                     }
                     break;
                 case 224 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2093:9: '\\u1fd6' .. '\\u1fdb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2094:9: '\\u1fd6' .. '\\u1fdb'
                     {
                     matchRange('\u1FD6','\u1FDB'); 
 
                     }
                     break;
                 case 225 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2094:9: '\\u1fe0' .. '\\u1fec'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2095:9: '\\u1fe0' .. '\\u1fec'
                     {
                     matchRange('\u1FE0','\u1FEC'); 
 
                     }
                     break;
                 case 226 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2095:9: '\\u1ff2' .. '\\u1ff4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2096:9: '\\u1ff2' .. '\\u1ff4'
                     {
                     matchRange('\u1FF2','\u1FF4'); 
 
                     }
                     break;
                 case 227 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2096:9: '\\u1ff6' .. '\\u1ffc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2097:9: '\\u1ff6' .. '\\u1ffc'
                     {
                     matchRange('\u1FF6','\u1FFC'); 
 
                     }
                     break;
                 case 228 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2097:9: '\\u203f' .. '\\u2040'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2098:9: '\\u203f' .. '\\u2040'
                     {
                     matchRange('\u203F','\u2040'); 
 
                     }
                     break;
                 case 229 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2098:9: '\\u2054'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2099:9: '\\u2054'
                     {
                     match('\u2054'); 
 
                     }
                     break;
                 case 230 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2099:9: '\\u2071'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2100:9: '\\u2071'
                     {
                     match('\u2071'); 
 
                     }
                     break;
                 case 231 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2100:9: '\\u207f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2101:9: '\\u207f'
                     {
                     match('\u207F'); 
 
                     }
                     break;
                 case 232 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2101:9: '\\u20a0' .. '\\u20b1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2102:9: '\\u20a0' .. '\\u20b1'
                     {
                     matchRange('\u20A0','\u20B1'); 
 
                     }
                     break;
                 case 233 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2102:9: '\\u2102'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2103:9: '\\u2102'
                     {
                     match('\u2102'); 
 
                     }
                     break;
                 case 234 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2103:9: '\\u2107'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2104:9: '\\u2107'
                     {
                     match('\u2107'); 
 
                     }
                     break;
                 case 235 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2104:9: '\\u210a' .. '\\u2113'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2105:9: '\\u210a' .. '\\u2113'
                     {
                     matchRange('\u210A','\u2113'); 
 
                     }
                     break;
                 case 236 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2105:9: '\\u2115'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2106:9: '\\u2115'
                     {
                     match('\u2115'); 
 
                     }
                     break;
                 case 237 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2106:9: '\\u2119' .. '\\u211d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2107:9: '\\u2119' .. '\\u211d'
                     {
                     matchRange('\u2119','\u211D'); 
 
                     }
                     break;
                 case 238 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2107:9: '\\u2124'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2108:9: '\\u2124'
                     {
                     match('\u2124'); 
 
                     }
                     break;
                 case 239 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2108:9: '\\u2126'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2109:9: '\\u2126'
                     {
                     match('\u2126'); 
 
                     }
                     break;
                 case 240 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2109:9: '\\u2128'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2110:9: '\\u2128'
                     {
                     match('\u2128'); 
 
                     }
                     break;
                 case 241 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2110:9: '\\u212a' .. '\\u212d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2111:9: '\\u212a' .. '\\u212d'
                     {
                     matchRange('\u212A','\u212D'); 
 
                     }
                     break;
                 case 242 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2111:9: '\\u212f' .. '\\u2131'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2112:9: '\\u212f' .. '\\u2131'
                     {
                     matchRange('\u212F','\u2131'); 
 
                     }
                     break;
                 case 243 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2112:9: '\\u2133' .. '\\u2139'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2113:9: '\\u2133' .. '\\u2139'
                     {
                     matchRange('\u2133','\u2139'); 
 
                     }
                     break;
                 case 244 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2113:9: '\\u213d' .. '\\u213f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2114:9: '\\u213d' .. '\\u213f'
                     {
                     matchRange('\u213D','\u213F'); 
 
                     }
                     break;
                 case 245 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2114:9: '\\u2145' .. '\\u2149'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2115:9: '\\u2145' .. '\\u2149'
                     {
                     matchRange('\u2145','\u2149'); 
 
                     }
                     break;
                 case 246 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2115:9: '\\u2160' .. '\\u2183'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2116:9: '\\u2160' .. '\\u2183'
                     {
                     matchRange('\u2160','\u2183'); 
 
                     }
                     break;
                 case 247 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2116:9: '\\u3005' .. '\\u3007'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2117:9: '\\u3005' .. '\\u3007'
                     {
                     matchRange('\u3005','\u3007'); 
 
                     }
                     break;
                 case 248 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2117:9: '\\u3021' .. '\\u3029'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2118:9: '\\u3021' .. '\\u3029'
                     {
                     matchRange('\u3021','\u3029'); 
 
                     }
                     break;
                 case 249 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2118:9: '\\u3031' .. '\\u3035'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2119:9: '\\u3031' .. '\\u3035'
                     {
                     matchRange('\u3031','\u3035'); 
 
                     }
                     break;
                 case 250 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2119:9: '\\u3038' .. '\\u303c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2120:9: '\\u3038' .. '\\u303c'
                     {
                     matchRange('\u3038','\u303C'); 
 
                     }
                     break;
                 case 251 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2120:9: '\\u3041' .. '\\u3096'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2121:9: '\\u3041' .. '\\u3096'
                     {
                     matchRange('\u3041','\u3096'); 
 
                     }
                     break;
                 case 252 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2121:9: '\\u309d' .. '\\u309f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2122:9: '\\u309d' .. '\\u309f'
                     {
                     matchRange('\u309D','\u309F'); 
 
                     }
                     break;
                 case 253 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2122:9: '\\u30a1' .. '\\u30ff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2123:9: '\\u30a1' .. '\\u30ff'
                     {
                     matchRange('\u30A1','\u30FF'); 
 
                     }
                     break;
                 case 254 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2123:9: '\\u3105' .. '\\u312c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2124:9: '\\u3105' .. '\\u312c'
                     {
                     matchRange('\u3105','\u312C'); 
 
                     }
                     break;
                 case 255 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2124:9: '\\u3131' .. '\\u318e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2125:9: '\\u3131' .. '\\u318e'
                     {
                     matchRange('\u3131','\u318E'); 
 
                     }
                     break;
                 case 256 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2125:9: '\\u31a0' .. '\\u31b7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2126:9: '\\u31a0' .. '\\u31b7'
                     {
                     matchRange('\u31A0','\u31B7'); 
 
                     }
                     break;
                 case 257 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2126:9: '\\u31f0' .. '\\u31ff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2127:9: '\\u31f0' .. '\\u31ff'
                     {
                     matchRange('\u31F0','\u31FF'); 
 
                     }
                     break;
                 case 258 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2127:9: '\\u3400' .. '\\u4db5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2128:9: '\\u3400' .. '\\u4db5'
                     {
                     matchRange('\u3400','\u4DB5'); 
 
                     }
                     break;
                 case 259 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2128:9: '\\u4e00' .. '\\u9fa5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2129:9: '\\u4e00' .. '\\u9fa5'
                     {
                     matchRange('\u4E00','\u9FA5'); 
 
                     }
                     break;
                 case 260 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2129:9: '\\ua000' .. '\\ua48c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2130:9: '\\ua000' .. '\\ua48c'
                     {
                     matchRange('\uA000','\uA48C'); 
 
                     }
                     break;
                 case 261 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2130:9: '\\uac00' .. '\\ud7a3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2131:9: '\\uac00' .. '\\ud7a3'
                     {
                     matchRange('\uAC00','\uD7A3'); 
 
                     }
                     break;
                 case 262 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2131:9: '\\uf900' .. '\\ufa2d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2132:9: '\\uf900' .. '\\ufa2d'
                     {
                     matchRange('\uF900','\uFA2D'); 
 
                     }
                     break;
                 case 263 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2132:9: '\\ufa30' .. '\\ufa6a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2133:9: '\\ufa30' .. '\\ufa6a'
                     {
                     matchRange('\uFA30','\uFA6A'); 
 
                     }
                     break;
                 case 264 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2133:9: '\\ufb00' .. '\\ufb06'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2134:9: '\\ufb00' .. '\\ufb06'
                     {
                     matchRange('\uFB00','\uFB06'); 
 
                     }
                     break;
                 case 265 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2134:9: '\\ufb13' .. '\\ufb17'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2135:9: '\\ufb13' .. '\\ufb17'
                     {
                     matchRange('\uFB13','\uFB17'); 
 
                     }
                     break;
                 case 266 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2135:9: '\\ufb1d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2136:9: '\\ufb1d'
                     {
                     match('\uFB1D'); 
 
                     }
                     break;
                 case 267 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2136:9: '\\ufb1f' .. '\\ufb28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2137:9: '\\ufb1f' .. '\\ufb28'
                     {
                     matchRange('\uFB1F','\uFB28'); 
 
                     }
                     break;
                 case 268 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2137:9: '\\ufb2a' .. '\\ufb36'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2138:9: '\\ufb2a' .. '\\ufb36'
                     {
                     matchRange('\uFB2A','\uFB36'); 
 
                     }
                     break;
                 case 269 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2138:9: '\\ufb38' .. '\\ufb3c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2139:9: '\\ufb38' .. '\\ufb3c'
                     {
                     matchRange('\uFB38','\uFB3C'); 
 
                     }
                     break;
                 case 270 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2139:9: '\\ufb3e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2140:9: '\\ufb3e'
                     {
                     match('\uFB3E'); 
 
                     }
                     break;
                 case 271 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2140:9: '\\ufb40' .. '\\ufb41'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2141:9: '\\ufb40' .. '\\ufb41'
                     {
                     matchRange('\uFB40','\uFB41'); 
 
                     }
                     break;
                 case 272 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2141:9: '\\ufb43' .. '\\ufb44'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2142:9: '\\ufb43' .. '\\ufb44'
                     {
                     matchRange('\uFB43','\uFB44'); 
 
                     }
                     break;
                 case 273 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2142:9: '\\ufb46' .. '\\ufbb1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2143:9: '\\ufb46' .. '\\ufbb1'
                     {
                     matchRange('\uFB46','\uFBB1'); 
 
                     }
                     break;
                 case 274 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2143:9: '\\ufbd3' .. '\\ufd3d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2144:9: '\\ufbd3' .. '\\ufd3d'
                     {
                     matchRange('\uFBD3','\uFD3D'); 
 
                     }
                     break;
                 case 275 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2144:9: '\\ufd50' .. '\\ufd8f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2145:9: '\\ufd50' .. '\\ufd8f'
                     {
                     matchRange('\uFD50','\uFD8F'); 
 
                     }
                     break;
                 case 276 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2145:9: '\\ufd92' .. '\\ufdc7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2146:9: '\\ufd92' .. '\\ufdc7'
                     {
                     matchRange('\uFD92','\uFDC7'); 
 
                     }
                     break;
                 case 277 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2146:9: '\\ufdf0' .. '\\ufdfc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2147:9: '\\ufdf0' .. '\\ufdfc'
                     {
                     matchRange('\uFDF0','\uFDFC'); 
 
                     }
                     break;
                 case 278 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2147:9: '\\ufe33' .. '\\ufe34'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2148:9: '\\ufe33' .. '\\ufe34'
                     {
                     matchRange('\uFE33','\uFE34'); 
 
                     }
                     break;
                 case 279 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2148:9: '\\ufe4d' .. '\\ufe4f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2149:9: '\\ufe4d' .. '\\ufe4f'
                     {
                     matchRange('\uFE4D','\uFE4F'); 
 
                     }
                     break;
                 case 280 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2149:9: '\\ufe69'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2150:9: '\\ufe69'
                     {
                     match('\uFE69'); 
 
                     }
                     break;
                 case 281 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2150:9: '\\ufe70' .. '\\ufe74'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2151:9: '\\ufe70' .. '\\ufe74'
                     {
                     matchRange('\uFE70','\uFE74'); 
 
                     }
                     break;
                 case 282 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2151:9: '\\ufe76' .. '\\ufefc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2152:9: '\\ufe76' .. '\\ufefc'
                     {
                     matchRange('\uFE76','\uFEFC'); 
 
                     }
                     break;
                 case 283 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2152:9: '\\uff04'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2153:9: '\\uff04'
                     {
                     match('\uFF04'); 
 
                     }
                     break;
                 case 284 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2153:9: '\\uff21' .. '\\uff3a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2154:9: '\\uff21' .. '\\uff3a'
                     {
                     matchRange('\uFF21','\uFF3A'); 
 
                     }
                     break;
                 case 285 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2154:9: '\\uff3f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2155:9: '\\uff3f'
                     {
                     match('\uFF3F'); 
 
                     }
                     break;
                 case 286 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2155:9: '\\uff41' .. '\\uff5a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2156:9: '\\uff41' .. '\\uff5a'
                     {
                     matchRange('\uFF41','\uFF5A'); 
 
                     }
                     break;
                 case 287 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2156:9: '\\uff65' .. '\\uffbe'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2157:9: '\\uff65' .. '\\uffbe'
                     {
                     matchRange('\uFF65','\uFFBE'); 
 
                     }
                     break;
                 case 288 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2157:9: '\\uffc2' .. '\\uffc7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2158:9: '\\uffc2' .. '\\uffc7'
                     {
                     matchRange('\uFFC2','\uFFC7'); 
 
                     }
                     break;
                 case 289 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2158:9: '\\uffca' .. '\\uffcf'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2159:9: '\\uffca' .. '\\uffcf'
                     {
                     matchRange('\uFFCA','\uFFCF'); 
 
                     }
                     break;
                 case 290 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2159:9: '\\uffd2' .. '\\uffd7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2160:9: '\\uffd2' .. '\\uffd7'
                     {
                     matchRange('\uFFD2','\uFFD7'); 
 
                     }
                     break;
                 case 291 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2160:9: '\\uffda' .. '\\uffdc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2161:9: '\\uffda' .. '\\uffdc'
                     {
                     matchRange('\uFFDA','\uFFDC'); 
 
                     }
                     break;
                 case 292 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2161:9: '\\uffe0' .. '\\uffe1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2162:9: '\\uffe0' .. '\\uffe1'
                     {
                     matchRange('\uFFE0','\uFFE1'); 
 
                     }
                     break;
                 case 293 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2162:9: '\\uffe5' .. '\\uffe6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2163:9: '\\uffe5' .. '\\uffe6'
                     {
                     matchRange('\uFFE5','\uFFE6'); 
 
                     }
                     break;
                 case 294 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2163:9: ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2164:9: ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' )
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2163:9: ( '\\ud800' .. '\\udbff' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2163:10: '\\ud800' .. '\\udbff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2164:9: ( '\\ud800' .. '\\udbff' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2164:10: '\\ud800' .. '\\udbff'
                     {
                     matchRange('\uD800','\uDBFF'); 
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2163:30: ( '\\udc00' .. '\\udfff' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2163:31: '\\udc00' .. '\\udfff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2164:30: ( '\\udc00' .. '\\udfff' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2164:31: '\\udc00' .. '\\udfff'
                     {
                     matchRange('\uDC00','\uDFFF'); 
 
@@ -6527,7 +6527,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "IdentifierPart"
     public final void mIdentifierPart() throws RecognitionException {
         try {
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2168:5: ( '\\u0000' .. '\\u0008' | '\\u000e' .. '\\u001b' | '\\u0024' | '\\u0030' .. '\\u0039' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u007f' .. '\\u009f' | '\\u00a2' .. '\\u00a5' | '\\u00aa' | '\\u00ad' | '\\u00b5' | '\\u00ba' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u0236' | '\\u0250' .. '\\u02c1' | '\\u02c6' .. '\\u02d1' | '\\u02e0' .. '\\u02e4' | '\\u02ee' | '\\u0300' .. '\\u0357' | '\\u035d' .. '\\u036f' | '\\u037a' | '\\u0386' | '\\u0388' .. '\\u038a' | '\\u038c' | '\\u038e' .. '\\u03a1' | '\\u03a3' .. '\\u03ce' | '\\u03d0' .. '\\u03f5' | '\\u03f7' .. '\\u03fb' | '\\u0400' .. '\\u0481' | '\\u0483' .. '\\u0486' | '\\u048a' .. '\\u04ce' | '\\u04d0' .. '\\u04f5' | '\\u04f8' .. '\\u04f9' | '\\u0500' .. '\\u050f' | '\\u0531' .. '\\u0556' | '\\u0559' | '\\u0561' .. '\\u0587' | '\\u0591' .. '\\u05a1' | '\\u05a3' .. '\\u05b9' | '\\u05bb' .. '\\u05bd' | '\\u05bf' | '\\u05c1' .. '\\u05c2' | '\\u05c4' | '\\u05d0' .. '\\u05ea' | '\\u05f0' .. '\\u05f2' | '\\u0600' .. '\\u0603' | '\\u0610' .. '\\u0615' | '\\u0621' .. '\\u063a' | '\\u0640' .. '\\u0658' | '\\u0660' .. '\\u0669' | '\\u066e' .. '\\u06d3' | '\\u06d5' .. '\\u06dd' | '\\u06df' .. '\\u06e8' | '\\u06ea' .. '\\u06fc' | '\\u06ff' | '\\u070f' .. '\\u074a' | '\\u074d' .. '\\u074f' | '\\u0780' .. '\\u07b1' | '\\u0901' .. '\\u0939' | '\\u093c' .. '\\u094d' | '\\u0950' .. '\\u0954' | '\\u0958' .. '\\u0963' | '\\u0966' .. '\\u096f' | '\\u0981' .. '\\u0983' | '\\u0985' .. '\\u098c' | '\\u098f' .. '\\u0990' | '\\u0993' .. '\\u09a8' | '\\u09aa' .. '\\u09b0' | '\\u09b2' | '\\u09b6' .. '\\u09b9' | '\\u09bc' .. '\\u09c4' | '\\u09c7' .. '\\u09c8' | '\\u09cb' .. '\\u09cd' | '\\u09d7' | '\\u09dc' .. '\\u09dd' | '\\u09df' .. '\\u09e3' | '\\u09e6' .. '\\u09f3' | '\\u0a01' .. '\\u0a03' | '\\u0a05' .. '\\u0a0a' | '\\u0a0f' .. '\\u0a10' | '\\u0a13' .. '\\u0a28' | '\\u0a2a' .. '\\u0a30' | '\\u0a32' .. '\\u0a33' | '\\u0a35' .. '\\u0a36' | '\\u0a38' .. '\\u0a39' | '\\u0a3c' | '\\u0a3e' .. '\\u0a42' | '\\u0a47' .. '\\u0a48' | '\\u0a4b' .. '\\u0a4d' | '\\u0a59' .. '\\u0a5c' | '\\u0a5e' | '\\u0a66' .. '\\u0a74' | '\\u0a81' .. '\\u0a83' | '\\u0a85' .. '\\u0a8d' | '\\u0a8f' .. '\\u0a91' | '\\u0a93' .. '\\u0aa8' | '\\u0aaa' .. '\\u0ab0' | '\\u0ab2' .. '\\u0ab3' | '\\u0ab5' .. '\\u0ab9' | '\\u0abc' .. '\\u0ac5' | '\\u0ac7' .. '\\u0ac9' | '\\u0acb' .. '\\u0acd' | '\\u0ad0' | '\\u0ae0' .. '\\u0ae3' | '\\u0ae6' .. '\\u0aef' | '\\u0af1' | '\\u0b01' .. '\\u0b03' | '\\u0b05' .. '\\u0b0c' | '\\u0b0f' .. '\\u0b10' | '\\u0b13' .. '\\u0b28' | '\\u0b2a' .. '\\u0b30' | '\\u0b32' .. '\\u0b33' | '\\u0b35' .. '\\u0b39' | '\\u0b3c' .. '\\u0b43' | '\\u0b47' .. '\\u0b48' | '\\u0b4b' .. '\\u0b4d' | '\\u0b56' .. '\\u0b57' | '\\u0b5c' .. '\\u0b5d' | '\\u0b5f' .. '\\u0b61' | '\\u0b66' .. '\\u0b6f' | '\\u0b71' | '\\u0b82' .. '\\u0b83' | '\\u0b85' .. '\\u0b8a' | '\\u0b8e' .. '\\u0b90' | '\\u0b92' .. '\\u0b95' | '\\u0b99' .. '\\u0b9a' | '\\u0b9c' | '\\u0b9e' .. '\\u0b9f' | '\\u0ba3' .. '\\u0ba4' | '\\u0ba8' .. '\\u0baa' | '\\u0bae' .. '\\u0bb5' | '\\u0bb7' .. '\\u0bb9' | '\\u0bbe' .. '\\u0bc2' | '\\u0bc6' .. '\\u0bc8' | '\\u0bca' .. '\\u0bcd' | '\\u0bd7' | '\\u0be7' .. '\\u0bef' | '\\u0bf9' | '\\u0c01' .. '\\u0c03' | '\\u0c05' .. '\\u0c0c' | '\\u0c0e' .. '\\u0c10' | '\\u0c12' .. '\\u0c28' | '\\u0c2a' .. '\\u0c33' | '\\u0c35' .. '\\u0c39' | '\\u0c3e' .. '\\u0c44' | '\\u0c46' .. '\\u0c48' | '\\u0c4a' .. '\\u0c4d' | '\\u0c55' .. '\\u0c56' | '\\u0c60' .. '\\u0c61' | '\\u0c66' .. '\\u0c6f' | '\\u0c82' .. '\\u0c83' | '\\u0c85' .. '\\u0c8c' | '\\u0c8e' .. '\\u0c90' | '\\u0c92' .. '\\u0ca8' | '\\u0caa' .. '\\u0cb3' | '\\u0cb5' .. '\\u0cb9' | '\\u0cbc' .. '\\u0cc4' | '\\u0cc6' .. '\\u0cc8' | '\\u0cca' .. '\\u0ccd' | '\\u0cd5' .. '\\u0cd6' | '\\u0cde' | '\\u0ce0' .. '\\u0ce1' | '\\u0ce6' .. '\\u0cef' | '\\u0d02' .. '\\u0d03' | '\\u0d05' .. '\\u0d0c' | '\\u0d0e' .. '\\u0d10' | '\\u0d12' .. '\\u0d28' | '\\u0d2a' .. '\\u0d39' | '\\u0d3e' .. '\\u0d43' | '\\u0d46' .. '\\u0d48' | '\\u0d4a' .. '\\u0d4d' | '\\u0d57' | '\\u0d60' .. '\\u0d61' | '\\u0d66' .. '\\u0d6f' | '\\u0d82' .. '\\u0d83' | '\\u0d85' .. '\\u0d96' | '\\u0d9a' .. '\\u0db1' | '\\u0db3' .. '\\u0dbb' | '\\u0dbd' | '\\u0dc0' .. '\\u0dc6' | '\\u0dca' | '\\u0dcf' .. '\\u0dd4' | '\\u0dd6' | '\\u0dd8' .. '\\u0ddf' | '\\u0df2' .. '\\u0df3' | '\\u0e01' .. '\\u0e3a' | '\\u0e3f' .. '\\u0e4e' | '\\u0e50' .. '\\u0e59' | '\\u0e81' .. '\\u0e82' | '\\u0e84' | '\\u0e87' .. '\\u0e88' | '\\u0e8a' | '\\u0e8d' | '\\u0e94' .. '\\u0e97' | '\\u0e99' .. '\\u0e9f' | '\\u0ea1' .. '\\u0ea3' | '\\u0ea5' | '\\u0ea7' | '\\u0eaa' .. '\\u0eab' | '\\u0ead' .. '\\u0eb9' | '\\u0ebb' .. '\\u0ebd' | '\\u0ec0' .. '\\u0ec4' | '\\u0ec6' | '\\u0ec8' .. '\\u0ecd' | '\\u0ed0' .. '\\u0ed9' | '\\u0edc' .. '\\u0edd' | '\\u0f00' | '\\u0f18' .. '\\u0f19' | '\\u0f20' .. '\\u0f29' | '\\u0f35' | '\\u0f37' | '\\u0f39' | '\\u0f3e' .. '\\u0f47' | '\\u0f49' .. '\\u0f6a' | '\\u0f71' .. '\\u0f84' | '\\u0f86' .. '\\u0f8b' | '\\u0f90' .. '\\u0f97' | '\\u0f99' .. '\\u0fbc' | '\\u0fc6' | '\\u1000' .. '\\u1021' | '\\u1023' .. '\\u1027' | '\\u1029' .. '\\u102a' | '\\u102c' .. '\\u1032' | '\\u1036' .. '\\u1039' | '\\u1040' .. '\\u1049' | '\\u1050' .. '\\u1059' | '\\u10a0' .. '\\u10c5' | '\\u10d0' .. '\\u10f8' | '\\u1100' .. '\\u1159' | '\\u115f' .. '\\u11a2' | '\\u11a8' .. '\\u11f9' | '\\u1200' .. '\\u1206' | '\\u1208' .. '\\u1246' | '\\u1248' | '\\u124a' .. '\\u124d' | '\\u1250' .. '\\u1256' | '\\u1258' | '\\u125a' .. '\\u125d' | '\\u1260' .. '\\u1286' | '\\u1288' | '\\u128a' .. '\\u128d' | '\\u1290' .. '\\u12ae' | '\\u12b0' | '\\u12b2' .. '\\u12b5' | '\\u12b8' .. '\\u12be' | '\\u12c0' | '\\u12c2' .. '\\u12c5' | '\\u12c8' .. '\\u12ce' | '\\u12d0' .. '\\u12d6' | '\\u12d8' .. '\\u12ee' | '\\u12f0' .. '\\u130e' | '\\u1310' | '\\u1312' .. '\\u1315' | '\\u1318' .. '\\u131e' | '\\u1320' .. '\\u1346' | '\\u1348' .. '\\u135a' | '\\u1369' .. '\\u1371' | '\\u13a0' .. '\\u13f4' | '\\u1401' .. '\\u166c' | '\\u166f' .. '\\u1676' | '\\u1681' .. '\\u169a' | '\\u16a0' .. '\\u16ea' | '\\u16ee' .. '\\u16f0' | '\\u1700' .. '\\u170c' | '\\u170e' .. '\\u1714' | '\\u1720' .. '\\u1734' | '\\u1740' .. '\\u1753' | '\\u1760' .. '\\u176c' | '\\u176e' .. '\\u1770' | '\\u1772' .. '\\u1773' | '\\u1780' .. '\\u17d3' | '\\u17d7' | '\\u17db' .. '\\u17dd' | '\\u17e0' .. '\\u17e9' | '\\u180b' .. '\\u180d' | '\\u1810' .. '\\u1819' | '\\u1820' .. '\\u1877' | '\\u1880' .. '\\u18a9' | '\\u1900' .. '\\u191c' | '\\u1920' .. '\\u192b' | '\\u1930' .. '\\u193b' | '\\u1946' .. '\\u196d' | '\\u1970' .. '\\u1974' | '\\u1d00' .. '\\u1d6b' | '\\u1e00' .. '\\u1e9b' | '\\u1ea0' .. '\\u1ef9' | '\\u1f00' .. '\\u1f15' | '\\u1f18' .. '\\u1f1d' | '\\u1f20' .. '\\u1f45' | '\\u1f48' .. '\\u1f4d' | '\\u1f50' .. '\\u1f57' | '\\u1f59' | '\\u1f5b' | '\\u1f5d' | '\\u1f5f' .. '\\u1f7d' | '\\u1f80' .. '\\u1fb4' | '\\u1fb6' .. '\\u1fbc' | '\\u1fbe' | '\\u1fc2' .. '\\u1fc4' | '\\u1fc6' .. '\\u1fcc' | '\\u1fd0' .. '\\u1fd3' | '\\u1fd6' .. '\\u1fdb' | '\\u1fe0' .. '\\u1fec' | '\\u1ff2' .. '\\u1ff4' | '\\u1ff6' .. '\\u1ffc' | '\\u200c' .. '\\u200f' | '\\u202a' .. '\\u202e' | '\\u203f' .. '\\u2040' | '\\u2054' | '\\u2060' .. '\\u2063' | '\\u206a' .. '\\u206f' | '\\u2071' | '\\u207f' | '\\u20a0' .. '\\u20b1' | '\\u20d0' .. '\\u20dc' | '\\u20e1' | '\\u20e5' .. '\\u20ea' | '\\u2102' | '\\u2107' | '\\u210a' .. '\\u2113' | '\\u2115' | '\\u2119' .. '\\u211d' | '\\u2124' | '\\u2126' | '\\u2128' | '\\u212a' .. '\\u212d' | '\\u212f' .. '\\u2131' | '\\u2133' .. '\\u2139' | '\\u213d' .. '\\u213f' | '\\u2145' .. '\\u2149' | '\\u2160' .. '\\u2183' | '\\u3005' .. '\\u3007' | '\\u3021' .. '\\u302f' | '\\u3031' .. '\\u3035' | '\\u3038' .. '\\u303c' | '\\u3041' .. '\\u3096' | '\\u3099' .. '\\u309a' | '\\u309d' .. '\\u309f' | '\\u30a1' .. '\\u30ff' | '\\u3105' .. '\\u312c' | '\\u3131' .. '\\u318e' | '\\u31a0' .. '\\u31b7' | '\\u31f0' .. '\\u31ff' | '\\u3400' .. '\\u4db5' | '\\u4e00' .. '\\u9fa5' | '\\ua000' .. '\\ua48c' | '\\uac00' .. '\\ud7a3' | '\\uf900' .. '\\ufa2d' | '\\ufa30' .. '\\ufa6a' | '\\ufb00' .. '\\ufb06' | '\\ufb13' .. '\\ufb17' | '\\ufb1d' .. '\\ufb28' | '\\ufb2a' .. '\\ufb36' | '\\ufb38' .. '\\ufb3c' | '\\ufb3e' | '\\ufb40' .. '\\ufb41' | '\\ufb43' .. '\\ufb44' | '\\ufb46' .. '\\ufbb1' | '\\ufbd3' .. '\\ufd3d' | '\\ufd50' .. '\\ufd8f' | '\\ufd92' .. '\\ufdc7' | '\\ufdf0' .. '\\ufdfc' | '\\ufe00' .. '\\ufe0f' | '\\ufe20' .. '\\ufe23' | '\\ufe33' .. '\\ufe34' | '\\ufe4d' .. '\\ufe4f' | '\\ufe69' | '\\ufe70' .. '\\ufe74' | '\\ufe76' .. '\\ufefc' | '\\ufeff' | '\\uff04' | '\\uff10' .. '\\uff19' | '\\uff21' .. '\\uff3a' | '\\uff3f' | '\\uff41' .. '\\uff5a' | '\\uff65' .. '\\uffbe' | '\\uffc2' .. '\\uffc7' | '\\uffca' .. '\\uffcf' | '\\uffd2' .. '\\uffd7' | '\\uffda' .. '\\uffdc' | '\\uffe0' .. '\\uffe1' | '\\uffe5' .. '\\uffe6' | '\\ufff9' .. '\\ufffb' | ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2169:5: ( '\\u0000' .. '\\u0008' | '\\u000e' .. '\\u001b' | '\\u0024' | '\\u0030' .. '\\u0039' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u007f' .. '\\u009f' | '\\u00a2' .. '\\u00a5' | '\\u00aa' | '\\u00ad' | '\\u00b5' | '\\u00ba' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u0236' | '\\u0250' .. '\\u02c1' | '\\u02c6' .. '\\u02d1' | '\\u02e0' .. '\\u02e4' | '\\u02ee' | '\\u0300' .. '\\u0357' | '\\u035d' .. '\\u036f' | '\\u037a' | '\\u0386' | '\\u0388' .. '\\u038a' | '\\u038c' | '\\u038e' .. '\\u03a1' | '\\u03a3' .. '\\u03ce' | '\\u03d0' .. '\\u03f5' | '\\u03f7' .. '\\u03fb' | '\\u0400' .. '\\u0481' | '\\u0483' .. '\\u0486' | '\\u048a' .. '\\u04ce' | '\\u04d0' .. '\\u04f5' | '\\u04f8' .. '\\u04f9' | '\\u0500' .. '\\u050f' | '\\u0531' .. '\\u0556' | '\\u0559' | '\\u0561' .. '\\u0587' | '\\u0591' .. '\\u05a1' | '\\u05a3' .. '\\u05b9' | '\\u05bb' .. '\\u05bd' | '\\u05bf' | '\\u05c1' .. '\\u05c2' | '\\u05c4' | '\\u05d0' .. '\\u05ea' | '\\u05f0' .. '\\u05f2' | '\\u0600' .. '\\u0603' | '\\u0610' .. '\\u0615' | '\\u0621' .. '\\u063a' | '\\u0640' .. '\\u0658' | '\\u0660' .. '\\u0669' | '\\u066e' .. '\\u06d3' | '\\u06d5' .. '\\u06dd' | '\\u06df' .. '\\u06e8' | '\\u06ea' .. '\\u06fc' | '\\u06ff' | '\\u070f' .. '\\u074a' | '\\u074d' .. '\\u074f' | '\\u0780' .. '\\u07b1' | '\\u0901' .. '\\u0939' | '\\u093c' .. '\\u094d' | '\\u0950' .. '\\u0954' | '\\u0958' .. '\\u0963' | '\\u0966' .. '\\u096f' | '\\u0981' .. '\\u0983' | '\\u0985' .. '\\u098c' | '\\u098f' .. '\\u0990' | '\\u0993' .. '\\u09a8' | '\\u09aa' .. '\\u09b0' | '\\u09b2' | '\\u09b6' .. '\\u09b9' | '\\u09bc' .. '\\u09c4' | '\\u09c7' .. '\\u09c8' | '\\u09cb' .. '\\u09cd' | '\\u09d7' | '\\u09dc' .. '\\u09dd' | '\\u09df' .. '\\u09e3' | '\\u09e6' .. '\\u09f3' | '\\u0a01' .. '\\u0a03' | '\\u0a05' .. '\\u0a0a' | '\\u0a0f' .. '\\u0a10' | '\\u0a13' .. '\\u0a28' | '\\u0a2a' .. '\\u0a30' | '\\u0a32' .. '\\u0a33' | '\\u0a35' .. '\\u0a36' | '\\u0a38' .. '\\u0a39' | '\\u0a3c' | '\\u0a3e' .. '\\u0a42' | '\\u0a47' .. '\\u0a48' | '\\u0a4b' .. '\\u0a4d' | '\\u0a59' .. '\\u0a5c' | '\\u0a5e' | '\\u0a66' .. '\\u0a74' | '\\u0a81' .. '\\u0a83' | '\\u0a85' .. '\\u0a8d' | '\\u0a8f' .. '\\u0a91' | '\\u0a93' .. '\\u0aa8' | '\\u0aaa' .. '\\u0ab0' | '\\u0ab2' .. '\\u0ab3' | '\\u0ab5' .. '\\u0ab9' | '\\u0abc' .. '\\u0ac5' | '\\u0ac7' .. '\\u0ac9' | '\\u0acb' .. '\\u0acd' | '\\u0ad0' | '\\u0ae0' .. '\\u0ae3' | '\\u0ae6' .. '\\u0aef' | '\\u0af1' | '\\u0b01' .. '\\u0b03' | '\\u0b05' .. '\\u0b0c' | '\\u0b0f' .. '\\u0b10' | '\\u0b13' .. '\\u0b28' | '\\u0b2a' .. '\\u0b30' | '\\u0b32' .. '\\u0b33' | '\\u0b35' .. '\\u0b39' | '\\u0b3c' .. '\\u0b43' | '\\u0b47' .. '\\u0b48' | '\\u0b4b' .. '\\u0b4d' | '\\u0b56' .. '\\u0b57' | '\\u0b5c' .. '\\u0b5d' | '\\u0b5f' .. '\\u0b61' | '\\u0b66' .. '\\u0b6f' | '\\u0b71' | '\\u0b82' .. '\\u0b83' | '\\u0b85' .. '\\u0b8a' | '\\u0b8e' .. '\\u0b90' | '\\u0b92' .. '\\u0b95' | '\\u0b99' .. '\\u0b9a' | '\\u0b9c' | '\\u0b9e' .. '\\u0b9f' | '\\u0ba3' .. '\\u0ba4' | '\\u0ba8' .. '\\u0baa' | '\\u0bae' .. '\\u0bb5' | '\\u0bb7' .. '\\u0bb9' | '\\u0bbe' .. '\\u0bc2' | '\\u0bc6' .. '\\u0bc8' | '\\u0bca' .. '\\u0bcd' | '\\u0bd7' | '\\u0be7' .. '\\u0bef' | '\\u0bf9' | '\\u0c01' .. '\\u0c03' | '\\u0c05' .. '\\u0c0c' | '\\u0c0e' .. '\\u0c10' | '\\u0c12' .. '\\u0c28' | '\\u0c2a' .. '\\u0c33' | '\\u0c35' .. '\\u0c39' | '\\u0c3e' .. '\\u0c44' | '\\u0c46' .. '\\u0c48' | '\\u0c4a' .. '\\u0c4d' | '\\u0c55' .. '\\u0c56' | '\\u0c60' .. '\\u0c61' | '\\u0c66' .. '\\u0c6f' | '\\u0c82' .. '\\u0c83' | '\\u0c85' .. '\\u0c8c' | '\\u0c8e' .. '\\u0c90' | '\\u0c92' .. '\\u0ca8' | '\\u0caa' .. '\\u0cb3' | '\\u0cb5' .. '\\u0cb9' | '\\u0cbc' .. '\\u0cc4' | '\\u0cc6' .. '\\u0cc8' | '\\u0cca' .. '\\u0ccd' | '\\u0cd5' .. '\\u0cd6' | '\\u0cde' | '\\u0ce0' .. '\\u0ce1' | '\\u0ce6' .. '\\u0cef' | '\\u0d02' .. '\\u0d03' | '\\u0d05' .. '\\u0d0c' | '\\u0d0e' .. '\\u0d10' | '\\u0d12' .. '\\u0d28' | '\\u0d2a' .. '\\u0d39' | '\\u0d3e' .. '\\u0d43' | '\\u0d46' .. '\\u0d48' | '\\u0d4a' .. '\\u0d4d' | '\\u0d57' | '\\u0d60' .. '\\u0d61' | '\\u0d66' .. '\\u0d6f' | '\\u0d82' .. '\\u0d83' | '\\u0d85' .. '\\u0d96' | '\\u0d9a' .. '\\u0db1' | '\\u0db3' .. '\\u0dbb' | '\\u0dbd' | '\\u0dc0' .. '\\u0dc6' | '\\u0dca' | '\\u0dcf' .. '\\u0dd4' | '\\u0dd6' | '\\u0dd8' .. '\\u0ddf' | '\\u0df2' .. '\\u0df3' | '\\u0e01' .. '\\u0e3a' | '\\u0e3f' .. '\\u0e4e' | '\\u0e50' .. '\\u0e59' | '\\u0e81' .. '\\u0e82' | '\\u0e84' | '\\u0e87' .. '\\u0e88' | '\\u0e8a' | '\\u0e8d' | '\\u0e94' .. '\\u0e97' | '\\u0e99' .. '\\u0e9f' | '\\u0ea1' .. '\\u0ea3' | '\\u0ea5' | '\\u0ea7' | '\\u0eaa' .. '\\u0eab' | '\\u0ead' .. '\\u0eb9' | '\\u0ebb' .. '\\u0ebd' | '\\u0ec0' .. '\\u0ec4' | '\\u0ec6' | '\\u0ec8' .. '\\u0ecd' | '\\u0ed0' .. '\\u0ed9' | '\\u0edc' .. '\\u0edd' | '\\u0f00' | '\\u0f18' .. '\\u0f19' | '\\u0f20' .. '\\u0f29' | '\\u0f35' | '\\u0f37' | '\\u0f39' | '\\u0f3e' .. '\\u0f47' | '\\u0f49' .. '\\u0f6a' | '\\u0f71' .. '\\u0f84' | '\\u0f86' .. '\\u0f8b' | '\\u0f90' .. '\\u0f97' | '\\u0f99' .. '\\u0fbc' | '\\u0fc6' | '\\u1000' .. '\\u1021' | '\\u1023' .. '\\u1027' | '\\u1029' .. '\\u102a' | '\\u102c' .. '\\u1032' | '\\u1036' .. '\\u1039' | '\\u1040' .. '\\u1049' | '\\u1050' .. '\\u1059' | '\\u10a0' .. '\\u10c5' | '\\u10d0' .. '\\u10f8' | '\\u1100' .. '\\u1159' | '\\u115f' .. '\\u11a2' | '\\u11a8' .. '\\u11f9' | '\\u1200' .. '\\u1206' | '\\u1208' .. '\\u1246' | '\\u1248' | '\\u124a' .. '\\u124d' | '\\u1250' .. '\\u1256' | '\\u1258' | '\\u125a' .. '\\u125d' | '\\u1260' .. '\\u1286' | '\\u1288' | '\\u128a' .. '\\u128d' | '\\u1290' .. '\\u12ae' | '\\u12b0' | '\\u12b2' .. '\\u12b5' | '\\u12b8' .. '\\u12be' | '\\u12c0' | '\\u12c2' .. '\\u12c5' | '\\u12c8' .. '\\u12ce' | '\\u12d0' .. '\\u12d6' | '\\u12d8' .. '\\u12ee' | '\\u12f0' .. '\\u130e' | '\\u1310' | '\\u1312' .. '\\u1315' | '\\u1318' .. '\\u131e' | '\\u1320' .. '\\u1346' | '\\u1348' .. '\\u135a' | '\\u1369' .. '\\u1371' | '\\u13a0' .. '\\u13f4' | '\\u1401' .. '\\u166c' | '\\u166f' .. '\\u1676' | '\\u1681' .. '\\u169a' | '\\u16a0' .. '\\u16ea' | '\\u16ee' .. '\\u16f0' | '\\u1700' .. '\\u170c' | '\\u170e' .. '\\u1714' | '\\u1720' .. '\\u1734' | '\\u1740' .. '\\u1753' | '\\u1760' .. '\\u176c' | '\\u176e' .. '\\u1770' | '\\u1772' .. '\\u1773' | '\\u1780' .. '\\u17d3' | '\\u17d7' | '\\u17db' .. '\\u17dd' | '\\u17e0' .. '\\u17e9' | '\\u180b' .. '\\u180d' | '\\u1810' .. '\\u1819' | '\\u1820' .. '\\u1877' | '\\u1880' .. '\\u18a9' | '\\u1900' .. '\\u191c' | '\\u1920' .. '\\u192b' | '\\u1930' .. '\\u193b' | '\\u1946' .. '\\u196d' | '\\u1970' .. '\\u1974' | '\\u1d00' .. '\\u1d6b' | '\\u1e00' .. '\\u1e9b' | '\\u1ea0' .. '\\u1ef9' | '\\u1f00' .. '\\u1f15' | '\\u1f18' .. '\\u1f1d' | '\\u1f20' .. '\\u1f45' | '\\u1f48' .. '\\u1f4d' | '\\u1f50' .. '\\u1f57' | '\\u1f59' | '\\u1f5b' | '\\u1f5d' | '\\u1f5f' .. '\\u1f7d' | '\\u1f80' .. '\\u1fb4' | '\\u1fb6' .. '\\u1fbc' | '\\u1fbe' | '\\u1fc2' .. '\\u1fc4' | '\\u1fc6' .. '\\u1fcc' | '\\u1fd0' .. '\\u1fd3' | '\\u1fd6' .. '\\u1fdb' | '\\u1fe0' .. '\\u1fec' | '\\u1ff2' .. '\\u1ff4' | '\\u1ff6' .. '\\u1ffc' | '\\u200c' .. '\\u200f' | '\\u202a' .. '\\u202e' | '\\u203f' .. '\\u2040' | '\\u2054' | '\\u2060' .. '\\u2063' | '\\u206a' .. '\\u206f' | '\\u2071' | '\\u207f' | '\\u20a0' .. '\\u20b1' | '\\u20d0' .. '\\u20dc' | '\\u20e1' | '\\u20e5' .. '\\u20ea' | '\\u2102' | '\\u2107' | '\\u210a' .. '\\u2113' | '\\u2115' | '\\u2119' .. '\\u211d' | '\\u2124' | '\\u2126' | '\\u2128' | '\\u212a' .. '\\u212d' | '\\u212f' .. '\\u2131' | '\\u2133' .. '\\u2139' | '\\u213d' .. '\\u213f' | '\\u2145' .. '\\u2149' | '\\u2160' .. '\\u2183' | '\\u3005' .. '\\u3007' | '\\u3021' .. '\\u302f' | '\\u3031' .. '\\u3035' | '\\u3038' .. '\\u303c' | '\\u3041' .. '\\u3096' | '\\u3099' .. '\\u309a' | '\\u309d' .. '\\u309f' | '\\u30a1' .. '\\u30ff' | '\\u3105' .. '\\u312c' | '\\u3131' .. '\\u318e' | '\\u31a0' .. '\\u31b7' | '\\u31f0' .. '\\u31ff' | '\\u3400' .. '\\u4db5' | '\\u4e00' .. '\\u9fa5' | '\\ua000' .. '\\ua48c' | '\\uac00' .. '\\ud7a3' | '\\uf900' .. '\\ufa2d' | '\\ufa30' .. '\\ufa6a' | '\\ufb00' .. '\\ufb06' | '\\ufb13' .. '\\ufb17' | '\\ufb1d' .. '\\ufb28' | '\\ufb2a' .. '\\ufb36' | '\\ufb38' .. '\\ufb3c' | '\\ufb3e' | '\\ufb40' .. '\\ufb41' | '\\ufb43' .. '\\ufb44' | '\\ufb46' .. '\\ufbb1' | '\\ufbd3' .. '\\ufd3d' | '\\ufd50' .. '\\ufd8f' | '\\ufd92' .. '\\ufdc7' | '\\ufdf0' .. '\\ufdfc' | '\\ufe00' .. '\\ufe0f' | '\\ufe20' .. '\\ufe23' | '\\ufe33' .. '\\ufe34' | '\\ufe4d' .. '\\ufe4f' | '\\ufe69' | '\\ufe70' .. '\\ufe74' | '\\ufe76' .. '\\ufefc' | '\\ufeff' | '\\uff04' | '\\uff10' .. '\\uff19' | '\\uff21' .. '\\uff3a' | '\\uff3f' | '\\uff41' .. '\\uff5a' | '\\uff65' .. '\\uffbe' | '\\uffc2' .. '\\uffc7' | '\\uffca' .. '\\uffcf' | '\\uffd2' .. '\\uffd7' | '\\uffda' .. '\\uffdc' | '\\uffe0' .. '\\uffe1' | '\\uffe5' .. '\\uffe6' | '\\ufff9' .. '\\ufffb' | ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' ) )
             int alt32=386;
             int LA32_0 = input.LA(1);
 
@@ -7697,2712 +7697,2712 @@ public class JavaLexer extends Lexer {
             }
             switch (alt32) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2168:9: '\\u0000' .. '\\u0008'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2169:9: '\\u0000' .. '\\u0008'
                     {
                     matchRange('\u0000','\b'); 
 
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2169:9: '\\u000e' .. '\\u001b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2170:9: '\\u000e' .. '\\u001b'
                     {
                     matchRange('\u000E','\u001B'); 
 
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2170:9: '\\u0024'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2171:9: '\\u0024'
                     {
                     match('$'); 
 
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2171:9: '\\u0030' .. '\\u0039'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2172:9: '\\u0030' .. '\\u0039'
                     {
                     matchRange('0','9'); 
 
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2172:9: '\\u0041' .. '\\u005a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2173:9: '\\u0041' .. '\\u005a'
                     {
                     matchRange('A','Z'); 
 
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2173:9: '\\u005f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2174:9: '\\u005f'
                     {
                     match('_'); 
 
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2174:9: '\\u0061' .. '\\u007a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2175:9: '\\u0061' .. '\\u007a'
                     {
                     matchRange('a','z'); 
 
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2175:9: '\\u007f' .. '\\u009f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2176:9: '\\u007f' .. '\\u009f'
                     {
                     matchRange('\u007F','\u009F'); 
 
                     }
                     break;
                 case 9 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2176:9: '\\u00a2' .. '\\u00a5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2177:9: '\\u00a2' .. '\\u00a5'
                     {
                     matchRange('\u00A2','\u00A5'); 
 
                     }
                     break;
                 case 10 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2177:9: '\\u00aa'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2178:9: '\\u00aa'
                     {
                     match('\u00AA'); 
 
                     }
                     break;
                 case 11 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2178:9: '\\u00ad'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2179:9: '\\u00ad'
                     {
                     match('\u00AD'); 
 
                     }
                     break;
                 case 12 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2179:9: '\\u00b5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2180:9: '\\u00b5'
                     {
                     match('\u00B5'); 
 
                     }
                     break;
                 case 13 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2180:9: '\\u00ba'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2181:9: '\\u00ba'
                     {
                     match('\u00BA'); 
 
                     }
                     break;
                 case 14 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2181:9: '\\u00c0' .. '\\u00d6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2182:9: '\\u00c0' .. '\\u00d6'
                     {
                     matchRange('\u00C0','\u00D6'); 
 
                     }
                     break;
                 case 15 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2182:9: '\\u00d8' .. '\\u00f6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2183:9: '\\u00d8' .. '\\u00f6'
                     {
                     matchRange('\u00D8','\u00F6'); 
 
                     }
                     break;
                 case 16 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2183:9: '\\u00f8' .. '\\u0236'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2184:9: '\\u00f8' .. '\\u0236'
                     {
                     matchRange('\u00F8','\u0236'); 
 
                     }
                     break;
                 case 17 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2184:9: '\\u0250' .. '\\u02c1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2185:9: '\\u0250' .. '\\u02c1'
                     {
                     matchRange('\u0250','\u02C1'); 
 
                     }
                     break;
                 case 18 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2185:9: '\\u02c6' .. '\\u02d1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2186:9: '\\u02c6' .. '\\u02d1'
                     {
                     matchRange('\u02C6','\u02D1'); 
 
                     }
                     break;
                 case 19 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2186:9: '\\u02e0' .. '\\u02e4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2187:9: '\\u02e0' .. '\\u02e4'
                     {
                     matchRange('\u02E0','\u02E4'); 
 
                     }
                     break;
                 case 20 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2187:9: '\\u02ee'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2188:9: '\\u02ee'
                     {
                     match('\u02EE'); 
 
                     }
                     break;
                 case 21 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2188:9: '\\u0300' .. '\\u0357'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2189:9: '\\u0300' .. '\\u0357'
                     {
                     matchRange('\u0300','\u0357'); 
 
                     }
                     break;
                 case 22 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2189:9: '\\u035d' .. '\\u036f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2190:9: '\\u035d' .. '\\u036f'
                     {
                     matchRange('\u035D','\u036F'); 
 
                     }
                     break;
                 case 23 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2190:9: '\\u037a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2191:9: '\\u037a'
                     {
                     match('\u037A'); 
 
                     }
                     break;
                 case 24 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2191:9: '\\u0386'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2192:9: '\\u0386'
                     {
                     match('\u0386'); 
 
                     }
                     break;
                 case 25 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2192:9: '\\u0388' .. '\\u038a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2193:9: '\\u0388' .. '\\u038a'
                     {
                     matchRange('\u0388','\u038A'); 
 
                     }
                     break;
                 case 26 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2193:9: '\\u038c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2194:9: '\\u038c'
                     {
                     match('\u038C'); 
 
                     }
                     break;
                 case 27 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2194:9: '\\u038e' .. '\\u03a1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2195:9: '\\u038e' .. '\\u03a1'
                     {
                     matchRange('\u038E','\u03A1'); 
 
                     }
                     break;
                 case 28 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2195:9: '\\u03a3' .. '\\u03ce'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2196:9: '\\u03a3' .. '\\u03ce'
                     {
                     matchRange('\u03A3','\u03CE'); 
 
                     }
                     break;
                 case 29 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2196:9: '\\u03d0' .. '\\u03f5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2197:9: '\\u03d0' .. '\\u03f5'
                     {
                     matchRange('\u03D0','\u03F5'); 
 
                     }
                     break;
                 case 30 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2197:9: '\\u03f7' .. '\\u03fb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2198:9: '\\u03f7' .. '\\u03fb'
                     {
                     matchRange('\u03F7','\u03FB'); 
 
                     }
                     break;
                 case 31 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2198:9: '\\u0400' .. '\\u0481'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2199:9: '\\u0400' .. '\\u0481'
                     {
                     matchRange('\u0400','\u0481'); 
 
                     }
                     break;
                 case 32 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2199:9: '\\u0483' .. '\\u0486'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2200:9: '\\u0483' .. '\\u0486'
                     {
                     matchRange('\u0483','\u0486'); 
 
                     }
                     break;
                 case 33 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2200:9: '\\u048a' .. '\\u04ce'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2201:9: '\\u048a' .. '\\u04ce'
                     {
                     matchRange('\u048A','\u04CE'); 
 
                     }
                     break;
                 case 34 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2201:9: '\\u04d0' .. '\\u04f5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2202:9: '\\u04d0' .. '\\u04f5'
                     {
                     matchRange('\u04D0','\u04F5'); 
 
                     }
                     break;
                 case 35 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2202:9: '\\u04f8' .. '\\u04f9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2203:9: '\\u04f8' .. '\\u04f9'
                     {
                     matchRange('\u04F8','\u04F9'); 
 
                     }
                     break;
                 case 36 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2203:9: '\\u0500' .. '\\u050f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2204:9: '\\u0500' .. '\\u050f'
                     {
                     matchRange('\u0500','\u050F'); 
 
                     }
                     break;
                 case 37 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2204:9: '\\u0531' .. '\\u0556'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2205:9: '\\u0531' .. '\\u0556'
                     {
                     matchRange('\u0531','\u0556'); 
 
                     }
                     break;
                 case 38 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2205:9: '\\u0559'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2206:9: '\\u0559'
                     {
                     match('\u0559'); 
 
                     }
                     break;
                 case 39 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2206:9: '\\u0561' .. '\\u0587'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2207:9: '\\u0561' .. '\\u0587'
                     {
                     matchRange('\u0561','\u0587'); 
 
                     }
                     break;
                 case 40 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2207:9: '\\u0591' .. '\\u05a1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2208:9: '\\u0591' .. '\\u05a1'
                     {
                     matchRange('\u0591','\u05A1'); 
 
                     }
                     break;
                 case 41 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2208:9: '\\u05a3' .. '\\u05b9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2209:9: '\\u05a3' .. '\\u05b9'
                     {
                     matchRange('\u05A3','\u05B9'); 
 
                     }
                     break;
                 case 42 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2209:9: '\\u05bb' .. '\\u05bd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2210:9: '\\u05bb' .. '\\u05bd'
                     {
                     matchRange('\u05BB','\u05BD'); 
 
                     }
                     break;
                 case 43 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2210:9: '\\u05bf'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2211:9: '\\u05bf'
                     {
                     match('\u05BF'); 
 
                     }
                     break;
                 case 44 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2211:9: '\\u05c1' .. '\\u05c2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2212:9: '\\u05c1' .. '\\u05c2'
                     {
                     matchRange('\u05C1','\u05C2'); 
 
                     }
                     break;
                 case 45 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2212:9: '\\u05c4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2213:9: '\\u05c4'
                     {
                     match('\u05C4'); 
 
                     }
                     break;
                 case 46 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2213:9: '\\u05d0' .. '\\u05ea'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2214:9: '\\u05d0' .. '\\u05ea'
                     {
                     matchRange('\u05D0','\u05EA'); 
 
                     }
                     break;
                 case 47 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2214:9: '\\u05f0' .. '\\u05f2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2215:9: '\\u05f0' .. '\\u05f2'
                     {
                     matchRange('\u05F0','\u05F2'); 
 
                     }
                     break;
                 case 48 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2215:9: '\\u0600' .. '\\u0603'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2216:9: '\\u0600' .. '\\u0603'
                     {
                     matchRange('\u0600','\u0603'); 
 
                     }
                     break;
                 case 49 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2216:9: '\\u0610' .. '\\u0615'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2217:9: '\\u0610' .. '\\u0615'
                     {
                     matchRange('\u0610','\u0615'); 
 
                     }
                     break;
                 case 50 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2217:9: '\\u0621' .. '\\u063a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2218:9: '\\u0621' .. '\\u063a'
                     {
                     matchRange('\u0621','\u063A'); 
 
                     }
                     break;
                 case 51 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2218:9: '\\u0640' .. '\\u0658'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2219:9: '\\u0640' .. '\\u0658'
                     {
                     matchRange('\u0640','\u0658'); 
 
                     }
                     break;
                 case 52 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2219:9: '\\u0660' .. '\\u0669'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2220:9: '\\u0660' .. '\\u0669'
                     {
                     matchRange('\u0660','\u0669'); 
 
                     }
                     break;
                 case 53 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2220:9: '\\u066e' .. '\\u06d3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2221:9: '\\u066e' .. '\\u06d3'
                     {
                     matchRange('\u066E','\u06D3'); 
 
                     }
                     break;
                 case 54 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2221:9: '\\u06d5' .. '\\u06dd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2222:9: '\\u06d5' .. '\\u06dd'
                     {
                     matchRange('\u06D5','\u06DD'); 
 
                     }
                     break;
                 case 55 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2222:9: '\\u06df' .. '\\u06e8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2223:9: '\\u06df' .. '\\u06e8'
                     {
                     matchRange('\u06DF','\u06E8'); 
 
                     }
                     break;
                 case 56 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2223:9: '\\u06ea' .. '\\u06fc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2224:9: '\\u06ea' .. '\\u06fc'
                     {
                     matchRange('\u06EA','\u06FC'); 
 
                     }
                     break;
                 case 57 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2224:9: '\\u06ff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2225:9: '\\u06ff'
                     {
                     match('\u06FF'); 
 
                     }
                     break;
                 case 58 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2225:9: '\\u070f' .. '\\u074a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2226:9: '\\u070f' .. '\\u074a'
                     {
                     matchRange('\u070F','\u074A'); 
 
                     }
                     break;
                 case 59 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2226:9: '\\u074d' .. '\\u074f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2227:9: '\\u074d' .. '\\u074f'
                     {
                     matchRange('\u074D','\u074F'); 
 
                     }
                     break;
                 case 60 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2227:9: '\\u0780' .. '\\u07b1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2228:9: '\\u0780' .. '\\u07b1'
                     {
                     matchRange('\u0780','\u07B1'); 
 
                     }
                     break;
                 case 61 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2228:9: '\\u0901' .. '\\u0939'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2229:9: '\\u0901' .. '\\u0939'
                     {
                     matchRange('\u0901','\u0939'); 
 
                     }
                     break;
                 case 62 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2229:9: '\\u093c' .. '\\u094d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2230:9: '\\u093c' .. '\\u094d'
                     {
                     matchRange('\u093C','\u094D'); 
 
                     }
                     break;
                 case 63 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2230:9: '\\u0950' .. '\\u0954'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2231:9: '\\u0950' .. '\\u0954'
                     {
                     matchRange('\u0950','\u0954'); 
 
                     }
                     break;
                 case 64 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2231:9: '\\u0958' .. '\\u0963'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2232:9: '\\u0958' .. '\\u0963'
                     {
                     matchRange('\u0958','\u0963'); 
 
                     }
                     break;
                 case 65 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2232:9: '\\u0966' .. '\\u096f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2233:9: '\\u0966' .. '\\u096f'
                     {
                     matchRange('\u0966','\u096F'); 
 
                     }
                     break;
                 case 66 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2233:9: '\\u0981' .. '\\u0983'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2234:9: '\\u0981' .. '\\u0983'
                     {
                     matchRange('\u0981','\u0983'); 
 
                     }
                     break;
                 case 67 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2234:9: '\\u0985' .. '\\u098c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2235:9: '\\u0985' .. '\\u098c'
                     {
                     matchRange('\u0985','\u098C'); 
 
                     }
                     break;
                 case 68 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2235:9: '\\u098f' .. '\\u0990'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2236:9: '\\u098f' .. '\\u0990'
                     {
                     matchRange('\u098F','\u0990'); 
 
                     }
                     break;
                 case 69 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2236:9: '\\u0993' .. '\\u09a8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2237:9: '\\u0993' .. '\\u09a8'
                     {
                     matchRange('\u0993','\u09A8'); 
 
                     }
                     break;
                 case 70 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2237:9: '\\u09aa' .. '\\u09b0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2238:9: '\\u09aa' .. '\\u09b0'
                     {
                     matchRange('\u09AA','\u09B0'); 
 
                     }
                     break;
                 case 71 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2238:9: '\\u09b2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2239:9: '\\u09b2'
                     {
                     match('\u09B2'); 
 
                     }
                     break;
                 case 72 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2239:9: '\\u09b6' .. '\\u09b9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2240:9: '\\u09b6' .. '\\u09b9'
                     {
                     matchRange('\u09B6','\u09B9'); 
 
                     }
                     break;
                 case 73 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2240:9: '\\u09bc' .. '\\u09c4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2241:9: '\\u09bc' .. '\\u09c4'
                     {
                     matchRange('\u09BC','\u09C4'); 
 
                     }
                     break;
                 case 74 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2241:9: '\\u09c7' .. '\\u09c8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2242:9: '\\u09c7' .. '\\u09c8'
                     {
                     matchRange('\u09C7','\u09C8'); 
 
                     }
                     break;
                 case 75 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2242:9: '\\u09cb' .. '\\u09cd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2243:9: '\\u09cb' .. '\\u09cd'
                     {
                     matchRange('\u09CB','\u09CD'); 
 
                     }
                     break;
                 case 76 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2243:9: '\\u09d7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2244:9: '\\u09d7'
                     {
                     match('\u09D7'); 
 
                     }
                     break;
                 case 77 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2244:9: '\\u09dc' .. '\\u09dd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2245:9: '\\u09dc' .. '\\u09dd'
                     {
                     matchRange('\u09DC','\u09DD'); 
 
                     }
                     break;
                 case 78 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2245:9: '\\u09df' .. '\\u09e3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2246:9: '\\u09df' .. '\\u09e3'
                     {
                     matchRange('\u09DF','\u09E3'); 
 
                     }
                     break;
                 case 79 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2246:9: '\\u09e6' .. '\\u09f3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2247:9: '\\u09e6' .. '\\u09f3'
                     {
                     matchRange('\u09E6','\u09F3'); 
 
                     }
                     break;
                 case 80 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2247:9: '\\u0a01' .. '\\u0a03'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2248:9: '\\u0a01' .. '\\u0a03'
                     {
                     matchRange('\u0A01','\u0A03'); 
 
                     }
                     break;
                 case 81 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2248:9: '\\u0a05' .. '\\u0a0a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2249:9: '\\u0a05' .. '\\u0a0a'
                     {
                     matchRange('\u0A05','\u0A0A'); 
 
                     }
                     break;
                 case 82 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2249:9: '\\u0a0f' .. '\\u0a10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2250:9: '\\u0a0f' .. '\\u0a10'
                     {
                     matchRange('\u0A0F','\u0A10'); 
 
                     }
                     break;
                 case 83 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2250:9: '\\u0a13' .. '\\u0a28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2251:9: '\\u0a13' .. '\\u0a28'
                     {
                     matchRange('\u0A13','\u0A28'); 
 
                     }
                     break;
                 case 84 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2251:9: '\\u0a2a' .. '\\u0a30'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2252:9: '\\u0a2a' .. '\\u0a30'
                     {
                     matchRange('\u0A2A','\u0A30'); 
 
                     }
                     break;
                 case 85 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2252:9: '\\u0a32' .. '\\u0a33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2253:9: '\\u0a32' .. '\\u0a33'
                     {
                     matchRange('\u0A32','\u0A33'); 
 
                     }
                     break;
                 case 86 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2253:9: '\\u0a35' .. '\\u0a36'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2254:9: '\\u0a35' .. '\\u0a36'
                     {
                     matchRange('\u0A35','\u0A36'); 
 
                     }
                     break;
                 case 87 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2254:9: '\\u0a38' .. '\\u0a39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2255:9: '\\u0a38' .. '\\u0a39'
                     {
                     matchRange('\u0A38','\u0A39'); 
 
                     }
                     break;
                 case 88 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2255:9: '\\u0a3c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2256:9: '\\u0a3c'
                     {
                     match('\u0A3C'); 
 
                     }
                     break;
                 case 89 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2256:9: '\\u0a3e' .. '\\u0a42'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2257:9: '\\u0a3e' .. '\\u0a42'
                     {
                     matchRange('\u0A3E','\u0A42'); 
 
                     }
                     break;
                 case 90 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2257:9: '\\u0a47' .. '\\u0a48'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2258:9: '\\u0a47' .. '\\u0a48'
                     {
                     matchRange('\u0A47','\u0A48'); 
 
                     }
                     break;
                 case 91 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2258:9: '\\u0a4b' .. '\\u0a4d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2259:9: '\\u0a4b' .. '\\u0a4d'
                     {
                     matchRange('\u0A4B','\u0A4D'); 
 
                     }
                     break;
                 case 92 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2259:9: '\\u0a59' .. '\\u0a5c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2260:9: '\\u0a59' .. '\\u0a5c'
                     {
                     matchRange('\u0A59','\u0A5C'); 
 
                     }
                     break;
                 case 93 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2260:9: '\\u0a5e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2261:9: '\\u0a5e'
                     {
                     match('\u0A5E'); 
 
                     }
                     break;
                 case 94 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2261:9: '\\u0a66' .. '\\u0a74'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2262:9: '\\u0a66' .. '\\u0a74'
                     {
                     matchRange('\u0A66','\u0A74'); 
 
                     }
                     break;
                 case 95 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2262:9: '\\u0a81' .. '\\u0a83'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2263:9: '\\u0a81' .. '\\u0a83'
                     {
                     matchRange('\u0A81','\u0A83'); 
 
                     }
                     break;
                 case 96 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2263:9: '\\u0a85' .. '\\u0a8d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2264:9: '\\u0a85' .. '\\u0a8d'
                     {
                     matchRange('\u0A85','\u0A8D'); 
 
                     }
                     break;
                 case 97 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2264:9: '\\u0a8f' .. '\\u0a91'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2265:9: '\\u0a8f' .. '\\u0a91'
                     {
                     matchRange('\u0A8F','\u0A91'); 
 
                     }
                     break;
                 case 98 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2265:9: '\\u0a93' .. '\\u0aa8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2266:9: '\\u0a93' .. '\\u0aa8'
                     {
                     matchRange('\u0A93','\u0AA8'); 
 
                     }
                     break;
                 case 99 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2266:9: '\\u0aaa' .. '\\u0ab0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2267:9: '\\u0aaa' .. '\\u0ab0'
                     {
                     matchRange('\u0AAA','\u0AB0'); 
 
                     }
                     break;
                 case 100 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2267:9: '\\u0ab2' .. '\\u0ab3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2268:9: '\\u0ab2' .. '\\u0ab3'
                     {
                     matchRange('\u0AB2','\u0AB3'); 
 
                     }
                     break;
                 case 101 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2268:9: '\\u0ab5' .. '\\u0ab9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2269:9: '\\u0ab5' .. '\\u0ab9'
                     {
                     matchRange('\u0AB5','\u0AB9'); 
 
                     }
                     break;
                 case 102 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2269:9: '\\u0abc' .. '\\u0ac5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2270:9: '\\u0abc' .. '\\u0ac5'
                     {
                     matchRange('\u0ABC','\u0AC5'); 
 
                     }
                     break;
                 case 103 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2270:9: '\\u0ac7' .. '\\u0ac9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2271:9: '\\u0ac7' .. '\\u0ac9'
                     {
                     matchRange('\u0AC7','\u0AC9'); 
 
                     }
                     break;
                 case 104 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2271:9: '\\u0acb' .. '\\u0acd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2272:9: '\\u0acb' .. '\\u0acd'
                     {
                     matchRange('\u0ACB','\u0ACD'); 
 
                     }
                     break;
                 case 105 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2272:9: '\\u0ad0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2273:9: '\\u0ad0'
                     {
                     match('\u0AD0'); 
 
                     }
                     break;
                 case 106 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2273:9: '\\u0ae0' .. '\\u0ae3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2274:9: '\\u0ae0' .. '\\u0ae3'
                     {
                     matchRange('\u0AE0','\u0AE3'); 
 
                     }
                     break;
                 case 107 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2274:9: '\\u0ae6' .. '\\u0aef'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2275:9: '\\u0ae6' .. '\\u0aef'
                     {
                     matchRange('\u0AE6','\u0AEF'); 
 
                     }
                     break;
                 case 108 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2275:9: '\\u0af1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2276:9: '\\u0af1'
                     {
                     match('\u0AF1'); 
 
                     }
                     break;
                 case 109 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2276:9: '\\u0b01' .. '\\u0b03'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2277:9: '\\u0b01' .. '\\u0b03'
                     {
                     matchRange('\u0B01','\u0B03'); 
 
                     }
                     break;
                 case 110 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2277:9: '\\u0b05' .. '\\u0b0c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2278:9: '\\u0b05' .. '\\u0b0c'
                     {
                     matchRange('\u0B05','\u0B0C'); 
 
                     }
                     break;
                 case 111 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2278:9: '\\u0b0f' .. '\\u0b10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2279:9: '\\u0b0f' .. '\\u0b10'
                     {
                     matchRange('\u0B0F','\u0B10'); 
 
                     }
                     break;
                 case 112 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2279:9: '\\u0b13' .. '\\u0b28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2280:9: '\\u0b13' .. '\\u0b28'
                     {
                     matchRange('\u0B13','\u0B28'); 
 
                     }
                     break;
                 case 113 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2280:9: '\\u0b2a' .. '\\u0b30'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2281:9: '\\u0b2a' .. '\\u0b30'
                     {
                     matchRange('\u0B2A','\u0B30'); 
 
                     }
                     break;
                 case 114 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2281:9: '\\u0b32' .. '\\u0b33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2282:9: '\\u0b32' .. '\\u0b33'
                     {
                     matchRange('\u0B32','\u0B33'); 
 
                     }
                     break;
                 case 115 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2282:9: '\\u0b35' .. '\\u0b39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2283:9: '\\u0b35' .. '\\u0b39'
                     {
                     matchRange('\u0B35','\u0B39'); 
 
                     }
                     break;
                 case 116 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2283:9: '\\u0b3c' .. '\\u0b43'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2284:9: '\\u0b3c' .. '\\u0b43'
                     {
                     matchRange('\u0B3C','\u0B43'); 
 
                     }
                     break;
                 case 117 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2284:9: '\\u0b47' .. '\\u0b48'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2285:9: '\\u0b47' .. '\\u0b48'
                     {
                     matchRange('\u0B47','\u0B48'); 
 
                     }
                     break;
                 case 118 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2285:9: '\\u0b4b' .. '\\u0b4d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2286:9: '\\u0b4b' .. '\\u0b4d'
                     {
                     matchRange('\u0B4B','\u0B4D'); 
 
                     }
                     break;
                 case 119 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2286:9: '\\u0b56' .. '\\u0b57'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2287:9: '\\u0b56' .. '\\u0b57'
                     {
                     matchRange('\u0B56','\u0B57'); 
 
                     }
                     break;
                 case 120 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2287:9: '\\u0b5c' .. '\\u0b5d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2288:9: '\\u0b5c' .. '\\u0b5d'
                     {
                     matchRange('\u0B5C','\u0B5D'); 
 
                     }
                     break;
                 case 121 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2288:9: '\\u0b5f' .. '\\u0b61'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2289:9: '\\u0b5f' .. '\\u0b61'
                     {
                     matchRange('\u0B5F','\u0B61'); 
 
                     }
                     break;
                 case 122 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2289:9: '\\u0b66' .. '\\u0b6f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2290:9: '\\u0b66' .. '\\u0b6f'
                     {
                     matchRange('\u0B66','\u0B6F'); 
 
                     }
                     break;
                 case 123 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2290:9: '\\u0b71'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2291:9: '\\u0b71'
                     {
                     match('\u0B71'); 
 
                     }
                     break;
                 case 124 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2291:9: '\\u0b82' .. '\\u0b83'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2292:9: '\\u0b82' .. '\\u0b83'
                     {
                     matchRange('\u0B82','\u0B83'); 
 
                     }
                     break;
                 case 125 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2292:9: '\\u0b85' .. '\\u0b8a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2293:9: '\\u0b85' .. '\\u0b8a'
                     {
                     matchRange('\u0B85','\u0B8A'); 
 
                     }
                     break;
                 case 126 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2293:9: '\\u0b8e' .. '\\u0b90'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2294:9: '\\u0b8e' .. '\\u0b90'
                     {
                     matchRange('\u0B8E','\u0B90'); 
 
                     }
                     break;
                 case 127 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2294:9: '\\u0b92' .. '\\u0b95'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2295:9: '\\u0b92' .. '\\u0b95'
                     {
                     matchRange('\u0B92','\u0B95'); 
 
                     }
                     break;
                 case 128 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2295:9: '\\u0b99' .. '\\u0b9a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2296:9: '\\u0b99' .. '\\u0b9a'
                     {
                     matchRange('\u0B99','\u0B9A'); 
 
                     }
                     break;
                 case 129 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2296:9: '\\u0b9c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2297:9: '\\u0b9c'
                     {
                     match('\u0B9C'); 
 
                     }
                     break;
                 case 130 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2297:9: '\\u0b9e' .. '\\u0b9f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2298:9: '\\u0b9e' .. '\\u0b9f'
                     {
                     matchRange('\u0B9E','\u0B9F'); 
 
                     }
                     break;
                 case 131 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2298:9: '\\u0ba3' .. '\\u0ba4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2299:9: '\\u0ba3' .. '\\u0ba4'
                     {
                     matchRange('\u0BA3','\u0BA4'); 
 
                     }
                     break;
                 case 132 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2299:9: '\\u0ba8' .. '\\u0baa'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2300:9: '\\u0ba8' .. '\\u0baa'
                     {
                     matchRange('\u0BA8','\u0BAA'); 
 
                     }
                     break;
                 case 133 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2300:9: '\\u0bae' .. '\\u0bb5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2301:9: '\\u0bae' .. '\\u0bb5'
                     {
                     matchRange('\u0BAE','\u0BB5'); 
 
                     }
                     break;
                 case 134 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2301:9: '\\u0bb7' .. '\\u0bb9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2302:9: '\\u0bb7' .. '\\u0bb9'
                     {
                     matchRange('\u0BB7','\u0BB9'); 
 
                     }
                     break;
                 case 135 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2302:9: '\\u0bbe' .. '\\u0bc2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2303:9: '\\u0bbe' .. '\\u0bc2'
                     {
                     matchRange('\u0BBE','\u0BC2'); 
 
                     }
                     break;
                 case 136 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2303:9: '\\u0bc6' .. '\\u0bc8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2304:9: '\\u0bc6' .. '\\u0bc8'
                     {
                     matchRange('\u0BC6','\u0BC8'); 
 
                     }
                     break;
                 case 137 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2304:9: '\\u0bca' .. '\\u0bcd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2305:9: '\\u0bca' .. '\\u0bcd'
                     {
                     matchRange('\u0BCA','\u0BCD'); 
 
                     }
                     break;
                 case 138 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2305:9: '\\u0bd7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2306:9: '\\u0bd7'
                     {
                     match('\u0BD7'); 
 
                     }
                     break;
                 case 139 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2306:9: '\\u0be7' .. '\\u0bef'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2307:9: '\\u0be7' .. '\\u0bef'
                     {
                     matchRange('\u0BE7','\u0BEF'); 
 
                     }
                     break;
                 case 140 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2307:9: '\\u0bf9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2308:9: '\\u0bf9'
                     {
                     match('\u0BF9'); 
 
                     }
                     break;
                 case 141 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2308:9: '\\u0c01' .. '\\u0c03'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2309:9: '\\u0c01' .. '\\u0c03'
                     {
                     matchRange('\u0C01','\u0C03'); 
 
                     }
                     break;
                 case 142 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2309:9: '\\u0c05' .. '\\u0c0c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2310:9: '\\u0c05' .. '\\u0c0c'
                     {
                     matchRange('\u0C05','\u0C0C'); 
 
                     }
                     break;
                 case 143 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2310:9: '\\u0c0e' .. '\\u0c10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2311:9: '\\u0c0e' .. '\\u0c10'
                     {
                     matchRange('\u0C0E','\u0C10'); 
 
                     }
                     break;
                 case 144 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2311:9: '\\u0c12' .. '\\u0c28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2312:9: '\\u0c12' .. '\\u0c28'
                     {
                     matchRange('\u0C12','\u0C28'); 
 
                     }
                     break;
                 case 145 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2312:9: '\\u0c2a' .. '\\u0c33'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2313:9: '\\u0c2a' .. '\\u0c33'
                     {
                     matchRange('\u0C2A','\u0C33'); 
 
                     }
                     break;
                 case 146 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2313:9: '\\u0c35' .. '\\u0c39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2314:9: '\\u0c35' .. '\\u0c39'
                     {
                     matchRange('\u0C35','\u0C39'); 
 
                     }
                     break;
                 case 147 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2314:9: '\\u0c3e' .. '\\u0c44'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2315:9: '\\u0c3e' .. '\\u0c44'
                     {
                     matchRange('\u0C3E','\u0C44'); 
 
                     }
                     break;
                 case 148 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2315:9: '\\u0c46' .. '\\u0c48'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2316:9: '\\u0c46' .. '\\u0c48'
                     {
                     matchRange('\u0C46','\u0C48'); 
 
                     }
                     break;
                 case 149 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2316:9: '\\u0c4a' .. '\\u0c4d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2317:9: '\\u0c4a' .. '\\u0c4d'
                     {
                     matchRange('\u0C4A','\u0C4D'); 
 
                     }
                     break;
                 case 150 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2317:9: '\\u0c55' .. '\\u0c56'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2318:9: '\\u0c55' .. '\\u0c56'
                     {
                     matchRange('\u0C55','\u0C56'); 
 
                     }
                     break;
                 case 151 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2318:9: '\\u0c60' .. '\\u0c61'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2319:9: '\\u0c60' .. '\\u0c61'
                     {
                     matchRange('\u0C60','\u0C61'); 
 
                     }
                     break;
                 case 152 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2319:9: '\\u0c66' .. '\\u0c6f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2320:9: '\\u0c66' .. '\\u0c6f'
                     {
                     matchRange('\u0C66','\u0C6F'); 
 
                     }
                     break;
                 case 153 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2320:9: '\\u0c82' .. '\\u0c83'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2321:9: '\\u0c82' .. '\\u0c83'
                     {
                     matchRange('\u0C82','\u0C83'); 
 
                     }
                     break;
                 case 154 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2321:9: '\\u0c85' .. '\\u0c8c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2322:9: '\\u0c85' .. '\\u0c8c'
                     {
                     matchRange('\u0C85','\u0C8C'); 
 
                     }
                     break;
                 case 155 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2322:9: '\\u0c8e' .. '\\u0c90'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2323:9: '\\u0c8e' .. '\\u0c90'
                     {
                     matchRange('\u0C8E','\u0C90'); 
 
                     }
                     break;
                 case 156 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2323:9: '\\u0c92' .. '\\u0ca8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2324:9: '\\u0c92' .. '\\u0ca8'
                     {
                     matchRange('\u0C92','\u0CA8'); 
 
                     }
                     break;
                 case 157 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2324:9: '\\u0caa' .. '\\u0cb3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2325:9: '\\u0caa' .. '\\u0cb3'
                     {
                     matchRange('\u0CAA','\u0CB3'); 
 
                     }
                     break;
                 case 158 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2325:9: '\\u0cb5' .. '\\u0cb9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2326:9: '\\u0cb5' .. '\\u0cb9'
                     {
                     matchRange('\u0CB5','\u0CB9'); 
 
                     }
                     break;
                 case 159 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2326:9: '\\u0cbc' .. '\\u0cc4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2327:9: '\\u0cbc' .. '\\u0cc4'
                     {
                     matchRange('\u0CBC','\u0CC4'); 
 
                     }
                     break;
                 case 160 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2327:9: '\\u0cc6' .. '\\u0cc8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2328:9: '\\u0cc6' .. '\\u0cc8'
                     {
                     matchRange('\u0CC6','\u0CC8'); 
 
                     }
                     break;
                 case 161 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2328:9: '\\u0cca' .. '\\u0ccd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2329:9: '\\u0cca' .. '\\u0ccd'
                     {
                     matchRange('\u0CCA','\u0CCD'); 
 
                     }
                     break;
                 case 162 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2329:9: '\\u0cd5' .. '\\u0cd6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2330:9: '\\u0cd5' .. '\\u0cd6'
                     {
                     matchRange('\u0CD5','\u0CD6'); 
 
                     }
                     break;
                 case 163 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2330:9: '\\u0cde'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2331:9: '\\u0cde'
                     {
                     match('\u0CDE'); 
 
                     }
                     break;
                 case 164 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2331:9: '\\u0ce0' .. '\\u0ce1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2332:9: '\\u0ce0' .. '\\u0ce1'
                     {
                     matchRange('\u0CE0','\u0CE1'); 
 
                     }
                     break;
                 case 165 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2332:9: '\\u0ce6' .. '\\u0cef'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2333:9: '\\u0ce6' .. '\\u0cef'
                     {
                     matchRange('\u0CE6','\u0CEF'); 
 
                     }
                     break;
                 case 166 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2333:9: '\\u0d02' .. '\\u0d03'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2334:9: '\\u0d02' .. '\\u0d03'
                     {
                     matchRange('\u0D02','\u0D03'); 
 
                     }
                     break;
                 case 167 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2334:9: '\\u0d05' .. '\\u0d0c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2335:9: '\\u0d05' .. '\\u0d0c'
                     {
                     matchRange('\u0D05','\u0D0C'); 
 
                     }
                     break;
                 case 168 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2335:9: '\\u0d0e' .. '\\u0d10'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2336:9: '\\u0d0e' .. '\\u0d10'
                     {
                     matchRange('\u0D0E','\u0D10'); 
 
                     }
                     break;
                 case 169 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2336:9: '\\u0d12' .. '\\u0d28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2337:9: '\\u0d12' .. '\\u0d28'
                     {
                     matchRange('\u0D12','\u0D28'); 
 
                     }
                     break;
                 case 170 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2337:9: '\\u0d2a' .. '\\u0d39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2338:9: '\\u0d2a' .. '\\u0d39'
                     {
                     matchRange('\u0D2A','\u0D39'); 
 
                     }
                     break;
                 case 171 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2338:9: '\\u0d3e' .. '\\u0d43'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2339:9: '\\u0d3e' .. '\\u0d43'
                     {
                     matchRange('\u0D3E','\u0D43'); 
 
                     }
                     break;
                 case 172 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2339:9: '\\u0d46' .. '\\u0d48'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2340:9: '\\u0d46' .. '\\u0d48'
                     {
                     matchRange('\u0D46','\u0D48'); 
 
                     }
                     break;
                 case 173 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2340:9: '\\u0d4a' .. '\\u0d4d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2341:9: '\\u0d4a' .. '\\u0d4d'
                     {
                     matchRange('\u0D4A','\u0D4D'); 
 
                     }
                     break;
                 case 174 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2341:9: '\\u0d57'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2342:9: '\\u0d57'
                     {
                     match('\u0D57'); 
 
                     }
                     break;
                 case 175 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2342:9: '\\u0d60' .. '\\u0d61'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2343:9: '\\u0d60' .. '\\u0d61'
                     {
                     matchRange('\u0D60','\u0D61'); 
 
                     }
                     break;
                 case 176 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2343:9: '\\u0d66' .. '\\u0d6f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2344:9: '\\u0d66' .. '\\u0d6f'
                     {
                     matchRange('\u0D66','\u0D6F'); 
 
                     }
                     break;
                 case 177 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2344:9: '\\u0d82' .. '\\u0d83'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2345:9: '\\u0d82' .. '\\u0d83'
                     {
                     matchRange('\u0D82','\u0D83'); 
 
                     }
                     break;
                 case 178 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2345:9: '\\u0d85' .. '\\u0d96'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2346:9: '\\u0d85' .. '\\u0d96'
                     {
                     matchRange('\u0D85','\u0D96'); 
 
                     }
                     break;
                 case 179 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2346:9: '\\u0d9a' .. '\\u0db1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2347:9: '\\u0d9a' .. '\\u0db1'
                     {
                     matchRange('\u0D9A','\u0DB1'); 
 
                     }
                     break;
                 case 180 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2347:9: '\\u0db3' .. '\\u0dbb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2348:9: '\\u0db3' .. '\\u0dbb'
                     {
                     matchRange('\u0DB3','\u0DBB'); 
 
                     }
                     break;
                 case 181 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2348:9: '\\u0dbd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2349:9: '\\u0dbd'
                     {
                     match('\u0DBD'); 
 
                     }
                     break;
                 case 182 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2349:9: '\\u0dc0' .. '\\u0dc6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2350:9: '\\u0dc0' .. '\\u0dc6'
                     {
                     matchRange('\u0DC0','\u0DC6'); 
 
                     }
                     break;
                 case 183 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2350:9: '\\u0dca'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2351:9: '\\u0dca'
                     {
                     match('\u0DCA'); 
 
                     }
                     break;
                 case 184 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2351:9: '\\u0dcf' .. '\\u0dd4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2352:9: '\\u0dcf' .. '\\u0dd4'
                     {
                     matchRange('\u0DCF','\u0DD4'); 
 
                     }
                     break;
                 case 185 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2352:9: '\\u0dd6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2353:9: '\\u0dd6'
                     {
                     match('\u0DD6'); 
 
                     }
                     break;
                 case 186 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2353:9: '\\u0dd8' .. '\\u0ddf'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2354:9: '\\u0dd8' .. '\\u0ddf'
                     {
                     matchRange('\u0DD8','\u0DDF'); 
 
                     }
                     break;
                 case 187 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2354:9: '\\u0df2' .. '\\u0df3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2355:9: '\\u0df2' .. '\\u0df3'
                     {
                     matchRange('\u0DF2','\u0DF3'); 
 
                     }
                     break;
                 case 188 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2355:9: '\\u0e01' .. '\\u0e3a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2356:9: '\\u0e01' .. '\\u0e3a'
                     {
                     matchRange('\u0E01','\u0E3A'); 
 
                     }
                     break;
                 case 189 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2356:9: '\\u0e3f' .. '\\u0e4e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2357:9: '\\u0e3f' .. '\\u0e4e'
                     {
                     matchRange('\u0E3F','\u0E4E'); 
 
                     }
                     break;
                 case 190 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2357:9: '\\u0e50' .. '\\u0e59'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2358:9: '\\u0e50' .. '\\u0e59'
                     {
                     matchRange('\u0E50','\u0E59'); 
 
                     }
                     break;
                 case 191 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2358:9: '\\u0e81' .. '\\u0e82'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2359:9: '\\u0e81' .. '\\u0e82'
                     {
                     matchRange('\u0E81','\u0E82'); 
 
                     }
                     break;
                 case 192 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2359:9: '\\u0e84'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2360:9: '\\u0e84'
                     {
                     match('\u0E84'); 
 
                     }
                     break;
                 case 193 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2360:9: '\\u0e87' .. '\\u0e88'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2361:9: '\\u0e87' .. '\\u0e88'
                     {
                     matchRange('\u0E87','\u0E88'); 
 
                     }
                     break;
                 case 194 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2361:9: '\\u0e8a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2362:9: '\\u0e8a'
                     {
                     match('\u0E8A'); 
 
                     }
                     break;
                 case 195 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2362:9: '\\u0e8d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2363:9: '\\u0e8d'
                     {
                     match('\u0E8D'); 
 
                     }
                     break;
                 case 196 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2363:9: '\\u0e94' .. '\\u0e97'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2364:9: '\\u0e94' .. '\\u0e97'
                     {
                     matchRange('\u0E94','\u0E97'); 
 
                     }
                     break;
                 case 197 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2364:9: '\\u0e99' .. '\\u0e9f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2365:9: '\\u0e99' .. '\\u0e9f'
                     {
                     matchRange('\u0E99','\u0E9F'); 
 
                     }
                     break;
                 case 198 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2365:9: '\\u0ea1' .. '\\u0ea3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2366:9: '\\u0ea1' .. '\\u0ea3'
                     {
                     matchRange('\u0EA1','\u0EA3'); 
 
                     }
                     break;
                 case 199 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2366:9: '\\u0ea5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2367:9: '\\u0ea5'
                     {
                     match('\u0EA5'); 
 
                     }
                     break;
                 case 200 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2367:9: '\\u0ea7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2368:9: '\\u0ea7'
                     {
                     match('\u0EA7'); 
 
                     }
                     break;
                 case 201 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2368:9: '\\u0eaa' .. '\\u0eab'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2369:9: '\\u0eaa' .. '\\u0eab'
                     {
                     matchRange('\u0EAA','\u0EAB'); 
 
                     }
                     break;
                 case 202 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2369:9: '\\u0ead' .. '\\u0eb9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2370:9: '\\u0ead' .. '\\u0eb9'
                     {
                     matchRange('\u0EAD','\u0EB9'); 
 
                     }
                     break;
                 case 203 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2370:9: '\\u0ebb' .. '\\u0ebd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2371:9: '\\u0ebb' .. '\\u0ebd'
                     {
                     matchRange('\u0EBB','\u0EBD'); 
 
                     }
                     break;
                 case 204 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2371:9: '\\u0ec0' .. '\\u0ec4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2372:9: '\\u0ec0' .. '\\u0ec4'
                     {
                     matchRange('\u0EC0','\u0EC4'); 
 
                     }
                     break;
                 case 205 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2372:9: '\\u0ec6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2373:9: '\\u0ec6'
                     {
                     match('\u0EC6'); 
 
                     }
                     break;
                 case 206 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2373:9: '\\u0ec8' .. '\\u0ecd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2374:9: '\\u0ec8' .. '\\u0ecd'
                     {
                     matchRange('\u0EC8','\u0ECD'); 
 
                     }
                     break;
                 case 207 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2374:9: '\\u0ed0' .. '\\u0ed9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2375:9: '\\u0ed0' .. '\\u0ed9'
                     {
                     matchRange('\u0ED0','\u0ED9'); 
 
                     }
                     break;
                 case 208 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2375:9: '\\u0edc' .. '\\u0edd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2376:9: '\\u0edc' .. '\\u0edd'
                     {
                     matchRange('\u0EDC','\u0EDD'); 
 
                     }
                     break;
                 case 209 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2376:9: '\\u0f00'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2377:9: '\\u0f00'
                     {
                     match('\u0F00'); 
 
                     }
                     break;
                 case 210 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2377:9: '\\u0f18' .. '\\u0f19'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2378:9: '\\u0f18' .. '\\u0f19'
                     {
                     matchRange('\u0F18','\u0F19'); 
 
                     }
                     break;
                 case 211 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2378:9: '\\u0f20' .. '\\u0f29'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2379:9: '\\u0f20' .. '\\u0f29'
                     {
                     matchRange('\u0F20','\u0F29'); 
 
                     }
                     break;
                 case 212 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2379:9: '\\u0f35'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2380:9: '\\u0f35'
                     {
                     match('\u0F35'); 
 
                     }
                     break;
                 case 213 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2380:9: '\\u0f37'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2381:9: '\\u0f37'
                     {
                     match('\u0F37'); 
 
                     }
                     break;
                 case 214 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2381:9: '\\u0f39'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2382:9: '\\u0f39'
                     {
                     match('\u0F39'); 
 
                     }
                     break;
                 case 215 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2382:9: '\\u0f3e' .. '\\u0f47'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2383:9: '\\u0f3e' .. '\\u0f47'
                     {
                     matchRange('\u0F3E','\u0F47'); 
 
                     }
                     break;
                 case 216 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2383:9: '\\u0f49' .. '\\u0f6a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2384:9: '\\u0f49' .. '\\u0f6a'
                     {
                     matchRange('\u0F49','\u0F6A'); 
 
                     }
                     break;
                 case 217 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2384:9: '\\u0f71' .. '\\u0f84'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2385:9: '\\u0f71' .. '\\u0f84'
                     {
                     matchRange('\u0F71','\u0F84'); 
 
                     }
                     break;
                 case 218 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2385:9: '\\u0f86' .. '\\u0f8b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2386:9: '\\u0f86' .. '\\u0f8b'
                     {
                     matchRange('\u0F86','\u0F8B'); 
 
                     }
                     break;
                 case 219 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2386:9: '\\u0f90' .. '\\u0f97'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2387:9: '\\u0f90' .. '\\u0f97'
                     {
                     matchRange('\u0F90','\u0F97'); 
 
                     }
                     break;
                 case 220 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2387:9: '\\u0f99' .. '\\u0fbc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2388:9: '\\u0f99' .. '\\u0fbc'
                     {
                     matchRange('\u0F99','\u0FBC'); 
 
                     }
                     break;
                 case 221 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2388:9: '\\u0fc6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2389:9: '\\u0fc6'
                     {
                     match('\u0FC6'); 
 
                     }
                     break;
                 case 222 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2389:9: '\\u1000' .. '\\u1021'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2390:9: '\\u1000' .. '\\u1021'
                     {
                     matchRange('\u1000','\u1021'); 
 
                     }
                     break;
                 case 223 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2390:9: '\\u1023' .. '\\u1027'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2391:9: '\\u1023' .. '\\u1027'
                     {
                     matchRange('\u1023','\u1027'); 
 
                     }
                     break;
                 case 224 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2391:9: '\\u1029' .. '\\u102a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2392:9: '\\u1029' .. '\\u102a'
                     {
                     matchRange('\u1029','\u102A'); 
 
                     }
                     break;
                 case 225 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2392:9: '\\u102c' .. '\\u1032'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2393:9: '\\u102c' .. '\\u1032'
                     {
                     matchRange('\u102C','\u1032'); 
 
                     }
                     break;
                 case 226 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2393:9: '\\u1036' .. '\\u1039'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2394:9: '\\u1036' .. '\\u1039'
                     {
                     matchRange('\u1036','\u1039'); 
 
                     }
                     break;
                 case 227 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2394:9: '\\u1040' .. '\\u1049'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2395:9: '\\u1040' .. '\\u1049'
                     {
                     matchRange('\u1040','\u1049'); 
 
                     }
                     break;
                 case 228 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2395:9: '\\u1050' .. '\\u1059'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2396:9: '\\u1050' .. '\\u1059'
                     {
                     matchRange('\u1050','\u1059'); 
 
                     }
                     break;
                 case 229 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2396:9: '\\u10a0' .. '\\u10c5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2397:9: '\\u10a0' .. '\\u10c5'
                     {
                     matchRange('\u10A0','\u10C5'); 
 
                     }
                     break;
                 case 230 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2397:9: '\\u10d0' .. '\\u10f8'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2398:9: '\\u10d0' .. '\\u10f8'
                     {
                     matchRange('\u10D0','\u10F8'); 
 
                     }
                     break;
                 case 231 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2398:9: '\\u1100' .. '\\u1159'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2399:9: '\\u1100' .. '\\u1159'
                     {
                     matchRange('\u1100','\u1159'); 
 
                     }
                     break;
                 case 232 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2399:9: '\\u115f' .. '\\u11a2'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2400:9: '\\u115f' .. '\\u11a2'
                     {
                     matchRange('\u115F','\u11A2'); 
 
                     }
                     break;
                 case 233 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2400:9: '\\u11a8' .. '\\u11f9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2401:9: '\\u11a8' .. '\\u11f9'
                     {
                     matchRange('\u11A8','\u11F9'); 
 
                     }
                     break;
                 case 234 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2401:9: '\\u1200' .. '\\u1206'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2402:9: '\\u1200' .. '\\u1206'
                     {
                     matchRange('\u1200','\u1206'); 
 
                     }
                     break;
                 case 235 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2402:9: '\\u1208' .. '\\u1246'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2403:9: '\\u1208' .. '\\u1246'
                     {
                     matchRange('\u1208','\u1246'); 
 
                     }
                     break;
                 case 236 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2403:9: '\\u1248'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2404:9: '\\u1248'
                     {
                     match('\u1248'); 
 
                     }
                     break;
                 case 237 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2404:9: '\\u124a' .. '\\u124d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2405:9: '\\u124a' .. '\\u124d'
                     {
                     matchRange('\u124A','\u124D'); 
 
                     }
                     break;
                 case 238 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2405:9: '\\u1250' .. '\\u1256'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2406:9: '\\u1250' .. '\\u1256'
                     {
                     matchRange('\u1250','\u1256'); 
 
                     }
                     break;
                 case 239 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2406:9: '\\u1258'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2407:9: '\\u1258'
                     {
                     match('\u1258'); 
 
                     }
                     break;
                 case 240 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2407:9: '\\u125a' .. '\\u125d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2408:9: '\\u125a' .. '\\u125d'
                     {
                     matchRange('\u125A','\u125D'); 
 
                     }
                     break;
                 case 241 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2408:9: '\\u1260' .. '\\u1286'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2409:9: '\\u1260' .. '\\u1286'
                     {
                     matchRange('\u1260','\u1286'); 
 
                     }
                     break;
                 case 242 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2409:9: '\\u1288'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2410:9: '\\u1288'
                     {
                     match('\u1288'); 
 
                     }
                     break;
                 case 243 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2410:9: '\\u128a' .. '\\u128d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2411:9: '\\u128a' .. '\\u128d'
                     {
                     matchRange('\u128A','\u128D'); 
 
                     }
                     break;
                 case 244 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2411:9: '\\u1290' .. '\\u12ae'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2412:9: '\\u1290' .. '\\u12ae'
                     {
                     matchRange('\u1290','\u12AE'); 
 
                     }
                     break;
                 case 245 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2412:9: '\\u12b0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2413:9: '\\u12b0'
                     {
                     match('\u12B0'); 
 
                     }
                     break;
                 case 246 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2413:9: '\\u12b2' .. '\\u12b5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2414:9: '\\u12b2' .. '\\u12b5'
                     {
                     matchRange('\u12B2','\u12B5'); 
 
                     }
                     break;
                 case 247 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2414:9: '\\u12b8' .. '\\u12be'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2415:9: '\\u12b8' .. '\\u12be'
                     {
                     matchRange('\u12B8','\u12BE'); 
 
                     }
                     break;
                 case 248 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2415:9: '\\u12c0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2416:9: '\\u12c0'
                     {
                     match('\u12C0'); 
 
                     }
                     break;
                 case 249 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2416:9: '\\u12c2' .. '\\u12c5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2417:9: '\\u12c2' .. '\\u12c5'
                     {
                     matchRange('\u12C2','\u12C5'); 
 
                     }
                     break;
                 case 250 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2417:9: '\\u12c8' .. '\\u12ce'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2418:9: '\\u12c8' .. '\\u12ce'
                     {
                     matchRange('\u12C8','\u12CE'); 
 
                     }
                     break;
                 case 251 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2418:9: '\\u12d0' .. '\\u12d6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2419:9: '\\u12d0' .. '\\u12d6'
                     {
                     matchRange('\u12D0','\u12D6'); 
 
                     }
                     break;
                 case 252 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2419:9: '\\u12d8' .. '\\u12ee'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2420:9: '\\u12d8' .. '\\u12ee'
                     {
                     matchRange('\u12D8','\u12EE'); 
 
                     }
                     break;
                 case 253 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2420:9: '\\u12f0' .. '\\u130e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2421:9: '\\u12f0' .. '\\u130e'
                     {
                     matchRange('\u12F0','\u130E'); 
 
                     }
                     break;
                 case 254 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2421:9: '\\u1310'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2422:9: '\\u1310'
                     {
                     match('\u1310'); 
 
                     }
                     break;
                 case 255 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2422:9: '\\u1312' .. '\\u1315'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2423:9: '\\u1312' .. '\\u1315'
                     {
                     matchRange('\u1312','\u1315'); 
 
                     }
                     break;
                 case 256 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2423:9: '\\u1318' .. '\\u131e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2424:9: '\\u1318' .. '\\u131e'
                     {
                     matchRange('\u1318','\u131E'); 
 
                     }
                     break;
                 case 257 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2424:9: '\\u1320' .. '\\u1346'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2425:9: '\\u1320' .. '\\u1346'
                     {
                     matchRange('\u1320','\u1346'); 
 
                     }
                     break;
                 case 258 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2425:9: '\\u1348' .. '\\u135a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2426:9: '\\u1348' .. '\\u135a'
                     {
                     matchRange('\u1348','\u135A'); 
 
                     }
                     break;
                 case 259 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2426:9: '\\u1369' .. '\\u1371'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2427:9: '\\u1369' .. '\\u1371'
                     {
                     matchRange('\u1369','\u1371'); 
 
                     }
                     break;
                 case 260 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2427:9: '\\u13a0' .. '\\u13f4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2428:9: '\\u13a0' .. '\\u13f4'
                     {
                     matchRange('\u13A0','\u13F4'); 
 
                     }
                     break;
                 case 261 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2428:9: '\\u1401' .. '\\u166c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2429:9: '\\u1401' .. '\\u166c'
                     {
                     matchRange('\u1401','\u166C'); 
 
                     }
                     break;
                 case 262 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2429:9: '\\u166f' .. '\\u1676'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2430:9: '\\u166f' .. '\\u1676'
                     {
                     matchRange('\u166F','\u1676'); 
 
                     }
                     break;
                 case 263 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2430:9: '\\u1681' .. '\\u169a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2431:9: '\\u1681' .. '\\u169a'
                     {
                     matchRange('\u1681','\u169A'); 
 
                     }
                     break;
                 case 264 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2431:9: '\\u16a0' .. '\\u16ea'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2432:9: '\\u16a0' .. '\\u16ea'
                     {
                     matchRange('\u16A0','\u16EA'); 
 
                     }
                     break;
                 case 265 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2432:9: '\\u16ee' .. '\\u16f0'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2433:9: '\\u16ee' .. '\\u16f0'
                     {
                     matchRange('\u16EE','\u16F0'); 
 
                     }
                     break;
                 case 266 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2433:9: '\\u1700' .. '\\u170c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2434:9: '\\u1700' .. '\\u170c'
                     {
                     matchRange('\u1700','\u170C'); 
 
                     }
                     break;
                 case 267 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2434:9: '\\u170e' .. '\\u1714'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2435:9: '\\u170e' .. '\\u1714'
                     {
                     matchRange('\u170E','\u1714'); 
 
                     }
                     break;
                 case 268 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2435:9: '\\u1720' .. '\\u1734'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2436:9: '\\u1720' .. '\\u1734'
                     {
                     matchRange('\u1720','\u1734'); 
 
                     }
                     break;
                 case 269 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2436:9: '\\u1740' .. '\\u1753'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2437:9: '\\u1740' .. '\\u1753'
                     {
                     matchRange('\u1740','\u1753'); 
 
                     }
                     break;
                 case 270 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2437:9: '\\u1760' .. '\\u176c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2438:9: '\\u1760' .. '\\u176c'
                     {
                     matchRange('\u1760','\u176C'); 
 
                     }
                     break;
                 case 271 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2438:9: '\\u176e' .. '\\u1770'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2439:9: '\\u176e' .. '\\u1770'
                     {
                     matchRange('\u176E','\u1770'); 
 
                     }
                     break;
                 case 272 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2439:9: '\\u1772' .. '\\u1773'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2440:9: '\\u1772' .. '\\u1773'
                     {
                     matchRange('\u1772','\u1773'); 
 
                     }
                     break;
                 case 273 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2440:9: '\\u1780' .. '\\u17d3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2441:9: '\\u1780' .. '\\u17d3'
                     {
                     matchRange('\u1780','\u17D3'); 
 
                     }
                     break;
                 case 274 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2441:9: '\\u17d7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2442:9: '\\u17d7'
                     {
                     match('\u17D7'); 
 
                     }
                     break;
                 case 275 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2442:9: '\\u17db' .. '\\u17dd'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2443:9: '\\u17db' .. '\\u17dd'
                     {
                     matchRange('\u17DB','\u17DD'); 
 
                     }
                     break;
                 case 276 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2443:9: '\\u17e0' .. '\\u17e9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2444:9: '\\u17e0' .. '\\u17e9'
                     {
                     matchRange('\u17E0','\u17E9'); 
 
                     }
                     break;
                 case 277 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2444:9: '\\u180b' .. '\\u180d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2445:9: '\\u180b' .. '\\u180d'
                     {
                     matchRange('\u180B','\u180D'); 
 
                     }
                     break;
                 case 278 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2445:9: '\\u1810' .. '\\u1819'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2446:9: '\\u1810' .. '\\u1819'
                     {
                     matchRange('\u1810','\u1819'); 
 
                     }
                     break;
                 case 279 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2446:9: '\\u1820' .. '\\u1877'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2447:9: '\\u1820' .. '\\u1877'
                     {
                     matchRange('\u1820','\u1877'); 
 
                     }
                     break;
                 case 280 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2447:9: '\\u1880' .. '\\u18a9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2448:9: '\\u1880' .. '\\u18a9'
                     {
                     matchRange('\u1880','\u18A9'); 
 
                     }
                     break;
                 case 281 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2448:9: '\\u1900' .. '\\u191c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2449:9: '\\u1900' .. '\\u191c'
                     {
                     matchRange('\u1900','\u191C'); 
 
                     }
                     break;
                 case 282 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2449:9: '\\u1920' .. '\\u192b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2450:9: '\\u1920' .. '\\u192b'
                     {
                     matchRange('\u1920','\u192B'); 
 
                     }
                     break;
                 case 283 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2450:9: '\\u1930' .. '\\u193b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2451:9: '\\u1930' .. '\\u193b'
                     {
                     matchRange('\u1930','\u193B'); 
 
                     }
                     break;
                 case 284 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2451:9: '\\u1946' .. '\\u196d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2452:9: '\\u1946' .. '\\u196d'
                     {
                     matchRange('\u1946','\u196D'); 
 
                     }
                     break;
                 case 285 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2452:9: '\\u1970' .. '\\u1974'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2453:9: '\\u1970' .. '\\u1974'
                     {
                     matchRange('\u1970','\u1974'); 
 
                     }
                     break;
                 case 286 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2453:9: '\\u1d00' .. '\\u1d6b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2454:9: '\\u1d00' .. '\\u1d6b'
                     {
                     matchRange('\u1D00','\u1D6B'); 
 
                     }
                     break;
                 case 287 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2454:9: '\\u1e00' .. '\\u1e9b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2455:9: '\\u1e00' .. '\\u1e9b'
                     {
                     matchRange('\u1E00','\u1E9B'); 
 
                     }
                     break;
                 case 288 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2455:9: '\\u1ea0' .. '\\u1ef9'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2456:9: '\\u1ea0' .. '\\u1ef9'
                     {
                     matchRange('\u1EA0','\u1EF9'); 
 
                     }
                     break;
                 case 289 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2456:9: '\\u1f00' .. '\\u1f15'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2457:9: '\\u1f00' .. '\\u1f15'
                     {
                     matchRange('\u1F00','\u1F15'); 
 
                     }
                     break;
                 case 290 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2457:9: '\\u1f18' .. '\\u1f1d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2458:9: '\\u1f18' .. '\\u1f1d'
                     {
                     matchRange('\u1F18','\u1F1D'); 
 
                     }
                     break;
                 case 291 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2458:9: '\\u1f20' .. '\\u1f45'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2459:9: '\\u1f20' .. '\\u1f45'
                     {
                     matchRange('\u1F20','\u1F45'); 
 
                     }
                     break;
                 case 292 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2459:9: '\\u1f48' .. '\\u1f4d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2460:9: '\\u1f48' .. '\\u1f4d'
                     {
                     matchRange('\u1F48','\u1F4D'); 
 
                     }
                     break;
                 case 293 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2460:9: '\\u1f50' .. '\\u1f57'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2461:9: '\\u1f50' .. '\\u1f57'
                     {
                     matchRange('\u1F50','\u1F57'); 
 
                     }
                     break;
                 case 294 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2461:9: '\\u1f59'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2462:9: '\\u1f59'
                     {
                     match('\u1F59'); 
 
                     }
                     break;
                 case 295 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2462:9: '\\u1f5b'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2463:9: '\\u1f5b'
                     {
                     match('\u1F5B'); 
 
                     }
                     break;
                 case 296 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2463:9: '\\u1f5d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2464:9: '\\u1f5d'
                     {
                     match('\u1F5D'); 
 
                     }
                     break;
                 case 297 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2464:9: '\\u1f5f' .. '\\u1f7d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2465:9: '\\u1f5f' .. '\\u1f7d'
                     {
                     matchRange('\u1F5F','\u1F7D'); 
 
                     }
                     break;
                 case 298 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2465:9: '\\u1f80' .. '\\u1fb4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2466:9: '\\u1f80' .. '\\u1fb4'
                     {
                     matchRange('\u1F80','\u1FB4'); 
 
                     }
                     break;
                 case 299 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2466:9: '\\u1fb6' .. '\\u1fbc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2467:9: '\\u1fb6' .. '\\u1fbc'
                     {
                     matchRange('\u1FB6','\u1FBC'); 
 
                     }
                     break;
                 case 300 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2467:9: '\\u1fbe'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2468:9: '\\u1fbe'
                     {
                     match('\u1FBE'); 
 
                     }
                     break;
                 case 301 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2468:9: '\\u1fc2' .. '\\u1fc4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2469:9: '\\u1fc2' .. '\\u1fc4'
                     {
                     matchRange('\u1FC2','\u1FC4'); 
 
                     }
                     break;
                 case 302 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2469:9: '\\u1fc6' .. '\\u1fcc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2470:9: '\\u1fc6' .. '\\u1fcc'
                     {
                     matchRange('\u1FC6','\u1FCC'); 
 
                     }
                     break;
                 case 303 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2470:9: '\\u1fd0' .. '\\u1fd3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2471:9: '\\u1fd0' .. '\\u1fd3'
                     {
                     matchRange('\u1FD0','\u1FD3'); 
 
                     }
                     break;
                 case 304 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2471:9: '\\u1fd6' .. '\\u1fdb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2472:9: '\\u1fd6' .. '\\u1fdb'
                     {
                     matchRange('\u1FD6','\u1FDB'); 
 
                     }
                     break;
                 case 305 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2472:9: '\\u1fe0' .. '\\u1fec'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2473:9: '\\u1fe0' .. '\\u1fec'
                     {
                     matchRange('\u1FE0','\u1FEC'); 
 
                     }
                     break;
                 case 306 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2473:9: '\\u1ff2' .. '\\u1ff4'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2474:9: '\\u1ff2' .. '\\u1ff4'
                     {
                     matchRange('\u1FF2','\u1FF4'); 
 
                     }
                     break;
                 case 307 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2474:9: '\\u1ff6' .. '\\u1ffc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2475:9: '\\u1ff6' .. '\\u1ffc'
                     {
                     matchRange('\u1FF6','\u1FFC'); 
 
                     }
                     break;
                 case 308 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2475:9: '\\u200c' .. '\\u200f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2476:9: '\\u200c' .. '\\u200f'
                     {
                     matchRange('\u200C','\u200F'); 
 
                     }
                     break;
                 case 309 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2476:9: '\\u202a' .. '\\u202e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2477:9: '\\u202a' .. '\\u202e'
                     {
                     matchRange('\u202A','\u202E'); 
 
                     }
                     break;
                 case 310 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2477:9: '\\u203f' .. '\\u2040'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2478:9: '\\u203f' .. '\\u2040'
                     {
                     matchRange('\u203F','\u2040'); 
 
                     }
                     break;
                 case 311 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2478:9: '\\u2054'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2479:9: '\\u2054'
                     {
                     match('\u2054'); 
 
                     }
                     break;
                 case 312 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2479:9: '\\u2060' .. '\\u2063'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2480:9: '\\u2060' .. '\\u2063'
                     {
                     matchRange('\u2060','\u2063'); 
 
                     }
                     break;
                 case 313 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2480:9: '\\u206a' .. '\\u206f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2481:9: '\\u206a' .. '\\u206f'
                     {
                     matchRange('\u206A','\u206F'); 
 
                     }
                     break;
                 case 314 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2481:9: '\\u2071'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2482:9: '\\u2071'
                     {
                     match('\u2071'); 
 
                     }
                     break;
                 case 315 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2482:9: '\\u207f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2483:9: '\\u207f'
                     {
                     match('\u207F'); 
 
                     }
                     break;
                 case 316 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2483:9: '\\u20a0' .. '\\u20b1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2484:9: '\\u20a0' .. '\\u20b1'
                     {
                     matchRange('\u20A0','\u20B1'); 
 
                     }
                     break;
                 case 317 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2484:9: '\\u20d0' .. '\\u20dc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2485:9: '\\u20d0' .. '\\u20dc'
                     {
                     matchRange('\u20D0','\u20DC'); 
 
                     }
                     break;
                 case 318 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2485:9: '\\u20e1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2486:9: '\\u20e1'
                     {
                     match('\u20E1'); 
 
                     }
                     break;
                 case 319 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2486:9: '\\u20e5' .. '\\u20ea'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2487:9: '\\u20e5' .. '\\u20ea'
                     {
                     matchRange('\u20E5','\u20EA'); 
 
                     }
                     break;
                 case 320 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2487:9: '\\u2102'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2488:9: '\\u2102'
                     {
                     match('\u2102'); 
 
                     }
                     break;
                 case 321 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2488:9: '\\u2107'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2489:9: '\\u2107'
                     {
                     match('\u2107'); 
 
                     }
                     break;
                 case 322 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2489:9: '\\u210a' .. '\\u2113'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2490:9: '\\u210a' .. '\\u2113'
                     {
                     matchRange('\u210A','\u2113'); 
 
                     }
                     break;
                 case 323 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2490:9: '\\u2115'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2491:9: '\\u2115'
                     {
                     match('\u2115'); 
 
                     }
                     break;
                 case 324 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2491:9: '\\u2119' .. '\\u211d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2492:9: '\\u2119' .. '\\u211d'
                     {
                     matchRange('\u2119','\u211D'); 
 
                     }
                     break;
                 case 325 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2492:9: '\\u2124'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2493:9: '\\u2124'
                     {
                     match('\u2124'); 
 
                     }
                     break;
                 case 326 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2493:9: '\\u2126'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2494:9: '\\u2126'
                     {
                     match('\u2126'); 
 
                     }
                     break;
                 case 327 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2494:9: '\\u2128'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2495:9: '\\u2128'
                     {
                     match('\u2128'); 
 
                     }
                     break;
                 case 328 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2495:9: '\\u212a' .. '\\u212d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2496:9: '\\u212a' .. '\\u212d'
                     {
                     matchRange('\u212A','\u212D'); 
 
                     }
                     break;
                 case 329 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2496:9: '\\u212f' .. '\\u2131'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2497:9: '\\u212f' .. '\\u2131'
                     {
                     matchRange('\u212F','\u2131'); 
 
                     }
                     break;
                 case 330 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2497:9: '\\u2133' .. '\\u2139'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2498:9: '\\u2133' .. '\\u2139'
                     {
                     matchRange('\u2133','\u2139'); 
 
                     }
                     break;
                 case 331 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2498:9: '\\u213d' .. '\\u213f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2499:9: '\\u213d' .. '\\u213f'
                     {
                     matchRange('\u213D','\u213F'); 
 
                     }
                     break;
                 case 332 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2499:9: '\\u2145' .. '\\u2149'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2500:9: '\\u2145' .. '\\u2149'
                     {
                     matchRange('\u2145','\u2149'); 
 
                     }
                     break;
                 case 333 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2500:9: '\\u2160' .. '\\u2183'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2501:9: '\\u2160' .. '\\u2183'
                     {
                     matchRange('\u2160','\u2183'); 
 
                     }
                     break;
                 case 334 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2501:9: '\\u3005' .. '\\u3007'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2502:9: '\\u3005' .. '\\u3007'
                     {
                     matchRange('\u3005','\u3007'); 
 
                     }
                     break;
                 case 335 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2502:9: '\\u3021' .. '\\u302f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2503:9: '\\u3021' .. '\\u302f'
                     {
                     matchRange('\u3021','\u302F'); 
 
                     }
                     break;
                 case 336 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2503:9: '\\u3031' .. '\\u3035'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2504:9: '\\u3031' .. '\\u3035'
                     {
                     matchRange('\u3031','\u3035'); 
 
                     }
                     break;
                 case 337 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2504:9: '\\u3038' .. '\\u303c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2505:9: '\\u3038' .. '\\u303c'
                     {
                     matchRange('\u3038','\u303C'); 
 
                     }
                     break;
                 case 338 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2505:9: '\\u3041' .. '\\u3096'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2506:9: '\\u3041' .. '\\u3096'
                     {
                     matchRange('\u3041','\u3096'); 
 
                     }
                     break;
                 case 339 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2506:9: '\\u3099' .. '\\u309a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2507:9: '\\u3099' .. '\\u309a'
                     {
                     matchRange('\u3099','\u309A'); 
 
                     }
                     break;
                 case 340 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2507:9: '\\u309d' .. '\\u309f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2508:9: '\\u309d' .. '\\u309f'
                     {
                     matchRange('\u309D','\u309F'); 
 
                     }
                     break;
                 case 341 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2508:9: '\\u30a1' .. '\\u30ff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2509:9: '\\u30a1' .. '\\u30ff'
                     {
                     matchRange('\u30A1','\u30FF'); 
 
                     }
                     break;
                 case 342 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2509:9: '\\u3105' .. '\\u312c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2510:9: '\\u3105' .. '\\u312c'
                     {
                     matchRange('\u3105','\u312C'); 
 
                     }
                     break;
                 case 343 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2510:9: '\\u3131' .. '\\u318e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2511:9: '\\u3131' .. '\\u318e'
                     {
                     matchRange('\u3131','\u318E'); 
 
                     }
                     break;
                 case 344 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2511:9: '\\u31a0' .. '\\u31b7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2512:9: '\\u31a0' .. '\\u31b7'
                     {
                     matchRange('\u31A0','\u31B7'); 
 
                     }
                     break;
                 case 345 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2512:9: '\\u31f0' .. '\\u31ff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2513:9: '\\u31f0' .. '\\u31ff'
                     {
                     matchRange('\u31F0','\u31FF'); 
 
                     }
                     break;
                 case 346 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2513:9: '\\u3400' .. '\\u4db5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2514:9: '\\u3400' .. '\\u4db5'
                     {
                     matchRange('\u3400','\u4DB5'); 
 
                     }
                     break;
                 case 347 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2514:9: '\\u4e00' .. '\\u9fa5'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2515:9: '\\u4e00' .. '\\u9fa5'
                     {
                     matchRange('\u4E00','\u9FA5'); 
 
                     }
                     break;
                 case 348 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2515:9: '\\ua000' .. '\\ua48c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2516:9: '\\ua000' .. '\\ua48c'
                     {
                     matchRange('\uA000','\uA48C'); 
 
                     }
                     break;
                 case 349 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2516:9: '\\uac00' .. '\\ud7a3'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2517:9: '\\uac00' .. '\\ud7a3'
                     {
                     matchRange('\uAC00','\uD7A3'); 
 
                     }
                     break;
                 case 350 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2517:9: '\\uf900' .. '\\ufa2d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2518:9: '\\uf900' .. '\\ufa2d'
                     {
                     matchRange('\uF900','\uFA2D'); 
 
                     }
                     break;
                 case 351 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2518:9: '\\ufa30' .. '\\ufa6a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2519:9: '\\ufa30' .. '\\ufa6a'
                     {
                     matchRange('\uFA30','\uFA6A'); 
 
                     }
                     break;
                 case 352 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2519:9: '\\ufb00' .. '\\ufb06'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2520:9: '\\ufb00' .. '\\ufb06'
                     {
                     matchRange('\uFB00','\uFB06'); 
 
                     }
                     break;
                 case 353 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2520:9: '\\ufb13' .. '\\ufb17'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2521:9: '\\ufb13' .. '\\ufb17'
                     {
                     matchRange('\uFB13','\uFB17'); 
 
                     }
                     break;
                 case 354 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2521:9: '\\ufb1d' .. '\\ufb28'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2522:9: '\\ufb1d' .. '\\ufb28'
                     {
                     matchRange('\uFB1D','\uFB28'); 
 
                     }
                     break;
                 case 355 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2522:9: '\\ufb2a' .. '\\ufb36'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2523:9: '\\ufb2a' .. '\\ufb36'
                     {
                     matchRange('\uFB2A','\uFB36'); 
 
                     }
                     break;
                 case 356 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2523:9: '\\ufb38' .. '\\ufb3c'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2524:9: '\\ufb38' .. '\\ufb3c'
                     {
                     matchRange('\uFB38','\uFB3C'); 
 
                     }
                     break;
                 case 357 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2524:9: '\\ufb3e'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2525:9: '\\ufb3e'
                     {
                     match('\uFB3E'); 
 
                     }
                     break;
                 case 358 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2525:9: '\\ufb40' .. '\\ufb41'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2526:9: '\\ufb40' .. '\\ufb41'
                     {
                     matchRange('\uFB40','\uFB41'); 
 
                     }
                     break;
                 case 359 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2526:9: '\\ufb43' .. '\\ufb44'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2527:9: '\\ufb43' .. '\\ufb44'
                     {
                     matchRange('\uFB43','\uFB44'); 
 
                     }
                     break;
                 case 360 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2527:9: '\\ufb46' .. '\\ufbb1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2528:9: '\\ufb46' .. '\\ufbb1'
                     {
                     matchRange('\uFB46','\uFBB1'); 
 
                     }
                     break;
                 case 361 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2528:9: '\\ufbd3' .. '\\ufd3d'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2529:9: '\\ufbd3' .. '\\ufd3d'
                     {
                     matchRange('\uFBD3','\uFD3D'); 
 
                     }
                     break;
                 case 362 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2529:9: '\\ufd50' .. '\\ufd8f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2530:9: '\\ufd50' .. '\\ufd8f'
                     {
                     matchRange('\uFD50','\uFD8F'); 
 
                     }
                     break;
                 case 363 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2530:9: '\\ufd92' .. '\\ufdc7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2531:9: '\\ufd92' .. '\\ufdc7'
                     {
                     matchRange('\uFD92','\uFDC7'); 
 
                     }
                     break;
                 case 364 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2531:9: '\\ufdf0' .. '\\ufdfc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2532:9: '\\ufdf0' .. '\\ufdfc'
                     {
                     matchRange('\uFDF0','\uFDFC'); 
 
                     }
                     break;
                 case 365 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2532:9: '\\ufe00' .. '\\ufe0f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2533:9: '\\ufe00' .. '\\ufe0f'
                     {
                     matchRange('\uFE00','\uFE0F'); 
 
                     }
                     break;
                 case 366 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2533:9: '\\ufe20' .. '\\ufe23'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2534:9: '\\ufe20' .. '\\ufe23'
                     {
                     matchRange('\uFE20','\uFE23'); 
 
                     }
                     break;
                 case 367 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2534:9: '\\ufe33' .. '\\ufe34'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2535:9: '\\ufe33' .. '\\ufe34'
                     {
                     matchRange('\uFE33','\uFE34'); 
 
                     }
                     break;
                 case 368 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2535:9: '\\ufe4d' .. '\\ufe4f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2536:9: '\\ufe4d' .. '\\ufe4f'
                     {
                     matchRange('\uFE4D','\uFE4F'); 
 
                     }
                     break;
                 case 369 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2536:9: '\\ufe69'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2537:9: '\\ufe69'
                     {
                     match('\uFE69'); 
 
                     }
                     break;
                 case 370 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2537:9: '\\ufe70' .. '\\ufe74'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2538:9: '\\ufe70' .. '\\ufe74'
                     {
                     matchRange('\uFE70','\uFE74'); 
 
                     }
                     break;
                 case 371 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2538:9: '\\ufe76' .. '\\ufefc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2539:9: '\\ufe76' .. '\\ufefc'
                     {
                     matchRange('\uFE76','\uFEFC'); 
 
                     }
                     break;
                 case 372 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2539:9: '\\ufeff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2540:9: '\\ufeff'
                     {
                     match('\uFEFF'); 
 
                     }
                     break;
                 case 373 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2540:9: '\\uff04'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2541:9: '\\uff04'
                     {
                     match('\uFF04'); 
 
                     }
                     break;
                 case 374 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2541:9: '\\uff10' .. '\\uff19'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2542:9: '\\uff10' .. '\\uff19'
                     {
                     matchRange('\uFF10','\uFF19'); 
 
                     }
                     break;
                 case 375 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2542:9: '\\uff21' .. '\\uff3a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2543:9: '\\uff21' .. '\\uff3a'
                     {
                     matchRange('\uFF21','\uFF3A'); 
 
                     }
                     break;
                 case 376 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2543:9: '\\uff3f'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2544:9: '\\uff3f'
                     {
                     match('\uFF3F'); 
 
                     }
                     break;
                 case 377 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2544:9: '\\uff41' .. '\\uff5a'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2545:9: '\\uff41' .. '\\uff5a'
                     {
                     matchRange('\uFF41','\uFF5A'); 
 
                     }
                     break;
                 case 378 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2545:9: '\\uff65' .. '\\uffbe'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2546:9: '\\uff65' .. '\\uffbe'
                     {
                     matchRange('\uFF65','\uFFBE'); 
 
                     }
                     break;
                 case 379 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2546:9: '\\uffc2' .. '\\uffc7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2547:9: '\\uffc2' .. '\\uffc7'
                     {
                     matchRange('\uFFC2','\uFFC7'); 
 
                     }
                     break;
                 case 380 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2547:9: '\\uffca' .. '\\uffcf'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2548:9: '\\uffca' .. '\\uffcf'
                     {
                     matchRange('\uFFCA','\uFFCF'); 
 
                     }
                     break;
                 case 381 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2548:9: '\\uffd2' .. '\\uffd7'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2549:9: '\\uffd2' .. '\\uffd7'
                     {
                     matchRange('\uFFD2','\uFFD7'); 
 
                     }
                     break;
                 case 382 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2549:9: '\\uffda' .. '\\uffdc'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2550:9: '\\uffda' .. '\\uffdc'
                     {
                     matchRange('\uFFDA','\uFFDC'); 
 
                     }
                     break;
                 case 383 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2550:9: '\\uffe0' .. '\\uffe1'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2551:9: '\\uffe0' .. '\\uffe1'
                     {
                     matchRange('\uFFE0','\uFFE1'); 
 
                     }
                     break;
                 case 384 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2551:9: '\\uffe5' .. '\\uffe6'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2552:9: '\\uffe5' .. '\\uffe6'
                     {
                     matchRange('\uFFE5','\uFFE6'); 
 
                     }
                     break;
                 case 385 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2552:9: '\\ufff9' .. '\\ufffb'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2553:9: '\\ufff9' .. '\\ufffb'
                     {
                     matchRange('\uFFF9','\uFFFB'); 
 
                     }
                     break;
                 case 386 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2553:9: ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2554:9: ( '\\ud800' .. '\\udbff' ) ( '\\udc00' .. '\\udfff' )
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2553:9: ( '\\ud800' .. '\\udbff' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2553:10: '\\ud800' .. '\\udbff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2554:9: ( '\\ud800' .. '\\udbff' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2554:10: '\\ud800' .. '\\udbff'
                     {
                     matchRange('\uD800','\uDBFF'); 
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2553:30: ( '\\udc00' .. '\\udfff' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2553:31: '\\udc00' .. '\\udfff'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2554:30: ( '\\udc00' .. '\\udfff' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:2554:31: '\\udc00' .. '\\udfff'
                     {
                     matchRange('\uDC00','\uDFFF'); 
 
@@ -11209,7 +11209,7 @@ public class JavaLexer extends Lexer {
             this.transition = DFA18_transition;
         }
         public String getDescription() {
-            return "1367:1: fragment NonIntegerNumber : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? | '.' ( '0' .. '9' )+ ( Exponent )? | ( '0' .. '9' )+ Exponent | ( '0' .. '9' )+ | HexPrefix ( HexDigit )* ( () | ( '.' ( HexDigit )* ) ) ( 'p' | 'P' ) ( '+' | '-' )? ( '0' .. '9' )+ );";
+            return "1368:1: fragment NonIntegerNumber : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? | '.' ( '0' .. '9' )+ ( Exponent )? | ( '0' .. '9' )+ Exponent | ( '0' .. '9' )+ | HexPrefix ( HexDigit )* ( () | ( '.' ( HexDigit )* ) ) ( 'p' | 'P' ) ( '+' | '-' )? ( '0' .. '9' )+ );";
         }
     }
     static final String DFA24_eotS =
@@ -11274,7 +11274,7 @@ public class JavaLexer extends Lexer {
             this.transition = DFA24_transition;
         }
         public String getDescription() {
-            return "1424:14: ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) )";
+            return "1425:14: ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' | ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) ( '0' .. '7' ) | ( '0' .. '7' ) )";
         }
     }
     static final String DFA29_eotS =
@@ -11328,7 +11328,7 @@ public class JavaLexer extends Lexer {
             this.transition = DFA29_transition;
         }
         public String getDescription() {
-            return "1476:1: LINE_COMMENT : ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* );";
+            return "1477:1: LINE_COMMENT : ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;

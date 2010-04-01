@@ -1,5 +1,5 @@
-#Wed Mar 31 14:02:21 CEST 2010
-antlr_core_builder_Xconversiontimeout=30000
+#Wed Mar 31 21:33:52 CEST 2010
+antlr_core_builder_Xconversiontimeout=40000
 antlr_core_builder_Xdfaverbose=false
 antlr_core_builder_Xm=4
 antlr_core_builder_Xmaxdfaedges=65534
