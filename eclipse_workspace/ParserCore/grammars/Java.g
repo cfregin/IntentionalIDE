@@ -288,7 +288,7 @@ options {
     backtrack=true;
     memoize=true;
     output=AST;
-     //asr
+     
 }
 @parser::header{
 package de.intentionalide.parser.java;
@@ -297,6 +297,7 @@ import de.intentionalide.code.IntentionalImport;
 import de.intentionalide.code.IntentionalMethod;
 import de.intentionalide.code.IntentionalProgram;
 import java.util.Stack;
+
 }
 @lexer::header{
 package de.intentionalide.parser.java;

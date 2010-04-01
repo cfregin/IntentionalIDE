@@ -878,3 +878,76 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2010-03-31 13:56:45.804
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2010-03-31 21:22:47.763 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_17
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/cfregin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/cfregin/development/IntentionalIDE/eclipse_workspace -product org.eclipse.epp.package.jee.product -keyring /Users/cfregin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2010-03-31 21:22:53.853
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2010-03-31 21:22:56.073
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.dltk.core 4 0 2010-03-31 21:25:24.439
+!MESSAGE Error deleting markers
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ParserCore/old grammars/ES3Walker.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:319)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:196)
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:764)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildResources(StandardScriptBuilder.java:233)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.buildResources(ScriptBuilder.java:764)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.incrementalBuild(ScriptBuilder.java:671)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:256)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2010-03-31 21:25:24.440
+!MESSAGE Resource '/ParserCore/old grammars/ES3Walker.java' does not exist.
+
+!ENTRY org.deved.antlride.core 4 0 2010-03-31 21:37:00.708
+!MESSAGE Could not create gramnar
+!STACK 0
+java.lang.NullPointerException
+	at org.deved.antlride.internal.core.antlr.MachineProbe.getGrammarLocationsForInputSequence(MachineProbe.java:106)
+	at org.deved.antlride.internal.core.antlr.Nondeterminism.findPaths(Nondeterminism.java:65)
+	at org.deved.antlride.internal.core.antlr.Nondeterminism.findAltPaths(Nondeterminism.java:35)
+	at org.deved.antlride.internal.core.antlr.ANTLRGrammarProvider.build(ANTLRGrammarProvider.java:106)
+	at org.deved.antlride.core.interpreter.DefaultAntlrInterpreter.beginSession(DefaultAntlrInterpreter.java:123)
+	at org.deved.antlride.internal.ui.editor.AntlrInterpreterPage$14.run(AntlrInterpreterPage.java:680)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2010-03-31 21:40:28.622 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_17
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/cfregin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/cfregin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-03-31 21:40:50.129
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.deved.antlride.core 4 0 2010-03-31 21:50:59.064
+!MESSAGE Could not create gramnar
+!STACK 0
+java.lang.NullPointerException
+	at org.deved.antlride.internal.core.antlr.MachineProbe.getGrammarLocationsForInputSequence(MachineProbe.java:106)
+	at org.deved.antlride.internal.core.antlr.Nondeterminism.findPaths(Nondeterminism.java:65)
+	at org.deved.antlride.internal.core.antlr.Nondeterminism.findAltPaths(Nondeterminism.java:35)
+	at org.deved.antlride.internal.core.antlr.ANTLRGrammarProvider.build(ANTLRGrammarProvider.java:106)
+	at org.deved.antlride.core.interpreter.DefaultAntlrInterpreter.beginSession(DefaultAntlrInterpreter.java:123)
+	at org.deved.antlride.internal.ui.editor.AntlrInterpreterPage$14.run(AntlrInterpreterPage.java:680)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)

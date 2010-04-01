@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g 2010-03-31 16:30:03
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g 2010-03-31 21:59:58
 
 package de.intentionalide.parser.java;
 import de.intentionalide.code.IntentionalClass;
@@ -6,6 +6,7 @@ import de.intentionalide.code.IntentionalImport;
 import de.intentionalide.code.IntentionalMethod;
 import de.intentionalide.code.IntentionalProgram;
 import java.util.Stack;
+
 
 
 import org.antlr.runtime.*;
@@ -320,7 +321,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "compilationUnit"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:317:1: compilationUnit : ( ( annotations )? packageDeclaration )? ( importDeclaration )* ( typeDeclaration )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:318:1: compilationUnit : ( ( annotations )? packageDeclaration )? ( importDeclaration )* ( typeDeclaration )* ;
     public final JavaParser.compilationUnit_return compilationUnit() throws RecognitionException {
         JavaParser.compilationUnit_return retval = new JavaParser.compilationUnit_return();
         retval.start = input.LT(1);
@@ -339,19 +340,19 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 1) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:5: ( ( ( annotations )? packageDeclaration )? ( importDeclaration )* ( typeDeclaration )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:9: ( ( annotations )? packageDeclaration )? ( importDeclaration )* ( typeDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:5: ( ( ( annotations )? packageDeclaration )? ( importDeclaration )* ( typeDeclaration )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:9: ( ( annotations )? packageDeclaration )? ( importDeclaration )* ( typeDeclaration )*
             {
             root_0 = (Object)adaptor.nil();
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:9: ( ( annotations )? packageDeclaration )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:9: ( ( annotations )? packageDeclaration )?
             int alt2=2;
             alt2 = dfa2.predict(input);
             switch (alt2) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:13: ( annotations )? packageDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:13: ( annotations )? packageDeclaration
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:13: ( annotations )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:13: ( annotations )?
                     int alt1=2;
                     int LA1_0 = input.LA(1);
 
@@ -360,7 +361,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt1) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:14: annotations
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:14: annotations
                             {
                             pushFollow(FOLLOW_annotations_in_compilationUnit115);
                             annotations1=annotations();
@@ -386,7 +387,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:326:9: ( importDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:327:9: ( importDeclaration )*
             loop3:
             do {
                 int alt3=2;
@@ -399,7 +400,7 @@ public class JavaParser extends Parser {
 
                 switch (alt3) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:326:10: importDeclaration
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:327:10: importDeclaration
             	    {
             	    pushFollow(FOLLOW_importDeclaration_in_compilationUnit166);
             	    importDeclaration3=importDeclaration();
@@ -416,7 +417,7 @@ public class JavaParser extends Parser {
                 }
             } while (true);
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:328:9: ( typeDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:329:9: ( typeDeclaration )*
             loop4:
             do {
                 int alt4=2;
@@ -429,7 +430,7 @@ public class JavaParser extends Parser {
 
                 switch (alt4) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:328:10: typeDeclaration
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:329:10: typeDeclaration
             	    {
             	    pushFollow(FOLLOW_typeDeclaration_in_compilationUnit188);
             	    typeDeclaration4=typeDeclaration();
@@ -476,7 +477,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "packageDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:332:1: packageDeclaration : 'package' qualifiedName ';' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:333:1: packageDeclaration : 'package' qualifiedName ';' ;
     public final JavaParser.packageDeclaration_return packageDeclaration() throws RecognitionException {
         JavaParser.packageDeclaration_return retval = new JavaParser.packageDeclaration_return();
         retval.start = input.LT(1);
@@ -493,8 +494,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 2) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:333:5: ( 'package' qualifiedName ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:333:9: 'package' qualifiedName ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:334:5: ( 'package' qualifiedName ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:334:9: 'package' qualifiedName ';'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -544,7 +545,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "importDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:337:1: importDeclaration : ( 'import' ( 'static' )? IDENTIFIER '.' '*' ';' | 'import' ( 'static' )? IDENTIFIER ( '.' IDENTIFIER )+ ( '.' '*' )? ';' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:338:1: importDeclaration : ( 'import' ( 'static' )? IDENTIFIER '.' '*' ';' | 'import' ( 'static' )? IDENTIFIER ( '.' IDENTIFIER )+ ( '.' '*' )? ';' );
     public final JavaParser.importDeclaration_return importDeclaration() throws RecognitionException {
         JavaParser.importDeclaration_return retval = new JavaParser.importDeclaration_return();
         retval.start = input.LT(1);
@@ -583,7 +584,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 3) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:338:5: ( 'import' ( 'static' )? IDENTIFIER '.' '*' ';' | 'import' ( 'static' )? IDENTIFIER ( '.' IDENTIFIER )+ ( '.' '*' )? ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:339:5: ( 'import' ( 'static' )? IDENTIFIER '.' '*' ';' | 'import' ( 'static' )? IDENTIFIER ( '.' IDENTIFIER )+ ( '.' '*' )? ';' )
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -674,7 +675,7 @@ public class JavaParser extends Parser {
             }
             switch (alt9) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:338:9: 'import' ( 'static' )? IDENTIFIER '.' '*' ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:339:9: 'import' ( 'static' )? IDENTIFIER '.' '*' ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -683,7 +684,7 @@ public class JavaParser extends Parser {
                     string_literal8_tree = (Object)adaptor.create(string_literal8);
                     adaptor.addChild(root_0, string_literal8_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:339:9: ( 'static' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:340:9: ( 'static' )?
                     int alt5=2;
                     int LA5_0 = input.LA(1);
 
@@ -692,7 +693,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt5) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:339:10: 'static'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:340:10: 'static'
                             {
                             string_literal9=(Token)match(input,STATIC,FOLLOW_STATIC_in_importDeclaration264); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -729,7 +730,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:343:9: 'import' ( 'static' )? IDENTIFIER ( '.' IDENTIFIER )+ ( '.' '*' )? ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:344:9: 'import' ( 'static' )? IDENTIFIER ( '.' IDENTIFIER )+ ( '.' '*' )? ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -738,7 +739,7 @@ public class JavaParser extends Parser {
                     string_literal14_tree = (Object)adaptor.create(string_literal14);
                     adaptor.addChild(root_0, string_literal14_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:344:9: ( 'static' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:345:9: ( 'static' )?
                     int alt6=2;
                     int LA6_0 = input.LA(1);
 
@@ -747,7 +748,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt6) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:344:10: 'static'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:345:10: 'static'
                             {
                             string_literal15=(Token)match(input,STATIC,FOLLOW_STATIC_in_importDeclaration328); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -765,7 +766,7 @@ public class JavaParser extends Parser {
                     IDENTIFIER16_tree = (Object)adaptor.create(IDENTIFIER16);
                     adaptor.addChild(root_0, IDENTIFIER16_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:347:9: ( '.' IDENTIFIER )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:348:9: ( '.' IDENTIFIER )+
                     int cnt7=0;
                     loop7:
                     do {
@@ -785,7 +786,7 @@ public class JavaParser extends Parser {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:347:10: '.' IDENTIFIER
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:348:10: '.' IDENTIFIER
                     	    {
                     	    char_literal17=(Token)match(input,DOT,FOLLOW_DOT_in_importDeclaration360); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -811,7 +812,7 @@ public class JavaParser extends Parser {
                         cnt7++;
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:349:9: ( '.' '*' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:350:9: ( '.' '*' )?
                     int alt8=2;
                     int LA8_0 = input.LA(1);
 
@@ -820,7 +821,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt8) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:349:10: '.' '*'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:350:10: '.' '*'
                             {
                             char_literal19=(Token)match(input,DOT,FOLLOW_DOT_in_importDeclaration384); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -882,7 +883,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "qualifiedImportName"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:359:1: qualifiedImportName : IDENTIFIER ( '.' IDENTIFIER )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:360:1: qualifiedImportName : IDENTIFIER ( '.' IDENTIFIER )* ;
     public final JavaParser.qualifiedImportName_return qualifiedImportName() throws RecognitionException {
         JavaParser.qualifiedImportName_return retval = new JavaParser.qualifiedImportName_return();
         retval.start = input.LT(1);
@@ -899,8 +900,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 4) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:360:5: ( IDENTIFIER ( '.' IDENTIFIER )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:360:9: IDENTIFIER ( '.' IDENTIFIER )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:361:5: ( IDENTIFIER ( '.' IDENTIFIER )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:361:9: IDENTIFIER ( '.' IDENTIFIER )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -909,7 +910,7 @@ public class JavaParser extends Parser {
             IDENTIFIER22_tree = (Object)adaptor.create(IDENTIFIER22);
             adaptor.addChild(root_0, IDENTIFIER22_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:361:9: ( '.' IDENTIFIER )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:362:9: ( '.' IDENTIFIER )*
             loop10:
             do {
                 int alt10=2;
@@ -922,7 +923,7 @@ public class JavaParser extends Parser {
 
                 switch (alt10) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:361:10: '.' IDENTIFIER
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:362:10: '.' IDENTIFIER
             	    {
             	    char_literal23=(Token)match(input,DOT,FOLLOW_DOT_in_qualifiedImportName448); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -973,7 +974,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:365:1: typeDeclaration : ( classOrInterfaceDeclaration | ';' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:366:1: typeDeclaration : ( classOrInterfaceDeclaration | ';' );
     public final JavaParser.typeDeclaration_return typeDeclaration() throws RecognitionException {
         JavaParser.typeDeclaration_return retval = new JavaParser.typeDeclaration_return();
         retval.start = input.LT(1);
@@ -988,7 +989,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 5) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:366:5: ( classOrInterfaceDeclaration | ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:367:5: ( classOrInterfaceDeclaration | ';' )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1007,7 +1008,7 @@ public class JavaParser extends Parser {
             }
             switch (alt11) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:366:9: classOrInterfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:367:9: classOrInterfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1021,7 +1022,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:367:9: ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:368:9: ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1062,7 +1063,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classOrInterfaceDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:370:1: classOrInterfaceDeclaration : ( classDeclaration | interfaceDeclaration );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:371:1: classOrInterfaceDeclaration : ( classDeclaration | interfaceDeclaration );
     public final JavaParser.classOrInterfaceDeclaration_return classOrInterfaceDeclaration() throws RecognitionException {
         JavaParser.classOrInterfaceDeclaration_return retval = new JavaParser.classOrInterfaceDeclaration_return();
         retval.start = input.LT(1);
@@ -1077,12 +1078,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 6) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:371:5: ( classDeclaration | interfaceDeclaration )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:372:5: ( classDeclaration | interfaceDeclaration )
             int alt12=2;
             alt12 = dfa12.predict(input);
             switch (alt12) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:371:10: classDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:372:10: classDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1096,7 +1097,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:372:9: interfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:373:9: interfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1138,7 +1139,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "modifiers"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:376:1: modifiers : ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:377:1: modifiers : ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )* ;
     public final JavaParser.modifiers_return modifiers() throws RecognitionException {
         JavaParser.modifiers_return retval = new JavaParser.modifiers_return();
         retval.start = input.LT(1);
@@ -1173,19 +1174,19 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 7) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:377:5: ( ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:378:5: ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:378:5: ( ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:379:5: ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )*
             {
             root_0 = (Object)adaptor.nil();
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:378:5: ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:379:5: ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )*
             loop13:
             do {
                 int alt13=13;
                 alt13 = dfa13.predict(input);
                 switch (alt13) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:378:10: annotation
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:379:10: annotation
             	    {
             	    pushFollow(FOLLOW_annotation_in_modifiers557);
             	    annotation29=annotation();
@@ -1197,7 +1198,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:379:9: 'public'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:380:9: 'public'
             	    {
             	    string_literal30=(Token)match(input,PUBLIC,FOLLOW_PUBLIC_in_modifiers567); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1208,7 +1209,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 3 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:380:9: 'protected'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:381:9: 'protected'
             	    {
             	    string_literal31=(Token)match(input,PROTECTED,FOLLOW_PROTECTED_in_modifiers577); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1219,7 +1220,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 4 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:381:9: 'private'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:382:9: 'private'
             	    {
             	    string_literal32=(Token)match(input,PRIVATE,FOLLOW_PRIVATE_in_modifiers587); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1230,7 +1231,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 5 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:382:9: 'static'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:383:9: 'static'
             	    {
             	    string_literal33=(Token)match(input,STATIC,FOLLOW_STATIC_in_modifiers597); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1241,7 +1242,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 6 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:383:9: 'abstract'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:384:9: 'abstract'
             	    {
             	    string_literal34=(Token)match(input,ABSTRACT,FOLLOW_ABSTRACT_in_modifiers607); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1252,7 +1253,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 7 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:384:9: 'final'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:385:9: 'final'
             	    {
             	    string_literal35=(Token)match(input,FINAL,FOLLOW_FINAL_in_modifiers617); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1263,7 +1264,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 8 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:385:9: 'native'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:386:9: 'native'
             	    {
             	    string_literal36=(Token)match(input,NATIVE,FOLLOW_NATIVE_in_modifiers627); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1274,7 +1275,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 9 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:386:9: 'synchronized'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:387:9: 'synchronized'
             	    {
             	    string_literal37=(Token)match(input,SYNCHRONIZED,FOLLOW_SYNCHRONIZED_in_modifiers637); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1285,7 +1286,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 10 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:387:9: 'transient'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:388:9: 'transient'
             	    {
             	    string_literal38=(Token)match(input,TRANSIENT,FOLLOW_TRANSIENT_in_modifiers647); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1296,7 +1297,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 11 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:388:9: 'volatile'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:389:9: 'volatile'
             	    {
             	    string_literal39=(Token)match(input,VOLATILE,FOLLOW_VOLATILE_in_modifiers657); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1307,7 +1308,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 12 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:389:9: 'strictfp'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:390:9: 'strictfp'
             	    {
             	    string_literal40=(Token)match(input,STRICTFP,FOLLOW_STRICTFP_in_modifiers667); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1353,7 +1354,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "variableModifiers"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:394:1: variableModifiers : ( 'final' | annotation )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:395:1: variableModifiers : ( 'final' | annotation )* ;
     public final JavaParser.variableModifiers_return variableModifiers() throws RecognitionException {
         JavaParser.variableModifiers_return retval = new JavaParser.variableModifiers_return();
         retval.start = input.LT(1);
@@ -1368,12 +1369,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 8) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:395:5: ( ( 'final' | annotation )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:395:9: ( 'final' | annotation )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:396:5: ( ( 'final' | annotation )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:396:9: ( 'final' | annotation )*
             {
             root_0 = (Object)adaptor.nil();
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:395:9: ( 'final' | annotation )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:396:9: ( 'final' | annotation )*
             loop14:
             do {
                 int alt14=3;
@@ -1389,7 +1390,7 @@ public class JavaParser extends Parser {
 
                 switch (alt14) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:395:13: 'final'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:396:13: 'final'
             	    {
             	    string_literal41=(Token)match(input,FINAL,FOLLOW_FINAL_in_variableModifiers699); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1400,7 +1401,7 @@ public class JavaParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:396:13: annotation
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:397:13: annotation
             	    {
             	    pushFollow(FOLLOW_annotation_in_variableModifiers713);
             	    annotation42=annotation();
@@ -1447,7 +1448,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:401:1: classDeclaration : ( normalClassDeclaration | enumDeclaration );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:402:1: classDeclaration : ( normalClassDeclaration | enumDeclaration );
     public final JavaParser.classDeclaration_return classDeclaration() throws RecognitionException {
         JavaParser.classDeclaration_return retval = new JavaParser.classDeclaration_return();
         retval.start = input.LT(1);
@@ -1462,12 +1463,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 9) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:402:5: ( normalClassDeclaration | enumDeclaration )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:403:5: ( normalClassDeclaration | enumDeclaration )
             int alt15=2;
             alt15 = dfa15.predict(input);
             switch (alt15) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:402:9: normalClassDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:403:9: normalClassDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1481,7 +1482,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:403:9: enumDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:404:9: enumDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1523,7 +1524,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "normalClassDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:406:1: normalClassDeclaration : modifiers 'class' IDENTIFIER ( typeParameters )? ( 'extends' type )? ( 'implements' typeList )? classBody ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:407:1: normalClassDeclaration : modifiers 'class' IDENTIFIER ( typeParameters )? ( 'extends' type )? ( 'implements' typeList )? classBody ;
     public final JavaParser.normalClassDeclaration_return normalClassDeclaration() throws RecognitionException {
         JavaParser.normalClassDeclaration_return retval = new JavaParser.normalClassDeclaration_return();
         retval.start = input.LT(1);
@@ -1552,8 +1553,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 10) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:407:5: ( modifiers 'class' IDENTIFIER ( typeParameters )? ( 'extends' type )? ( 'implements' typeList )? classBody )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:407:9: modifiers 'class' IDENTIFIER ( typeParameters )? ( 'extends' type )? ( 'implements' typeList )? classBody
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:408:5: ( modifiers 'class' IDENTIFIER ( typeParameters )? ( 'extends' type )? ( 'implements' typeList )? classBody )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:408:9: modifiers 'class' IDENTIFIER ( typeParameters )? ( 'extends' type )? ( 'implements' typeList )? classBody
             {
             root_0 = (Object)adaptor.nil();
 
@@ -1584,7 +1585,7 @@ public class JavaParser extends Parser {
                         classStack.push(newClass);
                        
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:417:9: ( typeParameters )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:418:9: ( typeParameters )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -1593,7 +1594,7 @@ public class JavaParser extends Parser {
             }
             switch (alt16) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:417:10: typeParameters
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:418:10: typeParameters
                     {
                     pushFollow(FOLLOW_typeParameters_in_normalClassDeclaration805);
                     typeParameters48=typeParameters();
@@ -1607,7 +1608,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:419:9: ( 'extends' type )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:420:9: ( 'extends' type )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -1616,7 +1617,7 @@ public class JavaParser extends Parser {
             }
             switch (alt17) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:419:10: 'extends' type
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:420:10: 'extends' type
                     {
                     string_literal49=(Token)match(input,EXTENDS,FOLLOW_EXTENDS_in_normalClassDeclaration827); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -1635,7 +1636,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:421:9: ( 'implements' typeList )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:422:9: ( 'implements' typeList )?
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -1644,7 +1645,7 @@ public class JavaParser extends Parser {
             }
             switch (alt18) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:421:10: 'implements' typeList
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:422:10: 'implements' typeList
                     {
                     string_literal51=(Token)match(input,IMPLEMENTS,FOLLOW_IMPLEMENTS_in_normalClassDeclaration851); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -1704,7 +1705,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeParameters"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:430:1: typeParameters : '<' typeParameter ( ',' typeParameter )* '>' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:431:1: typeParameters : '<' typeParameter ( ',' typeParameter )* '>' ;
     public final JavaParser.typeParameters_return typeParameters() throws RecognitionException {
         JavaParser.typeParameters_return retval = new JavaParser.typeParameters_return();
         retval.start = input.LT(1);
@@ -1725,8 +1726,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 11) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:431:5: ( '<' typeParameter ( ',' typeParameter )* '>' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:431:9: '<' typeParameter ( ',' typeParameter )* '>'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:432:5: ( '<' typeParameter ( ',' typeParameter )* '>' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:432:9: '<' typeParameter ( ',' typeParameter )* '>'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -1741,7 +1742,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, typeParameter55.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:433:13: ( ',' typeParameter )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:434:13: ( ',' typeParameter )*
             loop19:
             do {
                 int alt19=2;
@@ -1754,7 +1755,7 @@ public class JavaParser extends Parser {
 
                 switch (alt19) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:433:14: ',' typeParameter
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:434:14: ',' typeParameter
             	    {
             	    char_literal56=(Token)match(input,COMMA,FOLLOW_COMMA_in_typeParameters946); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1811,7 +1812,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeParameter"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:438:1: typeParameter : IDENTIFIER ( 'extends' typeBound )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:439:1: typeParameter : IDENTIFIER ( 'extends' typeBound )? ;
     public final JavaParser.typeParameter_return typeParameter() throws RecognitionException {
         JavaParser.typeParameter_return retval = new JavaParser.typeParameter_return();
         retval.start = input.LT(1);
@@ -1828,8 +1829,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 12) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:439:5: ( IDENTIFIER ( 'extends' typeBound )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:439:9: IDENTIFIER ( 'extends' typeBound )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:440:5: ( IDENTIFIER ( 'extends' typeBound )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:440:9: IDENTIFIER ( 'extends' typeBound )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -1838,7 +1839,7 @@ public class JavaParser extends Parser {
             IDENTIFIER59_tree = (Object)adaptor.create(IDENTIFIER59);
             adaptor.addChild(root_0, IDENTIFIER59_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:440:9: ( 'extends' typeBound )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:441:9: ( 'extends' typeBound )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -1847,7 +1848,7 @@ public class JavaParser extends Parser {
             }
             switch (alt20) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:440:10: 'extends' typeBound
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:441:10: 'extends' typeBound
                     {
                     string_literal60=(Token)match(input,EXTENDS,FOLLOW_EXTENDS_in_typeParameter1004); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -1896,7 +1897,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeBound"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:445:1: typeBound : type ( '&' type )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:446:1: typeBound : type ( '&' type )* ;
     public final JavaParser.typeBound_return typeBound() throws RecognitionException {
         JavaParser.typeBound_return retval = new JavaParser.typeBound_return();
         retval.start = input.LT(1);
@@ -1913,8 +1914,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 13) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:446:5: ( type ( '&' type )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:446:9: type ( '&' type )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:447:5: ( type ( '&' type )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:447:9: type ( '&' type )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -1924,7 +1925,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, type62.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:447:9: ( '&' type )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:448:9: ( '&' type )*
             loop21:
             do {
                 int alt21=2;
@@ -1937,7 +1938,7 @@ public class JavaParser extends Parser {
 
                 switch (alt21) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:447:10: '&' type
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:448:10: '&' type
             	    {
             	    char_literal63=(Token)match(input,AMP,FOLLOW_AMP_in_typeBound1049); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -1989,7 +1990,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "enumDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:452:1: enumDeclaration : modifiers ( 'enum' ) IDENTIFIER ( 'implements' typeList )? enumBody ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:453:1: enumDeclaration : modifiers ( 'enum' ) IDENTIFIER ( 'implements' typeList )? enumBody ;
     public final JavaParser.enumDeclaration_return enumDeclaration() throws RecognitionException {
         JavaParser.enumDeclaration_return retval = new JavaParser.enumDeclaration_return();
         retval.start = input.LT(1);
@@ -2012,8 +2013,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 14) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:453:5: ( modifiers ( 'enum' ) IDENTIFIER ( 'implements' typeList )? enumBody )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:453:9: modifiers ( 'enum' ) IDENTIFIER ( 'implements' typeList )? enumBody
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:454:5: ( modifiers ( 'enum' ) IDENTIFIER ( 'implements' typeList )? enumBody )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:454:9: modifiers ( 'enum' ) IDENTIFIER ( 'implements' typeList )? enumBody
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2023,8 +2024,8 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, modifiers65.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:454:9: ( 'enum' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:454:10: 'enum'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:455:9: ( 'enum' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:455:10: 'enum'
             {
             string_literal66=(Token)match(input,ENUM,FOLLOW_ENUM_in_enumDeclaration1095); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
@@ -2039,7 +2040,7 @@ public class JavaParser extends Parser {
             IDENTIFIER67_tree = (Object)adaptor.create(IDENTIFIER67);
             adaptor.addChild(root_0, IDENTIFIER67_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:457:9: ( 'implements' typeList )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:458:9: ( 'implements' typeList )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -2048,7 +2049,7 @@ public class JavaParser extends Parser {
             }
             switch (alt22) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:457:10: 'implements' typeList
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:458:10: 'implements' typeList
                     {
                     string_literal68=(Token)match(input,IMPLEMENTS,FOLLOW_IMPLEMENTS_in_enumDeclaration1127); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -2103,7 +2104,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "enumBody"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:463:1: enumBody : '{' ( enumConstants )? ( ',' )? ( enumBodyDeclarations )? '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:464:1: enumBody : '{' ( enumConstants )? ( ',' )? ( enumBodyDeclarations )? '}' ;
     public final JavaParser.enumBody_return enumBody() throws RecognitionException {
         JavaParser.enumBody_return retval = new JavaParser.enumBody_return();
         retval.start = input.LT(1);
@@ -2124,8 +2125,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 15) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:464:5: ( '{' ( enumConstants )? ( ',' )? ( enumBodyDeclarations )? '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:464:9: '{' ( enumConstants )? ( ',' )? ( enumBodyDeclarations )? '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:465:5: ( '{' ( enumConstants )? ( ',' )? ( enumBodyDeclarations )? '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:465:9: '{' ( enumConstants )? ( ',' )? ( enumBodyDeclarations )? '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2134,7 +2135,7 @@ public class JavaParser extends Parser {
             char_literal71_tree = (Object)adaptor.create(char_literal71);
             adaptor.addChild(root_0, char_literal71_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:465:9: ( enumConstants )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:466:9: ( enumConstants )?
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -2143,7 +2144,7 @@ public class JavaParser extends Parser {
             }
             switch (alt23) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:465:10: enumConstants
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:466:10: enumConstants
                     {
                     pushFollow(FOLLOW_enumConstants_in_enumBody1186);
                     enumConstants72=enumConstants();
@@ -2157,7 +2158,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:467:9: ( ',' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:468:9: ( ',' )?
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -2179,7 +2180,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:468:9: ( enumBodyDeclarations )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:469:9: ( enumBodyDeclarations )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -2188,7 +2189,7 @@ public class JavaParser extends Parser {
             }
             switch (alt25) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:468:10: enumBodyDeclarations
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:469:10: enumBodyDeclarations
                     {
                     pushFollow(FOLLOW_enumBodyDeclarations_in_enumBody1221);
                     enumBodyDeclarations74=enumBodyDeclarations();
@@ -2237,7 +2238,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "enumConstants"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:473:1: enumConstants : enumConstant ( ',' enumConstant )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:474:1: enumConstants : enumConstant ( ',' enumConstant )* ;
     public final JavaParser.enumConstants_return enumConstants() throws RecognitionException {
         JavaParser.enumConstants_return retval = new JavaParser.enumConstants_return();
         retval.start = input.LT(1);
@@ -2254,8 +2255,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 16) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:474:5: ( enumConstant ( ',' enumConstant )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:474:9: enumConstant ( ',' enumConstant )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:475:5: ( enumConstant ( ',' enumConstant )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:475:9: enumConstant ( ',' enumConstant )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2265,7 +2266,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, enumConstant76.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:475:9: ( ',' enumConstant )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:476:9: ( ',' enumConstant )*
             loop26:
             do {
                 int alt26=2;
@@ -2284,7 +2285,7 @@ public class JavaParser extends Parser {
 
                 switch (alt26) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:475:10: ',' enumConstant
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:476:10: ',' enumConstant
             	    {
             	    char_literal77=(Token)match(input,COMMA,FOLLOW_COMMA_in_enumConstants1274); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -2336,7 +2337,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "enumConstant"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:479:1: enumConstant : ( annotations )? IDENTIFIER ( arguments )? ( classBody )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:480:1: enumConstant : ( annotations )? IDENTIFIER ( arguments )? ( classBody )? ;
     public final JavaParser.enumConstant_return enumConstant() throws RecognitionException {
         JavaParser.enumConstant_return retval = new JavaParser.enumConstant_return();
         retval.start = input.LT(1);
@@ -2355,12 +2356,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 17) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:484:5: ( ( annotations )? IDENTIFIER ( arguments )? ( classBody )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:484:9: ( annotations )? IDENTIFIER ( arguments )? ( classBody )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:485:5: ( ( annotations )? IDENTIFIER ( arguments )? ( classBody )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:485:9: ( annotations )? IDENTIFIER ( arguments )? ( classBody )?
             {
             root_0 = (Object)adaptor.nil();
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:484:9: ( annotations )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:485:9: ( annotations )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -2369,7 +2370,7 @@ public class JavaParser extends Parser {
             }
             switch (alt27) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:484:10: annotations
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:485:10: annotations
                     {
                     pushFollow(FOLLOW_annotations_in_enumConstant1310);
                     annotations79=annotations();
@@ -2388,7 +2389,7 @@ public class JavaParser extends Parser {
             IDENTIFIER80_tree = (Object)adaptor.create(IDENTIFIER80);
             adaptor.addChild(root_0, IDENTIFIER80_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:487:9: ( arguments )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:488:9: ( arguments )?
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -2397,7 +2398,7 @@ public class JavaParser extends Parser {
             }
             switch (alt28) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:487:10: arguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:488:10: arguments
                     {
                     pushFollow(FOLLOW_arguments_in_enumConstant1342);
                     arguments81=arguments();
@@ -2411,7 +2412,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:489:9: ( classBody )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:490:9: ( classBody )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -2420,7 +2421,7 @@ public class JavaParser extends Parser {
             }
             switch (alt29) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:489:10: classBody
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:490:10: classBody
                     {
                     pushFollow(FOLLOW_classBody_in_enumConstant1364);
                     classBody82=classBody();
@@ -2464,7 +2465,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "enumBodyDeclarations"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:495:1: enumBodyDeclarations : ';' ( classBodyDeclaration )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:496:1: enumBodyDeclarations : ';' ( classBodyDeclaration )* ;
     public final JavaParser.enumBodyDeclarations_return enumBodyDeclarations() throws RecognitionException {
         JavaParser.enumBodyDeclarations_return retval = new JavaParser.enumBodyDeclarations_return();
         retval.start = input.LT(1);
@@ -2479,8 +2480,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 18) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:496:5: ( ';' ( classBodyDeclaration )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:496:9: ';' ( classBodyDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:497:5: ( ';' ( classBodyDeclaration )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:497:9: ';' ( classBodyDeclaration )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2489,7 +2490,7 @@ public class JavaParser extends Parser {
             char_literal83_tree = (Object)adaptor.create(char_literal83);
             adaptor.addChild(root_0, char_literal83_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:497:9: ( classBodyDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:498:9: ( classBodyDeclaration )*
             loop30:
             do {
                 int alt30=2;
@@ -2502,7 +2503,7 @@ public class JavaParser extends Parser {
 
                 switch (alt30) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:497:10: classBodyDeclaration
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:498:10: classBodyDeclaration
             	    {
             	    pushFollow(FOLLOW_classBodyDeclaration_in_enumBodyDeclarations1417);
             	    classBodyDeclaration84=classBodyDeclaration();
@@ -2549,7 +2550,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "interfaceDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:501:1: interfaceDeclaration : ( normalInterfaceDeclaration | annotationTypeDeclaration );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:502:1: interfaceDeclaration : ( normalInterfaceDeclaration | annotationTypeDeclaration );
     public final JavaParser.interfaceDeclaration_return interfaceDeclaration() throws RecognitionException {
         JavaParser.interfaceDeclaration_return retval = new JavaParser.interfaceDeclaration_return();
         retval.start = input.LT(1);
@@ -2564,12 +2565,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 19) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:502:5: ( normalInterfaceDeclaration | annotationTypeDeclaration )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:503:5: ( normalInterfaceDeclaration | annotationTypeDeclaration )
             int alt31=2;
             alt31 = dfa31.predict(input);
             switch (alt31) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:502:9: normalInterfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:503:9: normalInterfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -2583,7 +2584,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:503:9: annotationTypeDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:504:9: annotationTypeDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -2625,7 +2626,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "normalInterfaceDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:506:1: normalInterfaceDeclaration : modifiers 'interface' IDENTIFIER ( typeParameters )? ( 'extends' typeList )? interfaceBody ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:507:1: normalInterfaceDeclaration : modifiers 'interface' IDENTIFIER ( typeParameters )? ( 'extends' typeList )? interfaceBody ;
     public final JavaParser.normalInterfaceDeclaration_return normalInterfaceDeclaration() throws RecognitionException {
         JavaParser.normalInterfaceDeclaration_return retval = new JavaParser.normalInterfaceDeclaration_return();
         retval.start = input.LT(1);
@@ -2650,8 +2651,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 20) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:507:5: ( modifiers 'interface' IDENTIFIER ( typeParameters )? ( 'extends' typeList )? interfaceBody )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:507:9: modifiers 'interface' IDENTIFIER ( typeParameters )? ( 'extends' typeList )? interfaceBody
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:508:5: ( modifiers 'interface' IDENTIFIER ( typeParameters )? ( 'extends' typeList )? interfaceBody )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:508:9: modifiers 'interface' IDENTIFIER ( typeParameters )? ( 'extends' typeList )? interfaceBody
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2671,7 +2672,7 @@ public class JavaParser extends Parser {
             IDENTIFIER89_tree = (Object)adaptor.create(IDENTIFIER89);
             adaptor.addChild(root_0, IDENTIFIER89_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:508:9: ( typeParameters )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:509:9: ( typeParameters )?
             int alt32=2;
             int LA32_0 = input.LA(1);
 
@@ -2680,7 +2681,7 @@ public class JavaParser extends Parser {
             }
             switch (alt32) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:508:10: typeParameters
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:509:10: typeParameters
                     {
                     pushFollow(FOLLOW_typeParameters_in_normalInterfaceDeclaration1497);
                     typeParameters90=typeParameters();
@@ -2694,7 +2695,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:510:9: ( 'extends' typeList )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:511:9: ( 'extends' typeList )?
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -2703,7 +2704,7 @@ public class JavaParser extends Parser {
             }
             switch (alt33) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:510:10: 'extends' typeList
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:511:10: 'extends' typeList
                     {
                     string_literal91=(Token)match(input,EXTENDS,FOLLOW_EXTENDS_in_normalInterfaceDeclaration1519); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -2758,7 +2759,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeList"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:515:1: typeList : type ( ',' type )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:516:1: typeList : type ( ',' type )* ;
     public final JavaParser.typeList_return typeList() throws RecognitionException {
         JavaParser.typeList_return retval = new JavaParser.typeList_return();
         retval.start = input.LT(1);
@@ -2775,8 +2776,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 21) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:516:5: ( type ( ',' type )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:516:9: type ( ',' type )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:517:5: ( type ( ',' type )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:517:9: type ( ',' type )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2786,7 +2787,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, type94.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:517:9: ( ',' type )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:518:9: ( ',' type )*
             loop34:
             do {
                 int alt34=2;
@@ -2799,7 +2800,7 @@ public class JavaParser extends Parser {
 
                 switch (alt34) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:517:10: ',' type
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:518:10: ',' type
             	    {
             	    char_literal95=(Token)match(input,COMMA,FOLLOW_COMMA_in_typeList1573); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -2851,7 +2852,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classBody"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:521:1: classBody : '{' ( classBodyDeclaration )* '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:522:1: classBody : '{' ( classBodyDeclaration )* '}' ;
     public final JavaParser.classBody_return classBody() throws RecognitionException {
         JavaParser.classBody_return retval = new JavaParser.classBody_return();
         retval.start = input.LT(1);
@@ -2868,8 +2869,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 22) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:522:5: ( '{' ( classBodyDeclaration )* '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:522:9: '{' ( classBodyDeclaration )* '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:523:5: ( '{' ( classBodyDeclaration )* '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:523:9: '{' ( classBodyDeclaration )* '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2878,7 +2879,7 @@ public class JavaParser extends Parser {
             char_literal97_tree = (Object)adaptor.create(char_literal97);
             adaptor.addChild(root_0, char_literal97_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:523:9: ( classBodyDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:524:9: ( classBodyDeclaration )*
             loop35:
             do {
                 int alt35=2;
@@ -2891,7 +2892,7 @@ public class JavaParser extends Parser {
 
                 switch (alt35) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:523:10: classBodyDeclaration
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:524:10: classBodyDeclaration
             	    {
             	    pushFollow(FOLLOW_classBodyDeclaration_in_classBody1618);
             	    classBodyDeclaration98=classBodyDeclaration();
@@ -2943,7 +2944,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "interfaceBody"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:528:1: interfaceBody : '{' ( interfaceBodyDeclaration )* '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:529:1: interfaceBody : '{' ( interfaceBodyDeclaration )* '}' ;
     public final JavaParser.interfaceBody_return interfaceBody() throws RecognitionException {
         JavaParser.interfaceBody_return retval = new JavaParser.interfaceBody_return();
         retval.start = input.LT(1);
@@ -2960,8 +2961,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 23) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:529:5: ( '{' ( interfaceBodyDeclaration )* '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:529:9: '{' ( interfaceBodyDeclaration )* '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:530:5: ( '{' ( interfaceBodyDeclaration )* '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:530:9: '{' ( interfaceBodyDeclaration )* '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2970,7 +2971,7 @@ public class JavaParser extends Parser {
             char_literal100_tree = (Object)adaptor.create(char_literal100);
             adaptor.addChild(root_0, char_literal100_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:530:9: ( interfaceBodyDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:531:9: ( interfaceBodyDeclaration )*
             loop36:
             do {
                 int alt36=2;
@@ -2983,7 +2984,7 @@ public class JavaParser extends Parser {
 
                 switch (alt36) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:530:10: interfaceBodyDeclaration
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:531:10: interfaceBodyDeclaration
             	    {
             	    pushFollow(FOLLOW_interfaceBodyDeclaration_in_interfaceBody1672);
             	    interfaceBodyDeclaration101=interfaceBodyDeclaration();
@@ -3035,7 +3036,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classBodyDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:535:1: classBodyDeclaration : ( ';' | ( 'static' )? block | memberDecl );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:536:1: classBodyDeclaration : ( ';' | ( 'static' )? block | memberDecl );
     public final JavaParser.classBodyDeclaration_return classBodyDeclaration() throws RecognitionException {
         JavaParser.classBodyDeclaration_return retval = new JavaParser.classBodyDeclaration_return();
         retval.start = input.LT(1);
@@ -3054,7 +3055,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 24) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:536:5: ( ';' | ( 'static' )? block | memberDecl )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:537:5: ( ';' | ( 'static' )? block | memberDecl )
             int alt38=3;
             switch ( input.LA(1) ) {
             case SEMI:
@@ -3125,7 +3126,7 @@ public class JavaParser extends Parser {
 
             switch (alt38) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:536:9: ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:537:9: ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3138,11 +3139,11 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:537:9: ( 'static' )? block
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:538:9: ( 'static' )? block
                     {
                     root_0 = (Object)adaptor.nil();
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:537:9: ( 'static' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:538:9: ( 'static' )?
                     int alt37=2;
                     int LA37_0 = input.LA(1);
 
@@ -3151,7 +3152,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt37) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:537:10: 'static'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:538:10: 'static'
                             {
                             string_literal104=(Token)match(input,STATIC,FOLLOW_STATIC_in_classBodyDeclaration1725); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -3174,7 +3175,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:540:9: memberDecl
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:541:9: memberDecl
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3216,7 +3217,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "memberDecl"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:543:1: memberDecl : ( fieldDeclaration | methodDeclaration | classDeclaration | interfaceDeclaration );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:544:1: memberDecl : ( fieldDeclaration | methodDeclaration | classDeclaration | interfaceDeclaration );
     public final JavaParser.memberDecl_return memberDecl() throws RecognitionException {
         JavaParser.memberDecl_return retval = new JavaParser.memberDecl_return();
         retval.start = input.LT(1);
@@ -3235,12 +3236,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 25) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:544:5: ( fieldDeclaration | methodDeclaration | classDeclaration | interfaceDeclaration )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:5: ( fieldDeclaration | methodDeclaration | classDeclaration | interfaceDeclaration )
             int alt39=4;
             alt39 = dfa39.predict(input);
             switch (alt39) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:544:10: fieldDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:10: fieldDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3254,7 +3255,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:10: methodDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:546:10: methodDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3268,7 +3269,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:546:10: classDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:547:10: classDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3282,7 +3283,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:547:10: interfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:548:10: interfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3324,7 +3325,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "methodDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:551:1: methodDeclaration : ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' | modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' ) );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:552:1: methodDeclaration : ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' | modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' ) );
     public final JavaParser.methodDeclaration_return methodDeclaration() throws RecognitionException {
         JavaParser.methodDeclaration_return retval = new JavaParser.methodDeclaration_return();
         retval.start = input.LT(1);
@@ -3379,12 +3380,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 26) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:552:5: ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' | modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:553:5: ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' | modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' ) )
             int alt49=2;
             alt49 = dfa49.predict(input);
             switch (alt49) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:554:10: modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:10: modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3394,7 +3395,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, modifiers111.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:9: ( typeParameters )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:556:9: ( typeParameters )?
                     int alt40=2;
                     int LA40_0 = input.LA(1);
 
@@ -3403,7 +3404,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt40) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:10: typeParameters
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:556:10: typeParameters
                             {
                             pushFollow(FOLLOW_typeParameters_in_methodDeclaration1860);
                             typeParameters112=typeParameters();
@@ -3428,7 +3429,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, formalParameters114.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:559:9: ( 'throws' qualifiedNameList )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:560:9: ( 'throws' qualifiedNameList )?
                     int alt41=2;
                     int LA41_0 = input.LA(1);
 
@@ -3437,7 +3438,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt41) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:559:10: 'throws' qualifiedNameList
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:560:10: 'throws' qualifiedNameList
                             {
                             string_literal115=(Token)match(input,THROWS,FOLLOW_THROWS_in_methodDeclaration1902); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -3461,12 +3462,12 @@ public class JavaParser extends Parser {
                     char_literal117_tree = (Object)adaptor.create(char_literal117);
                     adaptor.addChild(root_0, char_literal117_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:562:9: ( explicitConstructorInvocation )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:563:9: ( explicitConstructorInvocation )?
                     int alt42=2;
                     alt42 = dfa42.predict(input);
                     switch (alt42) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:562:10: explicitConstructorInvocation
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:563:10: explicitConstructorInvocation
                             {
                             pushFollow(FOLLOW_explicitConstructorInvocation_in_methodDeclaration1937);
                             explicitConstructorInvocation118=explicitConstructorInvocation();
@@ -3480,7 +3481,7 @@ public class JavaParser extends Parser {
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:564:9: ( blockStatement )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:565:9: ( blockStatement )*
                     loop43:
                     do {
                         int alt43=2;
@@ -3493,7 +3494,7 @@ public class JavaParser extends Parser {
 
                         switch (alt43) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:564:10: blockStatement
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:565:10: blockStatement
                     	    {
                     	    pushFollow(FOLLOW_blockStatement_in_methodDeclaration1959);
                     	    blockStatement119=blockStatement();
@@ -3519,7 +3520,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:567:9: modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:568:9: modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' )
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3529,7 +3530,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, modifiers121.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:568:9: ( typeParameters )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:569:9: ( typeParameters )?
                     int alt44=2;
                     int LA44_0 = input.LA(1);
 
@@ -3538,7 +3539,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt44) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:568:10: typeParameters
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:569:10: typeParameters
                             {
                             pushFollow(FOLLOW_typeParameters_in_methodDeclaration2001);
                             typeParameters122=typeParameters();
@@ -3552,7 +3553,7 @@ public class JavaParser extends Parser {
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:570:9: ( type | 'void' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:571:9: ( type | 'void' )
                     int alt45=2;
                     int LA45_0 = input.LA(1);
 
@@ -3571,7 +3572,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt45) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:570:10: type
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:571:10: type
                             {
                             pushFollow(FOLLOW_type_in_methodDeclaration2023);
                             type123=type();
@@ -3583,7 +3584,7 @@ public class JavaParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:571:13: 'void'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:572:13: 'void'
                             {
                             string_literal124=(Token)match(input,VOID,FOLLOW_VOID_in_methodDeclaration2037); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -3607,7 +3608,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, formalParameters126.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:575:9: ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:576:9: ( '[' ']' )*
                     loop46:
                     do {
                         int alt46=2;
@@ -3620,7 +3621,7 @@ public class JavaParser extends Parser {
 
                         switch (alt46) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:575:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:576:10: '[' ']'
                     	    {
                     	    char_literal127=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_methodDeclaration2078); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -3641,7 +3642,7 @@ public class JavaParser extends Parser {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:577:9: ( 'throws' qualifiedNameList )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:578:9: ( 'throws' qualifiedNameList )?
                     int alt47=2;
                     int LA47_0 = input.LA(1);
 
@@ -3650,7 +3651,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt47) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:577:10: 'throws' qualifiedNameList
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:578:10: 'throws' qualifiedNameList
                             {
                             string_literal129=(Token)match(input,THROWS,FOLLOW_THROWS_in_methodDeclaration2102); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -3669,7 +3670,7 @@ public class JavaParser extends Parser {
 
                     }
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:579:9: ( block | ';' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:580:9: ( block | ';' )
                     int alt48=2;
                     int LA48_0 = input.LA(1);
 
@@ -3688,7 +3689,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt48) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:580:13: block
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:581:13: block
                             {
                             pushFollow(FOLLOW_block_in_methodDeclaration2159);
                             block131=block();
@@ -3700,7 +3701,7 @@ public class JavaParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:581:13: ';'
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:582:13: ';'
                             {
                             char_literal132=(Token)match(input,SEMI,FOLLOW_SEMI_in_methodDeclaration2173); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -3753,7 +3754,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "fieldDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:592:1: fieldDeclaration : modifiers type variableDeclarator ( ',' variableDeclarator )* ';' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:593:1: fieldDeclaration : modifiers type variableDeclarator ( ',' variableDeclarator )* ';' ;
     public final JavaParser.fieldDeclaration_return fieldDeclaration() throws RecognitionException {
         JavaParser.fieldDeclaration_return retval = new JavaParser.fieldDeclaration_return();
         retval.start = input.LT(1);
@@ -3776,8 +3777,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 27) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:593:5: ( modifiers type variableDeclarator ( ',' variableDeclarator )* ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:593:9: modifiers type variableDeclarator ( ',' variableDeclarator )* ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:594:5: ( modifiers type variableDeclarator ( ',' variableDeclarator )* ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:594:9: modifiers type variableDeclarator ( ',' variableDeclarator )* ';'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3799,7 +3800,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, variableDeclarator135.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:596:9: ( ',' variableDeclarator )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:597:9: ( ',' variableDeclarator )*
             loop50:
             do {
                 int alt50=2;
@@ -3812,7 +3813,7 @@ public class JavaParser extends Parser {
 
                 switch (alt50) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:596:10: ',' variableDeclarator
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:597:10: ',' variableDeclarator
             	    {
             	    char_literal136=(Token)match(input,COMMA,FOLLOW_COMMA_in_fieldDeclaration2246); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -3869,7 +3870,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "variableDeclarator"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:601:1: variableDeclarator : IDENTIFIER ( '[' ']' )* ( '=' variableInitializer )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:602:1: variableDeclarator : IDENTIFIER ( '[' ']' )* ( '=' variableInitializer )? ;
     public final JavaParser.variableDeclarator_return variableDeclarator() throws RecognitionException {
         JavaParser.variableDeclarator_return retval = new JavaParser.variableDeclarator_return();
         retval.start = input.LT(1);
@@ -3890,8 +3891,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 28) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:602:5: ( IDENTIFIER ( '[' ']' )* ( '=' variableInitializer )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:602:9: IDENTIFIER ( '[' ']' )* ( '=' variableInitializer )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:603:5: ( IDENTIFIER ( '[' ']' )* ( '=' variableInitializer )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:603:9: IDENTIFIER ( '[' ']' )* ( '=' variableInitializer )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3900,7 +3901,7 @@ public class JavaParser extends Parser {
             IDENTIFIER139_tree = (Object)adaptor.create(IDENTIFIER139);
             adaptor.addChild(root_0, IDENTIFIER139_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:603:9: ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:604:9: ( '[' ']' )*
             loop51:
             do {
                 int alt51=2;
@@ -3913,7 +3914,7 @@ public class JavaParser extends Parser {
 
                 switch (alt51) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:603:10: '[' ']'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:604:10: '[' ']'
             	    {
             	    char_literal140=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_variableDeclarator2300); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -3934,7 +3935,7 @@ public class JavaParser extends Parser {
                 }
             } while (true);
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:605:9: ( '=' variableInitializer )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:606:9: ( '=' variableInitializer )?
             int alt52=2;
             int LA52_0 = input.LA(1);
 
@@ -3943,7 +3944,7 @@ public class JavaParser extends Parser {
             }
             switch (alt52) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:605:10: '=' variableInitializer
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:606:10: '=' variableInitializer
                     {
                     char_literal142=(Token)match(input,EQ,FOLLOW_EQ_in_variableDeclarator2324); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -3992,7 +3993,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "interfaceBodyDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:609:1: interfaceBodyDeclaration : ( interfaceFieldDeclaration | interfaceMethodDeclaration | interfaceDeclaration | classDeclaration | ';' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:610:1: interfaceBodyDeclaration : ( interfaceFieldDeclaration | interfaceMethodDeclaration | interfaceDeclaration | classDeclaration | ';' );
     public final JavaParser.interfaceBodyDeclaration_return interfaceBodyDeclaration() throws RecognitionException {
         JavaParser.interfaceBodyDeclaration_return retval = new JavaParser.interfaceBodyDeclaration_return();
         retval.start = input.LT(1);
@@ -4013,12 +4014,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 29) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:613:5: ( interfaceFieldDeclaration | interfaceMethodDeclaration | interfaceDeclaration | classDeclaration | ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:614:5: ( interfaceFieldDeclaration | interfaceMethodDeclaration | interfaceDeclaration | classDeclaration | ';' )
             int alt53=5;
             alt53 = dfa53.predict(input);
             switch (alt53) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:614:9: interfaceFieldDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:615:9: interfaceFieldDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4032,7 +4033,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:615:9: interfaceMethodDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:616:9: interfaceMethodDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4046,7 +4047,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:616:9: interfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:617:9: interfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4060,7 +4061,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:617:9: classDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:618:9: classDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4074,7 +4075,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:618:9: ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:619:9: ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4115,7 +4116,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "interfaceMethodDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:621:1: interfaceMethodDeclaration : modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ';' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:622:1: interfaceMethodDeclaration : modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ';' ;
     public final JavaParser.interfaceMethodDeclaration_return interfaceMethodDeclaration() throws RecognitionException {
         JavaParser.interfaceMethodDeclaration_return retval = new JavaParser.interfaceMethodDeclaration_return();
         retval.start = input.LT(1);
@@ -4148,8 +4149,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 30) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:622:5: ( modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:622:9: modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:623:5: ( modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:623:9: modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ';'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4159,7 +4160,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, modifiers149.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:623:9: ( typeParameters )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:624:9: ( typeParameters )?
             int alt54=2;
             int LA54_0 = input.LA(1);
 
@@ -4168,7 +4169,7 @@ public class JavaParser extends Parser {
             }
             switch (alt54) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:623:10: typeParameters
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:624:10: typeParameters
                     {
                     pushFollow(FOLLOW_typeParameters_in_interfaceMethodDeclaration2436);
                     typeParameters150=typeParameters();
@@ -4182,7 +4183,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:625:9: ( type | 'void' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:626:9: ( type | 'void' )
             int alt55=2;
             int LA55_0 = input.LA(1);
 
@@ -4201,7 +4202,7 @@ public class JavaParser extends Parser {
             }
             switch (alt55) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:625:10: type
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:626:10: type
                     {
                     pushFollow(FOLLOW_type_in_interfaceMethodDeclaration2458);
                     type151=type();
@@ -4213,7 +4214,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:626:10: 'void'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:627:10: 'void'
                     {
                     string_literal152=(Token)match(input,VOID,FOLLOW_VOID_in_interfaceMethodDeclaration2469); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -4237,7 +4238,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, formalParameters154.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:630:9: ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:631:9: ( '[' ']' )*
             loop56:
             do {
                 int alt56=2;
@@ -4250,7 +4251,7 @@ public class JavaParser extends Parser {
 
                 switch (alt56) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:630:10: '[' ']'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:631:10: '[' ']'
             	    {
             	    char_literal155=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_interfaceMethodDeclaration2510); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -4271,7 +4272,7 @@ public class JavaParser extends Parser {
                 }
             } while (true);
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:632:9: ( 'throws' qualifiedNameList )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:633:9: ( 'throws' qualifiedNameList )?
             int alt57=2;
             int LA57_0 = input.LA(1);
 
@@ -4280,7 +4281,7 @@ public class JavaParser extends Parser {
             }
             switch (alt57) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:632:10: 'throws' qualifiedNameList
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:633:10: 'throws' qualifiedNameList
                     {
                     string_literal157=(Token)match(input,THROWS,FOLLOW_THROWS_in_interfaceMethodDeclaration2534); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -4334,7 +4335,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "interfaceFieldDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:636:1: interfaceFieldDeclaration : modifiers type variableDeclarator ( ',' variableDeclarator )* ';' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:637:1: interfaceFieldDeclaration : modifiers type variableDeclarator ( ',' variableDeclarator )* ';' ;
     public final JavaParser.interfaceFieldDeclaration_return interfaceFieldDeclaration() throws RecognitionException {
         JavaParser.interfaceFieldDeclaration_return retval = new JavaParser.interfaceFieldDeclaration_return();
         retval.start = input.LT(1);
@@ -4357,8 +4358,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 31) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:642:5: ( modifiers type variableDeclarator ( ',' variableDeclarator )* ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:642:9: modifiers type variableDeclarator ( ',' variableDeclarator )* ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:643:5: ( modifiers type variableDeclarator ( ',' variableDeclarator )* ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:643:9: modifiers type variableDeclarator ( ',' variableDeclarator )* ';'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4380,7 +4381,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, variableDeclarator162.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:643:9: ( ',' variableDeclarator )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:644:9: ( ',' variableDeclarator )*
             loop58:
             do {
                 int alt58=2;
@@ -4393,7 +4394,7 @@ public class JavaParser extends Parser {
 
                 switch (alt58) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:643:10: ',' variableDeclarator
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:644:10: ',' variableDeclarator
             	    {
             	    char_literal163=(Token)match(input,COMMA,FOLLOW_COMMA_in_interfaceFieldDeclaration2586); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -4450,7 +4451,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "type"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:649:1: type : ( classOrInterfaceType ( '[' ']' )* | primitiveType ( '[' ']' )* );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:650:1: type : ( classOrInterfaceType ( '[' ']' )* | primitiveType ( '[' ']' )* );
     public final JavaParser.type_return type() throws RecognitionException {
         JavaParser.type_return retval = new JavaParser.type_return();
         retval.start = input.LT(1);
@@ -4473,7 +4474,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 32) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:650:5: ( classOrInterfaceType ( '[' ']' )* | primitiveType ( '[' ']' )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:651:5: ( classOrInterfaceType ( '[' ']' )* | primitiveType ( '[' ']' )* )
             int alt61=2;
             int LA61_0 = input.LA(1);
 
@@ -4492,7 +4493,7 @@ public class JavaParser extends Parser {
             }
             switch (alt61) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:650:9: classOrInterfaceType ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:651:9: classOrInterfaceType ( '[' ']' )*
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4502,7 +4503,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, classOrInterfaceType166.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:651:9: ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:652:9: ( '[' ']' )*
                     loop59:
                     do {
                         int alt59=2;
@@ -4515,7 +4516,7 @@ public class JavaParser extends Parser {
 
                         switch (alt59) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:651:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:652:10: '[' ']'
                     	    {
                     	    char_literal167=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_type2641); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -4540,7 +4541,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:653:9: primitiveType ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:654:9: primitiveType ( '[' ']' )*
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4550,7 +4551,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, primitiveType169.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:654:9: ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:655:9: ( '[' ']' )*
                     loop60:
                     do {
                         int alt60=2;
@@ -4563,7 +4564,7 @@ public class JavaParser extends Parser {
 
                         switch (alt60) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:654:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:655:10: '[' ']'
                     	    {
                     	    char_literal170=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_type2675); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -4616,7 +4617,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classOrInterfaceType"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:659:1: classOrInterfaceType : IDENTIFIER ( typeArguments )? ( '.' IDENTIFIER ( typeArguments )? )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:660:1: classOrInterfaceType : IDENTIFIER ( typeArguments )? ( '.' IDENTIFIER ( typeArguments )? )* ;
     public final JavaParser.classOrInterfaceType_return classOrInterfaceType() throws RecognitionException {
         JavaParser.classOrInterfaceType_return retval = new JavaParser.classOrInterfaceType_return();
         retval.start = input.LT(1);
@@ -4637,8 +4638,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 33) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:660:5: ( IDENTIFIER ( typeArguments )? ( '.' IDENTIFIER ( typeArguments )? )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:660:9: IDENTIFIER ( typeArguments )? ( '.' IDENTIFIER ( typeArguments )? )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:661:5: ( IDENTIFIER ( typeArguments )? ( '.' IDENTIFIER ( typeArguments )? )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:661:9: IDENTIFIER ( typeArguments )? ( '.' IDENTIFIER ( typeArguments )? )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4647,7 +4648,7 @@ public class JavaParser extends Parser {
             IDENTIFIER172_tree = (Object)adaptor.create(IDENTIFIER172);
             adaptor.addChild(root_0, IDENTIFIER172_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:661:9: ( typeArguments )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:662:9: ( typeArguments )?
             int alt62=2;
             int LA62_0 = input.LA(1);
 
@@ -4660,7 +4661,7 @@ public class JavaParser extends Parser {
             }
             switch (alt62) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:661:10: typeArguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:662:10: typeArguments
                     {
                     pushFollow(FOLLOW_typeArguments_in_classOrInterfaceType2720);
                     typeArguments173=typeArguments();
@@ -4674,7 +4675,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:663:9: ( '.' IDENTIFIER ( typeArguments )? )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:664:9: ( '.' IDENTIFIER ( typeArguments )? )*
             loop64:
             do {
                 int alt64=2;
@@ -4687,7 +4688,7 @@ public class JavaParser extends Parser {
 
                 switch (alt64) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:663:10: '.' IDENTIFIER ( typeArguments )?
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:664:10: '.' IDENTIFIER ( typeArguments )?
             	    {
             	    char_literal174=(Token)match(input,DOT,FOLLOW_DOT_in_classOrInterfaceType2742); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -4699,7 +4700,7 @@ public class JavaParser extends Parser {
             	    IDENTIFIER175_tree = (Object)adaptor.create(IDENTIFIER175);
             	    adaptor.addChild(root_0, IDENTIFIER175_tree);
             	    }
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:664:13: ( typeArguments )?
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:665:13: ( typeArguments )?
             	    int alt63=2;
             	    int LA63_0 = input.LA(1);
 
@@ -4712,7 +4713,7 @@ public class JavaParser extends Parser {
             	    }
             	    switch (alt63) {
             	        case 1 :
-            	            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:664:14: typeArguments
+            	            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:665:14: typeArguments
             	            {
             	            pushFollow(FOLLOW_typeArguments_in_classOrInterfaceType2759);
             	            typeArguments176=typeArguments();
@@ -4765,7 +4766,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "primitiveType"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:669:1: primitiveType : ( 'boolean' | 'char' | 'byte' | 'short' | 'int' | 'long' | 'float' | 'double' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:670:1: primitiveType : ( 'boolean' | 'char' | 'byte' | 'short' | 'int' | 'long' | 'float' | 'double' );
     public final JavaParser.primitiveType_return primitiveType() throws RecognitionException {
         JavaParser.primitiveType_return retval = new JavaParser.primitiveType_return();
         retval.start = input.LT(1);
@@ -4778,7 +4779,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 34) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:670:5: ( 'boolean' | 'char' | 'byte' | 'short' | 'int' | 'long' | 'float' | 'double' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:671:5: ( 'boolean' | 'char' | 'byte' | 'short' | 'int' | 'long' | 'float' | 'double' )
             // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:
             {
             root_0 = (Object)adaptor.nil();
@@ -4825,7 +4826,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeArguments"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:680:1: typeArguments : '<' typeArgument ( ',' typeArgument )* '>' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:681:1: typeArguments : '<' typeArgument ( ',' typeArgument )* '>' ;
     public final JavaParser.typeArguments_return typeArguments() throws RecognitionException {
         JavaParser.typeArguments_return retval = new JavaParser.typeArguments_return();
         retval.start = input.LT(1);
@@ -4846,8 +4847,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 35) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:681:5: ( '<' typeArgument ( ',' typeArgument )* '>' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:681:9: '<' typeArgument ( ',' typeArgument )* '>'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:682:5: ( '<' typeArgument ( ',' typeArgument )* '>' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:682:9: '<' typeArgument ( ',' typeArgument )* '>'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4862,7 +4863,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, typeArgument179.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:682:9: ( ',' typeArgument )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:683:9: ( ',' typeArgument )*
             loop65:
             do {
                 int alt65=2;
@@ -4875,7 +4876,7 @@ public class JavaParser extends Parser {
 
                 switch (alt65) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:682:10: ',' typeArgument
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:683:10: ',' typeArgument
             	    {
             	    char_literal180=(Token)match(input,COMMA,FOLLOW_COMMA_in_typeArguments2909); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -4932,7 +4933,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeArgument"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:687:1: typeArgument : ( type | '?' ( ( 'extends' | 'super' ) type )? );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:688:1: typeArgument : ( type | '?' ( ( 'extends' | 'super' ) type )? );
     public final JavaParser.typeArgument_return typeArgument() throws RecognitionException {
         JavaParser.typeArgument_return retval = new JavaParser.typeArgument_return();
         retval.start = input.LT(1);
@@ -4951,7 +4952,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 36) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:688:5: ( type | '?' ( ( 'extends' | 'super' ) type )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:689:5: ( type | '?' ( ( 'extends' | 'super' ) type )? )
             int alt67=2;
             int LA67_0 = input.LA(1);
 
@@ -4970,7 +4971,7 @@ public class JavaParser extends Parser {
             }
             switch (alt67) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:688:9: type
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:689:9: type
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4984,7 +4985,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:689:9: '?' ( ( 'extends' | 'super' ) type )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:690:9: '?' ( ( 'extends' | 'super' ) type )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4993,7 +4994,7 @@ public class JavaParser extends Parser {
                     char_literal184_tree = (Object)adaptor.create(char_literal184);
                     adaptor.addChild(root_0, char_literal184_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:690:9: ( ( 'extends' | 'super' ) type )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:691:9: ( ( 'extends' | 'super' ) type )?
                     int alt66=2;
                     int LA66_0 = input.LA(1);
 
@@ -5002,7 +5003,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt66) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:691:13: ( 'extends' | 'super' ) type
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:692:13: ( 'extends' | 'super' ) type
                             {
                             set185=(Token)input.LT(1);
                             if ( input.LA(1)==EXTENDS||input.LA(1)==SUPER ) {
@@ -5060,7 +5061,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "qualifiedNameList"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:698:1: qualifiedNameList : qualifiedName ( ',' qualifiedName )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:699:1: qualifiedNameList : qualifiedName ( ',' qualifiedName )* ;
     public final JavaParser.qualifiedNameList_return qualifiedNameList() throws RecognitionException {
         JavaParser.qualifiedNameList_return retval = new JavaParser.qualifiedNameList_return();
         retval.start = input.LT(1);
@@ -5077,8 +5078,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 37) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:699:5: ( qualifiedName ( ',' qualifiedName )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:699:9: qualifiedName ( ',' qualifiedName )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:700:5: ( qualifiedName ( ',' qualifiedName )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:700:9: qualifiedName ( ',' qualifiedName )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5088,7 +5089,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, qualifiedName187.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:700:9: ( ',' qualifiedName )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:701:9: ( ',' qualifiedName )*
             loop68:
             do {
                 int alt68=2;
@@ -5101,7 +5102,7 @@ public class JavaParser extends Parser {
 
                 switch (alt68) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:700:10: ',' qualifiedName
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:701:10: ',' qualifiedName
             	    {
             	    char_literal188=(Token)match(input,COMMA,FOLLOW_COMMA_in_qualifiedNameList3073); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -5153,7 +5154,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "formalParameters"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:704:1: formalParameters : '(' ( formalParameterDecls )? ')' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:705:1: formalParameters : '(' ( formalParameterDecls )? ')' ;
     public final JavaParser.formalParameters_return formalParameters() throws RecognitionException {
         JavaParser.formalParameters_return retval = new JavaParser.formalParameters_return();
         retval.start = input.LT(1);
@@ -5170,8 +5171,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 38) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:705:5: ( '(' ( formalParameterDecls )? ')' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:705:9: '(' ( formalParameterDecls )? ')'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:706:5: ( '(' ( formalParameterDecls )? ')' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:706:9: '(' ( formalParameterDecls )? ')'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5180,7 +5181,7 @@ public class JavaParser extends Parser {
             char_literal190_tree = (Object)adaptor.create(char_literal190);
             adaptor.addChild(root_0, char_literal190_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:706:9: ( formalParameterDecls )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:707:9: ( formalParameterDecls )?
             int alt69=2;
             int LA69_0 = input.LA(1);
 
@@ -5189,7 +5190,7 @@ public class JavaParser extends Parser {
             }
             switch (alt69) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:706:10: formalParameterDecls
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:707:10: formalParameterDecls
                     {
                     pushFollow(FOLLOW_formalParameterDecls_in_formalParameters3117);
                     formalParameterDecls191=formalParameterDecls();
@@ -5238,7 +5239,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "formalParameterDecls"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:711:1: formalParameterDecls : ( ellipsisParameterDecl | normalParameterDecl ( ',' normalParameterDecl )* | ( normalParameterDecl ',' )+ ellipsisParameterDecl );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:712:1: formalParameterDecls : ( ellipsisParameterDecl | normalParameterDecl ( ',' normalParameterDecl )* | ( normalParameterDecl ',' )+ ellipsisParameterDecl );
     public final JavaParser.formalParameterDecls_return formalParameterDecls() throws RecognitionException {
         JavaParser.formalParameterDecls_return retval = new JavaParser.formalParameterDecls_return();
         retval.start = input.LT(1);
@@ -5263,7 +5264,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 39) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:712:5: ( ellipsisParameterDecl | normalParameterDecl ( ',' normalParameterDecl )* | ( normalParameterDecl ',' )+ ellipsisParameterDecl )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:5: ( ellipsisParameterDecl | normalParameterDecl ( ',' normalParameterDecl )* | ( normalParameterDecl ',' )+ ellipsisParameterDecl )
             int alt72=3;
             switch ( input.LA(1) ) {
             case FINAL:
@@ -5371,7 +5372,7 @@ public class JavaParser extends Parser {
 
             switch (alt72) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:712:9: ellipsisParameterDecl
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:9: ellipsisParameterDecl
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5385,7 +5386,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:9: normalParameterDecl ( ',' normalParameterDecl )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:9: normalParameterDecl ( ',' normalParameterDecl )*
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5395,7 +5396,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, normalParameterDecl194.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:9: ( ',' normalParameterDecl )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:715:9: ( ',' normalParameterDecl )*
                     loop70:
                     do {
                         int alt70=2;
@@ -5408,7 +5409,7 @@ public class JavaParser extends Parser {
 
                         switch (alt70) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:10: ',' normalParameterDecl
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:715:10: ',' normalParameterDecl
                     	    {
                     	    char_literal195=(Token)match(input,COMMA,FOLLOW_COMMA_in_formalParameterDecls3180); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -5434,11 +5435,11 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:716:9: ( normalParameterDecl ',' )+ ellipsisParameterDecl
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:717:9: ( normalParameterDecl ',' )+ ellipsisParameterDecl
                     {
                     root_0 = (Object)adaptor.nil();
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:716:9: ( normalParameterDecl ',' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:717:9: ( normalParameterDecl ',' )+
                     int cnt71=0;
                     loop71:
                     do {
@@ -5500,7 +5501,7 @@ public class JavaParser extends Parser {
 
                         switch (alt71) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:716:10: normalParameterDecl ','
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:717:10: normalParameterDecl ','
                     	    {
                     	    pushFollow(FOLLOW_normalParameterDecl_in_formalParameterDecls3204);
                     	    normalParameterDecl197=normalParameterDecl();
@@ -5565,7 +5566,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "normalParameterDecl"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:722:1: normalParameterDecl : variableModifiers type IDENTIFIER ( '[' ']' )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:723:1: normalParameterDecl : variableModifiers type IDENTIFIER ( '[' ']' )* ;
     public final JavaParser.normalParameterDecl_return normalParameterDecl() throws RecognitionException {
         JavaParser.normalParameterDecl_return retval = new JavaParser.normalParameterDecl_return();
         retval.start = input.LT(1);
@@ -5586,8 +5587,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 40) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:723:5: ( variableModifiers type IDENTIFIER ( '[' ']' )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:723:9: variableModifiers type IDENTIFIER ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:724:5: ( variableModifiers type IDENTIFIER ( '[' ']' )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:724:9: variableModifiers type IDENTIFIER ( '[' ']' )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5608,7 +5609,7 @@ public class JavaParser extends Parser {
             IDENTIFIER202_tree = (Object)adaptor.create(IDENTIFIER202);
             adaptor.addChild(root_0, IDENTIFIER202_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:724:9: ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:725:9: ( '[' ']' )*
             loop73:
             do {
                 int alt73=2;
@@ -5621,7 +5622,7 @@ public class JavaParser extends Parser {
 
                 switch (alt73) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:724:10: '[' ']'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:725:10: '[' ']'
             	    {
             	    char_literal203=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_normalParameterDecl3271); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -5672,7 +5673,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "ellipsisParameterDecl"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:728:1: ellipsisParameterDecl : variableModifiers type '...' IDENTIFIER ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:729:1: ellipsisParameterDecl : variableModifiers type '...' IDENTIFIER ;
     public final JavaParser.ellipsisParameterDecl_return ellipsisParameterDecl() throws RecognitionException {
         JavaParser.ellipsisParameterDecl_return retval = new JavaParser.ellipsisParameterDecl_return();
         retval.start = input.LT(1);
@@ -5691,8 +5692,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 41) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:729:5: ( variableModifiers type '...' IDENTIFIER )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:729:9: variableModifiers type '...' IDENTIFIER
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:730:5: ( variableModifiers type '...' IDENTIFIER )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:730:9: variableModifiers type '...' IDENTIFIER
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5748,7 +5749,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "explicitConstructorInvocation"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:735:1: explicitConstructorInvocation : ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' | primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:1: explicitConstructorInvocation : ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' | primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';' );
     public final JavaParser.explicitConstructorInvocation_return explicitConstructorInvocation() throws RecognitionException {
         JavaParser.explicitConstructorInvocation_return retval = new JavaParser.explicitConstructorInvocation_return();
         retval.start = input.LT(1);
@@ -5779,16 +5780,16 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 42) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:5: ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' | primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:5: ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' | primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';' )
             int alt76=2;
             alt76 = dfa76.predict(input);
             switch (alt76) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:9: ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:9: ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:9: ( nonWildcardTypeArguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:9: ( nonWildcardTypeArguments )?
                     int alt74=2;
                     int LA74_0 = input.LA(1);
 
@@ -5797,7 +5798,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt74) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:10: nonWildcardTypeArguments
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:10: nonWildcardTypeArguments
                             {
                             pushFollow(FOLLOW_nonWildcardTypeArguments_in_explicitConstructorInvocation3349);
                             nonWildcardTypeArguments209=nonWildcardTypeArguments();
@@ -5838,7 +5839,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:743:9: primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:744:9: primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5853,7 +5854,7 @@ public class JavaParser extends Parser {
                     char_literal214_tree = (Object)adaptor.create(char_literal214);
                     adaptor.addChild(root_0, char_literal214_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:745:9: ( nonWildcardTypeArguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:746:9: ( nonWildcardTypeArguments )?
                     int alt75=2;
                     int LA75_0 = input.LA(1);
 
@@ -5862,7 +5863,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt75) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:745:10: nonWildcardTypeArguments
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:746:10: nonWildcardTypeArguments
                             {
                             pushFollow(FOLLOW_nonWildcardTypeArguments_in_explicitConstructorInvocation3441);
                             nonWildcardTypeArguments215=nonWildcardTypeArguments();
@@ -5924,7 +5925,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "qualifiedName"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:751:1: qualifiedName : IDENTIFIER ( '.' IDENTIFIER )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:752:1: qualifiedName : IDENTIFIER ( '.' IDENTIFIER )* ;
     public final JavaParser.qualifiedName_return qualifiedName() throws RecognitionException {
         JavaParser.qualifiedName_return retval = new JavaParser.qualifiedName_return();
         retval.start = input.LT(1);
@@ -5941,8 +5942,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 43) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:752:5: ( IDENTIFIER ( '.' IDENTIFIER )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:752:9: IDENTIFIER ( '.' IDENTIFIER )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:753:5: ( IDENTIFIER ( '.' IDENTIFIER )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:753:9: IDENTIFIER ( '.' IDENTIFIER )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5951,7 +5952,7 @@ public class JavaParser extends Parser {
             IDENTIFIER219_tree = (Object)adaptor.create(IDENTIFIER219);
             adaptor.addChild(root_0, IDENTIFIER219_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:753:9: ( '.' IDENTIFIER )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:754:9: ( '.' IDENTIFIER )*
             loop77:
             do {
                 int alt77=2;
@@ -5964,7 +5965,7 @@ public class JavaParser extends Parser {
 
                 switch (alt77) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:753:10: '.' IDENTIFIER
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:754:10: '.' IDENTIFIER
             	    {
             	    char_literal220=(Token)match(input,DOT,FOLLOW_DOT_in_qualifiedName3505); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -6015,7 +6016,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotations"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:757:1: annotations : ( annotation )+ ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:758:1: annotations : ( annotation )+ ;
     public final JavaParser.annotations_return annotations() throws RecognitionException {
         JavaParser.annotations_return retval = new JavaParser.annotations_return();
         retval.start = input.LT(1);
@@ -6028,12 +6029,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 44) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:758:5: ( ( annotation )+ )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:758:9: ( annotation )+
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:759:5: ( ( annotation )+ )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:759:9: ( annotation )+
             {
             root_0 = (Object)adaptor.nil();
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:758:9: ( annotation )+
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:759:9: ( annotation )+
             int cnt78=0;
             loop78:
             do {
@@ -6047,7 +6048,7 @@ public class JavaParser extends Parser {
 
                 switch (alt78) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:758:10: annotation
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:759:10: annotation
             	    {
             	    pushFollow(FOLLOW_annotation_in_annotations3539);
             	    annotation222=annotation();
@@ -6099,7 +6100,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotation"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:762:1: annotation : '@' qualifiedName ( '(' ( elementValuePairs | elementValue )? ')' )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:763:1: annotation : '@' qualifiedName ( '(' ( elementValuePairs | elementValue )? ')' )? ;
     public final JavaParser.annotation_return annotation() throws RecognitionException {
         JavaParser.annotation_return retval = new JavaParser.annotation_return();
         retval.start = input.LT(1);
@@ -6122,8 +6123,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 45) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:767:5: ( '@' qualifiedName ( '(' ( elementValuePairs | elementValue )? ')' )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:767:9: '@' qualifiedName ( '(' ( elementValuePairs | elementValue )? ')' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:768:5: ( '@' qualifiedName ( '(' ( elementValuePairs | elementValue )? ')' )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:768:9: '@' qualifiedName ( '(' ( elementValuePairs | elementValue )? ')' )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6138,7 +6139,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, qualifiedName224.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:768:9: ( '(' ( elementValuePairs | elementValue )? ')' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:769:9: ( '(' ( elementValuePairs | elementValue )? ')' )?
             int alt80=2;
             int LA80_0 = input.LA(1);
 
@@ -6147,14 +6148,14 @@ public class JavaParser extends Parser {
             }
             switch (alt80) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:768:13: '(' ( elementValuePairs | elementValue )? ')'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:769:13: '(' ( elementValuePairs | elementValue )? ')'
                     {
                     char_literal225=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_annotation3588); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal225_tree = (Object)adaptor.create(char_literal225);
                     adaptor.addChild(root_0, char_literal225_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:769:19: ( elementValuePairs | elementValue )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:770:19: ( elementValuePairs | elementValue )?
                     int alt79=3;
                     int LA79_0 = input.LA(1);
 
@@ -6173,7 +6174,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt79) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:769:23: elementValuePairs
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:770:23: elementValuePairs
                             {
                             pushFollow(FOLLOW_elementValuePairs_in_annotation3615);
                             elementValuePairs226=elementValuePairs();
@@ -6185,7 +6186,7 @@ public class JavaParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:770:23: elementValue
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:771:23: elementValue
                             {
                             pushFollow(FOLLOW_elementValue_in_annotation3639);
                             elementValue227=elementValue();
@@ -6240,7 +6241,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "elementValuePairs"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:776:1: elementValuePairs : elementValuePair ( ',' elementValuePair )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:777:1: elementValuePairs : elementValuePair ( ',' elementValuePair )* ;
     public final JavaParser.elementValuePairs_return elementValuePairs() throws RecognitionException {
         JavaParser.elementValuePairs_return retval = new JavaParser.elementValuePairs_return();
         retval.start = input.LT(1);
@@ -6257,8 +6258,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 46) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:777:5: ( elementValuePair ( ',' elementValuePair )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:777:9: elementValuePair ( ',' elementValuePair )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:778:5: ( elementValuePair ( ',' elementValuePair )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:778:9: elementValuePair ( ',' elementValuePair )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6268,7 +6269,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, elementValuePair229.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:778:9: ( ',' elementValuePair )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:779:9: ( ',' elementValuePair )*
             loop81:
             do {
                 int alt81=2;
@@ -6281,7 +6282,7 @@ public class JavaParser extends Parser {
 
                 switch (alt81) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:778:10: ',' elementValuePair
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:779:10: ',' elementValuePair
             	    {
             	    char_literal230=(Token)match(input,COMMA,FOLLOW_COMMA_in_elementValuePairs3718); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -6333,7 +6334,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "elementValuePair"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:782:1: elementValuePair : IDENTIFIER '=' elementValue ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:783:1: elementValuePair : IDENTIFIER '=' elementValue ;
     public final JavaParser.elementValuePair_return elementValuePair() throws RecognitionException {
         JavaParser.elementValuePair_return retval = new JavaParser.elementValuePair_return();
         retval.start = input.LT(1);
@@ -6350,8 +6351,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 47) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:783:5: ( IDENTIFIER '=' elementValue )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:783:9: IDENTIFIER '=' elementValue
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:784:5: ( IDENTIFIER '=' elementValue )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:784:9: IDENTIFIER '=' elementValue
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6401,7 +6402,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "elementValue"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:786:1: elementValue : ( conditionalExpression | annotation | elementValueArrayInitializer );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:787:1: elementValue : ( conditionalExpression | annotation | elementValueArrayInitializer );
     public final JavaParser.elementValue_return elementValue() throws RecognitionException {
         JavaParser.elementValue_return retval = new JavaParser.elementValue_return();
         retval.start = input.LT(1);
@@ -6418,7 +6419,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 48) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:787:5: ( conditionalExpression | annotation | elementValueArrayInitializer )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:788:5: ( conditionalExpression | annotation | elementValueArrayInitializer )
             int alt82=3;
             switch ( input.LA(1) ) {
             case IDENTIFIER:
@@ -6474,7 +6475,7 @@ public class JavaParser extends Parser {
 
             switch (alt82) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:787:9: conditionalExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:788:9: conditionalExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6488,7 +6489,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:788:9: annotation
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:789:9: annotation
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6502,7 +6503,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:789:9: elementValueArrayInitializer
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:790:9: elementValueArrayInitializer
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6544,7 +6545,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "elementValueArrayInitializer"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:792:1: elementValueArrayInitializer : '{' ( elementValue ( ',' elementValue )* )? ( ',' )? '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:793:1: elementValueArrayInitializer : '{' ( elementValue ( ',' elementValue )* )? ( ',' )? '}' ;
     public final JavaParser.elementValueArrayInitializer_return elementValueArrayInitializer() throws RecognitionException {
         JavaParser.elementValueArrayInitializer_return retval = new JavaParser.elementValueArrayInitializer_return();
         retval.start = input.LT(1);
@@ -6567,8 +6568,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 49) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:793:5: ( '{' ( elementValue ( ',' elementValue )* )? ( ',' )? '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:793:9: '{' ( elementValue ( ',' elementValue )* )? ( ',' )? '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:794:5: ( '{' ( elementValue ( ',' elementValue )* )? ( ',' )? '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:794:9: '{' ( elementValue ( ',' elementValue )* )? ( ',' )? '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6577,7 +6578,7 @@ public class JavaParser extends Parser {
             char_literal238_tree = (Object)adaptor.create(char_literal238);
             adaptor.addChild(root_0, char_literal238_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:794:9: ( elementValue ( ',' elementValue )* )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:795:9: ( elementValue ( ',' elementValue )* )?
             int alt84=2;
             int LA84_0 = input.LA(1);
 
@@ -6586,7 +6587,7 @@ public class JavaParser extends Parser {
             }
             switch (alt84) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:794:10: elementValue ( ',' elementValue )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:795:10: elementValue ( ',' elementValue )*
                     {
                     pushFollow(FOLLOW_elementValue_in_elementValueArrayInitializer3826);
                     elementValue239=elementValue();
@@ -6594,7 +6595,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, elementValue239.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:795:13: ( ',' elementValue )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:796:13: ( ',' elementValue )*
                     loop83:
                     do {
                         int alt83=2;
@@ -6613,7 +6614,7 @@ public class JavaParser extends Parser {
 
                         switch (alt83) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:795:14: ',' elementValue
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:796:14: ',' elementValue
                     	    {
                     	    char_literal240=(Token)match(input,COMMA,FOLLOW_COMMA_in_elementValueArrayInitializer3841); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -6641,7 +6642,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:797:12: ( ',' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:798:12: ( ',' )?
             int alt85=2;
             int LA85_0 = input.LA(1);
 
@@ -6650,7 +6651,7 @@ public class JavaParser extends Parser {
             }
             switch (alt85) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:797:13: ','
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:798:13: ','
                     {
                     char_literal242=(Token)match(input,COMMA,FOLLOW_COMMA_in_elementValueArrayInitializer3872); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -6698,7 +6699,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotationTypeDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:801:1: annotationTypeDeclaration : modifiers '@' 'interface' IDENTIFIER annotationTypeBody ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:802:1: annotationTypeDeclaration : modifiers '@' 'interface' IDENTIFIER annotationTypeBody ;
     public final JavaParser.annotationTypeDeclaration_return annotationTypeDeclaration() throws RecognitionException {
         JavaParser.annotationTypeDeclaration_return retval = new JavaParser.annotationTypeDeclaration_return();
         retval.start = input.LT(1);
@@ -6719,8 +6720,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 50) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:805:5: ( modifiers '@' 'interface' IDENTIFIER annotationTypeBody )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:805:9: modifiers '@' 'interface' IDENTIFIER annotationTypeBody
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:806:5: ( modifiers '@' 'interface' IDENTIFIER annotationTypeBody )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:806:9: modifiers '@' 'interface' IDENTIFIER annotationTypeBody
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6781,7 +6782,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotationTypeBody"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:812:1: annotationTypeBody : '{' ( annotationTypeElementDeclaration )* '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:813:1: annotationTypeBody : '{' ( annotationTypeElementDeclaration )* '}' ;
     public final JavaParser.annotationTypeBody_return annotationTypeBody() throws RecognitionException {
         JavaParser.annotationTypeBody_return retval = new JavaParser.annotationTypeBody_return();
         retval.start = input.LT(1);
@@ -6798,8 +6799,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 51) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:813:5: ( '{' ( annotationTypeElementDeclaration )* '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:813:9: '{' ( annotationTypeElementDeclaration )* '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:814:5: ( '{' ( annotationTypeElementDeclaration )* '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:814:9: '{' ( annotationTypeElementDeclaration )* '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6808,7 +6809,7 @@ public class JavaParser extends Parser {
             char_literal249_tree = (Object)adaptor.create(char_literal249);
             adaptor.addChild(root_0, char_literal249_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:814:9: ( annotationTypeElementDeclaration )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:815:9: ( annotationTypeElementDeclaration )*
             loop86:
             do {
                 int alt86=2;
@@ -6821,7 +6822,7 @@ public class JavaParser extends Parser {
 
                 switch (alt86) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:814:10: annotationTypeElementDeclaration
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:815:10: annotationTypeElementDeclaration
             	    {
             	    pushFollow(FOLLOW_annotationTypeElementDeclaration_in_annotationTypeBody3964);
             	    annotationTypeElementDeclaration250=annotationTypeElementDeclaration();
@@ -6873,7 +6874,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotationTypeElementDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:819:1: annotationTypeElementDeclaration : ( annotationMethodDeclaration | interfaceFieldDeclaration | normalClassDeclaration | normalInterfaceDeclaration | enumDeclaration | annotationTypeDeclaration | ';' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:820:1: annotationTypeElementDeclaration : ( annotationMethodDeclaration | interfaceFieldDeclaration | normalClassDeclaration | normalInterfaceDeclaration | enumDeclaration | annotationTypeDeclaration | ';' );
     public final JavaParser.annotationTypeElementDeclaration_return annotationTypeElementDeclaration() throws RecognitionException {
         JavaParser.annotationTypeElementDeclaration_return retval = new JavaParser.annotationTypeElementDeclaration_return();
         retval.start = input.LT(1);
@@ -6898,12 +6899,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 52) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:823:5: ( annotationMethodDeclaration | interfaceFieldDeclaration | normalClassDeclaration | normalInterfaceDeclaration | enumDeclaration | annotationTypeDeclaration | ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:5: ( annotationMethodDeclaration | interfaceFieldDeclaration | normalClassDeclaration | normalInterfaceDeclaration | enumDeclaration | annotationTypeDeclaration | ';' )
             int alt87=7;
             alt87 = dfa87.predict(input);
             switch (alt87) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:823:9: annotationMethodDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:9: annotationMethodDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6917,7 +6918,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:9: interfaceFieldDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:825:9: interfaceFieldDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6931,7 +6932,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:825:9: normalClassDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:826:9: normalClassDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6945,7 +6946,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:826:9: normalInterfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:827:9: normalInterfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6959,7 +6960,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:827:9: enumDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:828:9: enumDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6973,7 +6974,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:828:9: annotationTypeDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:829:9: annotationTypeDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6987,7 +6988,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:829:9: ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:830:9: ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7028,7 +7029,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotationMethodDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:832:1: annotationMethodDeclaration : modifiers type IDENTIFIER '(' ')' ( 'default' elementValue )? ';' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:833:1: annotationMethodDeclaration : modifiers type IDENTIFIER '(' ')' ( 'default' elementValue )? ';' ;
     public final JavaParser.annotationMethodDeclaration_return annotationMethodDeclaration() throws RecognitionException {
         JavaParser.annotationMethodDeclaration_return retval = new JavaParser.annotationMethodDeclaration_return();
         retval.start = input.LT(1);
@@ -7055,8 +7056,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 53) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:833:5: ( modifiers type IDENTIFIER '(' ')' ( 'default' elementValue )? ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:833:9: modifiers type IDENTIFIER '(' ')' ( 'default' elementValue )? ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:834:5: ( modifiers type IDENTIFIER '(' ')' ( 'default' elementValue )? ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:834:9: modifiers type IDENTIFIER '(' ')' ( 'default' elementValue )? ';'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -7087,7 +7088,7 @@ public class JavaParser extends Parser {
             char_literal263_tree = (Object)adaptor.create(char_literal263);
             adaptor.addChild(root_0, char_literal263_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:834:17: ( 'default' elementValue )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:835:17: ( 'default' elementValue )?
             int alt88=2;
             int LA88_0 = input.LA(1);
 
@@ -7096,7 +7097,7 @@ public class JavaParser extends Parser {
             }
             switch (alt88) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:834:18: 'default' elementValue
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:835:18: 'default' elementValue
                     {
                     string_literal264=(Token)match(input,DEFAULT,FOLLOW_DEFAULT_in_annotationMethodDeclaration4107); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -7150,7 +7151,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "block"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:839:1: block : '{' ( blockStatement )* '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:840:1: block : '{' ( blockStatement )* '}' ;
     public final JavaParser.block_return block() throws RecognitionException {
         JavaParser.block_return retval = new JavaParser.block_return();
         retval.start = input.LT(1);
@@ -7167,8 +7168,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 54) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:840:5: ( '{' ( blockStatement )* '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:840:9: '{' ( blockStatement )* '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:841:5: ( '{' ( blockStatement )* '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:841:9: '{' ( blockStatement )* '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -7177,7 +7178,7 @@ public class JavaParser extends Parser {
             char_literal267_tree = (Object)adaptor.create(char_literal267);
             adaptor.addChild(root_0, char_literal267_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:841:9: ( blockStatement )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:842:9: ( blockStatement )*
             loop89:
             do {
                 int alt89=2;
@@ -7190,7 +7191,7 @@ public class JavaParser extends Parser {
 
                 switch (alt89) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:841:10: blockStatement
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:842:10: blockStatement
             	    {
             	    pushFollow(FOLLOW_blockStatement_in_block4173);
             	    blockStatement268=blockStatement();
@@ -7242,7 +7243,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "blockStatement"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:870:1: blockStatement : ( localVariableDeclarationStatement | classOrInterfaceDeclaration | statement );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:871:1: blockStatement : ( localVariableDeclarationStatement | classOrInterfaceDeclaration | statement );
     public final JavaParser.blockStatement_return blockStatement() throws RecognitionException {
         JavaParser.blockStatement_return retval = new JavaParser.blockStatement_return();
         retval.start = input.LT(1);
@@ -7259,12 +7260,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 55) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:871:5: ( localVariableDeclarationStatement | classOrInterfaceDeclaration | statement )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:5: ( localVariableDeclarationStatement | classOrInterfaceDeclaration | statement )
             int alt90=3;
             alt90 = dfa90.predict(input);
             switch (alt90) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:871:9: localVariableDeclarationStatement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:9: localVariableDeclarationStatement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7278,7 +7279,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:9: classOrInterfaceDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:873:9: classOrInterfaceDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7292,7 +7293,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:873:9: statement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:874:9: statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7334,7 +7335,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "localVariableDeclarationStatement"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:877:1: localVariableDeclarationStatement : localVariableDeclaration ';' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:878:1: localVariableDeclarationStatement : localVariableDeclaration ';' ;
     public final JavaParser.localVariableDeclarationStatement_return localVariableDeclarationStatement() throws RecognitionException {
         JavaParser.localVariableDeclarationStatement_return retval = new JavaParser.localVariableDeclarationStatement_return();
         retval.start = input.LT(1);
@@ -7349,8 +7350,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 56) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:878:5: ( localVariableDeclaration ';' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:878:9: localVariableDeclaration ';'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:879:5: ( localVariableDeclaration ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:879:9: localVariableDeclaration ';'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -7395,7 +7396,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "localVariableDeclaration"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:882:1: localVariableDeclaration : variableModifiers type variableDeclarator ( ',' variableDeclarator )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:883:1: localVariableDeclaration : variableModifiers type variableDeclarator ( ',' variableDeclarator )* ;
     public final JavaParser.localVariableDeclaration_return localVariableDeclaration() throws RecognitionException {
         JavaParser.localVariableDeclaration_return retval = new JavaParser.localVariableDeclaration_return();
         retval.start = input.LT(1);
@@ -7416,8 +7417,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 57) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:883:5: ( variableModifiers type variableDeclarator ( ',' variableDeclarator )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:883:9: variableModifiers type variableDeclarator ( ',' variableDeclarator )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:884:5: ( variableModifiers type variableDeclarator ( ',' variableDeclarator )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:884:9: variableModifiers type variableDeclarator ( ',' variableDeclarator )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -7439,7 +7440,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, variableDeclarator277.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:885:9: ( ',' variableDeclarator )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:886:9: ( ',' variableDeclarator )*
             loop91:
             do {
                 int alt91=2;
@@ -7452,7 +7453,7 @@ public class JavaParser extends Parser {
 
                 switch (alt91) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:885:10: ',' variableDeclarator
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:886:10: ',' variableDeclarator
             	    {
             	    char_literal278=(Token)match(input,COMMA,FOLLOW_COMMA_in_localVariableDeclaration4310); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -7504,7 +7505,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "statement"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:889:1: statement : ( block | ( 'assert' ) expression ( ':' expression )? ';' | 'assert' expression ( ':' expression )? ';' | 'if' parExpression statement ( 'else' statement )? | forstatement | 'while' parExpression statement | 'do' statement 'while' parExpression ';' | trystatement | 'switch' parExpression '{' switchBlockStatementGroups '}' | 'synchronized' parExpression block | 'return' ( expression )? ';' | 'throw' expression ';' | 'break' ( IDENTIFIER )? ';' | 'continue' ( IDENTIFIER )? ';' | expression ';' | IDENTIFIER ':' statement | ';' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:890:1: statement : ( block | ( 'assert' ) expression ( ':' expression )? ';' | 'assert' expression ( ':' expression )? ';' | 'if' parExpression statement ( 'else' statement )? | forstatement | 'while' parExpression statement | 'do' statement 'while' parExpression ';' | trystatement | 'switch' parExpression '{' switchBlockStatementGroups '}' | 'synchronized' parExpression block | 'return' ( expression )? ';' | 'throw' expression ';' | 'break' ( IDENTIFIER )? ';' | 'continue' ( IDENTIFIER )? ';' | expression ';' | IDENTIFIER ':' statement | ';' );
     public final JavaParser.statement_return statement() throws RecognitionException {
         JavaParser.statement_return retval = new JavaParser.statement_return();
         retval.start = input.LT(1);
@@ -7619,12 +7620,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 58) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:890:5: ( block | ( 'assert' ) expression ( ':' expression )? ';' | 'assert' expression ( ':' expression )? ';' | 'if' parExpression statement ( 'else' statement )? | forstatement | 'while' parExpression statement | 'do' statement 'while' parExpression ';' | trystatement | 'switch' parExpression '{' switchBlockStatementGroups '}' | 'synchronized' parExpression block | 'return' ( expression )? ';' | 'throw' expression ';' | 'break' ( IDENTIFIER )? ';' | 'continue' ( IDENTIFIER )? ';' | expression ';' | IDENTIFIER ':' statement | ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:891:5: ( block | ( 'assert' ) expression ( ':' expression )? ';' | 'assert' expression ( ':' expression )? ';' | 'if' parExpression statement ( 'else' statement )? | forstatement | 'while' parExpression statement | 'do' statement 'while' parExpression ';' | trystatement | 'switch' parExpression '{' switchBlockStatementGroups '}' | 'synchronized' parExpression block | 'return' ( expression )? ';' | 'throw' expression ';' | 'break' ( IDENTIFIER )? ';' | 'continue' ( IDENTIFIER )? ';' | expression ';' | IDENTIFIER ':' statement | ';' )
             int alt98=17;
             alt98 = dfa98.predict(input);
             switch (alt98) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:890:9: block
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:891:9: block
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7638,12 +7639,12 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:9: ( 'assert' ) expression ( ':' expression )? ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:9: ( 'assert' ) expression ( ':' expression )? ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:9: ( 'assert' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:10: 'assert'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:9: ( 'assert' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:10: 'assert'
                     {
                     string_literal281=(Token)match(input,ASSERT,FOLLOW_ASSERT_in_statement4367); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -7659,7 +7660,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, expression282.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:894:20: ( ':' expression )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:20: ( ':' expression )?
                     int alt92=2;
                     int LA92_0 = input.LA(1);
 
@@ -7668,7 +7669,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt92) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:894:21: ':' expression
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:21: ':' expression
                             {
                             char_literal283=(Token)match(input,COLON,FOLLOW_COLON_in_statement4390); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -7696,7 +7697,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:9: 'assert' expression ( ':' expression )? ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:9: 'assert' expression ( ':' expression )? ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7711,7 +7712,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, expression287.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:30: ( ':' expression )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:30: ( ':' expression )?
                     int alt93=2;
                     int LA93_0 = input.LA(1);
 
@@ -7720,7 +7721,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt93) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:31: ':' expression
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:31: ':' expression
                             {
                             char_literal288=(Token)match(input,COLON,FOLLOW_COLON_in_statement4412); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -7748,7 +7749,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:9: 'if' parExpression statement ( 'else' statement )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:897:9: 'if' parExpression statement ( 'else' statement )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7769,7 +7770,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, statement293.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:38: ( 'else' statement )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:897:38: ( 'else' statement )?
                     int alt94=2;
                     int LA94_0 = input.LA(1);
 
@@ -7782,7 +7783,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt94) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:39: 'else' statement
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:897:39: 'else' statement
                             {
                             string_literal294=(Token)match(input,ELSE,FOLLOW_ELSE_in_statement4447); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -7805,7 +7806,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:897:9: forstatement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:898:9: forstatement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7819,7 +7820,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:898:9: 'while' parExpression statement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:899:9: 'while' parExpression statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7844,7 +7845,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:899:9: 'do' statement 'while' parExpression ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:900:9: 'do' statement 'while' parExpression ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7879,7 +7880,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:900:9: trystatement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:901:9: trystatement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7893,7 +7894,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:901:9: 'switch' parExpression '{' switchBlockStatementGroups '}'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:902:9: 'switch' parExpression '{' switchBlockStatementGroups '}'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7928,7 +7929,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:902:9: 'synchronized' parExpression block
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:903:9: 'synchronized' parExpression block
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7953,7 +7954,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:903:9: 'return' ( expression )? ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:904:9: 'return' ( expression )? ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -7962,7 +7963,7 @@ public class JavaParser extends Parser {
                     string_literal314_tree = (Object)adaptor.create(string_literal314);
                     adaptor.addChild(root_0, string_literal314_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:903:18: ( expression )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:904:18: ( expression )?
                     int alt95=2;
                     int LA95_0 = input.LA(1);
 
@@ -7971,7 +7972,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt95) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:903:19: expression
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:904:19: expression
                             {
                             pushFollow(FOLLOW_expression_in_statement4558);
                             expression315=expression();
@@ -7994,7 +7995,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:904:9: 'throw' expression ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:905:9: 'throw' expression ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8018,7 +8019,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:905:9: 'break' ( IDENTIFIER )? ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:906:9: 'break' ( IDENTIFIER )? ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8027,7 +8028,7 @@ public class JavaParser extends Parser {
                     string_literal320_tree = (Object)adaptor.create(string_literal320);
                     adaptor.addChild(root_0, string_literal320_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:906:13: ( IDENTIFIER )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:907:13: ( IDENTIFIER )?
                     int alt96=2;
                     int LA96_0 = input.LA(1);
 
@@ -8036,7 +8037,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt96) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:906:14: IDENTIFIER
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:907:14: IDENTIFIER
                             {
                             IDENTIFIER321=(Token)match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_statement4602); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -8058,7 +8059,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:908:9: 'continue' ( IDENTIFIER )? ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:909:9: 'continue' ( IDENTIFIER )? ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8067,7 +8068,7 @@ public class JavaParser extends Parser {
                     string_literal323_tree = (Object)adaptor.create(string_literal323);
                     adaptor.addChild(root_0, string_literal323_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:909:13: ( IDENTIFIER )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:910:13: ( IDENTIFIER )?
                     int alt97=2;
                     int LA97_0 = input.LA(1);
 
@@ -8076,7 +8077,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt97) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:909:14: IDENTIFIER
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:910:14: IDENTIFIER
                             {
                             IDENTIFIER324=(Token)match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_statement4644); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -8098,7 +8099,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:911:9: expression ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:912:9: expression ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8117,7 +8118,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:912:9: IDENTIFIER ':' statement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:913:9: IDENTIFIER ':' statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8141,7 +8142,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 17 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:913:9: ';'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:914:9: ';'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8182,7 +8183,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "switchBlockStatementGroups"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:917:1: switchBlockStatementGroups : ( switchBlockStatementGroup )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:918:1: switchBlockStatementGroups : ( switchBlockStatementGroup )* ;
     public final JavaParser.switchBlockStatementGroups_return switchBlockStatementGroups() throws RecognitionException {
         JavaParser.switchBlockStatementGroups_return retval = new JavaParser.switchBlockStatementGroups_return();
         retval.start = input.LT(1);
@@ -8195,12 +8196,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 59) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:918:5: ( ( switchBlockStatementGroup )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:918:9: ( switchBlockStatementGroup )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:919:5: ( ( switchBlockStatementGroup )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:919:9: ( switchBlockStatementGroup )*
             {
             root_0 = (Object)adaptor.nil();
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:918:9: ( switchBlockStatementGroup )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:919:9: ( switchBlockStatementGroup )*
             loop99:
             do {
                 int alt99=2;
@@ -8213,7 +8214,7 @@ public class JavaParser extends Parser {
 
                 switch (alt99) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:918:10: switchBlockStatementGroup
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:919:10: switchBlockStatementGroup
             	    {
             	    pushFollow(FOLLOW_switchBlockStatementGroup_in_switchBlockStatementGroups4725);
             	    switchBlockStatementGroup332=switchBlockStatementGroup();
@@ -8260,7 +8261,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "switchBlockStatementGroup"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:921:1: switchBlockStatementGroup : switchLabel ( blockStatement )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:922:1: switchBlockStatementGroup : switchLabel ( blockStatement )* ;
     public final JavaParser.switchBlockStatementGroup_return switchBlockStatementGroup() throws RecognitionException {
         JavaParser.switchBlockStatementGroup_return retval = new JavaParser.switchBlockStatementGroup_return();
         retval.start = input.LT(1);
@@ -8275,8 +8276,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 60) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:922:5: ( switchLabel ( blockStatement )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:923:9: switchLabel ( blockStatement )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:923:5: ( switchLabel ( blockStatement )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:924:9: switchLabel ( blockStatement )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -8286,7 +8287,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, switchLabel333.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:924:9: ( blockStatement )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:925:9: ( blockStatement )*
             loop100:
             do {
                 int alt100=2;
@@ -8299,7 +8300,7 @@ public class JavaParser extends Parser {
 
                 switch (alt100) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:924:10: blockStatement
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:925:10: blockStatement
             	    {
             	    pushFollow(FOLLOW_blockStatement_in_switchBlockStatementGroup4765);
             	    blockStatement334=blockStatement();
@@ -8346,7 +8347,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "switchLabel"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:928:1: switchLabel : ( 'case' expression ':' | 'default' ':' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:929:1: switchLabel : ( 'case' expression ':' | 'default' ':' );
     public final JavaParser.switchLabel_return switchLabel() throws RecognitionException {
         JavaParser.switchLabel_return retval = new JavaParser.switchLabel_return();
         retval.start = input.LT(1);
@@ -8367,7 +8368,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 61) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:929:5: ( 'case' expression ':' | 'default' ':' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:930:5: ( 'case' expression ':' | 'default' ':' )
             int alt101=2;
             int LA101_0 = input.LA(1);
 
@@ -8386,7 +8387,7 @@ public class JavaParser extends Parser {
             }
             switch (alt101) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:929:9: 'case' expression ':'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:930:9: 'case' expression ':'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8410,7 +8411,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:930:9: 'default' ':'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:931:9: 'default' ':'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -8456,7 +8457,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "trystatement"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:934:1: trystatement : 'try' block ( catches 'finally' block | catches | 'finally' block ) ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:935:1: trystatement : 'try' block ( catches 'finally' block | catches | 'finally' block ) ;
     public final JavaParser.trystatement_return trystatement() throws RecognitionException {
         JavaParser.trystatement_return retval = new JavaParser.trystatement_return();
         retval.start = input.LT(1);
@@ -8483,8 +8484,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 62) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:935:5: ( 'try' block ( catches 'finally' block | catches | 'finally' block ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:935:9: 'try' block ( catches 'finally' block | catches | 'finally' block )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:936:5: ( 'try' block ( catches 'finally' block | catches | 'finally' block ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:936:9: 'try' block ( catches 'finally' block | catches | 'finally' block )
             {
             root_0 = (Object)adaptor.nil();
 
@@ -8499,7 +8500,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, block341.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:936:9: ( catches 'finally' block | catches | 'finally' block )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:9: ( catches 'finally' block | catches | 'finally' block )
             int alt102=3;
             int LA102_0 = input.LA(1);
 
@@ -8532,7 +8533,7 @@ public class JavaParser extends Parser {
             }
             switch (alt102) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:936:13: catches 'finally' block
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:13: catches 'finally' block
                     {
                     pushFollow(FOLLOW_catches_in_trystatement4849);
                     catches342=catches();
@@ -8555,7 +8556,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:13: catches
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:938:13: catches
                     {
                     pushFollow(FOLLOW_catches_in_trystatement4867);
                     catches345=catches();
@@ -8567,7 +8568,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:938:13: 'finally' block
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:939:13: 'finally' block
                     {
                     string_literal346=(Token)match(input,FINALLY,FOLLOW_FINALLY_in_trystatement4881); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -8616,7 +8617,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "catches"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:942:1: catches : catchClause ( catchClause )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:943:1: catches : catchClause ( catchClause )* ;
     public final JavaParser.catches_return catches() throws RecognitionException {
         JavaParser.catches_return retval = new JavaParser.catches_return();
         retval.start = input.LT(1);
@@ -8631,8 +8632,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 63) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:943:5: ( catchClause ( catchClause )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:943:9: catchClause ( catchClause )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:944:5: ( catchClause ( catchClause )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:944:9: catchClause ( catchClause )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -8642,7 +8643,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, catchClause348.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:944:9: ( catchClause )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:945:9: ( catchClause )*
             loop103:
             do {
                 int alt103=2;
@@ -8655,7 +8656,7 @@ public class JavaParser extends Parser {
 
                 switch (alt103) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:944:10: catchClause
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:945:10: catchClause
             	    {
             	    pushFollow(FOLLOW_catchClause_in_catches4925);
             	    catchClause349=catchClause();
@@ -8702,7 +8703,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "catchClause"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:948:1: catchClause : 'catch' '(' formalParameter ')' block ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:949:1: catchClause : 'catch' '(' formalParameter ')' block ;
     public final JavaParser.catchClause_return catchClause() throws RecognitionException {
         JavaParser.catchClause_return retval = new JavaParser.catchClause_return();
         retval.start = input.LT(1);
@@ -8723,8 +8724,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 64) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:949:5: ( 'catch' '(' formalParameter ')' block )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:949:9: 'catch' '(' formalParameter ')' block
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:950:5: ( 'catch' '(' formalParameter ')' block )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:950:9: 'catch' '(' formalParameter ')' block
             {
             root_0 = (Object)adaptor.nil();
 
@@ -8785,7 +8786,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "formalParameter"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:953:1: formalParameter : variableModifiers type IDENTIFIER ( '[' ']' )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:954:1: formalParameter : variableModifiers type IDENTIFIER ( '[' ']' )* ;
     public final JavaParser.formalParameter_return formalParameter() throws RecognitionException {
         JavaParser.formalParameter_return retval = new JavaParser.formalParameter_return();
         retval.start = input.LT(1);
@@ -8806,8 +8807,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 65) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:954:5: ( variableModifiers type IDENTIFIER ( '[' ']' )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:954:9: variableModifiers type IDENTIFIER ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:955:5: ( variableModifiers type IDENTIFIER ( '[' ']' )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:955:9: variableModifiers type IDENTIFIER ( '[' ']' )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -8828,7 +8829,7 @@ public class JavaParser extends Parser {
             IDENTIFIER357_tree = (Object)adaptor.create(IDENTIFIER357);
             adaptor.addChild(root_0, IDENTIFIER357_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:955:9: ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:956:9: ( '[' ']' )*
             loop104:
             do {
                 int alt104=2;
@@ -8841,7 +8842,7 @@ public class JavaParser extends Parser {
 
                 switch (alt104) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:955:10: '[' ']'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:956:10: '[' ']'
             	    {
             	    char_literal358=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_formalParameter5008); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -8892,7 +8893,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "forstatement"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:959:1: forstatement : ( 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement | 'for' '(' ( forInit )? ';' ( expression )? ';' ( expressionList )? ')' statement );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:960:1: forstatement : ( 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement | 'for' '(' ( forInit )? ';' ( expression )? ';' ( expressionList )? ')' statement );
     public final JavaParser.forstatement_return forstatement() throws RecognitionException {
         JavaParser.forstatement_return retval = new JavaParser.forstatement_return();
         retval.start = input.LT(1);
@@ -8939,7 +8940,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 66) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:960:5: ( 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement | 'for' '(' ( forInit )? ';' ( expression )? ';' ( expressionList )? ')' statement )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:961:5: ( 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement | 'for' '(' ( forInit )? ';' ( expression )? ';' ( expressionList )? ')' statement )
             int alt108=2;
             int LA108_0 = input.LA(1);
 
@@ -8969,7 +8970,7 @@ public class JavaParser extends Parser {
             }
             switch (alt108) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:962:9: 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:963:9: 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9026,7 +9027,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:966:9: 'for' '(' ( forInit )? ';' ( expression )? ';' ( expressionList )? ')' statement
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:967:9: 'for' '(' ( forInit )? ';' ( expression )? ';' ( expressionList )? ')' statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9040,7 +9041,7 @@ public class JavaParser extends Parser {
                     char_literal370_tree = (Object)adaptor.create(char_literal370);
                     adaptor.addChild(root_0, char_literal370_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:967:17: ( forInit )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:968:17: ( forInit )?
                     int alt105=2;
                     int LA105_0 = input.LA(1);
 
@@ -9049,7 +9050,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt105) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:967:18: forInit
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:968:18: forInit
                             {
                             pushFollow(FOLLOW_forInit_in_forstatement5138);
                             forInit371=forInit();
@@ -9068,7 +9069,7 @@ public class JavaParser extends Parser {
                     char_literal372_tree = (Object)adaptor.create(char_literal372);
                     adaptor.addChild(root_0, char_literal372_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:969:17: ( expression )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:970:17: ( expression )?
                     int alt106=2;
                     int LA106_0 = input.LA(1);
 
@@ -9077,7 +9078,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt106) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:969:18: expression
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:970:18: expression
                             {
                             pushFollow(FOLLOW_expression_in_forstatement5179);
                             expression373=expression();
@@ -9096,7 +9097,7 @@ public class JavaParser extends Parser {
                     char_literal374_tree = (Object)adaptor.create(char_literal374);
                     adaptor.addChild(root_0, char_literal374_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:971:17: ( expressionList )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:972:17: ( expressionList )?
                     int alt107=2;
                     int LA107_0 = input.LA(1);
 
@@ -9105,7 +9106,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt107) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:971:18: expressionList
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:972:18: expressionList
                             {
                             pushFollow(FOLLOW_expressionList_in_forstatement5220);
                             expressionList375=expressionList();
@@ -9162,7 +9163,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "forInit"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:975:1: forInit : ( localVariableDeclaration | expressionList );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:976:1: forInit : ( localVariableDeclaration | expressionList );
     public final JavaParser.forInit_return forInit() throws RecognitionException {
         JavaParser.forInit_return retval = new JavaParser.forInit_return();
         retval.start = input.LT(1);
@@ -9177,12 +9178,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 67) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:976:5: ( localVariableDeclaration | expressionList )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:977:5: ( localVariableDeclaration | expressionList )
             int alt109=2;
             alt109 = dfa109.predict(input);
             switch (alt109) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:976:9: localVariableDeclaration
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:977:9: localVariableDeclaration
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9196,7 +9197,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:977:9: expressionList
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:978:9: expressionList
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9238,7 +9239,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "parExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:980:1: parExpression : '(' expression ')' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:981:1: parExpression : '(' expression ')' ;
     public final JavaParser.parExpression_return parExpression() throws RecognitionException {
         JavaParser.parExpression_return retval = new JavaParser.parExpression_return();
         retval.start = input.LT(1);
@@ -9255,8 +9256,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 68) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:981:5: ( '(' expression ')' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:981:9: '(' expression ')'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:982:5: ( '(' expression ')' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:982:9: '(' expression ')'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -9306,7 +9307,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "expressionList"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:984:1: expressionList : expression ( ',' expression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:985:1: expressionList : expression ( ',' expression )* ;
     public final JavaParser.expressionList_return expressionList() throws RecognitionException {
         JavaParser.expressionList_return retval = new JavaParser.expressionList_return();
         retval.start = input.LT(1);
@@ -9323,8 +9324,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 69) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:985:5: ( expression ( ',' expression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:985:9: expression ( ',' expression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:986:5: ( expression ( ',' expression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:986:9: expression ( ',' expression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -9334,7 +9335,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, expression383.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:986:9: ( ',' expression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:987:9: ( ',' expression )*
             loop110:
             do {
                 int alt110=2;
@@ -9347,7 +9348,7 @@ public class JavaParser extends Parser {
 
                 switch (alt110) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:986:10: ',' expression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:987:10: ',' expression
             	    {
             	    char_literal384=(Token)match(input,COMMA,FOLLOW_COMMA_in_expressionList5328); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -9399,7 +9400,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "expression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:991:1: expression : conditionalExpression ( assignmentOperator expression )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:992:1: expression : conditionalExpression ( assignmentOperator expression )? ;
     public final JavaParser.expression_return expression() throws RecognitionException {
         JavaParser.expression_return retval = new JavaParser.expression_return();
         retval.start = input.LT(1);
@@ -9416,8 +9417,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 70) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:992:5: ( conditionalExpression ( assignmentOperator expression )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:992:9: conditionalExpression ( assignmentOperator expression )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:993:5: ( conditionalExpression ( assignmentOperator expression )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:993:9: conditionalExpression ( assignmentOperator expression )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -9427,7 +9428,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, conditionalExpression386.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:993:9: ( assignmentOperator expression )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:994:9: ( assignmentOperator expression )?
             int alt111=2;
             int LA111_0 = input.LA(1);
 
@@ -9436,7 +9437,7 @@ public class JavaParser extends Parser {
             }
             switch (alt111) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:993:10: assignmentOperator expression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:994:10: assignmentOperator expression
                     {
                     pushFollow(FOLLOW_assignmentOperator_in_expression5373);
                     assignmentOperator387=assignmentOperator();
@@ -9486,7 +9487,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "assignmentOperator"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:998:1: assignmentOperator : ( '=' | '+=' | '-=' | '*=' | '/=' | '&=' | '|=' | '^=' | '%=' | '<' '<' '=' | '>' '>' '>' '=' | '>' '>' '=' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:999:1: assignmentOperator : ( '=' | '+=' | '-=' | '*=' | '/=' | '&=' | '|=' | '^=' | '%=' | '<' '<' '=' | '>' '>' '>' '=' | '>' '>' '=' );
     public final JavaParser.assignmentOperator_return assignmentOperator() throws RecognitionException {
         JavaParser.assignmentOperator_return retval = new JavaParser.assignmentOperator_return();
         retval.start = input.LT(1);
@@ -9535,12 +9536,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 71) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:999:5: ( '=' | '+=' | '-=' | '*=' | '/=' | '&=' | '|=' | '^=' | '%=' | '<' '<' '=' | '>' '>' '>' '=' | '>' '>' '=' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1000:5: ( '=' | '+=' | '-=' | '*=' | '/=' | '&=' | '|=' | '^=' | '%=' | '<' '<' '=' | '>' '>' '>' '=' | '>' '>' '=' )
             int alt112=12;
             alt112 = dfa112.predict(input);
             switch (alt112) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:999:9: '='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1000:9: '='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9553,7 +9554,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1000:9: '+='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1001:9: '+='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9566,7 +9567,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1001:9: '-='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1002:9: '-='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9579,7 +9580,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1002:9: '*='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1003:9: '*='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9592,7 +9593,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1003:9: '/='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1004:9: '/='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9605,7 +9606,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1004:9: '&='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1005:9: '&='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9618,7 +9619,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1005:9: '|='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1006:9: '|='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9631,7 +9632,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1006:9: '^='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1007:9: '^='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9644,7 +9645,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1007:9: '%='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1008:9: '%='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9657,7 +9658,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1008:10: '<' '<' '='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1009:10: '<' '<' '='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9680,7 +9681,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1009:10: '>' '>' '>' '='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1010:10: '>' '>' '>' '='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9708,7 +9709,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1010:10: '>' '>' '='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1011:10: '>' '>' '='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -9759,7 +9760,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "conditionalExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1014:1: conditionalExpression : conditionalOrExpression ( '?' expression ':' conditionalExpression )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1015:1: conditionalExpression : conditionalOrExpression ( '?' expression ':' conditionalExpression )? ;
     public final JavaParser.conditionalExpression_return conditionalExpression() throws RecognitionException {
         JavaParser.conditionalExpression_return retval = new JavaParser.conditionalExpression_return();
         retval.start = input.LT(1);
@@ -9780,8 +9781,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 72) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1015:5: ( conditionalOrExpression ( '?' expression ':' conditionalExpression )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1015:9: conditionalOrExpression ( '?' expression ':' conditionalExpression )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1016:5: ( conditionalOrExpression ( '?' expression ':' conditionalExpression )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1016:9: conditionalOrExpression ( '?' expression ':' conditionalExpression )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -9791,7 +9792,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, conditionalOrExpression408.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1016:9: ( '?' expression ':' conditionalExpression )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1017:9: ( '?' expression ':' conditionalExpression )?
             int alt113=2;
             int LA113_0 = input.LA(1);
 
@@ -9800,7 +9801,7 @@ public class JavaParser extends Parser {
             }
             switch (alt113) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1016:10: '?' expression ':' conditionalExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1017:10: '?' expression ':' conditionalExpression
                     {
                     char_literal409=(Token)match(input,QUES,FOLLOW_QUES_in_conditionalExpression5566); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9860,7 +9861,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "conditionalOrExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1020:1: conditionalOrExpression : conditionalAndExpression ( '||' conditionalAndExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1021:1: conditionalOrExpression : conditionalAndExpression ( '||' conditionalAndExpression )* ;
     public final JavaParser.conditionalOrExpression_return conditionalOrExpression() throws RecognitionException {
         JavaParser.conditionalOrExpression_return retval = new JavaParser.conditionalOrExpression_return();
         retval.start = input.LT(1);
@@ -9877,8 +9878,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 73) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1021:5: ( conditionalAndExpression ( '||' conditionalAndExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1021:9: conditionalAndExpression ( '||' conditionalAndExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1022:5: ( conditionalAndExpression ( '||' conditionalAndExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1022:9: conditionalAndExpression ( '||' conditionalAndExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -9888,7 +9889,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, conditionalAndExpression413.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1022:9: ( '||' conditionalAndExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1023:9: ( '||' conditionalAndExpression )*
             loop114:
             do {
                 int alt114=2;
@@ -9901,7 +9902,7 @@ public class JavaParser extends Parser {
 
                 switch (alt114) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1022:10: '||' conditionalAndExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1023:10: '||' conditionalAndExpression
             	    {
             	    string_literal414=(Token)match(input,BARBAR,FOLLOW_BARBAR_in_conditionalOrExpression5614); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -9953,7 +9954,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "conditionalAndExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1026:1: conditionalAndExpression : inclusiveOrExpression ( '&&' inclusiveOrExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1027:1: conditionalAndExpression : inclusiveOrExpression ( '&&' inclusiveOrExpression )* ;
     public final JavaParser.conditionalAndExpression_return conditionalAndExpression() throws RecognitionException {
         JavaParser.conditionalAndExpression_return retval = new JavaParser.conditionalAndExpression_return();
         retval.start = input.LT(1);
@@ -9970,8 +9971,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 74) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1027:5: ( inclusiveOrExpression ( '&&' inclusiveOrExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1027:9: inclusiveOrExpression ( '&&' inclusiveOrExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1028:5: ( inclusiveOrExpression ( '&&' inclusiveOrExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1028:9: inclusiveOrExpression ( '&&' inclusiveOrExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -9981,7 +9982,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, inclusiveOrExpression416.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1028:9: ( '&&' inclusiveOrExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1029:9: ( '&&' inclusiveOrExpression )*
             loop115:
             do {
                 int alt115=2;
@@ -9994,7 +9995,7 @@ public class JavaParser extends Parser {
 
                 switch (alt115) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1028:10: '&&' inclusiveOrExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1029:10: '&&' inclusiveOrExpression
             	    {
             	    string_literal417=(Token)match(input,AMPAMP,FOLLOW_AMPAMP_in_conditionalAndExpression5658); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -10046,7 +10047,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "inclusiveOrExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1032:1: inclusiveOrExpression : exclusiveOrExpression ( '|' exclusiveOrExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1033:1: inclusiveOrExpression : exclusiveOrExpression ( '|' exclusiveOrExpression )* ;
     public final JavaParser.inclusiveOrExpression_return inclusiveOrExpression() throws RecognitionException {
         JavaParser.inclusiveOrExpression_return retval = new JavaParser.inclusiveOrExpression_return();
         retval.start = input.LT(1);
@@ -10063,8 +10064,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 75) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1033:5: ( exclusiveOrExpression ( '|' exclusiveOrExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1033:9: exclusiveOrExpression ( '|' exclusiveOrExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1034:5: ( exclusiveOrExpression ( '|' exclusiveOrExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1034:9: exclusiveOrExpression ( '|' exclusiveOrExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10074,7 +10075,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, exclusiveOrExpression419.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1034:9: ( '|' exclusiveOrExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1035:9: ( '|' exclusiveOrExpression )*
             loop116:
             do {
                 int alt116=2;
@@ -10087,7 +10088,7 @@ public class JavaParser extends Parser {
 
                 switch (alt116) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1034:10: '|' exclusiveOrExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1035:10: '|' exclusiveOrExpression
             	    {
             	    char_literal420=(Token)match(input,BAR,FOLLOW_BAR_in_inclusiveOrExpression5702); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -10139,7 +10140,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "exclusiveOrExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1038:1: exclusiveOrExpression : andExpression ( '^' andExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1039:1: exclusiveOrExpression : andExpression ( '^' andExpression )* ;
     public final JavaParser.exclusiveOrExpression_return exclusiveOrExpression() throws RecognitionException {
         JavaParser.exclusiveOrExpression_return retval = new JavaParser.exclusiveOrExpression_return();
         retval.start = input.LT(1);
@@ -10156,8 +10157,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 76) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1039:5: ( andExpression ( '^' andExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1039:9: andExpression ( '^' andExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1040:5: ( andExpression ( '^' andExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1040:9: andExpression ( '^' andExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10167,7 +10168,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, andExpression422.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1040:9: ( '^' andExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1041:9: ( '^' andExpression )*
             loop117:
             do {
                 int alt117=2;
@@ -10180,7 +10181,7 @@ public class JavaParser extends Parser {
 
                 switch (alt117) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1040:10: '^' andExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1041:10: '^' andExpression
             	    {
             	    char_literal423=(Token)match(input,CARET,FOLLOW_CARET_in_exclusiveOrExpression5746); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -10232,7 +10233,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "andExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1044:1: andExpression : equalityExpression ( '&' equalityExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1045:1: andExpression : equalityExpression ( '&' equalityExpression )* ;
     public final JavaParser.andExpression_return andExpression() throws RecognitionException {
         JavaParser.andExpression_return retval = new JavaParser.andExpression_return();
         retval.start = input.LT(1);
@@ -10249,8 +10250,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 77) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1045:5: ( equalityExpression ( '&' equalityExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1045:9: equalityExpression ( '&' equalityExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1046:5: ( equalityExpression ( '&' equalityExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1046:9: equalityExpression ( '&' equalityExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10260,7 +10261,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, equalityExpression425.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1046:9: ( '&' equalityExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1047:9: ( '&' equalityExpression )*
             loop118:
             do {
                 int alt118=2;
@@ -10273,7 +10274,7 @@ public class JavaParser extends Parser {
 
                 switch (alt118) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1046:10: '&' equalityExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1047:10: '&' equalityExpression
             	    {
             	    char_literal426=(Token)match(input,AMP,FOLLOW_AMP_in_andExpression5790); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -10325,7 +10326,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "equalityExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1050:1: equalityExpression : instanceOfExpression ( ( '==' | '!=' ) instanceOfExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1051:1: equalityExpression : instanceOfExpression ( ( '==' | '!=' ) instanceOfExpression )* ;
     public final JavaParser.equalityExpression_return equalityExpression() throws RecognitionException {
         JavaParser.equalityExpression_return retval = new JavaParser.equalityExpression_return();
         retval.start = input.LT(1);
@@ -10342,8 +10343,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 78) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1051:5: ( instanceOfExpression ( ( '==' | '!=' ) instanceOfExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1051:9: instanceOfExpression ( ( '==' | '!=' ) instanceOfExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1052:5: ( instanceOfExpression ( ( '==' | '!=' ) instanceOfExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1052:9: instanceOfExpression ( ( '==' | '!=' ) instanceOfExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10353,7 +10354,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, instanceOfExpression428.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1052:9: ( ( '==' | '!=' ) instanceOfExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1053:9: ( ( '==' | '!=' ) instanceOfExpression )*
             loop119:
             do {
                 int alt119=2;
@@ -10366,7 +10367,7 @@ public class JavaParser extends Parser {
 
                 switch (alt119) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1053:13: ( '==' | '!=' ) instanceOfExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1054:13: ( '==' | '!=' ) instanceOfExpression
             	    {
             	    set429=(Token)input.LT(1);
             	    if ( input.LA(1)==EQEQ||input.LA(1)==BANGEQ ) {
@@ -10425,7 +10426,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "instanceOfExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1060:1: instanceOfExpression : relationalExpression ( 'instanceof' type )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1061:1: instanceOfExpression : relationalExpression ( 'instanceof' type )? ;
     public final JavaParser.instanceOfExpression_return instanceOfExpression() throws RecognitionException {
         JavaParser.instanceOfExpression_return retval = new JavaParser.instanceOfExpression_return();
         retval.start = input.LT(1);
@@ -10442,8 +10443,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 79) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1061:5: ( relationalExpression ( 'instanceof' type )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1061:9: relationalExpression ( 'instanceof' type )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1062:5: ( relationalExpression ( 'instanceof' type )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1062:9: relationalExpression ( 'instanceof' type )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10453,7 +10454,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, relationalExpression431.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1062:9: ( 'instanceof' type )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1063:9: ( 'instanceof' type )?
             int alt120=2;
             int LA120_0 = input.LA(1);
 
@@ -10462,7 +10463,7 @@ public class JavaParser extends Parser {
             }
             switch (alt120) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1062:10: 'instanceof' type
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1063:10: 'instanceof' type
                     {
                     string_literal432=(Token)match(input,INSTANCEOF,FOLLOW_INSTANCEOF_in_instanceOfExpression5942); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -10511,7 +10512,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "relationalExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1066:1: relationalExpression : shiftExpression ( relationalOp shiftExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1067:1: relationalExpression : shiftExpression ( relationalOp shiftExpression )* ;
     public final JavaParser.relationalExpression_return relationalExpression() throws RecognitionException {
         JavaParser.relationalExpression_return retval = new JavaParser.relationalExpression_return();
         retval.start = input.LT(1);
@@ -10528,8 +10529,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 80) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1067:5: ( shiftExpression ( relationalOp shiftExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1067:9: shiftExpression ( relationalOp shiftExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1068:5: ( shiftExpression ( relationalOp shiftExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1068:9: shiftExpression ( relationalOp shiftExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10539,7 +10540,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, shiftExpression434.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1068:9: ( relationalOp shiftExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1069:9: ( relationalOp shiftExpression )*
             loop121:
             do {
                 int alt121=2;
@@ -10567,7 +10568,7 @@ public class JavaParser extends Parser {
 
                 switch (alt121) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1068:10: relationalOp shiftExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1069:10: relationalOp shiftExpression
             	    {
             	    pushFollow(FOLLOW_relationalOp_in_relationalExpression5986);
             	    relationalOp435=relationalOp();
@@ -10620,7 +10621,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "relationalOp"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1072:1: relationalOp : ( '<' '=' | '>' '=' | '<' | '>' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1073:1: relationalOp : ( '<' '=' | '>' '=' | '<' | '>' );
     public final JavaParser.relationalOp_return relationalOp() throws RecognitionException {
         JavaParser.relationalOp_return retval = new JavaParser.relationalOp_return();
         retval.start = input.LT(1);
@@ -10643,7 +10644,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 81) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1073:5: ( '<' '=' | '>' '=' | '<' | '>' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1074:5: ( '<' '=' | '>' '=' | '<' | '>' )
             int alt122=4;
             int LA122_0 = input.LA(1);
 
@@ -10690,7 +10691,7 @@ public class JavaParser extends Parser {
             }
             switch (alt122) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1073:10: '<' '='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1074:10: '<' '='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -10708,7 +10709,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1074:10: '>' '='
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1075:10: '>' '='
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -10726,7 +10727,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1075:9: '<'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1076:9: '<'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -10739,7 +10740,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1076:9: '>'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1077:9: '>'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -10780,7 +10781,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "shiftExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1079:1: shiftExpression : additiveExpression ( shiftOp additiveExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1080:1: shiftExpression : additiveExpression ( shiftOp additiveExpression )* ;
     public final JavaParser.shiftExpression_return shiftExpression() throws RecognitionException {
         JavaParser.shiftExpression_return retval = new JavaParser.shiftExpression_return();
         retval.start = input.LT(1);
@@ -10797,8 +10798,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 82) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1080:5: ( additiveExpression ( shiftOp additiveExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1080:9: additiveExpression ( shiftOp additiveExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1081:5: ( additiveExpression ( shiftOp additiveExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1081:9: additiveExpression ( shiftOp additiveExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -10808,7 +10809,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, additiveExpression443.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1081:9: ( shiftOp additiveExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1082:9: ( shiftOp additiveExpression )*
             loop123:
             do {
                 int alt123=2;
@@ -10857,7 +10858,7 @@ public class JavaParser extends Parser {
 
                 switch (alt123) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1081:10: shiftOp additiveExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1082:10: shiftOp additiveExpression
             	    {
             	    pushFollow(FOLLOW_shiftOp_in_shiftExpression6086);
             	    shiftOp444=shiftOp();
@@ -10910,7 +10911,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "shiftOp"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1086:1: shiftOp : ( '<' '<' | '>' '>' '>' | '>' '>' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1087:1: shiftOp : ( '<' '<' | '>' '>' '>' | '>' '>' );
     public final JavaParser.shiftOp_return shiftOp() throws RecognitionException {
         JavaParser.shiftOp_return retval = new JavaParser.shiftOp_return();
         retval.start = input.LT(1);
@@ -10935,7 +10936,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 83) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1087:5: ( '<' '<' | '>' '>' '>' | '>' '>' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1088:5: ( '<' '<' | '>' '>' '>' | '>' '>' )
             int alt124=3;
             int LA124_0 = input.LA(1);
 
@@ -10979,7 +10980,7 @@ public class JavaParser extends Parser {
             }
             switch (alt124) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1087:10: '<' '<'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1088:10: '<' '<'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -10997,7 +10998,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1088:10: '>' '>' '>'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1089:10: '>' '>' '>'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11020,7 +11021,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1089:10: '>' '>'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1090:10: '>' '>'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11066,7 +11067,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "additiveExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1093:1: additiveExpression : multiplicativeExpression ( ( '+' | '-' ) multiplicativeExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1094:1: additiveExpression : multiplicativeExpression ( ( '+' | '-' ) multiplicativeExpression )* ;
     public final JavaParser.additiveExpression_return additiveExpression() throws RecognitionException {
         JavaParser.additiveExpression_return retval = new JavaParser.additiveExpression_return();
         retval.start = input.LT(1);
@@ -11083,8 +11084,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 84) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1094:5: ( multiplicativeExpression ( ( '+' | '-' ) multiplicativeExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1094:9: multiplicativeExpression ( ( '+' | '-' ) multiplicativeExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1095:5: ( multiplicativeExpression ( ( '+' | '-' ) multiplicativeExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1095:9: multiplicativeExpression ( ( '+' | '-' ) multiplicativeExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -11094,7 +11095,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, multiplicativeExpression453.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1095:9: ( ( '+' | '-' ) multiplicativeExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1096:9: ( ( '+' | '-' ) multiplicativeExpression )*
             loop125:
             do {
                 int alt125=2;
@@ -11107,7 +11108,7 @@ public class JavaParser extends Parser {
 
                 switch (alt125) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1096:13: ( '+' | '-' ) multiplicativeExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1097:13: ( '+' | '-' ) multiplicativeExpression
             	    {
             	    set454=(Token)input.LT(1);
             	    if ( (input.LA(1)>=PLUS && input.LA(1)<=SUB) ) {
@@ -11166,7 +11167,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "multiplicativeExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1103:1: multiplicativeExpression : unaryExpression ( ( '*' | '/' | '%' ) unaryExpression )* ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1104:1: multiplicativeExpression : unaryExpression ( ( '*' | '/' | '%' ) unaryExpression )* ;
     public final JavaParser.multiplicativeExpression_return multiplicativeExpression() throws RecognitionException {
         JavaParser.multiplicativeExpression_return retval = new JavaParser.multiplicativeExpression_return();
         retval.start = input.LT(1);
@@ -11183,8 +11184,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 85) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1104:5: ( unaryExpression ( ( '*' | '/' | '%' ) unaryExpression )* )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1105:9: unaryExpression ( ( '*' | '/' | '%' ) unaryExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1105:5: ( unaryExpression ( ( '*' | '/' | '%' ) unaryExpression )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1106:9: unaryExpression ( ( '*' | '/' | '%' ) unaryExpression )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -11194,7 +11195,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, unaryExpression456.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1106:9: ( ( '*' | '/' | '%' ) unaryExpression )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1107:9: ( ( '*' | '/' | '%' ) unaryExpression )*
             loop126:
             do {
                 int alt126=2;
@@ -11207,7 +11208,7 @@ public class JavaParser extends Parser {
 
                 switch (alt126) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1107:13: ( '*' | '/' | '%' ) unaryExpression
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1108:13: ( '*' | '/' | '%' ) unaryExpression
             	    {
             	    set457=(Token)input.LT(1);
             	    if ( (input.LA(1)>=STAR && input.LA(1)<=SLASH)||input.LA(1)==PERCENT ) {
@@ -11266,7 +11267,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "unaryExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1115:1: unaryExpression : ( '+' unaryExpression | '-' unaryExpression | '++' unaryExpression | '--' unaryExpression | unaryExpressionNotPlusMinus );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1116:1: unaryExpression : ( '+' unaryExpression | '-' unaryExpression | '++' unaryExpression | '--' unaryExpression | unaryExpressionNotPlusMinus );
     public final JavaParser.unaryExpression_return unaryExpression() throws RecognitionException {
         JavaParser.unaryExpression_return retval = new JavaParser.unaryExpression_return();
         retval.start = input.LT(1);
@@ -11295,7 +11296,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 86) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1120:5: ( '+' unaryExpression | '-' unaryExpression | '++' unaryExpression | '--' unaryExpression | unaryExpressionNotPlusMinus )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1121:5: ( '+' unaryExpression | '-' unaryExpression | '++' unaryExpression | '--' unaryExpression | unaryExpressionNotPlusMinus )
             int alt127=5;
             switch ( input.LA(1) ) {
             case PLUS:
@@ -11357,7 +11358,7 @@ public class JavaParser extends Parser {
 
             switch (alt127) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1120:9: '+' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1121:9: '+' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11376,7 +11377,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1121:9: '-' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1122:9: '-' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11395,7 +11396,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1122:9: '++' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1123:9: '++' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11414,7 +11415,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1123:9: '--' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1124:9: '--' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11433,7 +11434,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1124:9: unaryExpressionNotPlusMinus
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1125:9: unaryExpressionNotPlusMinus
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11475,7 +11476,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "unaryExpressionNotPlusMinus"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1127:1: unaryExpressionNotPlusMinus : ( '~' unaryExpression | '!' unaryExpression | castExpression | primary ( selector )* ( '++' | '--' )? );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1128:1: unaryExpressionNotPlusMinus : ( '~' unaryExpression | '!' unaryExpression | castExpression | primary ( selector )* ( '++' | '--' )? );
     public final JavaParser.unaryExpressionNotPlusMinus_return unaryExpressionNotPlusMinus() throws RecognitionException {
         JavaParser.unaryExpressionNotPlusMinus_return retval = new JavaParser.unaryExpressionNotPlusMinus_return();
         retval.start = input.LT(1);
@@ -11502,12 +11503,12 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 87) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1128:5: ( '~' unaryExpression | '!' unaryExpression | castExpression | primary ( selector )* ( '++' | '--' )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1129:5: ( '~' unaryExpression | '!' unaryExpression | castExpression | primary ( selector )* ( '++' | '--' )? )
             int alt130=4;
             alt130 = dfa130.predict(input);
             switch (alt130) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1128:9: '~' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1129:9: '~' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11526,7 +11527,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1129:9: '!' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1130:9: '!' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11545,7 +11546,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1130:9: castExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1131:9: castExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11559,7 +11560,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1131:9: primary ( selector )* ( '++' | '--' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1132:9: primary ( selector )* ( '++' | '--' )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11569,7 +11570,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, primary473.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1132:9: ( selector )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1133:9: ( selector )*
                     loop128:
                     do {
                         int alt128=2;
@@ -11582,7 +11583,7 @@ public class JavaParser extends Parser {
 
                         switch (alt128) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1132:10: selector
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1133:10: selector
                     	    {
                     	    pushFollow(FOLLOW_selector_in_unaryExpressionNotPlusMinus6529);
                     	    selector474=selector();
@@ -11599,7 +11600,7 @@ public class JavaParser extends Parser {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1134:9: ( '++' | '--' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1135:9: ( '++' | '--' )?
                     int alt129=2;
                     int LA129_0 = input.LA(1);
 
@@ -11660,7 +11661,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "castExpression"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1139:1: castExpression : ( '(' primitiveType ')' unaryExpression | '(' type ')' unaryExpressionNotPlusMinus );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1140:1: castExpression : ( '(' primitiveType ')' unaryExpression | '(' type ')' unaryExpressionNotPlusMinus );
     public final JavaParser.castExpression_return castExpression() throws RecognitionException {
         JavaParser.castExpression_return retval = new JavaParser.castExpression_return();
         retval.start = input.LT(1);
@@ -11687,7 +11688,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 88) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1140:5: ( '(' primitiveType ')' unaryExpression | '(' type ')' unaryExpressionNotPlusMinus )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1141:5: ( '(' primitiveType ')' unaryExpression | '(' type ')' unaryExpressionNotPlusMinus )
             int alt131=2;
             int LA131_0 = input.LA(1);
 
@@ -11717,7 +11718,7 @@ public class JavaParser extends Parser {
             }
             switch (alt131) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1140:9: '(' primitiveType ')' unaryExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1141:9: '(' primitiveType ')' unaryExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11747,7 +11748,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1141:9: '(' type ')' unaryExpressionNotPlusMinus
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1142:9: '(' type ')' unaryExpressionNotPlusMinus
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11805,7 +11806,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "primary"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1144:1: primary : ( parExpression | 'this' ( '.' IDENTIFIER )* ( identifierSuffix )? | IDENTIFIER ( '.' IDENTIFIER )* ( identifierSuffix )? | 'super' superSuffix | literal | creator | primitiveType ( '[' ']' )* '.' 'class' | 'void' '.' 'class' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1145:1: primary : ( parExpression | 'this' ( '.' IDENTIFIER )* ( identifierSuffix )? | IDENTIFIER ( '.' IDENTIFIER )* ( identifierSuffix )? | 'super' superSuffix | literal | creator | primitiveType ( '[' ']' )* '.' 'class' | 'void' '.' 'class' );
     public final JavaParser.primary_return primary() throws RecognitionException {
         JavaParser.primary_return retval = new JavaParser.primary_return();
         retval.start = input.LT(1);
@@ -11858,7 +11859,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 89) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1148:5: ( parExpression | 'this' ( '.' IDENTIFIER )* ( identifierSuffix )? | IDENTIFIER ( '.' IDENTIFIER )* ( identifierSuffix )? | 'super' superSuffix | literal | creator | primitiveType ( '[' ']' )* '.' 'class' | 'void' '.' 'class' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1149:5: ( parExpression | 'this' ( '.' IDENTIFIER )* ( identifierSuffix )? | IDENTIFIER ( '.' IDENTIFIER )* ( identifierSuffix )? | 'super' superSuffix | literal | creator | primitiveType ( '[' ']' )* '.' 'class' | 'void' '.' 'class' )
             int alt137=8;
             switch ( input.LA(1) ) {
             case LPAREN:
@@ -11926,7 +11927,7 @@ public class JavaParser extends Parser {
 
             switch (alt137) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1148:9: parExpression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1149:9: parExpression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11940,7 +11941,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1149:9: 'this' ( '.' IDENTIFIER )* ( identifierSuffix )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1150:9: 'this' ( '.' IDENTIFIER )* ( identifierSuffix )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -11949,7 +11950,7 @@ public class JavaParser extends Parser {
                     string_literal485_tree = (Object)adaptor.create(string_literal485);
                     adaptor.addChild(root_0, string_literal485_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1150:9: ( '.' IDENTIFIER )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1151:9: ( '.' IDENTIFIER )*
                     loop132:
                     do {
                         int alt132=2;
@@ -11974,7 +11975,7 @@ public class JavaParser extends Parser {
 
                         switch (alt132) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1150:10: '.' IDENTIFIER
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1151:10: '.' IDENTIFIER
                     	    {
                     	    char_literal486=(Token)match(input,DOT,FOLLOW_DOT_in_primary6676); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -11995,12 +11996,12 @@ public class JavaParser extends Parser {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1152:9: ( identifierSuffix )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1153:9: ( identifierSuffix )?
                     int alt133=2;
                     alt133 = dfa133.predict(input);
                     switch (alt133) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1152:10: identifierSuffix
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1153:10: identifierSuffix
                             {
                             pushFollow(FOLLOW_identifierSuffix_in_primary6700);
                             identifierSuffix488=identifierSuffix();
@@ -12018,7 +12019,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1154:9: IDENTIFIER ( '.' IDENTIFIER )* ( identifierSuffix )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1155:9: IDENTIFIER ( '.' IDENTIFIER )* ( identifierSuffix )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12027,7 +12028,7 @@ public class JavaParser extends Parser {
                     IDENTIFIER489_tree = (Object)adaptor.create(IDENTIFIER489);
                     adaptor.addChild(root_0, IDENTIFIER489_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1155:9: ( '.' IDENTIFIER )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1156:9: ( '.' IDENTIFIER )*
                     loop134:
                     do {
                         int alt134=2;
@@ -12052,7 +12053,7 @@ public class JavaParser extends Parser {
 
                         switch (alt134) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1155:10: '.' IDENTIFIER
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1156:10: '.' IDENTIFIER
                     	    {
                     	    char_literal490=(Token)match(input,DOT,FOLLOW_DOT_in_primary6732); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -12073,12 +12074,12 @@ public class JavaParser extends Parser {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1157:9: ( identifierSuffix )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1158:9: ( identifierSuffix )?
                     int alt135=2;
                     alt135 = dfa135.predict(input);
                     switch (alt135) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1157:10: identifierSuffix
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1158:10: identifierSuffix
                             {
                             pushFollow(FOLLOW_identifierSuffix_in_primary6756);
                             identifierSuffix492=identifierSuffix();
@@ -12096,7 +12097,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1159:9: 'super' superSuffix
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1160:9: 'super' superSuffix
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12115,7 +12116,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1161:9: literal
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1162:9: literal
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12129,7 +12130,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1162:9: creator
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1163:9: creator
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12143,7 +12144,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1163:9: primitiveType ( '[' ']' )* '.' 'class'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1164:9: primitiveType ( '[' ']' )* '.' 'class'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12153,7 +12154,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, primitiveType497.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1164:9: ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1165:9: ( '[' ']' )*
                     loop136:
                     do {
                         int alt136=2;
@@ -12166,7 +12167,7 @@ public class JavaParser extends Parser {
 
                         switch (alt136) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1164:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1165:10: '[' ']'
                     	    {
                     	    char_literal498=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_primary6828); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -12201,7 +12202,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1167:9: 'void' '.' 'class'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1168:9: 'void' '.' 'class'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12252,7 +12253,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "superSuffix"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1171:1: superSuffix : ( arguments | '.' ( typeArguments )? IDENTIFIER ( arguments )? );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1172:1: superSuffix : ( arguments | '.' ( typeArguments )? IDENTIFIER ( arguments )? );
     public final JavaParser.superSuffix_return superSuffix() throws RecognitionException {
         JavaParser.superSuffix_return retval = new JavaParser.superSuffix_return();
         retval.start = input.LT(1);
@@ -12273,7 +12274,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 90) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1172:5: ( arguments | '.' ( typeArguments )? IDENTIFIER ( arguments )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1173:5: ( arguments | '.' ( typeArguments )? IDENTIFIER ( arguments )? )
             int alt140=2;
             int LA140_0 = input.LA(1);
 
@@ -12292,7 +12293,7 @@ public class JavaParser extends Parser {
             }
             switch (alt140) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1172:9: arguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1173:9: arguments
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12306,7 +12307,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1173:9: '.' ( typeArguments )? IDENTIFIER ( arguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1174:9: '.' ( typeArguments )? IDENTIFIER ( arguments )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12315,7 +12316,7 @@ public class JavaParser extends Parser {
                     char_literal506_tree = (Object)adaptor.create(char_literal506);
                     adaptor.addChild(root_0, char_literal506_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1173:13: ( typeArguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1174:13: ( typeArguments )?
                     int alt138=2;
                     int LA138_0 = input.LA(1);
 
@@ -12324,7 +12325,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt138) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1173:14: typeArguments
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1174:14: typeArguments
                             {
                             pushFollow(FOLLOW_typeArguments_in_superSuffix6906);
                             typeArguments507=typeArguments();
@@ -12343,7 +12344,7 @@ public class JavaParser extends Parser {
                     IDENTIFIER508_tree = (Object)adaptor.create(IDENTIFIER508);
                     adaptor.addChild(root_0, IDENTIFIER508_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1176:9: ( arguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1177:9: ( arguments )?
                     int alt139=2;
                     int LA139_0 = input.LA(1);
 
@@ -12352,7 +12353,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt139) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1176:10: arguments
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1177:10: arguments
                             {
                             pushFollow(FOLLOW_arguments_in_superSuffix6938);
                             arguments509=arguments();
@@ -12398,7 +12399,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "identifierSuffix"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1181:1: identifierSuffix : ( ( '[' ']' )+ '.' 'class' | ( '[' expression ']' )+ | arguments | '.' 'class' | '.' nonWildcardTypeArguments IDENTIFIER arguments | '.' 'this' | '.' 'super' arguments | innerCreator );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1182:1: identifierSuffix : ( ( '[' ']' )+ '.' 'class' | ( '[' expression ']' )+ | arguments | '.' 'class' | '.' nonWildcardTypeArguments IDENTIFIER arguments | '.' 'this' | '.' 'super' arguments | innerCreator );
     public final JavaParser.identifierSuffix_return identifierSuffix() throws RecognitionException {
         JavaParser.identifierSuffix_return retval = new JavaParser.identifierSuffix_return();
         retval.start = input.LT(1);
@@ -12449,16 +12450,16 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 91) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1182:5: ( ( '[' ']' )+ '.' 'class' | ( '[' expression ']' )+ | arguments | '.' 'class' | '.' nonWildcardTypeArguments IDENTIFIER arguments | '.' 'this' | '.' 'super' arguments | innerCreator )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1183:5: ( ( '[' ']' )+ '.' 'class' | ( '[' expression ']' )+ | arguments | '.' 'class' | '.' nonWildcardTypeArguments IDENTIFIER arguments | '.' 'this' | '.' 'super' arguments | innerCreator )
             int alt143=8;
             alt143 = dfa143.predict(input);
             switch (alt143) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1182:9: ( '[' ']' )+ '.' 'class'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1183:9: ( '[' ']' )+ '.' 'class'
                     {
                     root_0 = (Object)adaptor.nil();
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1182:9: ( '[' ']' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1183:9: ( '[' ']' )+
                     int cnt141=0;
                     loop141:
                     do {
@@ -12472,7 +12473,7 @@ public class JavaParser extends Parser {
 
                         switch (alt141) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1182:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1183:10: '[' ']'
                     	    {
                     	    char_literal510=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_identifierSuffix6971); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -12512,11 +12513,11 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1185:9: ( '[' expression ']' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1186:9: ( '[' expression ']' )+
                     {
                     root_0 = (Object)adaptor.nil();
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1185:9: ( '[' expression ']' )+
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1186:9: ( '[' expression ']' )+
                     int cnt142=0;
                     loop142:
                     do {
@@ -12524,7 +12525,7 @@ public class JavaParser extends Parser {
                         alt142 = dfa142.predict(input);
                         switch (alt142) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1185:10: '[' expression ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1186:10: '[' expression ']'
                     	    {
                     	    char_literal514=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_identifierSuffix7007); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -12560,7 +12561,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1187:9: arguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1188:9: arguments
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12574,7 +12575,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1188:9: '.' 'class'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1189:9: '.' 'class'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12592,7 +12593,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1189:9: '.' nonWildcardTypeArguments IDENTIFIER arguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1190:9: '.' nonWildcardTypeArguments IDENTIFIER arguments
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12622,7 +12623,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1190:9: '.' 'this'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1191:9: '.' 'this'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12640,7 +12641,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1191:9: '.' 'super' arguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1192:9: '.' 'super' arguments
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12664,7 +12665,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1192:9: innerCreator
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1193:9: innerCreator
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12706,7 +12707,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "selector"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1196:1: selector : ( '.' IDENTIFIER ( arguments )? | '.' 'this' | '.' 'super' superSuffix | innerCreator | '[' expression ']' );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1197:1: selector : ( '.' IDENTIFIER ( arguments )? | '.' 'this' | '.' 'super' superSuffix | innerCreator | '[' expression ']' );
     public final JavaParser.selector_return selector() throws RecognitionException {
         JavaParser.selector_return retval = new JavaParser.selector_return();
         retval.start = input.LT(1);
@@ -12741,7 +12742,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 92) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1197:5: ( '.' IDENTIFIER ( arguments )? | '.' 'this' | '.' 'super' superSuffix | innerCreator | '[' expression ']' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1198:5: ( '.' IDENTIFIER ( arguments )? | '.' 'this' | '.' 'super' superSuffix | innerCreator | '[' expression ']' )
             int alt145=5;
             int LA145_0 = input.LA(1);
 
@@ -12788,7 +12789,7 @@ public class JavaParser extends Parser {
             }
             switch (alt145) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1197:9: '.' IDENTIFIER ( arguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1198:9: '.' IDENTIFIER ( arguments )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12802,7 +12803,7 @@ public class JavaParser extends Parser {
                     IDENTIFIER531_tree = (Object)adaptor.create(IDENTIFIER531);
                     adaptor.addChild(root_0, IDENTIFIER531_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1198:9: ( arguments )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1199:9: ( arguments )?
                     int alt144=2;
                     int LA144_0 = input.LA(1);
 
@@ -12811,7 +12812,7 @@ public class JavaParser extends Parser {
                     }
                     switch (alt144) {
                         case 1 :
-                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1198:10: arguments
+                            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1199:10: arguments
                             {
                             pushFollow(FOLLOW_arguments_in_selector7131);
                             arguments532=arguments();
@@ -12829,7 +12830,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1200:9: '.' 'this'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1201:9: '.' 'this'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12847,7 +12848,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1201:9: '.' 'super' superSuffix
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1202:9: '.' 'super' superSuffix
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12871,7 +12872,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1203:9: innerCreator
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1204:9: innerCreator
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12885,7 +12886,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1204:9: '[' expression ']'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1205:9: '[' expression ']'
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -12937,7 +12938,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "creator"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1207:1: creator : ( 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest | 'new' classOrInterfaceType classCreatorRest | arrayCreator );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1208:1: creator : ( 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest | 'new' classOrInterfaceType classCreatorRest | arrayCreator );
     public final JavaParser.creator_return creator() throws RecognitionException {
         JavaParser.creator_return retval = new JavaParser.creator_return();
         retval.start = input.LT(1);
@@ -12964,7 +12965,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 93) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1208:5: ( 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest | 'new' classOrInterfaceType classCreatorRest | arrayCreator )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:5: ( 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest | 'new' classOrInterfaceType classCreatorRest | arrayCreator )
             int alt146=3;
             int LA146_0 = input.LA(1);
 
@@ -12997,7 +12998,7 @@ public class JavaParser extends Parser {
             }
             switch (alt146) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1208:9: 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:9: 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13028,7 +13029,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:9: 'new' classOrInterfaceType classCreatorRest
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1210:9: 'new' classOrInterfaceType classCreatorRest
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13053,7 +13054,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1210:9: arrayCreator
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1211:9: arrayCreator
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13095,7 +13096,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "arrayCreator"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1213:1: arrayCreator : ( 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer | 'new' createdName '[' expression ']' ( '[' expression ']' )* ( '[' ']' )* );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1214:1: arrayCreator : ( 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer | 'new' createdName '[' expression ']' ( '[' expression ']' )* ( '[' ']' )* );
     public final JavaParser.arrayCreator_return arrayCreator() throws RecognitionException {
         JavaParser.arrayCreator_return retval = new JavaParser.arrayCreator_return();
         retval.start = input.LT(1);
@@ -13140,7 +13141,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 94) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1214:5: ( 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer | 'new' createdName '[' expression ']' ( '[' expression ']' )* ( '[' ']' )* )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1215:5: ( 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer | 'new' createdName '[' expression ']' ( '[' expression ']' )* ( '[' ']' )* )
             int alt150=2;
             int LA150_0 = input.LA(1);
 
@@ -13170,7 +13171,7 @@ public class JavaParser extends Parser {
             }
             switch (alt150) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1214:9: 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1215:9: 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13195,7 +13196,7 @@ public class JavaParser extends Parser {
                     char_literal553_tree = (Object)adaptor.create(char_literal553);
                     adaptor.addChild(root_0, char_literal553_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1216:9: ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1217:9: ( '[' ']' )*
                     loop147:
                     do {
                         int alt147=2;
@@ -13208,7 +13209,7 @@ public class JavaParser extends Parser {
 
                         switch (alt147) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1216:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1217:10: '[' ']'
                     	    {
                     	    char_literal554=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_arrayCreator7295); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -13239,7 +13240,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1220:9: 'new' createdName '[' expression ']' ( '[' expression ']' )* ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1221:9: 'new' createdName '[' expression ']' ( '[' expression ']' )* ( '[' ']' )*
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13270,14 +13271,14 @@ public class JavaParser extends Parser {
                     char_literal561_tree = (Object)adaptor.create(char_literal561);
                     adaptor.addChild(root_0, char_literal561_tree);
                     }
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1223:9: ( '[' expression ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1224:9: ( '[' expression ']' )*
                     loop148:
                     do {
                         int alt148=2;
                         alt148 = dfa148.predict(input);
                         switch (alt148) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1223:13: '[' expression ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1224:13: '[' expression ']'
                     	    {
                     	    char_literal562=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_arrayCreator7367); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -13304,7 +13305,7 @@ public class JavaParser extends Parser {
                         }
                     } while (true);
 
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1226:9: ( '[' ']' )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1227:9: ( '[' ']' )*
                     loop149:
                     do {
                         int alt149=2;
@@ -13323,7 +13324,7 @@ public class JavaParser extends Parser {
 
                         switch (alt149) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1226:10: '[' ']'
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1227:10: '[' ']'
                     	    {
                     	    char_literal565=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_arrayCreator7405); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -13376,7 +13377,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "variableInitializer"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1230:1: variableInitializer : ( arrayInitializer | expression );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1231:1: variableInitializer : ( arrayInitializer | expression );
     public final JavaParser.variableInitializer_return variableInitializer() throws RecognitionException {
         JavaParser.variableInitializer_return retval = new JavaParser.variableInitializer_return();
         retval.start = input.LT(1);
@@ -13391,7 +13392,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 95) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1231:5: ( arrayInitializer | expression )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1232:5: ( arrayInitializer | expression )
             int alt151=2;
             int LA151_0 = input.LA(1);
 
@@ -13410,7 +13411,7 @@ public class JavaParser extends Parser {
             }
             switch (alt151) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1231:9: arrayInitializer
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1232:9: arrayInitializer
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13424,7 +13425,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1232:9: expression
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1233:9: expression
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13466,7 +13467,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "arrayInitializer"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1235:1: arrayInitializer : '{' ( variableInitializer ( ',' variableInitializer )* )? ( ',' )? '}' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1236:1: arrayInitializer : '{' ( variableInitializer ( ',' variableInitializer )* )? ( ',' )? '}' ;
     public final JavaParser.arrayInitializer_return arrayInitializer() throws RecognitionException {
         JavaParser.arrayInitializer_return retval = new JavaParser.arrayInitializer_return();
         retval.start = input.LT(1);
@@ -13489,8 +13490,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 96) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1236:5: ( '{' ( variableInitializer ( ',' variableInitializer )* )? ( ',' )? '}' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1236:9: '{' ( variableInitializer ( ',' variableInitializer )* )? ( ',' )? '}'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1237:5: ( '{' ( variableInitializer ( ',' variableInitializer )* )? ( ',' )? '}' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1237:9: '{' ( variableInitializer ( ',' variableInitializer )* )? ( ',' )? '}'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -13499,7 +13500,7 @@ public class JavaParser extends Parser {
             char_literal569_tree = (Object)adaptor.create(char_literal569);
             adaptor.addChild(root_0, char_literal569_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1237:13: ( variableInitializer ( ',' variableInitializer )* )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1238:13: ( variableInitializer ( ',' variableInitializer )* )?
             int alt153=2;
             int LA153_0 = input.LA(1);
 
@@ -13508,7 +13509,7 @@ public class JavaParser extends Parser {
             }
             switch (alt153) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1237:14: variableInitializer ( ',' variableInitializer )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1238:14: variableInitializer ( ',' variableInitializer )*
                     {
                     pushFollow(FOLLOW_variableInitializer_in_arrayInitializer7484);
                     variableInitializer570=variableInitializer();
@@ -13516,7 +13517,7 @@ public class JavaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, variableInitializer570.getTree());
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1238:17: ( ',' variableInitializer )*
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1239:17: ( ',' variableInitializer )*
                     loop152:
                     do {
                         int alt152=2;
@@ -13535,7 +13536,7 @@ public class JavaParser extends Parser {
 
                         switch (alt152) {
                     	case 1 :
-                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1238:18: ',' variableInitializer
+                    	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1239:18: ',' variableInitializer
                     	    {
                     	    char_literal571=(Token)match(input,COMMA,FOLLOW_COMMA_in_arrayInitializer7503); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -13563,7 +13564,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1241:13: ( ',' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1242:13: ( ',' )?
             int alt154=2;
             int LA154_0 = input.LA(1);
 
@@ -13572,7 +13573,7 @@ public class JavaParser extends Parser {
             }
             switch (alt154) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1241:14: ','
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1242:14: ','
                     {
                     char_literal573=(Token)match(input,COMMA,FOLLOW_COMMA_in_arrayInitializer7555); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -13620,7 +13621,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "createdName"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1246:1: createdName : ( classOrInterfaceType | primitiveType );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1247:1: createdName : ( classOrInterfaceType | primitiveType );
     public final JavaParser.createdName_return createdName() throws RecognitionException {
         JavaParser.createdName_return retval = new JavaParser.createdName_return();
         retval.start = input.LT(1);
@@ -13635,7 +13636,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 97) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1247:5: ( classOrInterfaceType | primitiveType )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1248:5: ( classOrInterfaceType | primitiveType )
             int alt155=2;
             int LA155_0 = input.LA(1);
 
@@ -13654,7 +13655,7 @@ public class JavaParser extends Parser {
             }
             switch (alt155) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1247:9: classOrInterfaceType
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1248:9: classOrInterfaceType
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13668,7 +13669,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1248:9: primitiveType
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1249:9: primitiveType
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -13710,7 +13711,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "innerCreator"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1251:1: innerCreator : '.' 'new' ( nonWildcardTypeArguments )? IDENTIFIER ( typeArguments )? classCreatorRest ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1252:1: innerCreator : '.' 'new' ( nonWildcardTypeArguments )? IDENTIFIER ( typeArguments )? classCreatorRest ;
     public final JavaParser.innerCreator_return innerCreator() throws RecognitionException {
         JavaParser.innerCreator_return retval = new JavaParser.innerCreator_return();
         retval.start = input.LT(1);
@@ -13733,8 +13734,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 98) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1252:5: ( '.' 'new' ( nonWildcardTypeArguments )? IDENTIFIER ( typeArguments )? classCreatorRest )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1252:9: '.' 'new' ( nonWildcardTypeArguments )? IDENTIFIER ( typeArguments )? classCreatorRest
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1253:5: ( '.' 'new' ( nonWildcardTypeArguments )? IDENTIFIER ( typeArguments )? classCreatorRest )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1253:9: '.' 'new' ( nonWildcardTypeArguments )? IDENTIFIER ( typeArguments )? classCreatorRest
             {
             root_0 = (Object)adaptor.nil();
 
@@ -13748,7 +13749,7 @@ public class JavaParser extends Parser {
             string_literal578_tree = (Object)adaptor.create(string_literal578);
             adaptor.addChild(root_0, string_literal578_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1253:9: ( nonWildcardTypeArguments )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1254:9: ( nonWildcardTypeArguments )?
             int alt156=2;
             int LA156_0 = input.LA(1);
 
@@ -13757,7 +13758,7 @@ public class JavaParser extends Parser {
             }
             switch (alt156) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1253:10: nonWildcardTypeArguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1254:10: nonWildcardTypeArguments
                     {
                     pushFollow(FOLLOW_nonWildcardTypeArguments_in_innerCreator7646);
                     nonWildcardTypeArguments579=nonWildcardTypeArguments();
@@ -13776,7 +13777,7 @@ public class JavaParser extends Parser {
             IDENTIFIER580_tree = (Object)adaptor.create(IDENTIFIER580);
             adaptor.addChild(root_0, IDENTIFIER580_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1256:9: ( typeArguments )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1257:9: ( typeArguments )?
             int alt157=2;
             int LA157_0 = input.LA(1);
 
@@ -13785,7 +13786,7 @@ public class JavaParser extends Parser {
             }
             switch (alt157) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1256:10: typeArguments
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1257:10: typeArguments
                     {
                     pushFollow(FOLLOW_typeArguments_in_innerCreator7678);
                     typeArguments581=typeArguments();
@@ -13835,7 +13836,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classCreatorRest"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1262:1: classCreatorRest : arguments ( classBody )? ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1263:1: classCreatorRest : arguments ( classBody )? ;
     public final JavaParser.classCreatorRest_return classCreatorRest() throws RecognitionException {
         JavaParser.classCreatorRest_return retval = new JavaParser.classCreatorRest_return();
         retval.start = input.LT(1);
@@ -13850,8 +13851,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 99) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1263:5: ( arguments ( classBody )? )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1263:9: arguments ( classBody )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1264:5: ( arguments ( classBody )? )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1264:9: arguments ( classBody )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -13861,7 +13862,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, arguments583.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1264:9: ( classBody )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1265:9: ( classBody )?
             int alt158=2;
             int LA158_0 = input.LA(1);
 
@@ -13870,7 +13871,7 @@ public class JavaParser extends Parser {
             }
             switch (alt158) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1264:10: classBody
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1265:10: classBody
                     {
                     pushFollow(FOLLOW_classBody_in_classCreatorRest7731);
                     classBody584=classBody();
@@ -13914,7 +13915,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "nonWildcardTypeArguments"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1269:1: nonWildcardTypeArguments : '<' typeList '>' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1270:1: nonWildcardTypeArguments : '<' typeList '>' ;
     public final JavaParser.nonWildcardTypeArguments_return nonWildcardTypeArguments() throws RecognitionException {
         JavaParser.nonWildcardTypeArguments_return retval = new JavaParser.nonWildcardTypeArguments_return();
         retval.start = input.LT(1);
@@ -13931,8 +13932,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 100) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1270:5: ( '<' typeList '>' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1270:9: '<' typeList '>'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1271:5: ( '<' typeList '>' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1271:9: '<' typeList '>'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -13982,7 +13983,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "arguments"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1274:1: arguments : '(' ( expressionList )? ')' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1275:1: arguments : '(' ( expressionList )? ')' ;
     public final JavaParser.arguments_return arguments() throws RecognitionException {
         JavaParser.arguments_return retval = new JavaParser.arguments_return();
         retval.start = input.LT(1);
@@ -13999,8 +14000,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 101) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1275:5: ( '(' ( expressionList )? ')' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1275:9: '(' ( expressionList )? ')'
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1276:5: ( '(' ( expressionList )? ')' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1276:9: '(' ( expressionList )? ')'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14009,7 +14010,7 @@ public class JavaParser extends Parser {
             char_literal588_tree = (Object)adaptor.create(char_literal588);
             adaptor.addChild(root_0, char_literal588_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1275:13: ( expressionList )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1276:13: ( expressionList )?
             int alt159=2;
             int LA159_0 = input.LA(1);
 
@@ -14018,7 +14019,7 @@ public class JavaParser extends Parser {
             }
             switch (alt159) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1275:14: expressionList
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1276:14: expressionList
                     {
                     pushFollow(FOLLOW_expressionList_in_arguments7798);
                     expressionList589=expressionList();
@@ -14067,7 +14068,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "literal"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1279:1: literal : ( INTLITERAL | LONGLITERAL | FLOATLITERAL | DOUBLELITERAL | CHARLITERAL | STRINGLITERAL | TRUE | FALSE | NULL );
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1280:1: literal : ( INTLITERAL | LONGLITERAL | FLOATLITERAL | DOUBLELITERAL | CHARLITERAL | STRINGLITERAL | TRUE | FALSE | NULL );
     public final JavaParser.literal_return literal() throws RecognitionException {
         JavaParser.literal_return retval = new JavaParser.literal_return();
         retval.start = input.LT(1);
@@ -14080,7 +14081,7 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 102) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1280:5: ( INTLITERAL | LONGLITERAL | FLOATLITERAL | DOUBLELITERAL | CHARLITERAL | STRINGLITERAL | TRUE | FALSE | NULL )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1281:5: ( INTLITERAL | LONGLITERAL | FLOATLITERAL | DOUBLELITERAL | CHARLITERAL | STRINGLITERAL | TRUE | FALSE | NULL )
             // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:
             {
             root_0 = (Object)adaptor.nil();
@@ -14127,7 +14128,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "classHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1291:1: classHeader : modifiers 'class' IDENTIFIER ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1292:1: classHeader : modifiers 'class' IDENTIFIER ;
     public final JavaParser.classHeader_return classHeader() throws RecognitionException {
         JavaParser.classHeader_return retval = new JavaParser.classHeader_return();
         retval.start = input.LT(1);
@@ -14144,8 +14145,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 103) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1296:5: ( modifiers 'class' IDENTIFIER )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1296:9: modifiers 'class' IDENTIFIER
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1297:5: ( modifiers 'class' IDENTIFIER )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1297:9: modifiers 'class' IDENTIFIER
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14195,7 +14196,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "enumHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1299:1: enumHeader : modifiers ( 'enum' | IDENTIFIER ) IDENTIFIER ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1300:1: enumHeader : modifiers ( 'enum' | IDENTIFIER ) IDENTIFIER ;
     public final JavaParser.enumHeader_return enumHeader() throws RecognitionException {
         JavaParser.enumHeader_return retval = new JavaParser.enumHeader_return();
         retval.start = input.LT(1);
@@ -14212,8 +14213,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 104) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1300:5: ( modifiers ( 'enum' | IDENTIFIER ) IDENTIFIER )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1300:9: modifiers ( 'enum' | IDENTIFIER ) IDENTIFIER
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1301:5: ( modifiers ( 'enum' | IDENTIFIER ) IDENTIFIER )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1301:9: modifiers ( 'enum' | IDENTIFIER ) IDENTIFIER
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14270,7 +14271,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "interfaceHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1303:1: interfaceHeader : modifiers 'interface' IDENTIFIER ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1304:1: interfaceHeader : modifiers 'interface' IDENTIFIER ;
     public final JavaParser.interfaceHeader_return interfaceHeader() throws RecognitionException {
         JavaParser.interfaceHeader_return retval = new JavaParser.interfaceHeader_return();
         retval.start = input.LT(1);
@@ -14287,8 +14288,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 105) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1304:5: ( modifiers 'interface' IDENTIFIER )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1304:9: modifiers 'interface' IDENTIFIER
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1305:5: ( modifiers 'interface' IDENTIFIER )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1305:9: modifiers 'interface' IDENTIFIER
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14338,7 +14339,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "annotationHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1307:1: annotationHeader : modifiers '@' 'interface' IDENTIFIER ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1308:1: annotationHeader : modifiers '@' 'interface' IDENTIFIER ;
     public final JavaParser.annotationHeader_return annotationHeader() throws RecognitionException {
         JavaParser.annotationHeader_return retval = new JavaParser.annotationHeader_return();
         retval.start = input.LT(1);
@@ -14357,8 +14358,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 106) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1308:5: ( modifiers '@' 'interface' IDENTIFIER )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1308:9: modifiers '@' 'interface' IDENTIFIER
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1309:5: ( modifiers '@' 'interface' IDENTIFIER )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1309:9: modifiers '@' 'interface' IDENTIFIER
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14413,7 +14414,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "typeHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1311:1: typeHeader : modifiers ( 'class' | 'enum' | ( ( '@' )? 'interface' ) ) IDENTIFIER ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:1: typeHeader : modifiers ( 'class' | 'enum' | ( ( '@' )? 'interface' ) ) IDENTIFIER ;
     public final JavaParser.typeHeader_return typeHeader() throws RecognitionException {
         JavaParser.typeHeader_return retval = new JavaParser.typeHeader_return();
         retval.start = input.LT(1);
@@ -14436,8 +14437,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 107) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:5: ( modifiers ( 'class' | 'enum' | ( ( '@' )? 'interface' ) ) IDENTIFIER )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:9: modifiers ( 'class' | 'enum' | ( ( '@' )? 'interface' ) ) IDENTIFIER
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:5: ( modifiers ( 'class' | 'enum' | ( ( '@' )? 'interface' ) ) IDENTIFIER )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:9: modifiers ( 'class' | 'enum' | ( ( '@' )? 'interface' ) ) IDENTIFIER
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14447,7 +14448,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, modifiers605.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:19: ( 'class' | 'enum' | ( ( '@' )? 'interface' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:19: ( 'class' | 'enum' | ( ( '@' )? 'interface' ) )
             int alt161=3;
             switch ( input.LA(1) ) {
             case CLASS:
@@ -14476,7 +14477,7 @@ public class JavaParser extends Parser {
 
             switch (alt161) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:20: 'class'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:20: 'class'
                     {
                     string_literal606=(Token)match(input,CLASS,FOLLOW_CLASS_in_typeHeader8040); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14487,7 +14488,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:28: 'enum'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:28: 'enum'
                     {
                     string_literal607=(Token)match(input,ENUM,FOLLOW_ENUM_in_typeHeader8042); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14498,12 +14499,12 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:35: ( ( '@' )? 'interface' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:35: ( ( '@' )? 'interface' )
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:35: ( ( '@' )? 'interface' )
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:36: ( '@' )? 'interface'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:35: ( ( '@' )? 'interface' )
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:36: ( '@' )? 'interface'
                     {
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1312:36: ( '@' )?
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1313:36: ( '@' )?
                     int alt160=2;
                     int LA160_0 = input.LA(1);
 
@@ -14574,7 +14575,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "methodHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1315:1: methodHeader : modifiers ( typeParameters )? ( type | 'void' )? IDENTIFIER '(' ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:1: methodHeader : modifiers ( typeParameters )? ( type | 'void' )? IDENTIFIER '(' ;
     public final JavaParser.methodHeader_return methodHeader() throws RecognitionException {
         JavaParser.methodHeader_return retval = new JavaParser.methodHeader_return();
         retval.start = input.LT(1);
@@ -14597,8 +14598,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 108) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:5: ( modifiers ( typeParameters )? ( type | 'void' )? IDENTIFIER '(' )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:9: modifiers ( typeParameters )? ( type | 'void' )? IDENTIFIER '('
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1317:5: ( modifiers ( typeParameters )? ( type | 'void' )? IDENTIFIER '(' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1317:9: modifiers ( typeParameters )? ( type | 'void' )? IDENTIFIER '('
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14608,7 +14609,7 @@ public class JavaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, modifiers611.getTree());
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:19: ( typeParameters )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1317:19: ( typeParameters )?
             int alt162=2;
             int LA162_0 = input.LA(1);
 
@@ -14631,7 +14632,7 @@ public class JavaParser extends Parser {
 
             }
 
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:35: ( type | 'void' )?
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1317:35: ( type | 'void' )?
             int alt163=3;
             switch ( input.LA(1) ) {
                 case IDENTIFIER:
@@ -14664,7 +14665,7 @@ public class JavaParser extends Parser {
 
             switch (alt163) {
                 case 1 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:36: type
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1317:36: type
                     {
                     pushFollow(FOLLOW_type_in_methodHeader8079);
                     type613=type();
@@ -14676,7 +14677,7 @@ public class JavaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1316:41: 'void'
+                    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1317:41: 'void'
                     {
                     string_literal614=(Token)match(input,VOID,FOLLOW_VOID_in_methodHeader8081); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14729,7 +14730,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "fieldHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1319:1: fieldHeader : modifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1320:1: fieldHeader : modifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) ;
     public final JavaParser.fieldHeader_return fieldHeader() throws RecognitionException {
         JavaParser.fieldHeader_return retval = new JavaParser.fieldHeader_return();
         retval.start = input.LT(1);
@@ -14752,8 +14753,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 109) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1320:5: ( modifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1320:9: modifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1321:5: ( modifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1321:9: modifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' )
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14774,7 +14775,7 @@ public class JavaParser extends Parser {
             IDENTIFIER619_tree = (Object)adaptor.create(IDENTIFIER619);
             adaptor.addChild(root_0, IDENTIFIER619_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1320:35: ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1321:35: ( '[' ']' )*
             loop164:
             do {
                 int alt164=2;
@@ -14787,7 +14788,7 @@ public class JavaParser extends Parser {
 
                 switch (alt164) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1320:36: '[' ']'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1321:36: '[' ']'
             	    {
             	    char_literal620=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_fieldHeader8114); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -14850,7 +14851,7 @@ public class JavaParser extends Parser {
     };
 
     // $ANTLR start "localVariableHeader"
-    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1323:1: localVariableHeader : variableModifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) ;
+    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1324:1: localVariableHeader : variableModifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) ;
     public final JavaParser.localVariableHeader_return localVariableHeader() throws RecognitionException {
         JavaParser.localVariableHeader_return retval = new JavaParser.localVariableHeader_return();
         retval.start = input.LT(1);
@@ -14873,8 +14874,8 @@ public class JavaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 110) ) { return retval; }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1324:5: ( variableModifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) )
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1324:9: variableModifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1325:5: ( variableModifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' ) )
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1325:9: variableModifiers type IDENTIFIER ( '[' ']' )* ( '=' | ',' | ';' )
             {
             root_0 = (Object)adaptor.nil();
 
@@ -14895,7 +14896,7 @@ public class JavaParser extends Parser {
             IDENTIFIER625_tree = (Object)adaptor.create(IDENTIFIER625);
             adaptor.addChild(root_0, IDENTIFIER625_tree);
             }
-            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1324:43: ( '[' ']' )*
+            // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1325:43: ( '[' ']' )*
             loop165:
             do {
                 int alt165=2;
@@ -14908,7 +14909,7 @@ public class JavaParser extends Parser {
 
                 switch (alt165) {
             	case 1 :
-            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1324:44: '[' ']'
+            	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1325:44: '[' ']'
             	    {
             	    char_literal626=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_localVariableHeader8152); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -14967,10 +14968,10 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred2_Java
     public final void synpred2_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:13: ( ( annotations )? packageDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:13: ( annotations )? packageDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:13: ( ( annotations )? packageDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:13: ( annotations )? packageDeclaration
         {
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:13: ( annotations )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:13: ( annotations )?
         int alt166=2;
         int LA166_0 = input.LA(1);
 
@@ -14979,7 +14980,7 @@ public class JavaParser extends Parser {
         }
         switch (alt166) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:322:14: annotations
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:323:14: annotations
                 {
                 pushFollow(FOLLOW_annotations_in_synpred2_Java115);
                 annotations();
@@ -15004,8 +15005,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred12_Java
     public final void synpred12_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:371:10: ( classDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:371:10: classDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:372:10: ( classDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:372:10: classDeclaration
         {
         pushFollow(FOLLOW_classDeclaration_in_synpred12_Java512);
         classDeclaration();
@@ -15019,8 +15020,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred27_Java
     public final void synpred27_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:402:9: ( normalClassDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:402:9: normalClassDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:403:9: ( normalClassDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:403:9: normalClassDeclaration
         {
         pushFollow(FOLLOW_normalClassDeclaration_in_synpred27_Java749);
         normalClassDeclaration();
@@ -15034,8 +15035,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred43_Java
     public final void synpred43_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:502:9: ( normalInterfaceDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:502:9: normalInterfaceDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:503:9: ( normalInterfaceDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:503:9: normalInterfaceDeclaration
         {
         pushFollow(FOLLOW_normalInterfaceDeclaration_in_synpred43_Java1448);
         normalInterfaceDeclaration();
@@ -15049,8 +15050,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred52_Java
     public final void synpred52_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:544:10: ( fieldDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:544:10: fieldDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:10: ( fieldDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:10: fieldDeclaration
         {
         pushFollow(FOLLOW_fieldDeclaration_in_synpred52_Java1778);
         fieldDeclaration();
@@ -15064,8 +15065,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred53_Java
     public final void synpred53_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:10: ( methodDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:545:10: methodDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:546:10: ( methodDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:546:10: methodDeclaration
         {
         pushFollow(FOLLOW_methodDeclaration_in_synpred53_Java1789);
         methodDeclaration();
@@ -15079,8 +15080,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred54_Java
     public final void synpred54_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:546:10: ( classDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:546:10: classDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:547:10: ( classDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:547:10: classDeclaration
         {
         pushFollow(FOLLOW_classDeclaration_in_synpred54_Java1800);
         classDeclaration();
@@ -15094,8 +15095,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred57_Java
     public final void synpred57_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:562:10: ( explicitConstructorInvocation )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:562:10: explicitConstructorInvocation
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:563:10: ( explicitConstructorInvocation )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:563:10: explicitConstructorInvocation
         {
         pushFollow(FOLLOW_explicitConstructorInvocation_in_synpred57_Java1937);
         explicitConstructorInvocation();
@@ -15109,15 +15110,15 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred59_Java
     public final void synpred59_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:554:10: ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:554:10: modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:10: ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:10: modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}'
         {
         pushFollow(FOLLOW_modifiers_in_synpred59_Java1849);
         modifiers();
 
         state._fsp--;
         if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:9: ( typeParameters )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:556:9: ( typeParameters )?
         int alt169=2;
         int LA169_0 = input.LA(1);
 
@@ -15126,7 +15127,7 @@ public class JavaParser extends Parser {
         }
         switch (alt169) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:555:10: typeParameters
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:556:10: typeParameters
                 {
                 pushFollow(FOLLOW_typeParameters_in_synpred59_Java1860);
                 typeParameters();
@@ -15145,7 +15146,7 @@ public class JavaParser extends Parser {
 
         state._fsp--;
         if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:559:9: ( 'throws' qualifiedNameList )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:560:9: ( 'throws' qualifiedNameList )?
         int alt170=2;
         int LA170_0 = input.LA(1);
 
@@ -15154,7 +15155,7 @@ public class JavaParser extends Parser {
         }
         switch (alt170) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:559:10: 'throws' qualifiedNameList
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:560:10: 'throws' qualifiedNameList
                 {
                 match(input,THROWS,FOLLOW_THROWS_in_synpred59_Java1902); if (state.failed) return ;
                 pushFollow(FOLLOW_qualifiedNameList_in_synpred59_Java1904);
@@ -15169,12 +15170,12 @@ public class JavaParser extends Parser {
         }
 
         match(input,LBRACE,FOLLOW_LBRACE_in_synpred59_Java1925); if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:562:9: ( explicitConstructorInvocation )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:563:9: ( explicitConstructorInvocation )?
         int alt171=2;
         alt171 = dfa171.predict(input);
         switch (alt171) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:562:10: explicitConstructorInvocation
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:563:10: explicitConstructorInvocation
                 {
                 pushFollow(FOLLOW_explicitConstructorInvocation_in_synpred59_Java1937);
                 explicitConstructorInvocation();
@@ -15187,7 +15188,7 @@ public class JavaParser extends Parser {
 
         }
 
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:564:9: ( blockStatement )*
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:565:9: ( blockStatement )*
         loop172:
         do {
             int alt172=2;
@@ -15200,7 +15201,7 @@ public class JavaParser extends Parser {
 
             switch (alt172) {
         	case 1 :
-        	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:564:10: blockStatement
+        	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:565:10: blockStatement
         	    {
         	    pushFollow(FOLLOW_blockStatement_in_synpred59_Java1959);
         	    blockStatement();
@@ -15224,8 +15225,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred68_Java
     public final void synpred68_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:614:9: ( interfaceFieldDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:614:9: interfaceFieldDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:615:9: ( interfaceFieldDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:615:9: interfaceFieldDeclaration
         {
         pushFollow(FOLLOW_interfaceFieldDeclaration_in_synpred68_Java2365);
         interfaceFieldDeclaration();
@@ -15239,8 +15240,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred69_Java
     public final void synpred69_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:615:9: ( interfaceMethodDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:615:9: interfaceMethodDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:616:9: ( interfaceMethodDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:616:9: interfaceMethodDeclaration
         {
         pushFollow(FOLLOW_interfaceMethodDeclaration_in_synpred69_Java2375);
         interfaceMethodDeclaration();
@@ -15254,8 +15255,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred70_Java
     public final void synpred70_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:616:9: ( interfaceDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:616:9: interfaceDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:617:9: ( interfaceDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:617:9: interfaceDeclaration
         {
         pushFollow(FOLLOW_interfaceDeclaration_in_synpred70_Java2385);
         interfaceDeclaration();
@@ -15269,8 +15270,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred71_Java
     public final void synpred71_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:617:9: ( classDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:617:9: classDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:618:9: ( classDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:618:9: classDeclaration
         {
         pushFollow(FOLLOW_classDeclaration_in_synpred71_Java2395);
         classDeclaration();
@@ -15284,8 +15285,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred96_Java
     public final void synpred96_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:712:9: ( ellipsisParameterDecl )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:712:9: ellipsisParameterDecl
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:9: ( ellipsisParameterDecl )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:9: ellipsisParameterDecl
         {
         pushFollow(FOLLOW_ellipsisParameterDecl_in_synpred96_Java3159);
         ellipsisParameterDecl();
@@ -15299,15 +15300,15 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred98_Java
     public final void synpred98_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:9: ( normalParameterDecl ( ',' normalParameterDecl )* )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:713:9: normalParameterDecl ( ',' normalParameterDecl )*
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:9: ( normalParameterDecl ( ',' normalParameterDecl )* )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:9: normalParameterDecl ( ',' normalParameterDecl )*
         {
         pushFollow(FOLLOW_normalParameterDecl_in_synpred98_Java3169);
         normalParameterDecl();
 
         state._fsp--;
         if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:9: ( ',' normalParameterDecl )*
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:715:9: ( ',' normalParameterDecl )*
         loop175:
         do {
             int alt175=2;
@@ -15320,7 +15321,7 @@ public class JavaParser extends Parser {
 
             switch (alt175) {
         	case 1 :
-        	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:714:10: ',' normalParameterDecl
+        	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:715:10: ',' normalParameterDecl
         	    {
         	    match(input,COMMA,FOLLOW_COMMA_in_synpred98_Java3180); if (state.failed) return ;
         	    pushFollow(FOLLOW_normalParameterDecl_in_synpred98_Java3182);
@@ -15344,8 +15345,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred99_Java
     public final void synpred99_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:716:10: ( normalParameterDecl ',' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:716:10: normalParameterDecl ','
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:717:10: ( normalParameterDecl ',' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:717:10: normalParameterDecl ','
         {
         pushFollow(FOLLOW_normalParameterDecl_in_synpred99_Java3204);
         normalParameterDecl();
@@ -15360,10 +15361,10 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred103_Java
     public final void synpred103_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:9: ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:9: ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:9: ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:9: ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';'
         {
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:9: ( nonWildcardTypeArguments )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:9: ( nonWildcardTypeArguments )?
         int alt176=2;
         int LA176_0 = input.LA(1);
 
@@ -15372,7 +15373,7 @@ public class JavaParser extends Parser {
         }
         switch (alt176) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:736:10: nonWildcardTypeArguments
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:737:10: nonWildcardTypeArguments
                 {
                 pushFollow(FOLLOW_nonWildcardTypeArguments_in_synpred103_Java3349);
                 nonWildcardTypeArguments();
@@ -15408,8 +15409,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred117_Java
     public final void synpred117_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:823:9: ( annotationMethodDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:823:9: annotationMethodDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:9: ( annotationMethodDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:9: annotationMethodDeclaration
         {
         pushFollow(FOLLOW_annotationMethodDeclaration_in_synpred117_Java4008);
         annotationMethodDeclaration();
@@ -15423,8 +15424,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred118_Java
     public final void synpred118_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:9: ( interfaceFieldDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:824:9: interfaceFieldDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:825:9: ( interfaceFieldDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:825:9: interfaceFieldDeclaration
         {
         pushFollow(FOLLOW_interfaceFieldDeclaration_in_synpred118_Java4018);
         interfaceFieldDeclaration();
@@ -15438,8 +15439,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred119_Java
     public final void synpred119_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:825:9: ( normalClassDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:825:9: normalClassDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:826:9: ( normalClassDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:826:9: normalClassDeclaration
         {
         pushFollow(FOLLOW_normalClassDeclaration_in_synpred119_Java4028);
         normalClassDeclaration();
@@ -15453,8 +15454,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred120_Java
     public final void synpred120_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:826:9: ( normalInterfaceDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:826:9: normalInterfaceDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:827:9: ( normalInterfaceDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:827:9: normalInterfaceDeclaration
         {
         pushFollow(FOLLOW_normalInterfaceDeclaration_in_synpred120_Java4038);
         normalInterfaceDeclaration();
@@ -15468,8 +15469,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred121_Java
     public final void synpred121_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:827:9: ( enumDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:827:9: enumDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:828:9: ( enumDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:828:9: enumDeclaration
         {
         pushFollow(FOLLOW_enumDeclaration_in_synpred121_Java4048);
         enumDeclaration();
@@ -15483,8 +15484,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred122_Java
     public final void synpred122_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:828:9: ( annotationTypeDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:828:9: annotationTypeDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:829:9: ( annotationTypeDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:829:9: annotationTypeDeclaration
         {
         pushFollow(FOLLOW_annotationTypeDeclaration_in_synpred122_Java4058);
         annotationTypeDeclaration();
@@ -15498,8 +15499,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred125_Java
     public final void synpred125_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:871:9: ( localVariableDeclarationStatement )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:871:9: localVariableDeclarationStatement
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:9: ( localVariableDeclarationStatement )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:9: localVariableDeclarationStatement
         {
         pushFollow(FOLLOW_localVariableDeclarationStatement_in_synpred125_Java4216);
         localVariableDeclarationStatement();
@@ -15513,8 +15514,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred126_Java
     public final void synpred126_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:9: ( classOrInterfaceDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:872:9: classOrInterfaceDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:873:9: ( classOrInterfaceDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:873:9: classOrInterfaceDeclaration
         {
         pushFollow(FOLLOW_classOrInterfaceDeclaration_in_synpred126_Java4226);
         classOrInterfaceDeclaration();
@@ -15528,11 +15529,11 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred130_Java
     public final void synpred130_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:9: ( ( 'assert' ) expression ( ':' expression )? ';' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:9: ( 'assert' ) expression ( ':' expression )? ';'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:9: ( ( 'assert' ) expression ( ':' expression )? ';' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:9: ( 'assert' ) expression ( ':' expression )? ';'
         {
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:9: ( 'assert' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:892:10: 'assert'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:9: ( 'assert' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:893:10: 'assert'
         {
         match(input,ASSERT,FOLLOW_ASSERT_in_synpred130_Java4367); if (state.failed) return ;
 
@@ -15543,7 +15544,7 @@ public class JavaParser extends Parser {
 
         state._fsp--;
         if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:894:20: ( ':' expression )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:20: ( ':' expression )?
         int alt179=2;
         int LA179_0 = input.LA(1);
 
@@ -15552,7 +15553,7 @@ public class JavaParser extends Parser {
         }
         switch (alt179) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:894:21: ':' expression
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:21: ':' expression
                 {
                 match(input,COLON,FOLLOW_COLON_in_synpred130_Java4390); if (state.failed) return ;
                 pushFollow(FOLLOW_expression_in_synpred130_Java4392);
@@ -15574,8 +15575,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred132_Java
     public final void synpred132_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:9: ( 'assert' expression ( ':' expression )? ';' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:9: 'assert' expression ( ':' expression )? ';'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:9: ( 'assert' expression ( ':' expression )? ';' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:9: 'assert' expression ( ':' expression )? ';'
         {
         match(input,ASSERT,FOLLOW_ASSERT_in_synpred132_Java4406); if (state.failed) return ;
         pushFollow(FOLLOW_expression_in_synpred132_Java4409);
@@ -15583,7 +15584,7 @@ public class JavaParser extends Parser {
 
         state._fsp--;
         if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:30: ( ':' expression )?
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:30: ( ':' expression )?
         int alt180=2;
         int LA180_0 = input.LA(1);
 
@@ -15592,7 +15593,7 @@ public class JavaParser extends Parser {
         }
         switch (alt180) {
             case 1 :
-                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:895:31: ':' expression
+                // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:31: ':' expression
                 {
                 match(input,COLON,FOLLOW_COLON_in_synpred132_Java4412); if (state.failed) return ;
                 pushFollow(FOLLOW_expression_in_synpred132_Java4414);
@@ -15614,8 +15615,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred133_Java
     public final void synpred133_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:39: ( 'else' statement )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:896:39: 'else' statement
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:897:39: ( 'else' statement )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:897:39: 'else' statement
         {
         match(input,ELSE,FOLLOW_ELSE_in_synpred133_Java4447); if (state.failed) return ;
         pushFollow(FOLLOW_statement_in_synpred133_Java4449);
@@ -15630,8 +15631,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred148_Java
     public final void synpred148_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:911:9: ( expression ';' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:911:9: expression ';'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:912:9: ( expression ';' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:912:9: expression ';'
         {
         pushFollow(FOLLOW_expression_in_synpred148_Java4671);
         expression();
@@ -15646,8 +15647,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred149_Java
     public final void synpred149_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:912:9: ( IDENTIFIER ':' statement )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:912:9: IDENTIFIER ':' statement
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:913:9: ( IDENTIFIER ':' statement )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:913:9: IDENTIFIER ':' statement
         {
         match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_synpred149_Java4689); if (state.failed) return ;
         match(input,COLON,FOLLOW_COLON_in_synpred149_Java4691); if (state.failed) return ;
@@ -15663,8 +15664,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred153_Java
     public final void synpred153_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:936:13: ( catches 'finally' block )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:936:13: catches 'finally' block
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:13: ( catches 'finally' block )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:13: catches 'finally' block
         {
         pushFollow(FOLLOW_catches_in_synpred153_Java4849);
         catches();
@@ -15684,8 +15685,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred154_Java
     public final void synpred154_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:13: ( catches )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:937:13: catches
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:938:13: ( catches )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:938:13: catches
         {
         pushFollow(FOLLOW_catches_in_synpred154_Java4867);
         catches();
@@ -15699,8 +15700,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred157_Java
     public final void synpred157_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:962:9: ( 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:962:9: 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:963:9: ( 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:963:9: 'for' '(' variableModifiers type IDENTIFIER ':' expression ')' statement
         {
         match(input,FOR,FOLLOW_FOR_in_synpred157_Java5059); if (state.failed) return ;
         match(input,LPAREN,FOLLOW_LPAREN_in_synpred157_Java5061); if (state.failed) return ;
@@ -15734,8 +15735,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred161_Java
     public final void synpred161_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:976:9: ( localVariableDeclaration )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:976:9: localVariableDeclaration
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:977:9: ( localVariableDeclaration )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:977:9: localVariableDeclaration
         {
         pushFollow(FOLLOW_localVariableDeclaration_in_synpred161_Java5263);
         localVariableDeclaration();
@@ -15749,8 +15750,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred202_Java
     public final void synpred202_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1130:9: ( castExpression )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1130:9: castExpression
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1131:9: ( castExpression )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1131:9: castExpression
         {
         pushFollow(FOLLOW_castExpression_in_synpred202_Java6508);
         castExpression();
@@ -15764,8 +15765,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred206_Java
     public final void synpred206_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1140:9: ( '(' primitiveType ')' unaryExpression )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1140:9: '(' primitiveType ')' unaryExpression
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1141:9: ( '(' primitiveType ')' unaryExpression )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1141:9: '(' primitiveType ')' unaryExpression
         {
         match(input,LPAREN,FOLLOW_LPAREN_in_synpred206_Java6599); if (state.failed) return ;
         pushFollow(FOLLOW_primitiveType_in_synpred206_Java6601);
@@ -15786,8 +15787,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred208_Java
     public final void synpred208_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1150:10: ( '.' IDENTIFIER )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1150:10: '.' IDENTIFIER
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1151:10: ( '.' IDENTIFIER )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1151:10: '.' IDENTIFIER
         {
         match(input,DOT,FOLLOW_DOT_in_synpred208_Java6676); if (state.failed) return ;
         match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_synpred208_Java6678); if (state.failed) return ;
@@ -15798,8 +15799,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred209_Java
     public final void synpred209_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1152:10: ( identifierSuffix )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1152:10: identifierSuffix
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1153:10: ( identifierSuffix )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1153:10: identifierSuffix
         {
         pushFollow(FOLLOW_identifierSuffix_in_synpred209_Java6700);
         identifierSuffix();
@@ -15813,8 +15814,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred211_Java
     public final void synpred211_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1155:10: ( '.' IDENTIFIER )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1155:10: '.' IDENTIFIER
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1156:10: ( '.' IDENTIFIER )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1156:10: '.' IDENTIFIER
         {
         match(input,DOT,FOLLOW_DOT_in_synpred211_Java6732); if (state.failed) return ;
         match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_synpred211_Java6734); if (state.failed) return ;
@@ -15825,8 +15826,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred212_Java
     public final void synpred212_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1157:10: ( identifierSuffix )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1157:10: identifierSuffix
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1158:10: ( identifierSuffix )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1158:10: identifierSuffix
         {
         pushFollow(FOLLOW_identifierSuffix_in_synpred212_Java6756);
         identifierSuffix();
@@ -15840,8 +15841,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred224_Java
     public final void synpred224_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1185:10: ( '[' expression ']' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1185:10: '[' expression ']'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1186:10: ( '[' expression ']' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1186:10: '[' expression ']'
         {
         match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred224_Java7007); if (state.failed) return ;
         pushFollow(FOLLOW_expression_in_synpred224_Java7009);
@@ -15857,8 +15858,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred236_Java
     public final void synpred236_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1208:9: ( 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1208:9: 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:9: ( 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:9: 'new' nonWildcardTypeArguments classOrInterfaceType classCreatorRest
         {
         match(input,NEW,FOLLOW_NEW_in_synpred236_Java7220); if (state.failed) return ;
         pushFollow(FOLLOW_nonWildcardTypeArguments_in_synpred236_Java7222);
@@ -15883,8 +15884,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred237_Java
     public final void synpred237_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:9: ( 'new' classOrInterfaceType classCreatorRest )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1209:9: 'new' classOrInterfaceType classCreatorRest
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1210:9: ( 'new' classOrInterfaceType classCreatorRest )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1210:9: 'new' classOrInterfaceType classCreatorRest
         {
         match(input,NEW,FOLLOW_NEW_in_synpred237_Java7236); if (state.failed) return ;
         pushFollow(FOLLOW_classOrInterfaceType_in_synpred237_Java7238);
@@ -15904,8 +15905,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred239_Java
     public final void synpred239_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1214:9: ( 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1214:9: 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1215:9: ( 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1215:9: 'new' createdName '[' ']' ( '[' ']' )* arrayInitializer
         {
         match(input,NEW,FOLLOW_NEW_in_synpred239_Java7270); if (state.failed) return ;
         pushFollow(FOLLOW_createdName_in_synpred239_Java7272);
@@ -15915,7 +15916,7 @@ public class JavaParser extends Parser {
         if (state.failed) return ;
         match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred239_Java7282); if (state.failed) return ;
         match(input,RBRACKET,FOLLOW_RBRACKET_in_synpred239_Java7284); if (state.failed) return ;
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1216:9: ( '[' ']' )*
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1217:9: ( '[' ']' )*
         loop193:
         do {
             int alt193=2;
@@ -15928,7 +15929,7 @@ public class JavaParser extends Parser {
 
             switch (alt193) {
         	case 1 :
-        	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1216:10: '[' ']'
+        	    // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1217:10: '[' ']'
         	    {
         	    match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred239_Java7295); if (state.failed) return ;
         	    match(input,RBRACKET,FOLLOW_RBRACKET_in_synpred239_Java7297); if (state.failed) return ;
@@ -15953,8 +15954,8 @@ public class JavaParser extends Parser {
 
     // $ANTLR start synpred240_Java
     public final void synpred240_Java_fragment() throws RecognitionException {   
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1223:13: ( '[' expression ']' )
-        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1223:13: '[' expression ']'
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1224:13: ( '[' expression ']' )
+        // /Users/cfregin/development/IntentionalIDE/eclipse_workspace/ParserCore/grammars/Java.g:1224:13: '[' expression ']'
         {
         match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred240_Java7367); if (state.failed) return ;
         pushFollow(FOLLOW_expression_in_synpred240_Java7369);
@@ -16691,7 +16692,7 @@ public class JavaParser extends Parser {
             this.transition = DFA2_transition;
         }
         public String getDescription() {
-            return "322:9: ( ( annotations )? packageDeclaration )?";
+            return "323:9: ( ( annotations )? packageDeclaration )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -16783,7 +16784,7 @@ public class JavaParser extends Parser {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "370:1: classOrInterfaceDeclaration : ( classDeclaration | interfaceDeclaration );";
+            return "371:1: classOrInterfaceDeclaration : ( classDeclaration | interfaceDeclaration );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -17041,7 +17042,7 @@ public class JavaParser extends Parser {
             this.transition = DFA13_transition;
         }
         public String getDescription() {
-            return "()* loopback of 378:5: ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )*";
+            return "()* loopback of 379:5: ( annotation | 'public' | 'protected' | 'private' | 'static' | 'abstract' | 'final' | 'native' | 'synchronized' | 'transient' | 'volatile' | 'strictfp' )*";
         }
     }
     static final String DFA15_eotS =
@@ -17106,7 +17107,7 @@ public class JavaParser extends Parser {
             this.transition = DFA15_transition;
         }
         public String getDescription() {
-            return "401:1: classDeclaration : ( normalClassDeclaration | enumDeclaration );";
+            return "402:1: classDeclaration : ( normalClassDeclaration | enumDeclaration );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -17362,7 +17363,7 @@ public class JavaParser extends Parser {
             this.transition = DFA31_transition;
         }
         public String getDescription() {
-            return "501:1: interfaceDeclaration : ( normalInterfaceDeclaration | annotationTypeDeclaration );";
+            return "502:1: interfaceDeclaration : ( normalInterfaceDeclaration | annotationTypeDeclaration );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -17627,7 +17628,7 @@ public class JavaParser extends Parser {
             this.transition = DFA39_transition;
         }
         public String getDescription() {
-            return "543:1: memberDecl : ( fieldDeclaration | methodDeclaration | classDeclaration | interfaceDeclaration );";
+            return "544:1: memberDecl : ( fieldDeclaration | methodDeclaration | classDeclaration | interfaceDeclaration );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -17966,7 +17967,7 @@ public class JavaParser extends Parser {
             this.transition = DFA49_transition;
         }
         public String getDescription() {
-            return "551:1: methodDeclaration : ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' | modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' ) );";
+            return "552:1: methodDeclaration : ( modifiers ( typeParameters )? IDENTIFIER formalParameters ( 'throws' qualifiedNameList )? '{' ( explicitConstructorInvocation )? ( blockStatement )* '}' | modifiers ( typeParameters )? ( type | 'void' ) IDENTIFIER formalParameters ( '[' ']' )* ( 'throws' qualifiedNameList )? ( block | ';' ) );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -18285,7 +18286,7 @@ public class JavaParser extends Parser {
             this.transition = DFA42_transition;
         }
         public String getDescription() {
-            return "562:9: ( explicitConstructorInvocation )?";
+            return "563:9: ( explicitConstructorInvocation )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -18491,7 +18492,7 @@ public class JavaParser extends Parser {
             this.transition = DFA53_transition;
         }
         public String getDescription() {
-            return "609:1: interfaceBodyDeclaration : ( interfaceFieldDeclaration | interfaceMethodDeclaration | interfaceDeclaration | classDeclaration | ';' );";
+            return "610:1: interfaceBodyDeclaration : ( interfaceFieldDeclaration | interfaceMethodDeclaration | interfaceDeclaration | classDeclaration | ';' );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -18820,7 +18821,7 @@ public class JavaParser extends Parser {
             this.transition = DFA76_transition;
         }
         public String getDescription() {
-            return "735:1: explicitConstructorInvocation : ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' | primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';' );";
+            return "736:1: explicitConstructorInvocation : ( ( nonWildcardTypeArguments )? ( 'this' | 'super' ) arguments ';' | primary '.' ( nonWildcardTypeArguments )? 'super' arguments ';' );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -18936,7 +18937,7 @@ public class JavaParser extends Parser {
             this.transition = DFA87_transition;
         }
         public String getDescription() {
-            return "819:1: annotationTypeElementDeclaration : ( annotationMethodDeclaration | interfaceFieldDeclaration | normalClassDeclaration | normalInterfaceDeclaration | enumDeclaration | annotationTypeDeclaration | ';' );";
+            return "820:1: annotationTypeElementDeclaration : ( annotationMethodDeclaration | interfaceFieldDeclaration | normalClassDeclaration | normalInterfaceDeclaration | enumDeclaration | annotationTypeDeclaration | ';' );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -19350,7 +19351,7 @@ public class JavaParser extends Parser {
             this.transition = DFA90_transition;
         }
         public String getDescription() {
-            return "870:1: blockStatement : ( localVariableDeclarationStatement | classOrInterfaceDeclaration | statement );";
+            return "871:1: blockStatement : ( localVariableDeclarationStatement | classOrInterfaceDeclaration | statement );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -19521,7 +19522,7 @@ public class JavaParser extends Parser {
             this.transition = DFA98_transition;
         }
         public String getDescription() {
-            return "889:1: statement : ( block | ( 'assert' ) expression ( ':' expression )? ';' | 'assert' expression ( ':' expression )? ';' | 'if' parExpression statement ( 'else' statement )? | forstatement | 'while' parExpression statement | 'do' statement 'while' parExpression ';' | trystatement | 'switch' parExpression '{' switchBlockStatementGroups '}' | 'synchronized' parExpression block | 'return' ( expression )? ';' | 'throw' expression ';' | 'break' ( IDENTIFIER )? ';' | 'continue' ( IDENTIFIER )? ';' | expression ';' | IDENTIFIER ':' statement | ';' );";
+            return "890:1: statement : ( block | ( 'assert' ) expression ( ':' expression )? ';' | 'assert' expression ( ':' expression )? ';' | 'if' parExpression statement ( 'else' statement )? | forstatement | 'while' parExpression statement | 'do' statement 'while' parExpression ';' | trystatement | 'switch' parExpression '{' switchBlockStatementGroups '}' | 'synchronized' parExpression block | 'return' ( expression )? ';' | 'throw' expression ';' | 'break' ( IDENTIFIER )? ';' | 'continue' ( IDENTIFIER )? ';' | expression ';' | IDENTIFIER ':' statement | ';' );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -19630,7 +19631,7 @@ public class JavaParser extends Parser {
             this.transition = DFA109_transition;
         }
         public String getDescription() {
-            return "975:1: forInit : ( localVariableDeclaration | expressionList );";
+            return "976:1: forInit : ( localVariableDeclaration | expressionList );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -19736,7 +19737,7 @@ public class JavaParser extends Parser {
             this.transition = DFA112_transition;
         }
         public String getDescription() {
-            return "998:1: assignmentOperator : ( '=' | '+=' | '-=' | '*=' | '/=' | '&=' | '|=' | '^=' | '%=' | '<' '<' '=' | '>' '>' '>' '=' | '>' '>' '=' );";
+            return "999:1: assignmentOperator : ( '=' | '+=' | '-=' | '*=' | '/=' | '&=' | '|=' | '^=' | '%=' | '<' '<' '=' | '>' '>' '>' '=' | '>' '>' '=' );";
         }
     }
     static final String DFA130_eotS =
@@ -19798,7 +19799,7 @@ public class JavaParser extends Parser {
             this.transition = DFA130_transition;
         }
         public String getDescription() {
-            return "1127:1: unaryExpressionNotPlusMinus : ( '~' unaryExpression | '!' unaryExpression | castExpression | primary ( selector )* ( '++' | '--' )? );";
+            return "1128:1: unaryExpressionNotPlusMinus : ( '~' unaryExpression | '!' unaryExpression | castExpression | primary ( selector )* ( '++' | '--' )? );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -19906,7 +19907,7 @@ public class JavaParser extends Parser {
             this.transition = DFA133_transition;
         }
         public String getDescription() {
-            return "1152:9: ( identifierSuffix )?";
+            return "1153:9: ( identifierSuffix )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -20029,7 +20030,7 @@ public class JavaParser extends Parser {
             this.transition = DFA135_transition;
         }
         public String getDescription() {
-            return "1157:9: ( identifierSuffix )?";
+            return "1158:9: ( identifierSuffix )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -20132,7 +20133,7 @@ public class JavaParser extends Parser {
             this.transition = DFA143_transition;
         }
         public String getDescription() {
-            return "1181:1: identifierSuffix : ( ( '[' ']' )+ '.' 'class' | ( '[' expression ']' )+ | arguments | '.' 'class' | '.' nonWildcardTypeArguments IDENTIFIER arguments | '.' 'this' | '.' 'super' arguments | innerCreator );";
+            return "1182:1: identifierSuffix : ( ( '[' ']' )+ '.' 'class' | ( '[' expression ']' )+ | arguments | '.' 'class' | '.' nonWildcardTypeArguments IDENTIFIER arguments | '.' 'this' | '.' 'super' arguments | innerCreator );";
         }
     }
     static final String DFA142_eotS =
@@ -20214,7 +20215,7 @@ public class JavaParser extends Parser {
             this.transition = DFA142_transition;
         }
         public String getDescription() {
-            return "()+ loopback of 1185:9: ( '[' expression ']' )+";
+            return "()+ loopback of 1186:9: ( '[' expression ']' )+";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -20322,7 +20323,7 @@ public class JavaParser extends Parser {
             this.transition = DFA148_transition;
         }
         public String getDescription() {
-            return "()* loopback of 1223:9: ( '[' expression ']' )*";
+            return "()* loopback of 1224:9: ( '[' expression ']' )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -20446,7 +20447,7 @@ public class JavaParser extends Parser {
             this.transition = DFA171_transition;
         }
         public String getDescription() {
-            return "562:9: ( explicitConstructorInvocation )?";
+            return "563:9: ( explicitConstructorInvocation )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
